@@ -22,7 +22,7 @@ public class MemberApplication {
         SpringApplication app = new SpringApplication(MemberApplication.class);
         Environment env = app.run(args).getEnvironment();
         LOG.info("启动成功！！");
-        LOG.info("测试地址: \thttp://127.0.0.1:{}", env.getProperty("server.port"));
-    }
+        //参数1:配置文件里的port 参数2:配置文件的前缀名
+        LOG.info("测试地址: \thttp://127.0.0.1:{}{}/hello", env.getProperty("server.port"), env.getProperty("server.servlet.context-path"));    }
 
 }

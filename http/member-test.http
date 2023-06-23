@@ -1,0 +1,5 @@
+#HTTP文件用于测试
+GET http://localhost:8001/member/hello
+Accept: application/json
+
+###
