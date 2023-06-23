@@ -1,2 +1,5 @@
 server:
   port: 8001
+#  context-path 项目API前缀 加了要放访问的话 必须要加上这个前缀
+  servlet:
+    context-path: "/member"
