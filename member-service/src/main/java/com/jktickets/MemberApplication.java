@@ -14,8 +14,6 @@ import org.slf4j.LoggerFactory;
 @SpringBootApplication
 public class MemberApplication {
 
-
-
     private static final Logger LOG = LoggerFactory.getLogger(MemberApplication.class);
 
     public static void main(String[] args) {

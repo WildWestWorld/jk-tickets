@@ -26,6 +26,9 @@
     <dependencies>
 
 
+
+
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -55,11 +58,30 @@
             </dependency>
 
 
+
+
             <dependency>
                 <groupId>com.example</groupId>
-                <artifactId>jk-tickets</artifactId>
+                <artifactId>common-service</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
+
+
+            <!-- 集成mybatis-->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>3.0.0</version>
+            </dependency>
+            <!-- 集成mysql连接 -->
+            <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.22</version>
+            </dependency>
+
+
 
 
 

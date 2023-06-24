@@ -31,7 +31,7 @@
 
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>jk-tickets</artifactId>
+            <artifactId>common-service</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
