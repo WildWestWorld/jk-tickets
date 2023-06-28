@@ -1,6 +1,7 @@
 package com.jktickets.controller;
 
 
+import com.jktickets.exception.BusinessException;
 import com.jktickets.res.CommonRes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,8 +33,8 @@ public class ControllerExceptionHandler {
         LOG.error("系统异常：", e);
         commonRes.setSuccess(false);
         commonRes.setCode(400);
-//        commonRes.setMessage("系统出现异常，请联系管理员");
-        commonRes.setMessage(e.getMessage());
+        commonRes.setMessage("系统出现异常，请联系管理员");
+//        commonRes.setMessage(e.getMessage());
         return commonRes;
     }
 
@@ -42,15 +43,16 @@ public class ControllerExceptionHandler {
      * @param e
      * @return
      */
-//    @ExceptionHandler(value = BusinessException.class)
-//    @ResponseBody
-//    public CommonRes exceptionHandler(BusinessException e) {
-//        CommonRes commonRes = new CommonRes();
-//        LOG.error("业务异常：{}", e.getE().getDesc());
-//        commonRes.setSuccess(false);
-//        commonRes.setMessage(e.getE().getDesc());
-//        return commonRes;
-//    }
+    @ExceptionHandler(value = BusinessException.class)
+    @ResponseBody
+    public CommonRes exceptionHandler(BusinessException e) {
+        CommonRes commonRes = new CommonRes();
+        LOG.error("业务异常:{}", e.getBusinessExceptionEnum().getDesc());
+        commonRes.setSuccess(false);
+        commonRes.setCode(400);
+        commonRes.setMessage(e.getBusinessExceptionEnum().getDesc());
+        return commonRes;
+    }
 
     /**
      * 校验异常统一处理

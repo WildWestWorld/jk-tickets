@@ -3,6 +3,8 @@ package com.jktickets.service.impl;
 import cn.hutool.core.collection.CollUtil;
 import com.jktickets.domain.Member;
 import com.jktickets.domain.MemberExample;
+import com.jktickets.exception.BusinessException;
+import com.jktickets.exception.BusinessExceptionEnum;
 import com.jktickets.mapper.MemberMapper;
 import com.jktickets.req.MemberRegisterReq;
 import com.jktickets.service.MemberService;
@@ -41,7 +43,7 @@ public class MemberServiceImpl implements MemberService {
 //      如果已经有了这个手机号
         if (CollUtil.isNotEmpty(memberList)){
 //            return memberList.get(0).getId();
-            throw new RuntimeException("手机号已注册");
+            throw new BusinessException(BusinessExceptionEnum.MEMBER_MOBILE_EXIST);
         }
 
         Member member = new Member();
