@@ -28,4 +28,7 @@ public class CommonRes<T> {
     public CommonRes(T result) {
         this.result = result;
     }
+
+    public CommonRes() {
+    }
 }
