@@ -4,6 +4,7 @@ import cn.hutool.core.collection.CollUtil;
 import com.jktickets.domain.Member;
 import com.jktickets.domain.MemberExample;
 import com.jktickets.mapper.MemberMapper;
+import com.jktickets.req.MemberRegisterReq;
 import com.jktickets.service.MemberService;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
@@ -26,7 +27,9 @@ public class MemberServiceImpl implements MemberService {
     }
 
     @Override
-    public long registerByMobile(String mobile) {
+    public long registerByMobile(MemberRegisterReq req) {
+        String mobile = req.getMobile();
+
 
 //        创建ORM条件查询
         MemberExample memberExample = new MemberExample();

@@ -1,6 +1,8 @@
 package com.jktickets.controller;
 
 
+import com.jktickets.req.MemberRegisterReq;
+import com.jktickets.res.CommonRes;
 import com.jktickets.service.MemberService;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,14 +17,19 @@ public class MemberController {
     MemberService memberService;
 
     @GetMapping("/count")
-    public Integer count() {
-        return memberService.countNum();
+    public CommonRes<Integer>  count() {
+        int countNum = memberService.countNum();
+
+
+        return new CommonRes<>(countNum);
     }
 
 
     @PostMapping("/register")
-    public long registerByMobile(String mobile) {
-        return memberService.registerByMobile(mobile);
+    public CommonRes<Long> registerByMobile(MemberRegisterReq req){
+        long mobile = memberService.registerByMobile(req);
+
+        return new CommonRes<>(mobile);
     }
 
 }

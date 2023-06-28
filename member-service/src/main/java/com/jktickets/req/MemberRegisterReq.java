@@ -1,0 +1,11 @@
+package com.jktickets.req;
+
+
+import lombok.Data;
+
+@Data
+public class MemberRegisterReq {
+    private String mobile;
+
+
+}
