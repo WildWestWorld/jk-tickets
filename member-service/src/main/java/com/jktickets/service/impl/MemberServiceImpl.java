@@ -1,6 +1,7 @@
 package com.jktickets.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.util.IdUtil;
 import com.jktickets.domain.Member;
 import com.jktickets.domain.MemberExample;
 import com.jktickets.exception.BusinessException;
@@ -8,6 +9,7 @@ import com.jktickets.exception.BusinessExceptionEnum;
 import com.jktickets.mapper.MemberMapper;
 import com.jktickets.req.MemberRegisterReq;
 import com.jktickets.service.MemberService;
+import com.jktickets.utils.SnowUtil;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
@@ -47,7 +49,9 @@ public class MemberServiceImpl implements MemberService {
         }
 
         Member member = new Member();
-        member.setId(System.currentTimeMillis());
+//        member.setId(System.currentTimeMillis());
+//        设置雪花算法 为id
+        member.setId(SnowUtil.getSnowflakeNextId());
         member.setMobile(mobile);
 
         memberMapper.insert(member);
