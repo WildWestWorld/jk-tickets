@@ -1,7 +1,6 @@
-package com.jktickets.controller;
+package com.jktickets.exception;
 
 
-import com.jktickets.exception.BusinessException;
 import com.jktickets.res.CommonRes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -58,15 +57,19 @@ public class ControllerExceptionHandler {
      * 校验异常统一处理
      * @param e
      * @return
+     *
      */
-//    @ExceptionHandler(value = BindException.class)
-//    @ResponseBody
-//    public CommonRes exceptionHandler(BindException e) {
-//        CommonRes commonRes = new CommonRes();
-//        LOG.error("校验异常：{}", e.getBindingResult().getAllErrors().get(0).getDefaultMessage());
-//        commonRes.setSuccess(false);
-//        commonRes.setMessage(e.getBindingResult().getAllErrors().get(0).getDefaultMessage());
-//        return commonRes;
-//    }
+
+
+//    * BindException 引入的得是 spring的validation 这个拦截就是要拦截 validation 发出报错信息
+    @ExceptionHandler(value = BindException.class)
+    @ResponseBody
+    public CommonRes exceptionHandler(BindException e) {
+        CommonRes commonRes = new CommonRes();
+        LOG.error("校验异常：{}", e.getBindingResult().getAllErrors().get(0).getDefaultMessage());
+        commonRes.setSuccess(false);
+        commonRes.setMessage(e.getBindingResult().getAllErrors().get(0).getDefaultMessage());
+        return commonRes;
+    }
 
 }
