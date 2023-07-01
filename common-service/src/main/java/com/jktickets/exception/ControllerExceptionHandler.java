@@ -68,6 +68,7 @@ public class ControllerExceptionHandler {
         CommonRes commonRes = new CommonRes();
         LOG.error("校验异常：{}", e.getBindingResult().getAllErrors().get(0).getDefaultMessage());
         commonRes.setSuccess(false);
+        commonRes.setCode(400);
         commonRes.setMessage(e.getBindingResult().getAllErrors().get(0).getDefaultMessage());
         return commonRes;
     }

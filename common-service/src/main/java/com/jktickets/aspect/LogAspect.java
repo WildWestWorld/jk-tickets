@@ -9,10 +9,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
-import org.aspectj.lang.annotation.Around;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
@@ -98,5 +95,33 @@ public class LogAspect {
         LOG.info("------------- 结束 耗时：{} ms -------------", System.currentTimeMillis() - startTime);
         return result;
     }
+
+    @Pointcut("execution(* com.jktickets..*Mapper.*(..))")
+    public void sqlPointcut() {
+    }
+    @Before("sqlPointcut()")
+    public void beforeSql(JoinPoint joinPoint) {
+        // 获取SQL语句
+        String sql = joinPoint.getSignature().getName();
+        LOG.info("执行SQL:  {} | {}", sql,joinPoint);
+        // 获取SQL参数值
+        Object[] args = joinPoint.getArgs();
+        if (args != null && args.length > 0) {
+            for (Object arg : args) {
+                LOG.info("参数值: {}", arg.toString());
+            }
+        }
+    }
+
+    @After("sqlPointcut()")
+    public void afterSql(JoinPoint joinPoint) {
+        // 获取SQL语句
+        String sql = joinPoint.getSignature().getName();
+        LOG.info("SQL执行完成: {} | {}", sql,joinPoint);
+
+
+    }
+
+
 
 }

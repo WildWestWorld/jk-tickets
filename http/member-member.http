@@ -8,8 +8,35 @@ Accept: application/json
 
 #ptrp
 POST http://localhost:8000/member/member/register
-Content-Type: application/x-www-form-urlencoded
+Content-Type: application/json
 
-mobile=12345678
+{
+  "mobile":"12305448760"
+}
+
+
+###
+
+
+#ptrp
+POST http://localhost:8000/member/member/sendCode
+Content-Type: application/json
+
+{
+  "mobile":"12305448760"
+}
+
+###
+
+#ptrp
+POST http://localhost:8000/member/member/login
+Content-Type: application/json
+
+{
+"mobile":"12305448760",
+"code":"8888"
+}
+
+
 
 ###

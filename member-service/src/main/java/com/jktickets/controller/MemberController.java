@@ -1,15 +1,15 @@
 package com.jktickets.controller;
 
 
+import com.jktickets.req.MemberLoginReq;
 import com.jktickets.req.MemberRegisterReq;
+import com.jktickets.req.MemberSendCodeReq;
 import com.jktickets.res.CommonRes;
+import com.jktickets.res.MemberLoginRes;
 import com.jktickets.service.MemberService;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/member")
@@ -27,10 +27,24 @@ public class MemberController {
 
 
     @PostMapping("/register")
-    public CommonRes<Long> registerByMobile(@Valid MemberRegisterReq req){
+//    @RequestBody 用于请求 用JSON
+    public CommonRes<Long> registerByMobile(@Valid  @RequestBody  MemberRegisterReq req){
         long mobile = memberService.registerByMobile(req);
 
         return new CommonRes<>(mobile);
+    }
+    @PostMapping("/sendCode")
+    public CommonRes<String> sendCode(@Valid @RequestBody MemberSendCodeReq req){
+         memberService.sendCode(req);
+
+        return new CommonRes<>("短信发送成功");
+    }
+
+    @PostMapping("/login")
+    public CommonRes<MemberLoginRes> sendCode(@Valid  @RequestBody MemberLoginReq req){
+        MemberLoginRes memberLoginRes = memberService.login(req);
+
+        return new CommonRes<>(memberLoginRes);
     }
 
 }
