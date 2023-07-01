@@ -15,6 +15,7 @@ import com.jktickets.req.MemberRegisterReq;
 import com.jktickets.req.MemberSendCodeReq;
 import com.jktickets.res.MemberLoginRes;
 import com.jktickets.service.MemberService;
+import com.jktickets.utils.JwtUtil;
 import com.jktickets.utils.SnowUtil;
 import jakarta.annotation.Resource;
 import org.slf4j.Logger;
@@ -130,11 +131,15 @@ public class MemberServiceImpl implements MemberService {
 
 //        利用huTool生成JWT
 //        1.拿到Payload   用户信息转成Map
-        Map<String, Object> map = BeanUtil.beanToMap(memberLoginRes);
-//        2.设置秘钥
-        String key = "JK12306";
-//        3.huTool生成Token createToken(Map<String, Object> payload, byte[] key)
-        String token = JWTUtil.createToken(map, key.getBytes());
+//        Map<String, Object> map = BeanUtil.beanToMap(memberLoginRes);
+////        2.设置秘钥
+//        String key = "JK12306";
+////        3.huTool生成Token createToken(Map<String, Object> payload, byte[] key)
+//        String token = JWTUtil.createToken(map, key.getBytes());
+
+        String token = JwtUtil.createToken(memberLoginRes.getId(), memberLoginRes.getMobile());
+
+
         memberLoginRes.setToken(token);
         return memberLoginRes;
 
