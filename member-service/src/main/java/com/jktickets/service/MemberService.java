@@ -4,7 +4,7 @@ package com.jktickets.service;
 import com.jktickets.req.merber.MemberLoginReq;
 import com.jktickets.req.merber.MemberRegisterReq;
 import com.jktickets.req.merber.MemberSendCodeReq;
-import com.jktickets.res.MemberLoginRes;
+import com.jktickets.res.member.MemberLoginRes;
 
 
 public interface MemberService {

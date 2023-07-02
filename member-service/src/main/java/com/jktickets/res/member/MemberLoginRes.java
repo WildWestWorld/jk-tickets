@@ -1,4 +1,4 @@
-package com.jktickets.res;
+package com.jktickets.res.member;
 
 import lombok.Data;
 

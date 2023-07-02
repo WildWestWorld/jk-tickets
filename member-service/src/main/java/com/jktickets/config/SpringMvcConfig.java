@@ -1,5 +1,6 @@
 package com.jktickets.config;
 
+import com.jktickets.interceptor.LogInterceptor;
 
 import com.jktickets.interceptor.MemberInterceptor;
 import jakarta.annotation.Resource;
@@ -13,11 +14,16 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class SpringMvcConfig implements WebMvcConfigurer {
 
+//日志拦截器
+    @Resource
+    LogInterceptor logInterceptor;
+
    @Resource
    MemberInterceptor memberInterceptor;
 
    @Override
    public void addInterceptors(InterceptorRegistry registry) {
+       registry.addInterceptor(logInterceptor);
 
        registry.addInterceptor(memberInterceptor)
                .addPathPatterns("/**")

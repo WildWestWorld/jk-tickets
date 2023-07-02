@@ -1,4 +1,12 @@
 
+#HTTP文件用于测试
+#gtr
+GET http://localhost:8000/member/passenger/queryList
+token:{{token}}
+Accept: application/json
+
+###
+
 #ptrp
 POST http://localhost:8000/member/passenger/save
 Content-Type: application/json
@@ -11,5 +19,8 @@ token:{{token}}
   "idCard":"12345",
   "type":"1"
 }
+
+###
+
 
 
