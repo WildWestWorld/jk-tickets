@@ -1,4 +1,4 @@
-package com.jktickets.req;
+package com.jktickets.req.merber;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

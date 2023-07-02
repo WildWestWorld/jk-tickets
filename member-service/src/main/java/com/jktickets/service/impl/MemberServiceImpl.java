@@ -4,15 +4,14 @@ import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.RandomUtil;
-import cn.hutool.jwt.JWTUtil;
 import com.jktickets.domain.Member;
 import com.jktickets.domain.MemberExample;
 import com.jktickets.exception.BusinessException;
 import com.jktickets.exception.BusinessExceptionEnum;
 import com.jktickets.mapper.MemberMapper;
-import com.jktickets.req.MemberLoginReq;
-import com.jktickets.req.MemberRegisterReq;
-import com.jktickets.req.MemberSendCodeReq;
+import com.jktickets.req.merber.MemberLoginReq;
+import com.jktickets.req.merber.MemberRegisterReq;
+import com.jktickets.req.merber.MemberSendCodeReq;
 import com.jktickets.res.MemberLoginRes;
 import com.jktickets.service.MemberService;
 import com.jktickets.utils.JwtUtil;
@@ -23,7 +22,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Map;
 
 @Service
 public class MemberServiceImpl implements MemberService {

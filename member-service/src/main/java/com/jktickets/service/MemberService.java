@@ -1,9 +1,9 @@
 package com.jktickets.service;
 
 
-import com.jktickets.req.MemberLoginReq;
-import com.jktickets.req.MemberRegisterReq;
-import com.jktickets.req.MemberSendCodeReq;
+import com.jktickets.req.merber.MemberLoginReq;
+import com.jktickets.req.merber.MemberRegisterReq;
+import com.jktickets.req.merber.MemberSendCodeReq;
 import com.jktickets.res.MemberLoginRes;
 
 

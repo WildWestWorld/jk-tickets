@@ -3,8 +3,10 @@ package com.jktickets.mapper;
 import com.jktickets.domain.Passenger;
 import com.jktickets.domain.PassengerExample;
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+@Mapper
 public interface PassengerMapper {
     long countByExample(PassengerExample example);
 

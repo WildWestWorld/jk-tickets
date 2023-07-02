@@ -1,9 +1,9 @@
 package com.jktickets.controller;
 
 
-import com.jktickets.req.MemberLoginReq;
-import com.jktickets.req.MemberRegisterReq;
-import com.jktickets.req.MemberSendCodeReq;
+import com.jktickets.req.merber.MemberLoginReq;
+import com.jktickets.req.merber.MemberRegisterReq;
+import com.jktickets.req.merber.MemberSendCodeReq;
 import com.jktickets.res.CommonRes;
 import com.jktickets.res.MemberLoginRes;
 import com.jktickets.service.MemberService;
@@ -46,5 +46,7 @@ public class MemberController {
 
         return new CommonRes<>(memberLoginRes);
     }
+
+
 
 }
