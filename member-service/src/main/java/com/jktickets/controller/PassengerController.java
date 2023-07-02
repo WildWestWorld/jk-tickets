@@ -17,6 +17,6 @@ public class PassengerController {
     @PostMapping("/save")
     public CommonRes<Object> save(@Valid @RequestBody PassengerSaveReq req) {
        passengerService.savePassenger(req);
-        return new CommonRes<>();
+        return new CommonRes<>("添加乘客成功");
     }
 }

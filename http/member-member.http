@@ -37,6 +37,10 @@ Content-Type: application/json
 "code":"8888"
 }
 
-
+> {%
+    client.log(JSON.stringify(response.body));
+    client.log(response.body.result.token);
+    client.global.set("token",response.body.result.token);
+%}
 
 ###
