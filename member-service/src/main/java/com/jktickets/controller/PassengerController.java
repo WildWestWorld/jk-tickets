@@ -1,6 +1,7 @@
 package com.jktickets.controller;
 
 
+import cn.hutool.core.util.ObjectUtil;
 import com.github.pagehelper.PageInfo;
 import com.jktickets.context.LoginMemberContext;
 import com.jktickets.req.passenger.PassengerQueryReq;
@@ -23,8 +24,13 @@ public class PassengerController {
 
     @PostMapping("/save")
     public CommonRes<Object> savePassenger(@Valid @RequestBody PassengerSaveReq req) {
-       passengerService.savePassenger(req);
-        return new CommonRes<>("添加乘客成功");
+
+        passengerService.savePassenger(req);
+       if(ObjectUtil.isNull(req.getId())){
+           return new CommonRes<>("添加乘客成功");
+       }else{
+           return new CommonRes<>("编辑乘客成功");
+       }
     }
 
     @GetMapping("/queryList")

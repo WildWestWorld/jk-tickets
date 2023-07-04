@@ -37,15 +37,24 @@ public class PassengerServiceImpl implements PassengerService {
     @Override
     public void savePassenger(PassengerSaveReq req) {
         Passenger passenger = BeanUtil.copyProperties(req, Passenger.class);
+
+
         DateTime nowTime  = DateTime.now();
 
-//        从 线程中获取数据
-        passenger.setMemberId(LoginMemberContext.getId());
-        passenger.setId(SnowUtil.getSnowflakeNextId());
-        passenger.setCreateTime(nowTime);
-        passenger.setUpdateTime(nowTime);
+        if(ObjectUtil.isNull(passenger.getId())){
+            //        从 线程中获取数据
+            passenger.setMemberId(LoginMemberContext.getId());
+            passenger.setId(SnowUtil.getSnowflakeNextId());
+            passenger.setCreateTime(nowTime);
+            passenger.setUpdateTime(nowTime);
 
-        passengerMapper.insert(passenger);
+            passengerMapper.insert(passenger);
+        }else{
+            passenger.setUpdateTime(nowTime);
+            passengerMapper.updateByPrimaryKeySelective(passenger);
+        }
+
+
 
     }
 

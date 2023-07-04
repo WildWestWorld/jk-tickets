@@ -17,7 +17,8 @@ token:{{token}}
   "memberId":"1",
   "name":"test2",
   "idCard":"12345",
-  "type":"1"
+  "type":"3",
+  "id": "1"
 }
 
 ###
