@@ -4,6 +4,8 @@ import cn.hutool.core.bean.BeanUtil;
 
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.util.ObjectUtil;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.jktickets.context.LoginMemberContext;
 import com.jktickets.domain.Passenger;
 import com.jktickets.domain.PassengerExample;
@@ -11,6 +13,7 @@ import com.jktickets.mapper.PassengerMapper;
 
 import com.jktickets.req.passenger.PassengerQueryReq;
 import com.jktickets.req.passenger.PassengerSaveReq;
+import com.jktickets.res.PageRes;
 import com.jktickets.res.passenger.PassengerQueryRes;
 import com.jktickets.service.MemberService;
 import com.jktickets.service.PassengerService;
@@ -47,15 +50,29 @@ public class PassengerServiceImpl implements PassengerService {
     }
 
     @Override
-    public List<PassengerQueryRes> queryPassengerList(PassengerQueryReq req) {
+    public PageRes<PassengerQueryRes> queryPassengerList(PassengerQueryReq req) {
         PassengerExample passengerExample = new PassengerExample();
         PassengerExample.Criteria criteria = passengerExample.createCriteria();
         if(ObjectUtil.isNotNull(req.getMemberId())){
             criteria.andMemberIdEqualTo(req.getMemberId());
         }
-        List<Passenger> passengers = passengerMapper.selectByExample(passengerExample);
+
+        // 分页处理
+        PageHelper.startPage(req.getPage(), req.getSize());
+        List<Passenger> passengerList = passengerMapper.selectByExample(passengerExample);
+
+
+        PageInfo<Passenger> passengerPageInfo = new PageInfo<>(passengerList);
+
+        LOG.info("总行数：{}", passengerPageInfo.getTotal());
+        LOG.info("总页数：{}", passengerPageInfo.getPages());
+
 //  转成Controller的传输类
-        List<PassengerQueryRes> passengerQueryRes = BeanUtil.copyToList(passengers, PassengerQueryRes.class);
-        return passengerQueryRes;
+        List<PassengerQueryRes> passengerQueryResList = BeanUtil.copyToList(passengerList, PassengerQueryRes.class);
+
+        PageRes<PassengerQueryRes> pageRes = new PageRes<>();
+        pageRes.setList(passengerQueryResList);
+        pageRes.setTotal(passengerPageInfo.getTotal());
+        return pageRes;
     }
 }

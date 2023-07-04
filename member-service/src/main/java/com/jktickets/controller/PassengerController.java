@@ -1,10 +1,12 @@
 package com.jktickets.controller;
 
 
+import com.github.pagehelper.PageInfo;
 import com.jktickets.context.LoginMemberContext;
 import com.jktickets.req.passenger.PassengerQueryReq;
 import com.jktickets.req.passenger.PassengerSaveReq;
 import com.jktickets.res.CommonRes;
+import com.jktickets.res.PageRes;
 import com.jktickets.res.passenger.PassengerQueryRes;
 import com.jktickets.service.PassengerService;
 import jakarta.annotation.Resource;
@@ -26,10 +28,11 @@ public class PassengerController {
     }
 
     @GetMapping("/queryList")
-    public CommonRes<Object> queryPassengerList(@Valid  PassengerQueryReq req) {
-//       获取当前用户的MemberID
+    public CommonRes<PageRes<PassengerQueryRes>> queryPassengerList(@Valid PassengerQueryReq req) {
+
+        //       获取当前用户的MemberID
         req.setMemberId(LoginMemberContext.getId());
-        List<PassengerQueryRes> passengerQueryResList = passengerService.queryPassengerList(req);
+        PageRes<PassengerQueryRes> passengerQueryResList = passengerService.queryPassengerList(req);
         return new CommonRes<>(passengerQueryResList);
     }
 
