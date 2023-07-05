@@ -12,4 +12,6 @@ import java.util.List;
 public interface PassengerService {
          void savePassenger(PassengerSaveReq req);
    PageRes<PassengerQueryRes> queryPassengerList(PassengerQueryReq req);
+
+   void deleteById(Long id);
 }

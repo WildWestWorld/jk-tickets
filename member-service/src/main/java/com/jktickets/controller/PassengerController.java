@@ -42,4 +42,12 @@ public class PassengerController {
         return new CommonRes<>(passengerQueryResList);
     }
 
+
+    @DeleteMapping("/delete/{id}")
+    public CommonRes<Object> deleteById(@PathVariable Long id) {
+            passengerService.deleteById(id);
+        return new CommonRes<>("删除乘客成功");
+
+    }
+
 }

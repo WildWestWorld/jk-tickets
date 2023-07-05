@@ -22,6 +22,15 @@ token:{{token}}
 }
 
 ###
+#ptrp
+DELETE http://localhost:8000/member/passenger/delete/1676236917785628672
+Content-Type: application/json
+#token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODgyNzY3MzcsIm1vYmlsZSI6IjEyMzA1NDQ4NzYwIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY4ODM2MzEzNywiaWF0IjoxNjg4Mjc2NzM3fQ.SdIML7Hit4-z3cgQaCgMJjGvFnHwXW5cpmhHshPJ5HE
+token:{{token}}
+
+
+
+###
 
 
 

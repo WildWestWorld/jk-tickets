@@ -84,4 +84,10 @@ public class PassengerServiceImpl implements PassengerService {
         pageRes.setTotal(passengerPageInfo.getTotal());
         return pageRes;
     }
+
+
+    @Override
+    public void deleteById(Long id) {
+        passengerMapper.deleteByPrimaryKey(id);
+    }
 }
