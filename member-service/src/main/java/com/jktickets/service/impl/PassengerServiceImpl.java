@@ -29,7 +29,7 @@ import java.util.List;
 @Service
 public class PassengerServiceImpl implements PassengerService {
 
-    private final static Logger LOG = LoggerFactory.getLogger(MemberService.class);
+    private final static Logger LOG = LoggerFactory.getLogger(PassengerService.class);
 
     @Resource
     PassengerMapper passengerMapper;

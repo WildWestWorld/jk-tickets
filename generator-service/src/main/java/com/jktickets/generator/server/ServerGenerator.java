@@ -15,7 +15,8 @@ import java.util.*;
 
 public class ServerGenerator {
 
-    static String serverPath = "generator-service\\src\\main\\java\\com\\jktickets\\generator\\test\\";
+//    static String serverPath = "generator-service\\src\\main\\java\\com\\jktickets\\generator\\test\\";
+    static String serverPath = "[module]-service/src/main/java/com/jktickets/";
     static String pomPath = "generator-service/pom.xml";
 
     static {
@@ -27,13 +28,20 @@ public class ServerGenerator {
     public static void main(String[] args) throws Exception {
 
 
-
-
-//    设置POM中的生成路径
+        // 获取mybatis-generator
+//        来自于POM文件
         String generatorPath = getGeneratorPath();
+        // 比如generator-config-member.xml，得到module = member
+        String module = generatorPath.replace("src/main/resources/generator-config-", "").replace(".xml", "");
+        System.out.println("module: " + module);
+        serverPath = serverPath.replace("[module]", module);
+        // new File(servicePath).mkdirs();
+        System.out.println("servicePath: " + serverPath);
+
+
 
         // 读取table节点
-//        查找POM中的TBALE节点中的TableName和domainObjectName
+//        查找POM中的TBALE节点中的TableName和domainObjectName 也就是拿到到 模板变量Domain domain
         Document document = new SAXReader().read("generator-service/" + generatorPath);
         Node table = document.selectSingleNode("//table");
         System.out.println(table);
@@ -41,6 +49,29 @@ public class ServerGenerator {
         Node domainObjectName = table.selectSingleNode("@domainObjectName");
         System.out.println(tableName.getText() + "/" + domainObjectName.getText());
 
+
+
+        // 示例：表名 jiawa_test
+        // Domain = JiawaTest
+        String Domain = domainObjectName.getText();
+        // Domain 第一个字符变小写然后拼接  =>  domain = jiawaTest
+        String domain = Domain.substring(0, 1).toLowerCase() + Domain.substring(1);
+        // do_main = jiawa-test 表名XX_XX 转成XX-XX
+        String do_main = tableName.getText().replaceAll("_", "-");
+
+
+        // 组装参数
+        Map<String, Object> param = new HashMap<>();
+        param.put("module", module);
+        param.put("Domain", Domain);
+        param.put("domain", domain);
+        param.put("do_main", do_main);
+
+        System.out.println("组装参数：" + param);
+
+
+        gen(Domain, param, "service", "service");
+        genImpl(Domain, param, "service", "serviceImpl");
 
 
 ////        生成类
@@ -67,5 +98,25 @@ public class ServerGenerator {
         return node.getText();
     }
 
+
+    private static void gen(String Domain, Map<String, Object> param, String packageName, String target) throws IOException, TemplateException {
+        FreemarkerUtil.initConfig(target + ".ftl");
+        String toPath = serverPath + packageName + "/";
+        new File(toPath).mkdirs();
+        String Target = target.substring(0, 1).toUpperCase() + target.substring(1);
+        String fileName = toPath + Domain + Target + ".java";
+        System.out.println("开始生成：" + fileName);
+        FreemarkerUtil.generator(fileName, param);
+    }
+
+    private static void genImpl(String Domain, Map<String, Object> param, String packageName, String target) throws IOException, TemplateException {
+        FreemarkerUtil.initConfig(target + ".ftl");
+        String toPath = serverPath +packageName + "/impl/" ;
+        new File(toPath).mkdirs();
+        String Target = target.substring(0, 1).toUpperCase() + target.substring(1);
+        String fileName = toPath + Domain + Target + ".java";
+        System.out.println("开始生成：" + fileName);
+        FreemarkerUtil.generator(fileName, param);
+    }
 
 }
