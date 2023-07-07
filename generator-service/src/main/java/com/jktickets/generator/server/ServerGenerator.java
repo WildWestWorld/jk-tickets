@@ -4,6 +4,7 @@ package com.jktickets.generator.server;
 import com.jktickets.generator.util.FreemarkerUtil;
 import freemarker.template.TemplateException;
 import org.dom4j.Document;
+import org.dom4j.DocumentException;
 import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
 
@@ -24,15 +25,22 @@ public class ServerGenerator {
 
     //    生成代码 主路径
     public static void main(String[] args) throws Exception {
-        SAXReader saxReader = new SAXReader();
-        Map<String, String> map = new HashMap<>();
-        map.put("pom", "http://maven.apache.org/POM/4.0.0");
-        saxReader.getDocumentFactory().setXPathNamespaceURIs(map);
-//        读取pom路径
-        Document document = saxReader.read(pomPath);
-//        读取   pom中的 configurationFile节点
-        Node node = document.selectSingleNode("//pom:configurationFile");
-        System.out.println(node.getText());
+
+
+
+
+//    设置POM中的生成路径
+        String generatorPath = getGeneratorPath();
+
+        // 读取table节点
+//        查找POM中的TBALE节点中的TableName和domainObjectName
+        Document document = new SAXReader().read("generator-service/" + generatorPath);
+        Node table = document.selectSingleNode("//table");
+        System.out.println(table);
+        Node tableName = table.selectSingleNode("@tableName");
+        Node domainObjectName = table.selectSingleNode("@domainObjectName");
+        System.out.println(tableName.getText() + "/" + domainObjectName.getText());
+
 
 
 ////        生成类
@@ -44,6 +52,19 @@ public class ServerGenerator {
 //        param.put("domain","Test");
 ////        设置生成路径
 //        FreemarkerUtil.generator(serverPath+"Test.java",param);
+    }
+
+//    设置POM中的生成路径
+    private static String getGeneratorPath() throws DocumentException {
+        SAXReader saxReader = new SAXReader();
+        Map<String, String> map = new HashMap<>();
+        map.put("pom", "http://maven.apache.org/POM/4.0.0");
+        saxReader.getDocumentFactory().setXPathNamespaceURIs(map);
+//        读取pom路径
+        Document document = saxReader.read(pomPath);
+//        读取   pom中的 configurationFile节点
+        Node node = document.selectSingleNode("//pom:configurationFile");
+        return node.getText();
     }
 
 
