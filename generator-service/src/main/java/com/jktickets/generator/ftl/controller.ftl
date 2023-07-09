@@ -27,9 +27,9 @@ public class ${Domain}Controller {
 
         ${domain}Service.save${Domain}(req);
        if(ObjectUtil.isNull(req.getId())){
-           return new CommonRes<>("添加乘客成功");
+           return new CommonRes<>("添加${Domain}成功");
        }else{
-           return new CommonRes<>("编辑乘客成功");
+           return new CommonRes<>("编辑${Domain}成功");
        }
     }
 
@@ -37,7 +37,7 @@ public class ${Domain}Controller {
     public CommonRes<PageRes<${Domain}QueryRes>> query${Domain}List(@Valid ${Domain}QueryReq req) {
 
         //       获取当前用户的MemberID
-        req.setMemberId(LoginMemberContext.getId());
+        //req.setMemberId(LoginMemberContext.getId());
         PageRes<${Domain}QueryRes> ${domain}QueryResList = ${domain}Service.query${Domain}List(req);
         return new CommonRes<>(${domain}QueryResList);
     }
@@ -46,7 +46,7 @@ public class ${Domain}Controller {
     @DeleteMapping("/delete/{id}")
     public CommonRes<Object> deleteById(@PathVariable Long id) {
             ${domain}Service.deleteById(id);
-        return new CommonRes<>("删除乘客成功");
+        return new CommonRes<>("删除${Domain}成功");
 
     }
 

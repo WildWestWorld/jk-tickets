@@ -31,21 +31,21 @@
         <!-- domain类的位置 targetProject是相对pom.xml的路径-->
 <!--        当前是在generator-service目录 ../ 之后就是在jk-tickets 里面了-->
 <!--    com.jktickets.domain domain我们默认是没有的我们让他自动创建    -->
-        <javaModelGenerator targetProject="../member-service/src/main/java"
+        <javaModelGenerator targetProject="../business-service/src/main/java"
                             targetPackage="com.jktickets.domain"/>
 
         <!-- mapper xml的位置 targetProject是相对pom.xml的路径 -->
-        <sqlMapGenerator targetProject="../member-service/src/main/resources"
+        <sqlMapGenerator targetProject="../business-service/src/main/resources"
                          targetPackage="mapper"/>
 
         <!-- mapper类的位置 targetProject是相对pom.xml的路径 -->
-        <javaClientGenerator targetProject="../member-service/src/main/java"
+        <javaClientGenerator targetProject="../business-service/src/main/java"
                              targetPackage="com.jktickets.mapper"
                              type="XMLMAPPER"/>
 
 
 <!--        tableName 需要生成哪张表我们就写对应的表  domainObjectName生成的类名-->
-<!--        <table tableName="member" domainObjectName="Member"/>-->
-        <table tableName="passenger" domainObjectName="Passenger"/>
+        <table tableName="station" domainObjectName="Station"/>
+<!--        <table tableName="passenger" domainObjectName="Passenger"/>-->
     </context>
 </generatorConfiguration>

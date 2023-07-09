@@ -9,7 +9,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>member-service</artifactId>
+    <artifactId>business-service</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -60,7 +60,5 @@
             </plugin>
         </plugins>
     </build>
-
-
 
 </project>

@@ -1,0 +1,26 @@
+server:
+  port: 8002
+#  context-path 项目API前缀 加了要放访问的话 必须要加上这个前缀
+  servlet:
+    context-path: "/business"
+
+
+
+spring:
+  datasource:
+    username: train_business
+    password: KEY!moling!6
+    url: jdbc:mysql://rm-cn-uax39xxd10011clo.rwlb.rds.aliyuncs.com/train-business?characterEncoding=UTF8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+mybatis:
+  #让mybatis知道xml文件在哪
+  mapper-locations: classpath:/mapper/**/*.xml
+
+# PageHelper 分页插件配置
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countsql
