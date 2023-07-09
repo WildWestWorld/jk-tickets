@@ -104,7 +104,8 @@ public class ServerGenerator {
         gen(Domain, param, "service", "service");
         genImpl(Domain, param, "service", "serviceImpl");
 //        生成Controller
-        gen(Domain, param, "controller", "controller");
+//        gen(Domain, param, "controller", "controller");
+        gen(Domain, param, "controller/admin", "adminController");
 
 ////        生成类
 ////        设置模板路径

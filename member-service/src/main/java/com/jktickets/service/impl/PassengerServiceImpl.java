@@ -15,7 +15,7 @@ import com.jktickets.req.passenger.PassengerQueryReq;
 import com.jktickets.req.passenger.PassengerSaveReq;
 import com.jktickets.res.PageRes;
 import com.jktickets.res.passenger.PassengerQueryRes;
-import com.jktickets.service.MemberService;
+
 import com.jktickets.service.PassengerService;
 
 import com.jktickets.utils.SnowUtil;

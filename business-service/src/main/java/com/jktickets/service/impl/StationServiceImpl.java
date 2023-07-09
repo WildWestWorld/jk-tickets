@@ -15,7 +15,7 @@ import com.jktickets.req.station.StationQueryReq;
 import com.jktickets.req.station.StationSaveReq;
 import com.jktickets.res.PageRes;
 import com.jktickets.res.station.StationQueryRes;
-import com.jktickets.service.MemberService;
+
 import com.jktickets.service.StationService;
 
 import com.jktickets.utils.SnowUtil;
@@ -43,7 +43,7 @@ public class StationServiceImpl implements StationService {
 
         if(ObjectUtil.isNull(station.getId())){
             //        从 线程中获取数据
-            station.setMemberId(LoginMemberContext.getId());
+//          station.setMemberId(LoginMemberContext.getId());
             station.setId(SnowUtil.getSnowflakeNextId());
             station.setCreateTime(nowTime);
             station.setUpdateTime(nowTime);

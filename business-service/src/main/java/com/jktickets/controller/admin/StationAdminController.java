@@ -1,4 +1,4 @@
-package com.jktickets.controller;
+package com.jktickets.controller.admin;
 
 
 import cn.hutool.core.util.ObjectUtil;
@@ -18,7 +18,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/admin/station")
-public class StationController {
+public class StationAdminController {
     @Resource
     StationService stationService;
 

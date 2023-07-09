@@ -15,7 +15,7 @@ import com.jktickets.req.${domain}.${Domain}QueryReq;
 import com.jktickets.req.${domain}.${Domain}SaveReq;
 import com.jktickets.res.PageRes;
 import com.jktickets.res.${domain}.${Domain}QueryRes;
-import com.jktickets.service.MemberService;
+
 import com.jktickets.service.${Domain}Service;
 
 import com.jktickets.utils.SnowUtil;
@@ -43,7 +43,7 @@ public class ${Domain}ServiceImpl implements ${Domain}Service {
 
         if(ObjectUtil.isNull(${domain}.getId())){
             //        从 线程中获取数据
-            ${domain}.setMemberId(LoginMemberContext.getId());
+//          ${domain}.setMemberId(LoginMemberContext.getId());
             ${domain}.setId(SnowUtil.getSnowflakeNextId());
             ${domain}.setCreateTime(nowTime);
             ${domain}.setUpdateTime(nowTime);
