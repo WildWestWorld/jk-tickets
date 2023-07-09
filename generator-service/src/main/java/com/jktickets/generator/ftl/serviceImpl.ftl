@@ -62,9 +62,9 @@ public class ${Domain}ServiceImpl implements ${Domain}Service {
     public PageRes<${Domain}QueryRes> query${Domain}List(${Domain}QueryReq req) {
         ${Domain}Example ${domain}Example = new ${Domain}Example();
         ${Domain}Example.Criteria criteria = ${domain}Example.createCriteria();
-        if(ObjectUtil.isNotNull(req.getMemberId())){
-            criteria.andMemberIdEqualTo(req.getMemberId());
-        }
+//        if(ObjectUtil.isNotNull(req.getMemberId())){
+//            criteria.andMemberIdEqualTo(req.getMemberId());
+//        }
 
         // 分页处理
         PageHelper.startPage(req.getPage(), req.getSize());

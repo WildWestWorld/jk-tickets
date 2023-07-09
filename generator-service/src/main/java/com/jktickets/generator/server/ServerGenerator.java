@@ -17,7 +17,7 @@ import java.util.*;
 
 public class ServerGenerator {
 
-//    static String serverPath = "generator-service\\src\\main\\java\\com\\jktickets\\generator\\test\\";
+    //    static String serverPath = "generator-service\\src\\main\\java\\com\\jktickets\\generator\\test\\";
     static String serverPath = "[module]-service/src/main/java/com/jktickets/";
     static String pomPath = "generator-service/pom.xml";
 
@@ -39,7 +39,6 @@ public class ServerGenerator {
         serverPath = serverPath.replace("[module]", module);
         // new File(servicePath).mkdirs();
         System.out.println("servicePath: " + serverPath);
-
 
 
         // 读取table节点
@@ -96,6 +95,10 @@ public class ServerGenerator {
 
 //        生成Req
         genReq(Domain, param, "req", "saveReq");
+        genReq(Domain, param, "req", "queryReq");
+
+//      生成genRes
+        genRes(Domain, param, "res", "queryRes");
 
 //      生成Service
         gen(Domain, param, "service", "service");
@@ -114,7 +117,7 @@ public class ServerGenerator {
 //        FreemarkerUtil.generator(serverPath+"Test.java",param);
     }
 
-//    设置POM中的生成路径
+    //    设置POM中的生成路径
     private static String getGeneratorPath() throws DocumentException {
         SAXReader saxReader = new SAXReader();
         Map<String, String> map = new HashMap<>();
@@ -139,11 +142,9 @@ public class ServerGenerator {
     }
 
 
-
-
     private static void genImpl(String Domain, Map<String, Object> param, String packageName, String target) throws IOException, TemplateException {
         FreemarkerUtil.initConfig(target + ".ftl");
-        String toPath = serverPath +packageName + "/impl/" ;
+        String toPath = serverPath + packageName + "/impl/";
         new File(toPath).mkdirs();
         String Target = target.substring(0, 1).toUpperCase() + target.substring(1);
         String fileName = toPath + Domain + Target + ".java";
@@ -155,7 +156,19 @@ public class ServerGenerator {
     private static void genReq(String Domain, Map<String, Object> param, String packageName, String target) throws IOException, TemplateException {
         FreemarkerUtil.initConfig(target + ".ftl");
         String domain = Domain.toLowerCase();
-        String toPath = serverPath +packageName + "/"+domain+ "/" ;
+        String toPath = serverPath + packageName + "/" + domain + "/";
+
+        new File(toPath).mkdirs();
+        String Target = target.substring(0, 1).toUpperCase() + target.substring(1);
+        String fileName = toPath + Domain + Target + ".java";
+        System.out.println("开始生成：" + fileName);
+        FreemarkerUtil.generator(fileName, param);
+    }
+
+    private static void genRes(String Domain, Map<String, Object> param, String packageName, String target) throws IOException, TemplateException {
+        FreemarkerUtil.initConfig(target + ".ftl");
+        String domain = Domain.toLowerCase();
+        String toPath = serverPath + packageName + "/" + domain + "/";
 
         new File(toPath).mkdirs();
         String Target = target.substring(0, 1).toUpperCase() + target.substring(1);
