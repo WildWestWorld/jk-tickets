@@ -1,4 +1,4 @@
-package com.jktickets.generator.server;
+package com.jktickets.generator.generator;
 
 
 import cn.hutool.core.util.StrUtil;

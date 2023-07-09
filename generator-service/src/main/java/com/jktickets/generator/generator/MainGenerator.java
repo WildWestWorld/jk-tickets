@@ -1,4 +1,4 @@
-package com.jktickets.generator.server;
+package com.jktickets.generator.generator;
 
 
 import com.jktickets.generator.util.DbUtil;
@@ -15,7 +15,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
-public class ServerGenerator {
+public class MainGenerator {
 
     //    static String serverPath = "generator-service\\src\\main\\java\\com\\jktickets\\generator\\test\\";
     static String serverPath = "[module]-service/src/main/java/com/jktickets/";
