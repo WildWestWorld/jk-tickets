@@ -46,9 +46,9 @@
 
 <!--        tableName 需要生成哪张表我们就写对应的表  domainObjectName生成的类名-->
 <!--        <table tableName="station" domainObjectName="Station"/>-->
-<!--        <table tableName="train" domainObjectName="Train"/>-->
+        <table tableName="train" domainObjectName="Train"/>
 <!--        <table tableName="train_station" domainObjectName="TrainStation"/>-->
 <!--        <table tableName="train_carriage" domainObjectName="TrainCarriage"/>-->
-        <table tableName="train_seat" domainObjectName="TrainSeat"/>
+<!--        <table tableName="train_seat" domainObjectName="TrainSeat"/>-->
     </context>
 </generatorConfiguration>

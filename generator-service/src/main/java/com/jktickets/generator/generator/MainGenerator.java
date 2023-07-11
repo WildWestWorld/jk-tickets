@@ -156,7 +156,10 @@ public class MainGenerator {
 
     private static void genReq(String Domain, Map<String, Object> param, String packageName, String target) throws IOException, TemplateException {
         FreemarkerUtil.initConfig(target + ".ftl");
-        String domain = Domain.toLowerCase();
+//        String domain = Domain.toLowerCase();
+
+        String domain = Domain.substring(0, 1).toLowerCase() + Domain.substring(1);
+
         String toPath = serverPath + packageName + "/" + domain + "/";
 
         new File(toPath).mkdirs();
@@ -168,7 +171,9 @@ public class MainGenerator {
 
     private static void genRes(String Domain, Map<String, Object> param, String packageName, String target) throws IOException, TemplateException {
         FreemarkerUtil.initConfig(target + ".ftl");
-        String domain = Domain.toLowerCase();
+//        String domain = Domain.toLowerCase();
+        String domain = Domain.substring(0, 1).toLowerCase() + Domain.substring(1);
+
         String toPath = serverPath + packageName + "/" + domain + "/";
 
         new File(toPath).mkdirs();

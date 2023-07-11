@@ -1,61 +1,105 @@
-2023-07-09 16:05:41.319 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-07-09 16:05:41.642 INFO  com.jktickets.BusinessApplication                 :51   [32m                  [0;39m Starting BusinessApplication using Java 17.0.3 with PID 14080 (D:\Project\java\jk-tickets\business-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
-2023-07-09 16:05:41.644 INFO  com.jktickets.BusinessApplication                 :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-07-09 16:05:41.839 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-09 16:05:41.841 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-09 16:05:44.589 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
-2023-07-09 16:05:44.813 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5b1ad086-92a2-3312-b384-f0be8750d5f4
-2023-07-09 16:05:47.215 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8002 (http)
-2023-07-09 16:05:47.260 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8002"]
-2023-07-09 16:05:47.261 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-07-09 16:05:47.261 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
-2023-07-09 16:05:47.406 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-07-09 16:05:47.406 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 5564 ms
-2023-07-09 16:05:48.886 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
-2023-07-09 16:05:49.333 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-07-09 16:05:49.835 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8002"]
-2023-07-09 16:05:49.882 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8002 (http) with context path '/business'
-2023-07-09 16:05:50.280 INFO  com.jktickets.BusinessApplication                 :57   [32m                  [0;39m Started BusinessApplication in 10.915 seconds (process running for 14.594)
-2023-07-09 16:05:50.286 INFO  com.jktickets.BusinessApplication                 :19   [32m                  [0;39m 启动成功！！
-2023-07-09 16:05:50.286 INFO  com.jktickets.BusinessApplication                 :21   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8002/business/hello
-2023-07-09 16:06:05.204 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-09 16:06:05.204 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2023-07-09 16:06:05.206 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2023-07-09 16:06:05.263 INFO  com.jktickets.aspect.LogAspect                    :57   [32m                  [0;39m ------------- 开始 -------------
-2023-07-09 16:06:05.264 INFO  com.jktickets.aspect.LogAspect                    :58   [32m                  [0;39m 请求地址: http://127.0.0.1:8002/business/hello GET
-2023-07-09 16:06:05.265 INFO  com.jktickets.aspect.LogAspect                    :59   [32m                  [0;39m 类名方法: com.jktickets.controller.TestController.hello
-2023-07-09 16:06:05.265 INFO  com.jktickets.aspect.LogAspect                    :60   [32m                  [0;39m 远程地址: 127.0.0.1
-2023-07-09 16:06:05.447 INFO  com.jktickets.aspect.LogAspect                    :82   [32m                  [0;39m 请求参数: []
-2023-07-09 16:06:05.448 INFO  com.jktickets.aspect.LogAspect                    :94   [32m                  [0;39m 返回结果: "HelloWorld!"
-2023-07-09 16:06:05.448 INFO  com.jktickets.aspect.LogAspect                    :95   [32m                  [0;39m ------------- 结束 耗时：186 ms -------------
-2023-07-09 16:11:12.233 INFO  com.jktickets.aspect.LogAspect                    :57   [32m                  [0;39m ------------- 开始 -------------
-2023-07-09 16:11:12.234 INFO  com.jktickets.aspect.LogAspect                    :58   [32m                  [0;39m 请求地址: http://127.0.0.1:8002/business/hello GET
-2023-07-09 16:11:12.234 INFO  com.jktickets.aspect.LogAspect                    :59   [32m                  [0;39m 类名方法: com.jktickets.controller.TestController.hello
-2023-07-09 16:11:12.234 INFO  com.jktickets.aspect.LogAspect                    :60   [32m                  [0;39m 远程地址: 127.0.0.1
-2023-07-09 16:11:12.235 INFO  com.jktickets.aspect.LogAspect                    :82   [32m                  [0;39m 请求参数: []
-2023-07-09 16:11:12.235 INFO  com.jktickets.aspect.LogAspect                    :94   [32m                  [0;39m 返回结果: "HelloWorld!"
-2023-07-09 16:11:12.235 INFO  com.jktickets.aspect.LogAspect                    :95   [32m                  [0;39m ------------- 结束 耗时：2 ms -------------
-2023-07-09 17:12:38.306 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 13 class path changes (0 additions, 0 deletions, 13 modifications)
-2023-07-09 17:12:38.379 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8002"]
-2023-07-09 17:12:38.380 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2023-07-09 17:12:38.384 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-07-09 17:12:38.403 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8002"]
-2023-07-09 17:12:38.408 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8002"]
-2023-07-09 17:12:39.069 INFO  com.jktickets.BusinessApplication                 :51   [32m                  [0;39m Starting BusinessApplication using Java 17.0.3 with PID 14080 (D:\Project\java\jk-tickets\business-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
-2023-07-09 17:12:39.070 INFO  com.jktickets.BusinessApplication                 :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-07-09 17:12:39.447 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
-2023-07-09 17:12:39.458 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=5b1ad086-92a2-3312-b384-f0be8750d5f4
-2023-07-09 17:12:39.720 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8002 (http)
-2023-07-09 17:12:39.721 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8002"]
-2023-07-09 17:12:39.722 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-07-09 17:12:39.723 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
-2023-07-09 17:12:39.747 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-07-09 17:12:39.747 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 672 ms
-2023-07-09 17:12:40.316 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
-2023-07-09 17:12:40.628 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-07-09 17:12:41.107 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8002"]
-2023-07-09 17:12:41.114 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8002 (http) with context path '/business'
-2023-07-09 17:12:41.576 INFO  com.jktickets.BusinessApplication                 :57   [32m                  [0;39m Started BusinessApplication in 3.015 seconds (process running for 4025.89)
-2023-07-09 17:12:41.580 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2023-07-09 17:12:41.580 INFO  com.jktickets.BusinessApplication                 :19   [32m                  [0;39m 启动成功！！
-2023-07-09 17:12:41.581 INFO  com.jktickets.BusinessApplication                 :21   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8002/business/hello
+2023-07-11 21:03:53.157 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-11 21:03:53.206 INFO  com.jktickets.BusinessApplication                 :51   [32m                  [0;39m Starting BusinessApplication using Java 17.0.3 with PID 16164 (D:\Project\java\jk-tickets\business-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-11 21:03:53.207 INFO  com.jktickets.BusinessApplication                 :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-11 21:03:53.265 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-11 21:03:53.265 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-11 21:03:54.187 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
+2023-07-11 21:03:54.285 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=30d2f515-282c-34d8-b464-aa252e8655ab
+2023-07-11 21:03:55.163 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8002 (http)
+2023-07-11 21:03:55.175 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8002"]
+2023-07-11 21:03:55.176 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-11 21:03:55.177 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-11 21:03:55.253 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-11 21:03:55.254 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1988 ms
+2023-07-11 21:03:55.342 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stationAdminController': Injection of resource dependencies failed
+2023-07-11 21:03:55.346 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-07-11 21:03:55.364 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-11 21:03:55.399 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.jktickets.mapper.StationMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.jktickets.mapper.StationMapper' in your configuration.
+
+2023-07-11 21:05:15.477 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-11 21:05:15.524 INFO  com.jktickets.BusinessApplication                 :51   [32m                  [0;39m Starting BusinessApplication using Java 17.0.3 with PID 10232 (D:\Project\java\jk-tickets\business-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-11 21:05:15.525 INFO  com.jktickets.BusinessApplication                 :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-11 21:05:15.573 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-11 21:05:15.573 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-11 21:05:16.575 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=3a9d4c08-ba1a-3842-9d9f-b559719581c6
+2023-07-11 21:05:17.467 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8002 (http)
+2023-07-11 21:05:17.478 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8002"]
+2023-07-11 21:05:17.479 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-11 21:05:17.480 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-11 21:05:17.564 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-11 21:05:17.564 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1991 ms
+2023-07-11 21:05:18.715 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-11 21:05:19.063 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-07-11 21:05:19.546 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8002"]
+2023-07-11 21:05:19.574 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8002 (http) with context path '/business'
+2023-07-11 21:05:19.974 INFO  com.jktickets.BusinessApplication                 :57   [32m                  [0;39m Started BusinessApplication in 5.531 seconds (process running for 6.483)
+2023-07-11 21:05:19.978 INFO  com.jktickets.BusinessApplication                 :19   [32m                  [0;39m 启动成功！！
+2023-07-11 21:05:19.979 INFO  com.jktickets.BusinessApplication                 :21   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8002/business/hello
+2023-07-11 21:05:56.929 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-11 21:05:56.930 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-11 21:05:56.931 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-07-11 21:06:43.543 ERROR c.jktickets.exception.ControllerExceptionHandler  :32   [32m                  [0;39m 系统异常：
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:261)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:504)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1274)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:895)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-11 21:06:43.563 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]

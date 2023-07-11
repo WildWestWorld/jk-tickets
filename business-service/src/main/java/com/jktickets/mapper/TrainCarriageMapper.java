@@ -4,7 +4,9 @@ import com.jktickets.domain.TrainCarriage;
 import com.jktickets.domain.TrainCarriageExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+@Mapper
 public interface TrainCarriageMapper {
     long countByExample(TrainCarriageExample example);
 

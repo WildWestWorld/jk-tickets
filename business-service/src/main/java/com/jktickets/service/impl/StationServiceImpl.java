@@ -9,13 +9,17 @@ import com.github.pagehelper.PageInfo;
 import com.jktickets.context.LoginMemberContext;
 import com.jktickets.domain.Station;
 import com.jktickets.domain.StationExample;
+import com.jktickets.domain.Train;
+import com.jktickets.domain.TrainExample;
 import com.jktickets.mapper.StationMapper;
 
 import com.jktickets.req.station.StationQueryReq;
 import com.jktickets.req.station.StationSaveReq;
+import com.jktickets.req.train.TrainQueryReq;
 import com.jktickets.res.PageRes;
 import com.jktickets.res.station.StationQueryRes;
 
+import com.jktickets.res.train.TrainQueryRes;
 import com.jktickets.service.StationService;
 
 import com.jktickets.utils.SnowUtil;
@@ -90,4 +94,21 @@ public class StationServiceImpl implements StationService {
     public void deleteById(Long id) {
         stationMapper.deleteByPrimaryKey(id);
     }
+
+
+
+    @Override
+    public List<StationQueryRes> queryAllStationList(TrainQueryReq req) {
+        StationExample stationExample = new StationExample();
+//        code:车次编号
+        stationExample.setOrderByClause("code desc");
+
+
+        List<Station> stationList = stationMapper.selectByExample(stationExample);
+
+
+        List<StationQueryRes> stationQueryRes = BeanUtil.copyToList(stationList, StationQueryRes.class);
+        return stationQueryRes;
+    }
+
 }

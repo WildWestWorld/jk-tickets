@@ -2,6 +2,7 @@ package com.jktickets.service;
 
 
 
+import com.jktickets.domain.TrainCarriage;
 import com.jktickets.req.trainCarriage.TrainCarriageQueryReq;
 import com.jktickets.req.trainCarriage.TrainCarriageSaveReq;
 import com.jktickets.res.PageRes;
@@ -14,4 +15,7 @@ public interface TrainCarriageService {
    PageRes<TrainCarriageQueryRes> queryTrainCarriageList(TrainCarriageQueryReq req);
 
    void deleteById(Long id);
+
+
+   List<TrainCarriage> selectByTrainCode(String trainCode);
 }
