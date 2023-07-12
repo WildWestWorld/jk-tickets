@@ -46,8 +46,11 @@ public class TrainCarriageServiceImpl implements TrainCarriageService {
         DateTime nowTime  = DateTime.now();
 
         // 自动计算出列数和总座位数
+        //获取 座位类型对应的枚举
         List<SeatColEnum> seatColEnums = SeatColEnum.getColsByType(req.getSeatType());
+//      通过枚举类型的长度 来设置列数
         req.setColCount(seatColEnums.size());
+//        计算出座位数量( 枚举类型的长度 * 行数)
         req.setSeatCount(req.getColCount() * req.getRowCount());
 
         if(ObjectUtil.isNull(trainCarriage.getId())){

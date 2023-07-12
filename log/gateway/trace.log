@@ -25,3 +25,4 @@
 2023-07-11 21:03:49.665 INFO  com.jktickets.GatewayApplication                  :24   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8000
 2023-07-11 21:05:56.654 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/train/gen-seat/G1
 2023-07-11 21:06:43.533 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/train/genSeat/G1
+2023-07-11 21:09:08.042 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/train/genSeat/G1

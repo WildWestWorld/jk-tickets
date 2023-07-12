@@ -103,3 +103,41 @@ org.springframework.web.HttpRequestMethodNotSupportedException: Request method '
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 2023-07-11 21:06:43.563 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2023-07-11 21:07:21.002 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-11 21:07:21.048 INFO  com.jktickets.BusinessApplication                 :51   [32m                  [0;39m Starting BusinessApplication using Java 17.0.3 with PID 12992 (D:\Project\java\jk-tickets\business-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-11 21:07:21.049 INFO  com.jktickets.BusinessApplication                 :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-11 21:07:21.099 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-11 21:07:21.099 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-11 21:07:22.105 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=3a9d4c08-ba1a-3842-9d9f-b559719581c6
+2023-07-11 21:07:22.983 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8002 (http)
+2023-07-11 21:07:22.994 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8002"]
+2023-07-11 21:07:22.995 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-11 21:07:22.995 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-11 21:07:23.066 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-11 21:07:23.066 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1966 ms
+2023-07-11 21:07:24.213 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-11 21:07:24.504 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-07-11 21:07:24.943 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8002"]
+2023-07-11 21:07:24.970 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8002 (http) with context path '/business'
+2023-07-11 21:07:25.336 INFO  com.jktickets.BusinessApplication                 :57   [32m                  [0;39m Started BusinessApplication in 5.407 seconds (process running for 6.357)
+2023-07-11 21:07:25.340 INFO  com.jktickets.BusinessApplication                 :19   [32m                  [0;39m 启动成功！！
+2023-07-11 21:07:25.340 INFO  com.jktickets.BusinessApplication                 :21   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8002/business/hello
+2023-07-11 21:09:08.122 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-11 21:09:08.123 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-11 21:09:08.125 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
+2023-07-11 21:09:08.179 INFO  com.jktickets.aspect.LogAspect                    :57   [32m                  [0;39m ------------- 开始 -------------
+2023-07-11 21:09:08.180 INFO  com.jktickets.aspect.LogAspect                    :58   [32m                  [0;39m 请求地址: http://127.0.0.1:8002/business/admin/train/genSeat/G1 GET
+2023-07-11 21:09:08.181 INFO  com.jktickets.aspect.LogAspect                    :59   [32m                  [0;39m 类名方法: com.jktickets.controller.admin.TrainAdminController.genSeat
+2023-07-11 21:09:08.182 INFO  com.jktickets.aspect.LogAspect                    :60   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-07-11 21:09:08.232 INFO  com.jktickets.aspect.LogAspect                    :82   [32m                  [0;39m 请求参数: ["G1"]
+2023-07-11 21:09:08.239 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-07-11 21:09:08.652 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53447719
+2023-07-11 21:09:08.655 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-07-11 21:09:08.688 INFO  com.jktickets.aspect.LogAspect                    :106  [32m                  [0;39m 执行SQL:  deleteByExample | execution(int com.jktickets.mapper.TrainSeatMapper.deleteByExample(TrainSeatExample))
+2023-07-11 21:09:08.688 INFO  com.jktickets.aspect.LogAspect                    :111  [32m                  [0;39m 参数值: com.jktickets.domain.TrainSeatExample@64fecea8
+2023-07-11 21:09:08.781 INFO  com.jktickets.aspect.LogAspect                    :120  [32m                  [0;39m SQL执行完成: deleteByExample | execution(int com.jktickets.mapper.TrainSeatMapper.deleteByExample(TrainSeatExample))
+2023-07-11 21:09:08.784 INFO  com.jktickets.aspect.LogAspect                    :106  [32m                  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.TrainCarriageMapper.selectByExample(TrainCarriageExample))
+2023-07-11 21:09:08.785 INFO  com.jktickets.aspect.LogAspect                    :111  [32m                  [0;39m 参数值: com.jktickets.domain.TrainCarriageExample@4bcc3f23
+2023-07-11 21:09:08.828 INFO  com.jktickets.aspect.LogAspect                    :120  [32m                  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.TrainCarriageMapper.selectByExample(TrainCarriageExample))
+2023-07-11 21:09:08.883 INFO  com.jktickets.aspect.LogAspect                    :94   [32m                  [0;39m 返回结果: {"code":0,"message":"","result":"生成Seat成功","success":true}
+2023-07-11 21:09:08.883 INFO  com.jktickets.aspect.LogAspect                    :95   [32m                  [0;39m ------------- 结束 耗时：706 ms -------------
