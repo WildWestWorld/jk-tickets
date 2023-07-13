@@ -20,6 +20,7 @@
         <module>gateway-service</module>
         <module>generator-service</module>
         <module>business-service</module>
+        <module>batch-service</module>
     </modules>
     <properties>
         <java.version>17</java.version>

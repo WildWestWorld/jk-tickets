@@ -1,0 +1,11 @@
+#HTTP文件用于测试
+GET http://localhost:8003/batch/hello
+Accept: application/json
+
+###
+
+#HTTP文件用于测试
+GET http://localhost:8000/batch/hello
+Accept: application/json
+
+###

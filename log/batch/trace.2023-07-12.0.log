@@ -1,0 +1,37 @@
+2023-07-12 21:53:29.767 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-12 21:53:30.678 INFO  com.jktickets.BatchApplication                    :51   [32m                  [0;39m Starting BatchApplication using Java 17.0.3 with PID 11020 (D:\Project\java\jk-tickets\batch-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-12 21:53:30.681 INFO  com.jktickets.BatchApplication                    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-12 21:53:31.485 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-12 21:53:31.498 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-12 21:53:39.355 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
+2023-07-12 21:53:40.019 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=810ba5cc-f440-38c8-8a5c-f4824f12c36a
+2023-07-12 21:53:45.953 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8003 (http)
+2023-07-12 21:53:46.029 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8003"]
+2023-07-12 21:53:46.030 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-12 21:53:46.030 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-12 21:53:46.579 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-12 21:53:46.579 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 15080 ms
+2023-07-12 21:53:50.501 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-12 21:53:52.129 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-07-12 21:53:52.783 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8003"]
+2023-07-12 21:53:52.914 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8003 (http) with context path '/batch'
+2023-07-12 21:53:53.429 INFO  com.jktickets.BatchApplication                    :57   [32m                  [0;39m Started BatchApplication in 28.637 seconds (process running for 37.003)
+2023-07-12 21:53:53.433 INFO  com.jktickets.BatchApplication                    :23   [32m                  [0;39m 启动成功！！
+2023-07-12 21:53:53.436 INFO  com.jktickets.BatchApplication                    :25   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8003/batch/hello
+2023-07-12 21:55:41.476 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-12 21:55:41.477 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-12 21:55:41.480 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
+2023-07-12 21:55:41.614 INFO  com.jktickets.aspect.LogAspect                    :57   [32m                  [0;39m ------------- 开始 -------------
+2023-07-12 21:55:41.618 INFO  com.jktickets.aspect.LogAspect                    :58   [32m                  [0;39m 请求地址: http://localhost:8003/batch/hello GET
+2023-07-12 21:55:41.619 INFO  com.jktickets.aspect.LogAspect                    :59   [32m                  [0;39m 类名方法: com.jktickets.controller.TestController.hello
+2023-07-12 21:55:41.621 INFO  com.jktickets.aspect.LogAspect                    :60   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-07-12 21:55:42.028 INFO  com.jktickets.aspect.LogAspect                    :82   [32m                  [0;39m 请求参数: []
+2023-07-12 21:55:42.029 INFO  com.jktickets.aspect.LogAspect                    :94   [32m                  [0;39m 返回结果: "HelloWorld12311!"
+2023-07-12 21:55:42.029 INFO  com.jktickets.aspect.LogAspect                    :95   [32m                  [0;39m ------------- 结束 耗时：420 ms -------------
+2023-07-12 21:56:36.118 INFO  com.jktickets.aspect.LogAspect                    :57   [32m                  [0;39m ------------- 开始 -------------
+2023-07-12 21:56:36.118 INFO  com.jktickets.aspect.LogAspect                    :58   [32m                  [0;39m 请求地址: http://127.0.0.1:8003/batch/hello GET
+2023-07-12 21:56:36.118 INFO  com.jktickets.aspect.LogAspect                    :59   [32m                  [0;39m 类名方法: com.jktickets.controller.TestController.hello
+2023-07-12 21:56:36.119 INFO  com.jktickets.aspect.LogAspect                    :60   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-07-12 21:56:36.119 INFO  com.jktickets.aspect.LogAspect                    :82   [32m                  [0;39m 请求参数: []
+2023-07-12 21:56:36.119 INFO  com.jktickets.aspect.LogAspect                    :94   [32m                  [0;39m 返回结果: "HelloWorld12311!"
+2023-07-12 21:56:36.120 INFO  com.jktickets.aspect.LogAspect                    :95   [32m                  [0;39m ------------- 结束 耗时：2 ms -------------

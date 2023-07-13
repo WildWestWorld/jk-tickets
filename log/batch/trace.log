@@ -1,0 +1,62 @@
+2023-07-13 20:44:04.401 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-13 20:44:04.459 INFO  com.jktickets.BatchApplication                    :51   [32m                  [0;39m Starting BatchApplication using Java 17.0.3 with PID 17940 (D:\Project\java\jk-tickets\batch-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-13 20:44:04.461 INFO  com.jktickets.BatchApplication                    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-13 20:44:04.520 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13 20:44:04.521 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13 20:44:05.498 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
+2023-07-13 20:44:05.606 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=d3752f6c-ca4b-344e-adc2-8eb06102fbac
+2023-07-13 20:44:06.550 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8003 (http)
+2023-07-13 20:44:06.562 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8003"]
+2023-07-13 20:44:06.563 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-13 20:44:06.563 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-13 20:44:06.640 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-13 20:44:06.641 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2119 ms
+2023-07-13 20:44:07.651 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-13 20:44:07.976 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-07-13 20:44:08.440 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8003"]
+2023-07-13 20:44:08.471 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8003 (http) with context path '/batch'
+2023-07-13 20:44:08.857 INFO  com.jktickets.BatchApplication                    :57   [32m                  [0;39m Started BatchApplication in 5.588 seconds (process running for 6.823)
+2023-07-13 20:44:08.861 INFO  com.jktickets.BatchApplication                    :23   [32m                  [0;39m 启动成功！！
+2023-07-13 20:44:08.862 INFO  com.jktickets.BatchApplication                    :25   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8003/batch/hello
+2023-07-13 21:17:36.299 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-13 21:17:36.378 INFO  com.jktickets.BatchApplication                    :51   [32m                  [0;39m Starting BatchApplication using Java 17.0.3 with PID 9464 (D:\Project\java\jk-tickets\batch-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-13 21:17:36.380 INFO  com.jktickets.BatchApplication                    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-13 21:17:36.453 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13 21:17:36.454 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13 21:17:37.537 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
+2023-07-13 21:17:37.668 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=fe1a92d7-d9dc-3953-a53b-e9a4ad7fcfdf
+2023-07-13 21:17:38.652 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8003 (http)
+2023-07-13 21:17:38.664 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8003"]
+2023-07-13 21:17:38.665 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-13 21:17:38.665 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-13 21:17:38.743 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-13 21:17:38.744 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2289 ms
+2023-07-13 21:17:39.823 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-13 21:17:40.106 INFO  org.quartz.impl.StdSchedulerFactory               :1220 [32m                  [0;39m Using default implementation for ThreadExecutor
+2023-07-13 21:17:40.121 INFO  org.quartz.core.SchedulerSignalerImpl             :61   [32m                  [0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-07-13 21:17:40.122 INFO  org.quartz.core.QuartzScheduler                   :229  [32m                  [0;39m Quartz Scheduler v.2.3.2 created.
+2023-07-13 21:17:40.124 INFO  org.quartz.simpl.RAMJobStore                      :155  [32m                  [0;39m RAMJobStore initialized.
+2023-07-13 21:17:40.125 INFO  org.quartz.core.QuartzScheduler                   :294  [32m                  [0;39m Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-07-13 21:17:40.125 INFO  org.quartz.impl.StdSchedulerFactory               :1374 [32m                  [0;39m Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-07-13 21:17:40.126 INFO  org.quartz.impl.StdSchedulerFactory               :1378 [32m                  [0;39m Quartz scheduler version: 2.3.2
+2023-07-13 21:17:40.126 INFO  org.quartz.core.QuartzScheduler                   :2293 [32m                  [0;39m JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@31349bfc
+2023-07-13 21:17:40.252 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-07-13 21:17:40.736 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8003"]
+2023-07-13 21:17:40.765 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8003 (http) with context path '/batch'
+2023-07-13 21:17:41.150 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :729  [32m                  [0;39m Starting Quartz Scheduler now
+2023-07-13 21:17:41.151 INFO  org.quartz.core.QuartzScheduler                   :547  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-07-13 21:17:41.169 INFO  com.jktickets.BatchApplication                    :57   [32m                  [0;39m Started BatchApplication in 6.084 seconds (process running for 7.534)
+2023-07-13 21:17:41.173 INFO  com.jktickets.BatchApplication                    :23   [32m                  [0;39m 启动成功！！
+2023-07-13 21:17:41.174 INFO  com.jktickets.BatchApplication                    :25   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8003/batch/hello
+2023-07-13 21:18:04.463 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-07-13 21:18:04.505 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :847  [32m                  [0;39m Shutting down Quartz Scheduler
+2023-07-13 21:18:04.506 INFO  org.quartz.core.QuartzScheduler                   :666  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2023-07-13 21:18:04.506 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-07-13 21:18:04.506 INFO  org.quartz.core.QuartzScheduler                   :740  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
