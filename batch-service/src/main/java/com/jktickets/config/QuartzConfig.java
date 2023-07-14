@@ -1,6 +1,6 @@
 package com.jktickets.config;// package com.jiawa.train.batch.config;
 
-import com.jktickets.job.TestJob;
+import com.jktickets.job.basic.TestJob;
 import org.quartz.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

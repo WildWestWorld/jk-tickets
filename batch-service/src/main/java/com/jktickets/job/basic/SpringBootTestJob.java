@@ -1,4 +1,4 @@
-package com.jktickets.job;
+package com.jktickets.job.basic;
 
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
