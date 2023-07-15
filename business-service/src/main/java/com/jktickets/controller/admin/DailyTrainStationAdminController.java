@@ -12,8 +12,10 @@ import com.jktickets.res.dailyTrainStation.DailyTrainStationQueryRes;
 import com.jktickets.service.DailyTrainStationService;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -49,5 +51,8 @@ public class DailyTrainStationAdminController {
         return new CommonRes<>("删除DailyTrainStation成功");
 
     }
+
+
+
 
 }

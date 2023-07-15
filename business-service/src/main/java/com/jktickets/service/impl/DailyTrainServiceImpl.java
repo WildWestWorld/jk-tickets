@@ -20,6 +20,7 @@ import com.jktickets.res.dailyTrain.DailyTrainQueryRes;
 
 import com.jktickets.service.DailyTrainService;
 
+import com.jktickets.service.DailyTrainStationService;
 import com.jktickets.service.TrainService;
 import com.jktickets.utils.SnowUtil;
 import jakarta.annotation.Resource;
@@ -40,6 +41,10 @@ public class DailyTrainServiceImpl implements DailyTrainService {
 
     @Resource
     TrainService trainService;
+
+
+    @Resource
+    DailyTrainStationService dailyTrainStationService;
 
     @Override
     public void saveDailyTrain(DailyTrainSaveReq req) {
@@ -115,11 +120,15 @@ public class DailyTrainServiceImpl implements DailyTrainService {
         for (Train train : trainList) {
 //            生成每日火车
             genDailyTrain(date, train);
+
+
+//        生成该车次的车站数据
+            dailyTrainStationService.genDailyTrainStation(date,train.getCode());
         }
 
     }
-
-    private  void genDailyTrain(Date date, Train train) {
+    @Override
+    public  void genDailyTrain(Date date, Train train) {
         //            先删除之前可能存在的 车次
         DailyTrainExample dailyTrainExample = new DailyTrainExample();
 //            查询是否有相同的车次
@@ -136,5 +145,6 @@ public class DailyTrainServiceImpl implements DailyTrainService {
         dailyTrain.setUpdateTime(now);
 
         dailyTrainMapper.insert(dailyTrain);
+
     }
 }

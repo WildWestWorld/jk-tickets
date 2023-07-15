@@ -19,4 +19,7 @@ public interface DailyTrainService {
 
    void genDaily(Date date);
 
+
+     void genDailyTrain(Date date, Train train);
+
 }
