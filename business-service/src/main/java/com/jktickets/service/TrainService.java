@@ -19,6 +19,7 @@ public interface TrainService {
    Train selectByUnique(String code);
 
    void deleteById(Long id);
+   List<Train> selectAllTrainList();
 
 
 }

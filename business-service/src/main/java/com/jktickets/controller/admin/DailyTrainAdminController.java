@@ -12,8 +12,10 @@ import com.jktickets.res.dailyTrain.DailyTrainQueryRes;
 import com.jktickets.service.DailyTrainService;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -48,6 +50,12 @@ public class DailyTrainAdminController {
             dailyTrainService.deleteById(id);
         return new CommonRes<>("删除DailyTrain成功");
 
+    }
+
+    @GetMapping("/genDaily/{date}")
+    public CommonRes<Object> genDailyByDate(@PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") Date date) {
+        dailyTrainService.genDaily(date);
+        return new CommonRes<>("生成每日火车成功");
     }
 
 }
