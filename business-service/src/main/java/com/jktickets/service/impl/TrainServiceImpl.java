@@ -82,6 +82,7 @@ public class TrainServiceImpl implements TrainService {
     @Override
     public PageRes<TrainQueryRes> queryTrainList(TrainQueryReq req) {
         TrainExample trainExample = new TrainExample();
+        trainExample.setOrderByClause("code asc");
         TrainExample.Criteria criteria = trainExample.createCriteria();
 //        if(ObjectUtil.isNotNull(req.getMemberId())){
 //            criteria.andMemberIdEqualTo(req.getMemberId());

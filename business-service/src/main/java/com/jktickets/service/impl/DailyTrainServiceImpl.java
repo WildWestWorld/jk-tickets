@@ -61,10 +61,14 @@ public class DailyTrainServiceImpl implements DailyTrainService {
     @Override
     public PageRes<DailyTrainQueryRes> queryDailyTrainList(DailyTrainQueryReq req) {
         DailyTrainExample dailyTrainExample = new DailyTrainExample();
+        dailyTrainExample.setOrderByClause("date desc,code asc");
         DailyTrainExample.Criteria criteria = dailyTrainExample.createCriteria();
-//        if(ObjectUtil.isNotNull(req.getMemberId())){
-//            criteria.andMemberIdEqualTo(req.getMemberId());
-//        }
+        if(ObjectUtil.isNotNull(req.getDate())){
+            criteria.andDateEqualTo(req.getDate());
+        }
+        if(ObjectUtil.isNotEmpty(req.getCode())){
+            criteria.andCodeEqualTo(req.getCode());
+        }
 
         // 分页处理
         PageHelper.startPage(req.getPage(), req.getSize());
