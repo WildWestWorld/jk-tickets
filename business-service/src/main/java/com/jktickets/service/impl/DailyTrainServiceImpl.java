@@ -4,6 +4,7 @@ import cn.hutool.core.bean.BeanUtil;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.date.DateTime;
+import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.ObjectUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -18,6 +19,7 @@ import com.jktickets.req.dailyTrain.DailyTrainSaveReq;
 import com.jktickets.res.PageRes;
 import com.jktickets.res.dailyTrain.DailyTrainQueryRes;
 
+import com.jktickets.service.DailyTrainCarriageService;
 import com.jktickets.service.DailyTrainService;
 
 import com.jktickets.service.DailyTrainStationService;
@@ -45,6 +47,8 @@ public class DailyTrainServiceImpl implements DailyTrainService {
 
     @Resource
     DailyTrainStationService dailyTrainStationService;
+    @Resource
+    DailyTrainCarriageService dailyTrainCarriageService;
 
     @Override
     public void saveDailyTrain(DailyTrainSaveReq req) {
@@ -118,17 +122,26 @@ public class DailyTrainServiceImpl implements DailyTrainService {
         }
 
         for (Train train : trainList) {
+            LOG.info("生成日期【{}】车次【{}】的信息开始", DateUtil.formatDate(date), train.getCode());
+
 //            生成每日火车
             genDailyTrain(date, train);
 
 
 //        生成该车次的车站数据
-            dailyTrainStationService.genDailyTrainStation(date,train.getCode());
+            dailyTrainStationService.genDailyTrainStation(date, train.getCode());
+
+            // 生成该车次的车厢数据
+            dailyTrainCarriageService.genDailyTrainCarriage(date, train.getCode());
+
+            LOG.info("生成日期【{}】车次【{}】的信息结束", DateUtil.formatDate(date), train.getCode());
         }
 
+
     }
+
     @Override
-    public  void genDailyTrain(Date date, Train train) {
+    public void genDailyTrain(Date date, Train train) {
         //            先删除之前可能存在的 车次
         DailyTrainExample dailyTrainExample = new DailyTrainExample();
 //            查询是否有相同的车次
