@@ -1,19 +1,29 @@
-2023-07-14 20:50:12.567 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-07-14 20:50:12.886 INFO  com.jktickets.BusinessApplication                 :51   [32m                  [0;39m Starting BusinessApplication using Java 17.0.3 with PID 15664 (D:\Project\java\jk-tickets\business-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
-2023-07-14 20:50:12.888 INFO  com.jktickets.BusinessApplication                 :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-07-14 20:50:13.076 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-14 20:50:13.077 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-14 20:50:16.018 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=a9c81669-3141-36de-bd2e-6e6010cbfaf5
-2023-07-14 20:50:18.208 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8002 (http)
-2023-07-14 20:50:18.251 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8002"]
-2023-07-14 20:50:18.252 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-07-14 20:50:18.252 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
-2023-07-14 20:50:18.401 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-07-14 20:50:18.401 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 5323 ms
-2023-07-14 20:50:20.283 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
-2023-07-14 20:50:20.673 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-07-14 20:50:21.123 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8002"]
-2023-07-14 20:50:21.174 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8002 (http) with context path '/business'
-2023-07-14 20:50:21.517 INFO  com.jktickets.BusinessApplication                 :57   [32m                  [0;39m Started BusinessApplication in 10.591 seconds (process running for 12.424)
-2023-07-14 20:50:21.521 INFO  com.jktickets.BusinessApplication                 :21   [32m                  [0;39m 启动成功！！
-2023-07-14 20:50:21.522 INFO  com.jktickets.BusinessApplication                 :23   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8002/business/hello
+2023-07-15 11:49:39.159 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-15 11:49:39.203 INFO  com.jktickets.BusinessApplication                 :51   [32m                  [0;39m Starting BusinessApplication using Java 17.0.3 with PID 11584 (D:\Project\java\jk-tickets\business-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-15 11:49:39.205 INFO  com.jktickets.BusinessApplication                 :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-15 11:49:39.262 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-15 11:49:39.263 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-15 11:49:40.632 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=0543041c-ed0d-35c6-b670-13c66ea91824
+2023-07-15 11:49:42.117 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8002 (http)
+2023-07-15 11:49:42.161 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8002"]
+2023-07-15 11:49:42.162 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-15 11:49:42.162 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-15 11:49:42.320 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-15 11:49:42.320 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 3056 ms
+2023-07-15 11:49:43.727 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-15 11:49:44.042 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-07-15 11:49:44.549 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8002"]
+2023-07-15 11:49:44.626 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8002 (http) with context path '/business'
+2023-07-15 11:49:44.991 INFO  com.jktickets.BusinessApplication                 :57   [32m                  [0;39m Started BusinessApplication in 6.887 seconds (process running for 7.795)
+2023-07-15 11:49:44.994 INFO  com.jktickets.BusinessApplication                 :21   [32m                  [0;39m 启动成功！！
+2023-07-15 11:49:44.995 INFO  com.jktickets.BusinessApplication                 :23   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8002/business/hello
+2023-07-15 11:50:39.589 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-15 11:50:39.589 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-15 11:50:39.592 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-07-15 11:50:39.636 INFO  com.jktickets.aspect.LogAspect                    :57   [32m16893930396148or  [0;39m ------------- 开始 -------------
+2023-07-15 11:50:39.637 INFO  com.jktickets.aspect.LogAspect                    :58   [32m16893930396148or  [0;39m 请求地址: http://127.0.0.1:8002/business/hello GET
+2023-07-15 11:50:39.638 INFO  com.jktickets.aspect.LogAspect                    :59   [32m16893930396148or  [0;39m 类名方法: com.jktickets.controller.TestController.hello
+2023-07-15 11:50:39.638 INFO  com.jktickets.aspect.LogAspect                    :60   [32m16893930396148or  [0;39m 远程地址: 127.0.0.1
+2023-07-15 11:50:39.690 INFO  com.jktickets.aspect.LogAspect                    :82   [32m16893930396148or  [0;39m 请求参数: []
+2023-07-15 11:50:39.690 INFO  com.jktickets.aspect.LogAspect                    :94   [32m16893930396148or  [0;39m 返回结果: "HelloWorld!"
+2023-07-15 11:50:39.690 INFO  com.jktickets.aspect.LogAspect                    :95   [32m16893930396148or  [0;39m ------------- 结束 耗时：56 ms -------------

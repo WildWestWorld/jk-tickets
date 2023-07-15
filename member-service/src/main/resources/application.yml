@@ -12,7 +12,9 @@ spring:
     password: KEY!moling!6
     url: jdbc:mysql://rm-cn-uax39xxd10011clo.rwlb.rds.aliyuncs.com/train-member?characterEncoding=UTF8&autoReconnect=true&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
-
+#  用于外键
+  application:
+    name: member-service
 
 mybatis:
   #让mybatis知道xml文件在哪

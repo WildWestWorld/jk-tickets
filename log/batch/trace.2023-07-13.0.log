@@ -1,0 +1,381 @@
+2023-07-13 20:44:04.401 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-13 20:44:04.459 INFO  com.jktickets.BatchApplication                    :51   [32m                  [0;39m Starting BatchApplication using Java 17.0.3 with PID 17940 (D:\Project\java\jk-tickets\batch-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-13 20:44:04.461 INFO  com.jktickets.BatchApplication                    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-13 20:44:04.520 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13 20:44:04.521 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13 20:44:05.498 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
+2023-07-13 20:44:05.606 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=d3752f6c-ca4b-344e-adc2-8eb06102fbac
+2023-07-13 20:44:06.550 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8003 (http)
+2023-07-13 20:44:06.562 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8003"]
+2023-07-13 20:44:06.563 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-13 20:44:06.563 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-13 20:44:06.640 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-13 20:44:06.641 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2119 ms
+2023-07-13 20:44:07.651 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-13 20:44:07.976 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-07-13 20:44:08.440 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8003"]
+2023-07-13 20:44:08.471 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8003 (http) with context path '/batch'
+2023-07-13 20:44:08.857 INFO  com.jktickets.BatchApplication                    :57   [32m                  [0;39m Started BatchApplication in 5.588 seconds (process running for 6.823)
+2023-07-13 20:44:08.861 INFO  com.jktickets.BatchApplication                    :23   [32m                  [0;39m 启动成功！！
+2023-07-13 20:44:08.862 INFO  com.jktickets.BatchApplication                    :25   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8003/batch/hello
+2023-07-13 21:17:36.299 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-13 21:17:36.378 INFO  com.jktickets.BatchApplication                    :51   [32m                  [0;39m Starting BatchApplication using Java 17.0.3 with PID 9464 (D:\Project\java\jk-tickets\batch-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-13 21:17:36.380 INFO  com.jktickets.BatchApplication                    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-13 21:17:36.453 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13 21:17:36.454 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13 21:17:37.537 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
+2023-07-13 21:17:37.668 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=fe1a92d7-d9dc-3953-a53b-e9a4ad7fcfdf
+2023-07-13 21:17:38.652 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8003 (http)
+2023-07-13 21:17:38.664 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8003"]
+2023-07-13 21:17:38.665 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-13 21:17:38.665 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-13 21:17:38.743 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-13 21:17:38.744 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2289 ms
+2023-07-13 21:17:39.823 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-13 21:17:40.106 INFO  org.quartz.impl.StdSchedulerFactory               :1220 [32m                  [0;39m Using default implementation for ThreadExecutor
+2023-07-13 21:17:40.121 INFO  org.quartz.core.SchedulerSignalerImpl             :61   [32m                  [0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-07-13 21:17:40.122 INFO  org.quartz.core.QuartzScheduler                   :229  [32m                  [0;39m Quartz Scheduler v.2.3.2 created.
+2023-07-13 21:17:40.124 INFO  org.quartz.simpl.RAMJobStore                      :155  [32m                  [0;39m RAMJobStore initialized.
+2023-07-13 21:17:40.125 INFO  org.quartz.core.QuartzScheduler                   :294  [32m                  [0;39m Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-07-13 21:17:40.125 INFO  org.quartz.impl.StdSchedulerFactory               :1374 [32m                  [0;39m Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-07-13 21:17:40.126 INFO  org.quartz.impl.StdSchedulerFactory               :1378 [32m                  [0;39m Quartz scheduler version: 2.3.2
+2023-07-13 21:17:40.126 INFO  org.quartz.core.QuartzScheduler                   :2293 [32m                  [0;39m JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@31349bfc
+2023-07-13 21:17:40.252 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-07-13 21:17:40.736 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8003"]
+2023-07-13 21:17:40.765 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8003 (http) with context path '/batch'
+2023-07-13 21:17:41.150 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :729  [32m                  [0;39m Starting Quartz Scheduler now
+2023-07-13 21:17:41.151 INFO  org.quartz.core.QuartzScheduler                   :547  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-07-13 21:17:41.169 INFO  com.jktickets.BatchApplication                    :57   [32m                  [0;39m Started BatchApplication in 6.084 seconds (process running for 7.534)
+2023-07-13 21:17:41.173 INFO  com.jktickets.BatchApplication                    :23   [32m                  [0;39m 启动成功！！
+2023-07-13 21:17:41.174 INFO  com.jktickets.BatchApplication                    :25   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8003/batch/hello
+2023-07-13 21:18:04.463 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-07-13 21:18:04.505 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :847  [32m                  [0;39m Shutting down Quartz Scheduler
+2023-07-13 21:18:04.506 INFO  org.quartz.core.QuartzScheduler                   :666  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2023-07-13 21:18:04.506 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-07-13 21:18:04.506 INFO  org.quartz.core.QuartzScheduler                   :740  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2023-07-13 21:29:33.240 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-13 21:29:33.294 INFO  com.jktickets.BatchApplication                    :51   [32m                  [0;39m Starting BatchApplication using Java 17.0.3 with PID 16552 (D:\Project\java\jk-tickets\batch-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-13 21:29:33.296 INFO  com.jktickets.BatchApplication                    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-13 21:29:33.353 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13 21:29:33.354 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13 21:29:34.348 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
+2023-07-13 21:29:34.457 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=86c0923a-5521-3d4d-8c78-7e46a1220dff
+2023-07-13 21:29:35.478 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8003 (http)
+2023-07-13 21:29:35.491 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8003"]
+2023-07-13 21:29:35.492 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-13 21:29:35.492 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-13 21:29:35.572 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-13 21:29:35.573 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2218 ms
+2023-07-13 21:29:36.607 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-13 21:29:36.908 INFO  org.quartz.impl.StdSchedulerFactory               :1220 [32m                  [0;39m Using default implementation for ThreadExecutor
+2023-07-13 21:29:36.922 INFO  org.quartz.core.SchedulerSignalerImpl             :61   [32m                  [0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-07-13 21:29:36.922 INFO  org.quartz.core.QuartzScheduler                   :229  [32m                  [0;39m Quartz Scheduler v.2.3.2 created.
+2023-07-13 21:29:36.924 INFO  org.quartz.simpl.RAMJobStore                      :155  [32m                  [0;39m RAMJobStore initialized.
+2023-07-13 21:29:36.925 INFO  org.quartz.core.QuartzScheduler                   :294  [32m                  [0;39m Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2023-07-13 21:29:36.925 INFO  org.quartz.impl.StdSchedulerFactory               :1374 [32m                  [0;39m Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2023-07-13 21:29:36.925 INFO  org.quartz.impl.StdSchedulerFactory               :1378 [32m                  [0;39m Quartz scheduler version: 2.3.2
+2023-07-13 21:29:36.925 INFO  org.quartz.core.QuartzScheduler                   :2293 [32m                  [0;39m JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3f22c342
+2023-07-13 21:29:37.014 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-07-13 21:29:37.495 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8003"]
+2023-07-13 21:29:37.525 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8003 (http) with context path '/batch'
+2023-07-13 21:29:37.893 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :729  [32m                  [0;39m Starting Quartz Scheduler now
+2023-07-13 21:29:37.893 INFO  org.quartz.core.QuartzScheduler                   :547  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2023-07-13 21:29:37.905 INFO  com.jktickets.BatchApplication                    :57   [32m                  [0;39m Started BatchApplication in 5.85 seconds (process running for 6.96)
+2023-07-13 21:29:37.909 INFO  com.jktickets.BatchApplication                    :23   [32m                  [0;39m 启动成功！！
+2023-07-13 21:29:37.910 INFO  com.jktickets.BatchApplication                    :25   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8003/batch/hello
+2023-07-13 21:29:56.592 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-07-13 21:29:56.629 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :847  [32m                  [0;39m Shutting down Quartz Scheduler
+2023-07-13 21:29:56.630 INFO  org.quartz.core.QuartzScheduler                   :666  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2023-07-13 21:29:56.630 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2023-07-13 21:29:56.630 INFO  org.quartz.core.QuartzScheduler                   :740  [32m                  [0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2023-07-13 22:24:51.944 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-13 22:24:51.995 INFO  com.jktickets.BatchApplication                    :51   [32m                  [0;39m Starting BatchApplication using Java 17.0.3 with PID 17824 (D:\Project\java\jk-tickets\batch-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-13 22:24:51.996 INFO  com.jktickets.BatchApplication                    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-13 22:24:52.053 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13 22:24:52.053 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13 22:24:52.997 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
+2023-07-13 22:24:53.119 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=d78c4f15-ddca-3400-993f-51e3c07b2f3e
+2023-07-13 22:24:54.072 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8003 (http)
+2023-07-13 22:24:54.085 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8003"]
+2023-07-13 22:24:54.087 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-13 22:24:54.087 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-13 22:24:54.168 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-13 22:24:54.169 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2115 ms
+2023-07-13 22:24:54.398 INFO  org.quartz.impl.StdSchedulerFactory               :1220 [32m                  [0;39m Using default implementation for ThreadExecutor
+2023-07-13 22:24:54.414 INFO  org.quartz.core.SchedulerSignalerImpl             :61   [32m                  [0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-07-13 22:24:54.414 INFO  org.quartz.core.QuartzScheduler                   :229  [32m                  [0;39m Quartz Scheduler v.2.3.2 created.
+2023-07-13 22:24:54.424 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-07-13 22:24:54.814 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3016d4d9
+2023-07-13 22:24:54.817 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-07-13 22:24:54.830 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :672  [32m                  [0;39m Using db table-based data access locking (synchronization).
+2023-07-13 22:24:54.832 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :145  [32m                  [0;39m JobStoreCMT initialized.
+2023-07-13 22:24:54.834 INFO  org.quartz.core.QuartzScheduler                   :294  [32m                  [0;39m Scheduler meta-data: Quartz Scheduler (v2.3.2) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2023-07-13 22:24:54.834 INFO  org.quartz.impl.StdSchedulerFactory               :1374 [32m                  [0;39m Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2023-07-13 22:24:54.834 INFO  org.quartz.impl.StdSchedulerFactory               :1378 [32m                  [0;39m Quartz scheduler version: 2.3.2
+2023-07-13 22:24:54.835 INFO  org.quartz.core.QuartzScheduler                   :2293 [32m                  [0;39m JobFactory set to: com.jktickets.job.sql.MyJobFactory@7cec7d2d
+2023-07-13 22:24:55.675 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\Project\java\jk-tickets\batch-service\target\classes\mapper\MemberMapper.xml]'
+2023-07-13 22:24:55.676 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :847  [32m                  [0;39m Shutting down Quartz Scheduler
+2023-07-13 22:24:55.677 INFO  org.quartz.core.QuartzScheduler                   :666  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutting down.
+2023-07-13 22:24:55.677 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2023-07-13 22:24:55.677 INFO  org.quartz.core.QuartzScheduler                   :740  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutdown complete.
+2023-07-13 22:24:55.678 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-07-13 22:24:55.866 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-07-13 22:24:55.873 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-07-13 22:24:55.888 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-13 22:24:55.931 ERROR org.springframework.boot.SpringApplication        :820  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\Project\java\jk-tickets\batch-service\target\classes\mapper\MemberMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:640)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at com.jktickets.BatchApplication.main(BatchApplication.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [D:\Project\java\jk-tickets\batch-service\target\classes\mapper\MemberMapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	... 22 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [D:\Project\java\jk-tickets\batch-service\target\classes\mapper\MemberMapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:615)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:492)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:635)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:189)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$SpringCGLIB$$0.CGLIB$sqlSessionFactory$1(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$SpringCGLIB$$2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:257)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$SpringCGLIB$$0.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139)
+	... 23 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Project\java\jk-tickets\batch-service\target\classes\mapper\MemberMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.jktickets.domain.Member'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.jktickets.domain.Member
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613)
+	... 36 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.jktickets.domain.Member'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.jktickets.domain.Member
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
+	... 38 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.jktickets.domain.Member'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.jktickets.domain.Member
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:128)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 42 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.jktickets.domain.Member
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124)
+	... 44 common frames omitted
+2023-07-13 22:25:47.645 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-13 22:25:47.704 INFO  com.jktickets.BatchApplication                    :51   [32m                  [0;39m Starting BatchApplication using Java 17.0.3 with PID 2624 (D:\Project\java\jk-tickets\batch-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-13 22:25:47.706 INFO  com.jktickets.BatchApplication                    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-13 22:25:47.766 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-13 22:25:47.767 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-13 22:25:48.745 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
+2023-07-13 22:25:48.869 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=d78c4f15-ddca-3400-993f-51e3c07b2f3e
+2023-07-13 22:25:49.812 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8003 (http)
+2023-07-13 22:25:49.824 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8003"]
+2023-07-13 22:25:49.825 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-13 22:25:49.826 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-13 22:25:49.906 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-13 22:25:49.907 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2139 ms
+2023-07-13 22:25:50.127 INFO  org.quartz.impl.StdSchedulerFactory               :1220 [32m                  [0;39m Using default implementation for ThreadExecutor
+2023-07-13 22:25:50.140 INFO  org.quartz.core.SchedulerSignalerImpl             :61   [32m                  [0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-07-13 22:25:50.140 INFO  org.quartz.core.QuartzScheduler                   :229  [32m                  [0;39m Quartz Scheduler v.2.3.2 created.
+2023-07-13 22:25:50.148 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-07-13 22:25:50.491 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e22b7f1
+2023-07-13 22:25:50.494 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-07-13 22:25:50.505 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :672  [32m                  [0;39m Using db table-based data access locking (synchronization).
+2023-07-13 22:25:50.507 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :145  [32m                  [0;39m JobStoreCMT initialized.
+2023-07-13 22:25:50.508 INFO  org.quartz.core.QuartzScheduler                   :294  [32m                  [0;39m Scheduler meta-data: Quartz Scheduler (v2.3.2) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2023-07-13 22:25:50.509 INFO  org.quartz.impl.StdSchedulerFactory               :1374 [32m                  [0;39m Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2023-07-13 22:25:50.509 INFO  org.quartz.impl.StdSchedulerFactory               :1378 [32m                  [0;39m Quartz scheduler version: 2.3.2
+2023-07-13 22:25:50.510 INFO  org.quartz.core.QuartzScheduler                   :2293 [32m                  [0;39m JobFactory set to: com.jktickets.job.sql.MyJobFactory@56e6ce3b
+2023-07-13 22:25:51.256 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-13 22:25:51.569 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-07-13 22:25:52.040 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8003"]
+2023-07-13 22:25:52.070 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8003 (http) with context path '/batch'
+2023-07-13 22:25:52.458 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :734  [32m                  [0;39m Will start Quartz Scheduler [schedulerFactoryBean] in 2 seconds
+2023-07-13 22:25:52.470 INFO  com.jktickets.BatchApplication                    :57   [32m                  [0;39m Started BatchApplication in 5.955 seconds (process running for 7.0)
+2023-07-13 22:25:52.474 INFO  com.jktickets.BatchApplication                    :23   [32m                  [0;39m 启动成功！！
+2023-07-13 22:25:52.475 INFO  com.jktickets.BatchApplication                    :25   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8003/batch/hello
+2023-07-13 22:25:54.473 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :750  [32m                  [0;39m Starting Quartz Scheduler now, after delay of 2 seconds
+2023-07-13 22:25:54.615 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :866  [32m                  [0;39m Freed 0 triggers from 'acquired' / 'blocked' state.
+2023-07-13 22:25:54.648 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :876  [32m                  [0;39m Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2023-07-13 22:25:54.648 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :889  [32m                  [0;39m Recovery complete.
+2023-07-13 22:25:54.668 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :896  [32m                  [0;39m Removed 0 'complete' triggers.
+2023-07-13 22:25:54.685 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :901  [32m                  [0;39m Removed 0 stale fired job entries.
+2023-07-13 22:25:54.717 INFO  org.quartz.core.QuartzScheduler                   :547  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2023-07-13 22:27:40.008 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-13 22:27:40.009 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-13 22:27:40.010 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-07-13 22:27:40.131 INFO  com.jktickets.aspect.LogAspect                    :57   [32m16892584600342k8  [0;39m ------------- 开始 -------------
+2023-07-13 22:27:40.133 INFO  com.jktickets.aspect.LogAspect                    :58   [32m16892584600342k8  [0;39m 请求地址: http://127.0.0.1:8003/batch/admin/job/add POST
+2023-07-13 22:27:40.133 INFO  com.jktickets.aspect.LogAspect                    :59   [32m16892584600342k8  [0;39m 类名方法: com.jktickets.controller.JobController.add
+2023-07-13 22:27:40.134 INFO  com.jktickets.aspect.LogAspect                    :60   [32m16892584600342k8  [0;39m 远程地址: 127.0.0.1
+2023-07-13 22:27:40.228 INFO  com.jktickets.aspect.LogAspect                    :82   [32m16892584600342k8  [0;39m 请求参数: [{"cronExpression":"*/2 * * * * ?","name":"com.jktickets.job.basic.TestJob"}]
+2023-07-13 22:27:40.228 INFO  com.jktickets.controller.JobController            :47   [32m16892584600342k8  [0;39m 创建定时任务开始：com.jktickets.job.basic.TestJob，null，*/2 * * * * ?，null
+2023-07-13 22:27:40.229 INFO  org.quartz.core.QuartzScheduler                   :547  [32m16892584600342k8  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2023-07-13 22:27:40.422 INFO  com.jktickets.controller.JobController            :80   [32m16892584600342k8  [0;39m 创建定时任务结束：CommonRes(success=true, code=0, message=, result=创建定时任务成功)
+2023-07-13 22:27:40.430 INFO  com.jktickets.aspect.LogAspect                    :94   [32m16892584600342k8  [0;39m 返回结果: {"code":0,"message":"","result":"创建定时任务成功","success":true}
+2023-07-13 22:27:40.431 INFO  com.jktickets.aspect.LogAspect                    :95   [32m16892584600342k8  [0;39m ------------- 结束 耗时：301 ms -------------
+2023-07-13 22:30:54.866 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :973  [32m                  [0;39m Handling 1 trigger(s) that missed their scheduled fire-time.
+2023-07-13 22:31:10.237 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689258670237jxo  [0;39m ------------- 开始 -------------
+2023-07-13 22:31:10.238 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689258670237jxo  [0;39m 请求地址: http://127.0.0.1:8003/batch/admin/job/query GET
+2023-07-13 22:31:10.238 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689258670237jxo  [0;39m 类名方法: com.jktickets.controller.JobController.query
+2023-07-13 22:31:10.238 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689258670237jxo  [0;39m 远程地址: 127.0.0.1
+2023-07-13 22:31:10.239 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689258670237jxo  [0;39m 请求参数: []
+2023-07-13 22:31:10.239 INFO  com.jktickets.controller.JobController            :181  [32m1689258670237jxo  [0;39m 查看所有定时任务开始
+2023-07-13 22:31:10.422 INFO  com.jktickets.controller.JobController            :212  [32m1689258670237jxo  [0;39m 查看定时任务结束：CommonRes(success=true, code=0, message=, result=[CronJobDto{cronExpression='*/2 * * * * ?', group='DEFAULT', name='com.jktickets.job.basic.TestJob', description='null', state='BLOCKED', nextFireTime=Thu Jul 13 22:31:04 CST 2023, preFireTime=Thu Jul 13 22:31:02 CST 2023}])
+2023-07-13 22:31:10.430 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689258670237jxo  [0;39m 返回结果: {"code":0,"message":"","result":[{"cronExpression":"*/2 * * * * ?","group":"DEFAULT","name":"com.jktickets.job.basic.TestJob","nextFireTime":1689258664000,"preFireTime":1689258662000,"state":"BLOCKED"}],"success":true}
+2023-07-13 22:31:10.430 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689258670237jxo  [0;39m ------------- 结束 耗时：193 ms -------------
+2023-07-13 22:32:38.173 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689258758172nfg  [0;39m ------------- 开始 -------------
+2023-07-13 22:32:38.174 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689258758172nfg  [0;39m 请求地址: http://127.0.0.1:8003/batch/admin/job/pause POST
+2023-07-13 22:32:38.175 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689258758172nfg  [0;39m 类名方法: com.jktickets.controller.JobController.pause
+2023-07-13 22:32:38.176 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689258758172nfg  [0;39m 远程地址: 127.0.0.1
+2023-07-13 22:32:38.176 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689258758172nfg  [0;39m 请求参数: [{"name":"com.jktickets.job.basic.TestJob"}]
+2023-07-13 22:32:38.177 INFO  com.jktickets.controller.JobController            :88   [32m1689258758172nfg  [0;39m 暂停定时任务开始：com.jktickets.job.basic.TestJob，null
+2023-07-13 22:32:38.349 INFO  com.jktickets.controller.JobController            :100  [32m1689258758172nfg  [0;39m 暂停定时任务结束：CommonRes(success=true, code=0, message=, result=暂停定时任务成功)
+2023-07-13 22:32:38.350 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689258758172nfg  [0;39m 返回结果: {"code":0,"message":"","result":"暂停定时任务成功","success":true}
+2023-07-13 22:32:38.350 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689258758172nfg  [0;39m ------------- 结束 耗时：177 ms -------------
+2023-07-13 22:34:57.625 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689258897624vbh  [0;39m ------------- 开始 -------------
+2023-07-13 22:34:57.626 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689258897624vbh  [0;39m 请求地址: http://127.0.0.1:8003/batch/admin/job/resume POST
+2023-07-13 22:34:57.627 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689258897624vbh  [0;39m 类名方法: com.jktickets.controller.JobController.resume
+2023-07-13 22:34:57.627 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689258897624vbh  [0;39m 远程地址: 127.0.0.1
+2023-07-13 22:34:57.628 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689258897624vbh  [0;39m 请求参数: [{"name":"com.jktickets.job.basic.TestJob"}]
+2023-07-13 22:34:57.628 INFO  com.jktickets.controller.JobController            :108  [32m1689258897624vbh  [0;39m 重启定时任务开始：com.jktickets.job.basic.TestJob，null
+2023-07-13 22:34:57.926 INFO  com.jktickets.controller.JobController            :120  [32m1689258897624vbh  [0;39m 重启定时任务结束：CommonRes(success=true, code=0, message=, result=重启定时任务成功)
+2023-07-13 22:34:57.926 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689258897624vbh  [0;39m 返回结果: {"code":0,"message":"","result":"重启定时任务成功","success":true}
+2023-07-13 22:34:57.926 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689258897624vbh  [0;39m ------------- 结束 耗时：301 ms -------------
+2023-07-13 22:35:50.541 INFO  com.jktickets.aspect.LogAspect                    :57   [32m168925895054087u  [0;39m ------------- 开始 -------------
+2023-07-13 22:35:50.541 INFO  com.jktickets.aspect.LogAspect                    :58   [32m168925895054087u  [0;39m 请求地址: http://127.0.0.1:8003/batch/admin/job/reschedule POST
+2023-07-13 22:35:50.542 INFO  com.jktickets.aspect.LogAspect                    :59   [32m168925895054087u  [0;39m 类名方法: com.jktickets.controller.JobController.reschedule
+2023-07-13 22:35:50.542 INFO  com.jktickets.aspect.LogAspect                    :60   [32m168925895054087u  [0;39m 远程地址: 127.0.0.1
+2023-07-13 22:35:50.542 INFO  com.jktickets.aspect.LogAspect                    :82   [32m168925895054087u  [0;39m 请求参数: [{"cronExpression":"*/5 * * * * ?","name":"com.jktickets.job.basic.TestJob"}]
+2023-07-13 22:35:50.543 INFO  com.jktickets.controller.JobController            :130  [32m168925895054087u  [0;39m 更新定时任务开始：com.jktickets.job.basic.TestJob，null，*/5 * * * * ?，null
+2023-07-13 22:35:52.071 INFO  com.jktickets.controller.JobController            :153  [32m168925895054087u  [0;39m 更新定时任务结束：CommonRes(success=true, code=0, message=, result=更新定时任务成功)
+2023-07-13 22:35:52.072 INFO  com.jktickets.aspect.LogAspect                    :94   [32m168925895054087u  [0;39m 返回结果: {"code":0,"message":"","result":"更新定时任务成功","success":true}
+2023-07-13 22:35:52.072 INFO  com.jktickets.aspect.LogAspect                    :95   [32m168925895054087u  [0;39m ------------- 结束 耗时：1531 ms -------------
+2023-07-13 22:37:28.242 INFO  com.jktickets.aspect.LogAspect                    :57   [32m16892590482415vh  [0;39m ------------- 开始 -------------
+2023-07-13 22:37:28.243 INFO  com.jktickets.aspect.LogAspect                    :58   [32m16892590482415vh  [0;39m 请求地址: http://127.0.0.1:8003/batch/admin/job/run POST
+2023-07-13 22:37:28.244 INFO  com.jktickets.aspect.LogAspect                    :59   [32m16892590482415vh  [0;39m 类名方法: com.jktickets.controller.JobController.run
+2023-07-13 22:37:28.245 INFO  com.jktickets.aspect.LogAspect                    :60   [32m16892590482415vh  [0;39m 远程地址: 127.0.0.1
+2023-07-13 22:37:28.245 INFO  com.jktickets.aspect.LogAspect                    :82   [32m16892590482415vh  [0;39m 请求参数: [{"name":"com.jktickets.job.basic.TestJob"}]
+2023-07-13 22:37:28.246 INFO  com.jktickets.controller.JobController            :36   [32m16892590482415vh  [0;39m 手动执行任务开始：com.jktickets.job.basic.TestJob, null
+2023-07-13 22:37:28.393 INFO  com.jktickets.aspect.LogAspect                    :94   [32m16892590482415vh  [0;39m 返回结果: {"code":0,"message":"","result":"手动执行任务开始成功","success":true}
+2023-07-13 22:37:28.393 INFO  com.jktickets.aspect.LogAspect                    :95   [32m16892590482415vh  [0;39m ------------- 结束 耗时：151 ms -------------
+2023-07-13 22:37:35.466 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689259055465l4v  [0;39m ------------- 开始 -------------
+2023-07-13 22:37:35.467 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689259055465l4v  [0;39m 请求地址: http://127.0.0.1:8003/batch/admin/job/delete POST
+2023-07-13 22:37:35.467 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689259055465l4v  [0;39m 类名方法: com.jktickets.controller.JobController.delete
+2023-07-13 22:37:35.467 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689259055465l4v  [0;39m 远程地址: 127.0.0.1
+2023-07-13 22:37:35.468 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689259055465l4v  [0;39m 请求参数: [{"name":"com.jiawa.train.batch.job.TestJob"}]
+2023-07-13 22:37:35.468 INFO  com.jktickets.controller.JobController            :161  [32m1689259055465l4v  [0;39m 删除定时任务开始：com.jiawa.train.batch.job.TestJob，null
+2023-07-13 22:37:35.941 INFO  com.jktickets.controller.JobController            :175  [32m1689259055465l4v  [0;39m 删除定时任务结束：CommonRes(success=true, code=0, message=, result=删除定时任务成功)
+2023-07-13 22:37:35.942 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689259055465l4v  [0;39m 返回结果: {"code":0,"message":"","result":"删除定时任务成功","success":true}
+2023-07-13 22:37:35.942 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689259055465l4v  [0;39m ------------- 结束 耗时：476 ms -------------
+2023-07-13 22:37:39.517 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689259059516a0f  [0;39m ------------- 开始 -------------
+2023-07-13 22:37:39.518 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689259059516a0f  [0;39m 请求地址: http://127.0.0.1:8003/batch/admin/job/delete POST
+2023-07-13 22:37:39.518 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689259059516a0f  [0;39m 类名方法: com.jktickets.controller.JobController.delete
+2023-07-13 22:37:39.519 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689259059516a0f  [0;39m 远程地址: 127.0.0.1
+2023-07-13 22:37:39.519 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689259059516a0f  [0;39m 请求参数: [{"name":"com.jiawa.train.batch.job.TestJob"}]
+2023-07-13 22:37:39.519 INFO  com.jktickets.controller.JobController            :161  [32m1689259059516a0f  [0;39m 删除定时任务开始：com.jiawa.train.batch.job.TestJob，null
+2023-07-13 22:37:39.739 INFO  com.jktickets.controller.JobController            :175  [32m1689259059516a0f  [0;39m 删除定时任务结束：CommonRes(success=true, code=0, message=, result=删除定时任务成功)
+2023-07-13 22:37:39.739 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689259059516a0f  [0;39m 返回结果: {"code":0,"message":"","result":"删除定时任务成功","success":true}
+2023-07-13 22:37:39.740 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689259059516a0f  [0;39m ------------- 结束 耗时：223 ms -------------
+2023-07-13 22:37:43.218 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689259063218bp5  [0;39m ------------- 开始 -------------
+2023-07-13 22:37:43.219 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689259063218bp5  [0;39m 请求地址: http://127.0.0.1:8003/batch/admin/job/delete POST
+2023-07-13 22:37:43.219 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689259063218bp5  [0;39m 类名方法: com.jktickets.controller.JobController.delete
+2023-07-13 22:37:43.219 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689259063218bp5  [0;39m 远程地址: 127.0.0.1
+2023-07-13 22:37:43.220 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689259063218bp5  [0;39m 请求参数: [{"name":"com.jiawa.train.batch.job.TestJob"}]
+2023-07-13 22:37:43.220 INFO  com.jktickets.controller.JobController            :161  [32m1689259063218bp5  [0;39m 删除定时任务开始：com.jiawa.train.batch.job.TestJob，null
+2023-07-13 22:37:43.556 INFO  com.jktickets.controller.JobController            :175  [32m1689259063218bp5  [0;39m 删除定时任务结束：CommonRes(success=true, code=0, message=, result=删除定时任务成功)
+2023-07-13 22:37:43.557 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689259063218bp5  [0;39m 返回结果: {"code":0,"message":"","result":"删除定时任务成功","success":true}
+2023-07-13 22:37:43.557 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689259063218bp5  [0;39m ------------- 结束 耗时：339 ms -------------
+2023-07-13 22:38:52.045 INFO  com.jktickets.aspect.LogAspect                    :57   [32m168925913204554z  [0;39m ------------- 开始 -------------
+2023-07-13 22:38:52.046 INFO  com.jktickets.aspect.LogAspect                    :58   [32m168925913204554z  [0;39m 请求地址: http://127.0.0.1:8003/batch/admin/job/query GET
+2023-07-13 22:38:52.046 INFO  com.jktickets.aspect.LogAspect                    :59   [32m168925913204554z  [0;39m 类名方法: com.jktickets.controller.JobController.query
+2023-07-13 22:38:52.047 INFO  com.jktickets.aspect.LogAspect                    :60   [32m168925913204554z  [0;39m 远程地址: 127.0.0.1
+2023-07-13 22:38:52.047 INFO  com.jktickets.aspect.LogAspect                    :82   [32m168925913204554z  [0;39m 请求参数: []
+2023-07-13 22:38:52.047 INFO  com.jktickets.controller.JobController            :181  [32m168925913204554z  [0;39m 查看所有定时任务开始
+2023-07-13 22:38:52.151 INFO  com.jktickets.controller.JobController            :212  [32m168925913204554z  [0;39m 查看定时任务结束：CommonRes(success=true, code=0, message=, result=[CronJobDto{cronExpression='*/5 * * * * ?', group='DEFAULT', name='com.jktickets.job.basic.TestJob', description='null', state='BLOCKED', nextFireTime=Thu Jul 13 22:38:55 CST 2023, preFireTime=Thu Jul 13 22:38:50 CST 2023}])
+2023-07-13 22:38:52.152 INFO  com.jktickets.aspect.LogAspect                    :94   [32m168925913204554z  [0;39m 返回结果: {"code":0,"message":"","result":[{"cronExpression":"*/5 * * * * ?","group":"DEFAULT","name":"com.jktickets.job.basic.TestJob","nextFireTime":1689259135000,"preFireTime":1689259130000,"state":"BLOCKED"}],"success":true}
+2023-07-13 22:38:52.152 INFO  com.jktickets.aspect.LogAspect                    :95   [32m168925913204554z  [0;39m ------------- 结束 耗时：107 ms -------------
+2023-07-13 22:39:09.442 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689259149441y3b  [0;39m ------------- 开始 -------------
+2023-07-13 22:39:09.443 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689259149441y3b  [0;39m 请求地址: http://127.0.0.1:8003/batch/admin/job/delete POST
+2023-07-13 22:39:09.443 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689259149441y3b  [0;39m 类名方法: com.jktickets.controller.JobController.delete
+2023-07-13 22:39:09.443 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689259149441y3b  [0;39m 远程地址: 127.0.0.1
+2023-07-13 22:39:09.443 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689259149441y3b  [0;39m 请求参数: [{"name":"com.jktickets.job.basic.TestJob"}]
+2023-07-13 22:39:09.444 INFO  com.jktickets.controller.JobController            :161  [32m1689259149441y3b  [0;39m 删除定时任务开始：com.jktickets.job.basic.TestJob，null
+2023-07-13 22:39:09.710 INFO  com.jktickets.controller.JobController            :175  [32m1689259149441y3b  [0;39m 删除定时任务结束：CommonRes(success=true, code=0, message=, result=删除定时任务成功)
+2023-07-13 22:39:09.710 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689259149441y3b  [0;39m 返回结果: {"code":0,"message":"","result":"删除定时任务成功","success":true}
+2023-07-13 22:39:09.710 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689259149441y3b  [0;39m ------------- 结束 耗时：268 ms -------------
+2023-07-13 22:41:04.583 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689259264583554  [0;39m ------------- 开始 -------------
+2023-07-13 22:41:04.583 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689259264583554  [0;39m 请求地址: http://127.0.0.1:8003/batch/admin/job/query GET
+2023-07-13 22:41:04.584 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689259264583554  [0;39m 类名方法: com.jktickets.controller.JobController.query
+2023-07-13 22:41:04.584 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689259264583554  [0;39m 远程地址: 127.0.0.1
+2023-07-13 22:41:04.584 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689259264583554  [0;39m 请求参数: []
+2023-07-13 22:41:04.584 INFO  com.jktickets.controller.JobController            :181  [32m1689259264583554  [0;39m 查看所有定时任务开始
+2023-07-13 22:41:04.608 INFO  com.jktickets.controller.JobController            :212  [32m1689259264583554  [0;39m 查看定时任务结束：CommonRes(success=true, code=0, message=, result=[])
+2023-07-13 22:41:04.608 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689259264583554  [0;39m 返回结果: {"code":0,"message":"","result":[],"success":true}
+2023-07-13 22:41:04.608 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689259264583554  [0;39m ------------- 结束 耗时：25 ms -------------
+2023-07-13 23:12:22.608 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2023-07-13 23:12:22.650 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :847  [32m                  [0;39m Shutting down Quartz Scheduler
+2023-07-13 23:12:22.650 INFO  org.quartz.core.QuartzScheduler                   :666  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutting down.
+2023-07-13 23:12:22.651 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2023-07-13 23:12:22.651 INFO  org.quartz.core.QuartzScheduler                   :740  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutdown complete.
+2023-07-13 23:12:22.652 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-07-13 23:12:22.656 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
