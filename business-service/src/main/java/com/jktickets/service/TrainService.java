@@ -13,7 +13,7 @@ import java.util.List;
 public interface TrainService {
    void saveTrain(TrainSaveReq req);
    PageRes<TrainQueryRes> queryTrainList(TrainQueryReq req);
-   List<TrainQueryRes> queryAllTrainList(TrainQueryReq req);
+   List<TrainQueryRes> queryAllTrainList();
 
 
    Train selectByUnique(String code);

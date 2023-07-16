@@ -40,7 +40,6 @@ public class TrainCarriageServiceImpl implements TrainCarriageService {
 
     @Override
     public void saveTrainCarriage(TrainCarriageSaveReq req) {
-        TrainCarriage trainCarriage = BeanUtil.copyProperties(req, TrainCarriage.class);
 
 
         DateTime nowTime  = DateTime.now();
@@ -50,8 +49,14 @@ public class TrainCarriageServiceImpl implements TrainCarriageService {
         List<SeatColEnum> seatColEnums = SeatColEnum.getColsByType(req.getSeatType());
 //      通过枚举类型的长度 来设置列数
         req.setColCount(seatColEnums.size());
+
+        System.out.println(req.getColCount() * req.getRowCount());
+        System.out.println(req.getColCount() );
+        System.out.println( req.getRowCount());
+
 //        计算出座位数量( 枚举类型的长度 * 行数)
         req.setSeatCount(req.getColCount() * req.getRowCount());
+        TrainCarriage trainCarriage = BeanUtil.copyProperties(req, TrainCarriage.class);
 
         if(ObjectUtil.isNull(trainCarriage.getId())){
 

@@ -55,11 +55,11 @@ public class StationAdminController {
 
 
     @GetMapping("/queryAll")
-    public CommonRes<List<StationQueryRes>> queryAllStationList(@Valid TrainQueryReq req) {
+    public CommonRes<List<StationQueryRes>> queryAllStationList() {
 
         //       获取当前用户的MemberID
         //req.setMemberId(LoginMemberContext.getId());
-        List<StationQueryRes> trainQueryRes = stationService.queryAllStationList(req);
+        List<StationQueryRes> trainQueryRes = stationService.queryAllStationList();
 
 
         return new CommonRes<>(trainQueryRes);

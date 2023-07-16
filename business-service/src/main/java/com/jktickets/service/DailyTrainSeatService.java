@@ -7,6 +7,7 @@ import com.jktickets.req.dailyTrainSeat.DailyTrainSeatSaveReq;
 import com.jktickets.res.PageRes;
 import com.jktickets.res.dailyTrainSeat.DailyTrainSeatQueryRes;
 
+import java.util.Date;
 import java.util.List;
 
 public interface DailyTrainSeatService {
@@ -14,4 +15,7 @@ public interface DailyTrainSeatService {
    PageRes<DailyTrainSeatQueryRes> queryDailyTrainSeatList(DailyTrainSeatQueryReq req);
 
    void deleteById(Long id);
+
+   void genDailyTrainSeat(Date date, String trainCode);
+
 }

@@ -39,10 +39,10 @@ public class TrainStationServiceImpl implements TrainStationService {
 
     @Override
     public void saveTrainStation(TrainStationSaveReq req) {
-        TrainStation trainStation = BeanUtil.copyProperties(req, TrainStation.class);
 
 
         DateTime nowTime  = DateTime.now();
+        TrainStation trainStation = BeanUtil.copyProperties(req, TrainStation.class);
 
         if(ObjectUtil.isNull(trainStation.getId())){
 

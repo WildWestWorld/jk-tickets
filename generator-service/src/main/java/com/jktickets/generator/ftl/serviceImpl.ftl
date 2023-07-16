@@ -36,10 +36,13 @@ public class ${Domain}ServiceImpl implements ${Domain}Service {
 
     @Override
     public void save${Domain}(${Domain}SaveReq req) {
-        ${Domain} ${domain} = BeanUtil.copyProperties(req, ${Domain}.class);
 
 
         DateTime nowTime  = DateTime.now();
+
+
+        ${Domain} ${domain} = BeanUtil.copyProperties(req, ${Domain}.class);
+
 
         if(ObjectUtil.isNull(${domain}.getId())){
             //        从 线程中获取数据

@@ -43,10 +43,10 @@ public class TrainSeatServiceImpl implements TrainSeatService {
 
     @Override
     public void saveTrainSeat(TrainSeatSaveReq req) {
-        TrainSeat trainSeat = BeanUtil.copyProperties(req, TrainSeat.class);
 
 
         DateTime nowTime = DateTime.now();
+        TrainSeat trainSeat = BeanUtil.copyProperties(req, TrainSeat.class);
 
         if (ObjectUtil.isNull(trainSeat.getId())) {
             //        从 线程中获取数据
@@ -159,4 +159,16 @@ public class TrainSeatServiceImpl implements TrainSeatService {
     public void deleteById(Long id) {
         trainSeatMapper.deleteByPrimaryKey(id);
     }
+
+
+    @Override
+    public List<TrainSeat> selectByTrainCode(String trainCode) {
+        TrainSeatExample trainSeatExample = new TrainSeatExample();
+        trainSeatExample.setOrderByClause("`id` asc");
+        TrainSeatExample.Criteria criteria = trainSeatExample.createCriteria();
+        criteria.andTrainCodeEqualTo(trainCode);
+        return trainSeatMapper.selectByExample(trainSeatExample);
+    }
+
+
 }

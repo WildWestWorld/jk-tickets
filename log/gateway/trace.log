@@ -1,25 +1,25 @@
-2023-07-15 11:49:29.976 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-07-15 11:49:30.066 INFO  com.jktickets.GatewayApplication                  :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.3 with PID 3284 (D:\Project\java\jk-tickets\gateway-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
-2023-07-15 11:49:30.070 INFO  com.jktickets.GatewayApplication                  :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-07-15 11:49:30.145 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-15 11:49:30.146 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-15 11:49:31.271 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=324267dc-ff55-3f4c-bee8-5e2f01045e68
-2023-07-15 11:49:33.011 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
-2023-07-15 11:49:33.011 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
-2023-07-15 11:49:33.012 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
-2023-07-15 11:49:33.012 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
-2023-07-15 11:49:33.012 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
-2023-07-15 11:49:33.013 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
-2023-07-15 11:49:33.013 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
-2023-07-15 11:49:33.013 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
-2023-07-15 11:49:33.014 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
-2023-07-15 11:49:33.014 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
-2023-07-15 11:49:33.014 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
-2023-07-15 11:49:33.015 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2023-07-15 11:49:33.015 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
-2023-07-15 11:49:33.015 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2023-07-15 11:49:33.346 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-07-15 11:49:34.422 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
-2023-07-15 11:49:35.388 INFO  com.jktickets.GatewayApplication                  :57   [32m                  [0;39m Started GatewayApplication in 6.769 seconds (process running for 8.819)
-2023-07-15 11:49:35.396 INFO  com.jktickets.GatewayApplication                  :22   [32m                  [0;39m 启动成功！！
-2023-07-15 11:49:35.397 INFO  com.jktickets.GatewayApplication                  :24   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8000
+2023-07-16 10:34:35.216 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-16 10:34:35.302 INFO  com.jktickets.GatewayApplication                  :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.3 with PID 11504 (D:\Project\java\jk-tickets\gateway-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-16 10:34:35.304 INFO  com.jktickets.GatewayApplication                  :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-16 10:34:35.382 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-16 10:34:35.383 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-16 10:34:36.423 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=324267dc-ff55-3f4c-bee8-5e2f01045e68
+2023-07-16 10:34:38.027 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-07-16 10:34:38.028 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-07-16 10:34:38.029 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-07-16 10:34:38.030 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-07-16 10:34:38.031 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-07-16 10:34:38.031 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-07-16 10:34:38.032 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-07-16 10:34:38.032 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-07-16 10:34:38.033 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-07-16 10:34:38.033 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-07-16 10:34:38.034 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-07-16 10:34:38.034 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-07-16 10:34:38.034 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-07-16 10:34:38.035 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-07-16 10:34:38.327 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-07-16 10:34:39.301 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-07-16 10:34:40.358 INFO  com.jktickets.GatewayApplication                  :57   [32m                  [0;39m Started GatewayApplication in 6.427 seconds (process running for 7.648)
+2023-07-16 10:34:40.364 INFO  com.jktickets.GatewayApplication                  :22   [32m                  [0;39m 启动成功！！
+2023-07-16 10:34:40.364 INFO  com.jktickets.GatewayApplication                  :24   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8000

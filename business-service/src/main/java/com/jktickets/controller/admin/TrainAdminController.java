@@ -63,11 +63,11 @@ public class TrainAdminController {
     }
 
     @GetMapping("/queryAll")
-    public CommonRes<List<TrainQueryRes>> queryAllTrainList(@Valid TrainQueryReq req) {
+    public CommonRes<List<TrainQueryRes>> queryAllTrainList() {
 
         //       获取当前用户的MemberID
         //req.setMemberId(LoginMemberContext.getId());
-        List<TrainQueryRes> trainQueryRes = trainService.queryAllTrainList(req);
+        List<TrainQueryRes> trainQueryRes = trainService.queryAllTrainList();
 
 
         return new CommonRes<>(trainQueryRes);

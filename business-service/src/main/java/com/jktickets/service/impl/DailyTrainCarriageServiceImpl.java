@@ -46,7 +46,6 @@ public class DailyTrainCarriageServiceImpl implements DailyTrainCarriageService 
     TrainCarriageService trainCarriageService;
     @Override
     public void saveDailyTrainCarriage(DailyTrainCarriageSaveReq req) {
-        DailyTrainCarriage dailyTrainCarriage = BeanUtil.copyProperties(req, DailyTrainCarriage.class);
 
 
         DateTime nowTime  = DateTime.now();
@@ -59,6 +58,7 @@ public class DailyTrainCarriageServiceImpl implements DailyTrainCarriageService 
         req.setColCount(seatColEnums.size());
 //        计算出座位数量( 枚举类型的长度 * 行数)
         req.setSeatCount(req.getColCount() * req.getRowCount());
+        DailyTrainCarriage dailyTrainCarriage = BeanUtil.copyProperties(req, DailyTrainCarriage.class);
 
         if(ObjectUtil.isNull(dailyTrainCarriage.getId())){
             //        从 线程中获取数据
@@ -146,4 +146,8 @@ public class DailyTrainCarriageServiceImpl implements DailyTrainCarriageService 
         }
         LOG.info("生成日期【{}】车次【{}】的车厢信息结束", DateUtil.formatDate(date), trainCode);
     }
+
+
+
+
 }

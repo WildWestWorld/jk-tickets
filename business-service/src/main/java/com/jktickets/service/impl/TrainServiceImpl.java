@@ -40,10 +40,10 @@ public class TrainServiceImpl implements TrainService {
 
     @Override
     public void saveTrain(TrainSaveReq req) {
-        Train train = BeanUtil.copyProperties(req, Train.class);
 
 
         DateTime nowTime  = DateTime.now();
+        Train train = BeanUtil.copyProperties(req, Train.class);
 
         if(ObjectUtil.isNull(train.getId())){
             // 保存之前，先校验唯一键是否存在
@@ -110,7 +110,7 @@ public class TrainServiceImpl implements TrainService {
 
 
     @Override
-    public List<TrainQueryRes> queryAllTrainList(TrainQueryReq req) {
+    public List<TrainQueryRes> queryAllTrainList() {
         List<Train> trainList = selectAllTrainList();
 
         List<TrainQueryRes> trainQueryRes = BeanUtil.copyToList(trainList, TrainQueryRes.class);

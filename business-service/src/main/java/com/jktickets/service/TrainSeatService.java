@@ -2,6 +2,7 @@ package com.jktickets.service;
 
 
 
+import com.jktickets.domain.TrainSeat;
 import com.jktickets.req.trainSeat.TrainSeatQueryReq;
 import com.jktickets.req.trainSeat.TrainSeatSaveReq;
 import com.jktickets.res.PageRes;
@@ -16,5 +17,5 @@ public interface TrainSeatService {
    void deleteById(Long id);
 
    void genTrainSeat(String trainCode);
-
+   List<TrainSeat> selectByTrainCode(String trainCode);
 }

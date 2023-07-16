@@ -14,7 +14,7 @@ import java.util.List;
 public interface StationService {
    void saveStation(StationSaveReq req);
    PageRes<StationQueryRes> queryStationList(StationQueryReq req);
-   List<StationQueryRes> queryAllStationList(TrainQueryReq req);
+   List<StationQueryRes> queryAllStationList();
 
    void deleteById(Long id);
 }

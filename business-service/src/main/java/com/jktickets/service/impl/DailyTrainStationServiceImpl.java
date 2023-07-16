@@ -46,10 +46,10 @@ public class DailyTrainStationServiceImpl implements DailyTrainStationService {
 
     @Override
     public void saveDailyTrainStation(DailyTrainStationSaveReq req) {
-        DailyTrainStation dailyTrainStation = BeanUtil.copyProperties(req, DailyTrainStation.class);
 
 
         DateTime nowTime = DateTime.now();
+        DailyTrainStation dailyTrainStation = BeanUtil.copyProperties(req, DailyTrainStation.class);
 
         if (ObjectUtil.isNull(dailyTrainStation.getId())) {
             //        从 线程中获取数据

@@ -19,11 +19,8 @@ import com.jktickets.req.dailyTrain.DailyTrainSaveReq;
 import com.jktickets.res.PageRes;
 import com.jktickets.res.dailyTrain.DailyTrainQueryRes;
 
-import com.jktickets.service.DailyTrainCarriageService;
-import com.jktickets.service.DailyTrainService;
+import com.jktickets.service.*;
 
-import com.jktickets.service.DailyTrainStationService;
-import com.jktickets.service.TrainService;
 import com.jktickets.utils.SnowUtil;
 import jakarta.annotation.Resource;
 import org.slf4j.Logger;
@@ -50,12 +47,19 @@ public class DailyTrainServiceImpl implements DailyTrainService {
     @Resource
     DailyTrainCarriageService dailyTrainCarriageService;
 
+    @Resource
+    DailyTrainSeatService dailyTrainSeatService;
+
+
+    @Resource
+    DailyTrainTicketService dailyTrainTicketService;
+
     @Override
     public void saveDailyTrain(DailyTrainSaveReq req) {
-        DailyTrain dailyTrain = BeanUtil.copyProperties(req, DailyTrain.class);
 
 
         DateTime nowTime = DateTime.now();
+        DailyTrain dailyTrain = BeanUtil.copyProperties(req, DailyTrain.class);
 
         if (ObjectUtil.isNull(dailyTrain.getId())) {
             //        从 线程中获取数据
@@ -122,19 +126,10 @@ public class DailyTrainServiceImpl implements DailyTrainService {
         }
 
         for (Train train : trainList) {
-            LOG.info("生成日期【{}】车次【{}】的信息开始", DateUtil.formatDate(date), train.getCode());
 
 //            生成每日火车
             genDailyTrain(date, train);
 
-
-//        生成该车次的车站数据
-            dailyTrainStationService.genDailyTrainStation(date, train.getCode());
-
-            // 生成该车次的车厢数据
-            dailyTrainCarriageService.genDailyTrainCarriage(date, train.getCode());
-
-            LOG.info("生成日期【{}】车次【{}】的信息结束", DateUtil.formatDate(date), train.getCode());
         }
 
 
@@ -142,6 +137,10 @@ public class DailyTrainServiceImpl implements DailyTrainService {
 
     @Override
     public void genDailyTrain(Date date, Train train) {
+
+        LOG.info("生成日期【{}】车次【{}】的信息开始", DateUtil.formatDate(date), train.getCode());
+
+
         //            先删除之前可能存在的 车次
         DailyTrainExample dailyTrainExample = new DailyTrainExample();
 //            查询是否有相同的车次
@@ -156,8 +155,25 @@ public class DailyTrainServiceImpl implements DailyTrainService {
         dailyTrain.setId(SnowUtil.getSnowflakeNextId());
         dailyTrain.setCreateTime(now);
         dailyTrain.setUpdateTime(now);
-
+        dailyTrain.setDate(date);
         dailyTrainMapper.insert(dailyTrain);
 
+
+
+
+
+//        生成该车次的车站数据
+        dailyTrainStationService.genDailyTrainStation(date, train.getCode());
+
+        // 生成该车次的车厢数据
+        dailyTrainCarriageService.genDailyTrainCarriage(date, train.getCode());
+
+
+        // 生成该车次的座位数据
+        dailyTrainSeatService.genDailyTrainSeat(date, train.getCode());
+
+
+        dailyTrainTicketService.genDailyTrainTicket(dailyTrain, date, train.getCode());
+        LOG.info("生成日期【{}】车次【{}】的信息结束", DateUtil.formatDate(date), train.getCode());
     }
 }

@@ -43,10 +43,10 @@ public class StationServiceImpl implements StationService {
 
     @Override
     public void saveStation(StationSaveReq req) {
-        Station station = BeanUtil.copyProperties(req, Station.class);
 
 
         DateTime nowTime  = DateTime.now();
+        Station station = BeanUtil.copyProperties(req, Station.class);
 
         if(ObjectUtil.isNull(station.getId())){
 
@@ -118,10 +118,10 @@ public class StationServiceImpl implements StationService {
 
 
     @Override
-    public List<StationQueryRes> queryAllStationList(TrainQueryReq req) {
+    public List<StationQueryRes> queryAllStationList() {
         StationExample stationExample = new StationExample();
 //        code:车次编号
-        stationExample.setOrderByClause("code desc");
+        stationExample.setOrderByClause("name_pinyin asc");
 
 
         List<Station> stationList = stationMapper.selectByExample(stationExample);

@@ -18,7 +18,9 @@ import java.util.*;
 public class MainGenerator {
 
     //    static String serverPath = "generator-service\\src\\main\\java\\com\\jktickets\\generator\\test\\";
+//   生成路径
     static String serverPath = "[module]-service/src/main/java/com/jktickets/";
+    //   pom路径
     static String pomPath = "generator-service/pom.xml";
 
     static {
