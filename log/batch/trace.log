@@ -46,3 +46,15 @@
 2023-07-17 20:08:40.482 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :896  [32m                  [0;39m Removed 0 'complete' triggers.
 2023-07-17 20:08:40.494 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :901  [32m                  [0;39m Removed 0 stale fired job entries.
 2023-07-17 20:08:40.522 INFO  org.quartz.core.QuartzScheduler                   :547  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2023-07-17 20:48:08.995 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17 20:48:08.996 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-17 20:48:08.999 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
+2023-07-17 20:48:09.039 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689598089022pw3  [0;39m ------------- 开始 -------------
+2023-07-17 20:48:09.040 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689598089022pw3  [0;39m 请求地址: http://127.0.0.1:8003/batch/admin/job/query GET
+2023-07-17 20:48:09.040 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689598089022pw3  [0;39m 类名方法: com.jktickets.controller.JobController.query
+2023-07-17 20:48:09.040 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689598089022pw3  [0;39m 远程地址: 127.0.0.1
+2023-07-17 20:48:09.084 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689598089022pw3  [0;39m 请求参数: []
+2023-07-17 20:48:09.084 INFO  com.jktickets.controller.JobController            :181  [32m1689598089022pw3  [0;39m 查看所有定时任务开始
+2023-07-17 20:48:09.123 INFO  com.jktickets.controller.JobController            :212  [32m1689598089022pw3  [0;39m 查看定时任务结束：CommonRes(success=true, code=0, message=, result=[])
+2023-07-17 20:48:09.151 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689598089022pw3  [0;39m 返回结果: {"code":0,"message":"","result":[],"success":true}
+2023-07-17 20:48:09.152 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689598089022pw3  [0;39m ------------- 结束 耗时：114 ms -------------
