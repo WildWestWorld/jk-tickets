@@ -1,0 +1,68 @@
+2023-07-16 10:34:31.956 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-16 10:34:32.023 INFO  com.jktickets.BatchApplication                    :51   [32m                  [0;39m Starting BatchApplication using Java 17.0.3 with PID 15768 (D:\Project\java\jk-tickets\batch-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-16 10:34:32.025 INFO  com.jktickets.BatchApplication                    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-16 10:34:32.088 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-16 10:34:32.089 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-16 10:34:33.694 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
+2023-07-16 10:34:33.856 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=1bedfdc6-bc76-3cfc-ba1b-14b17af324d7
+2023-07-16 10:34:35.320 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8003 (http)
+2023-07-16 10:34:35.337 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8003"]
+2023-07-16 10:34:35.339 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-16 10:34:35.340 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-16 10:34:35.455 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-16 10:34:35.456 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 3366 ms
+2023-07-16 10:34:35.756 INFO  org.quartz.impl.StdSchedulerFactory               :1220 [32m                  [0;39m Using default implementation for ThreadExecutor
+2023-07-16 10:34:35.773 INFO  org.quartz.core.SchedulerSignalerImpl             :61   [32m                  [0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-07-16 10:34:35.774 INFO  org.quartz.core.QuartzScheduler                   :229  [32m                  [0;39m Quartz Scheduler v.2.3.2 created.
+2023-07-16 10:34:35.787 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-07-16 10:34:36.210 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4836b679
+2023-07-16 10:34:36.214 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-07-16 10:34:36.230 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :672  [32m                  [0;39m Using db table-based data access locking (synchronization).
+2023-07-16 10:34:36.234 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :145  [32m                  [0;39m JobStoreCMT initialized.
+2023-07-16 10:34:36.235 INFO  org.quartz.core.QuartzScheduler                   :294  [32m                  [0;39m Scheduler meta-data: Quartz Scheduler (v2.3.2) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2023-07-16 10:34:36.236 INFO  org.quartz.impl.StdSchedulerFactory               :1374 [32m                  [0;39m Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2023-07-16 10:34:36.237 INFO  org.quartz.impl.StdSchedulerFactory               :1378 [32m                  [0;39m Quartz scheduler version: 2.3.2
+2023-07-16 10:34:36.237 INFO  org.quartz.core.QuartzScheduler                   :2293 [32m                  [0;39m JobFactory set to: com.jktickets.job.sql.MyJobFactory@388891c9
+2023-07-16 10:34:36.590 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-07-16 10:34:37.527 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-16 10:34:38.413 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m                  [0;39m Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-07-16 10:34:38.488 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8003"]
+2023-07-16 10:34:38.527 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8003 (http) with context path '/batch'
+2023-07-16 10:34:38.940 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :734  [32m                  [0;39m Will start Quartz Scheduler [schedulerFactoryBean] in 2 seconds
+2023-07-16 10:34:38.952 INFO  com.jktickets.BatchApplication                    :57   [32m                  [0;39m Started BatchApplication in 8.159 seconds (process running for 9.817)
+2023-07-16 10:34:38.958 INFO  com.jktickets.BatchApplication                    :26   [32m                  [0;39m 启动成功！！
+2023-07-16 10:34:38.959 INFO  com.jktickets.BatchApplication                    :28   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8003/batch/hello
+2023-07-16 10:34:40.951 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :750  [32m                  [0;39m Starting Quartz Scheduler now, after delay of 2 seconds
+2023-07-16 10:34:41.079 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :866  [32m                  [0;39m Freed 0 triggers from 'acquired' / 'blocked' state.
+2023-07-16 10:34:41.110 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :876  [32m                  [0;39m Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2023-07-16 10:34:41.110 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :889  [32m                  [0;39m Recovery complete.
+2023-07-16 10:34:41.138 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :896  [32m                  [0;39m Removed 0 'complete' triggers.
+2023-07-16 10:34:41.159 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :901  [32m                  [0;39m Removed 0 stale fired job entries.
+2023-07-16 10:34:41.419 INFO  org.quartz.core.QuartzScheduler                   :547  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2023-07-16 17:03:13.857 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-16 17:03:13.863 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-16 17:03:13.891 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 26 ms
+2023-07-16 17:03:13.964 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689498193931u85  [0;39m ------------- 开始 -------------
+2023-07-16 17:03:13.966 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689498193931u85  [0;39m 请求地址: http://127.0.0.1:8003/batch/admin/job/query GET
+2023-07-16 17:03:13.967 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689498193931u85  [0;39m 类名方法: com.jktickets.controller.JobController.query
+2023-07-16 17:03:13.967 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689498193931u85  [0;39m 远程地址: 127.0.0.1
+2023-07-16 17:03:14.024 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689498193931u85  [0;39m 请求参数: []
+2023-07-16 17:03:14.024 INFO  com.jktickets.controller.JobController            :181  [32m1689498193931u85  [0;39m 查看所有定时任务开始
+2023-07-16 17:03:14.110 INFO  com.jktickets.controller.JobController            :212  [32m1689498193931u85  [0;39m 查看定时任务结束：CommonRes(success=true, code=0, message=, result=[])
+2023-07-16 17:03:14.146 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689498193931u85  [0;39m 返回结果: {"code":0,"message":"","result":[],"success":true}
+2023-07-16 17:03:14.146 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689498193931u85  [0;39m ------------- 结束 耗时：184 ms -------------
+2023-07-16 18:28:35.955 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5ffc7ef0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-16 18:28:40.960 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@68bc67a4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-16 18:28:45.962 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@187a1604 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-16 18:28:47.083 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@eab2ec0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-16 18:28:50.962 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7def36b9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-16 18:28:52.089 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4f8970e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-16 18:28:55.972 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7665efe7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-16 18:28:57.098 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@66258708 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.

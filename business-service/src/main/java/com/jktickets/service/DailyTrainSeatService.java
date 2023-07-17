@@ -17,5 +17,5 @@ public interface DailyTrainSeatService {
    void deleteById(Long id);
 
    void genDailyTrainSeat(Date date, String trainCode);
-
+   int countTrainSeat(Date date, String trainCode, String seatType);
 }

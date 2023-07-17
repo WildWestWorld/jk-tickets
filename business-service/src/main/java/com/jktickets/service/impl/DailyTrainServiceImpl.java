@@ -11,9 +11,11 @@ import com.github.pagehelper.PageInfo;
 import com.jktickets.context.LoginMemberContext;
 import com.jktickets.domain.DailyTrain;
 import com.jktickets.domain.DailyTrainExample;
+import com.jktickets.domain.DailyTrainSeatExample;
 import com.jktickets.domain.Train;
 import com.jktickets.mapper.DailyTrainMapper;
 
+import com.jktickets.mapper.DailyTrainSeatMapper;
 import com.jktickets.req.dailyTrain.DailyTrainQueryReq;
 import com.jktickets.req.dailyTrain.DailyTrainSaveReq;
 import com.jktickets.res.PageRes;
@@ -37,6 +39,8 @@ public class DailyTrainServiceImpl implements DailyTrainService {
 
     @Resource
     DailyTrainMapper dailyTrainMapper;
+    @Resource
+    DailyTrainSeatMapper dailyTrainSeatMapper;
 
     @Resource
     TrainService trainService;
@@ -50,9 +54,10 @@ public class DailyTrainServiceImpl implements DailyTrainService {
     @Resource
     DailyTrainSeatService dailyTrainSeatService;
 
-
     @Resource
     DailyTrainTicketService dailyTrainTicketService;
+
+
 
     @Override
     public void saveDailyTrain(DailyTrainSaveReq req) {
@@ -176,4 +181,7 @@ public class DailyTrainServiceImpl implements DailyTrainService {
         dailyTrainTicketService.genDailyTrainTicket(dailyTrain, date, train.getCode());
         LOG.info("生成日期【{}】车次【{}】的信息结束", DateUtil.formatDate(date), train.getCode());
     }
+
+
+
 }

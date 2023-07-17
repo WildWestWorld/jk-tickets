@@ -22,4 +22,7 @@ public interface DailyTrainService {
 
      void genDailyTrain(Date date, Train train);
 
+
+
+
 }
