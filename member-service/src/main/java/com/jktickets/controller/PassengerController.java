@@ -50,4 +50,11 @@ public class PassengerController {
 
     }
 
+
+    @GetMapping("/queryMine")
+    public CommonRes<List<PassengerQueryRes>> queryMine() {
+        List<PassengerQueryRes> list = passengerService.queryMine();
+        return new CommonRes<>(list);
+    }
+
 }

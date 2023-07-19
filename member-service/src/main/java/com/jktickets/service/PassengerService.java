@@ -14,4 +14,6 @@ public interface PassengerService {
    PageRes<PassengerQueryRes> queryPassengerList(PassengerQueryReq req);
 
    void deleteById(Long id);
+
+   List<PassengerQueryRes> queryMine();
 }

@@ -1,0 +1,2 @@
+2023-07-17 21:23:20.451 ERROR c.jktickets.exception.ControllerExceptionHandler  :49   [32m16896001994804ul  [0;39m 业务异常:请先获取短信验证码
+2023-07-17 21:24:05.518 ERROR c.jktickets.exception.ControllerExceptionHandler  :49   [32m1689600245476yue  [0;39m 业务异常:请先获取短信验证码

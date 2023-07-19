@@ -90,4 +90,20 @@ public class PassengerServiceImpl implements PassengerService {
     public void deleteById(Long id) {
         passengerMapper.deleteByPrimaryKey(id);
     }
+
+
+
+
+    /**
+     * 查询我的所有乘客
+     */
+    @Override
+    public List<PassengerQueryRes> queryMine() {
+        PassengerExample passengerExample = new PassengerExample();
+        passengerExample.setOrderByClause("name asc");
+        PassengerExample.Criteria criteria = passengerExample.createCriteria();
+        criteria.andMemberIdEqualTo(LoginMemberContext.getId());
+        List<Passenger> list = passengerMapper.selectByExample(passengerExample);
+        return BeanUtil.copyToList(list, PassengerQueryRes.class);
+    }
 }
