@@ -1,0 +1,708 @@
+2023-07-18 19:05:31.287 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-18 19:05:31.366 INFO  com.jktickets.MemberApplication                   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.3 with PID 10508 (D:\Project\java\jk-tickets\member-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-18 19:05:31.369 INFO  com.jktickets.MemberApplication                   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-18 19:05:31.430 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-18 19:05:31.439 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-18 19:05:32.854 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=52ef56ae-ef40-39b4-a425-4bd1c816e46f
+2023-07-18 19:05:36.481 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-07-18 19:05:36.551 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-07-18 19:05:36.553 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-18 19:05:36.553 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-18 19:05:36.809 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-18 19:05:36.810 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 5370 ms
+2023-07-18 19:05:39.787 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-18 19:05:40.245 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-07-18 19:05:40.783 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-07-18 19:05:40.824 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-07-18 19:05:41.250 INFO  com.jktickets.MemberApplication                   :57   [32m                  [0;39m Started MemberApplication in 11.222 seconds (process running for 12.493)
+2023-07-18 19:05:41.254 INFO  com.jktickets.MemberApplication                   :22   [32m                  [0;39m 启动成功！！
+2023-07-18 19:05:41.255 INFO  com.jktickets.MemberApplication                   :24   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
+2023-07-18 19:13:49.467 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-18 19:13:49.468 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-18 19:13:49.469 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-07-18 19:13:49.719 INFO  com.jktickets.aspect.LogAspect                    :57   [32m16896788295173ip  [0;39m ------------- 开始 -------------
+2023-07-18 19:13:49.720 INFO  com.jktickets.aspect.LogAspect                    :58   [32m16896788295173ip  [0;39m 请求地址: http://127.0.0.1:8001/member/member/sendCode POST
+2023-07-18 19:13:49.720 INFO  com.jktickets.aspect.LogAspect                    :59   [32m16896788295173ip  [0;39m 类名方法: com.jktickets.controller.MemberController.sendCode
+2023-07-18 19:13:49.720 INFO  com.jktickets.aspect.LogAspect                    :60   [32m16896788295173ip  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:13:49.898 INFO  com.jktickets.aspect.LogAspect                    :82   [32m16896788295173ip  [0;39m 请求参数: [{"mobile":"13000000000"}]
+2023-07-18 19:13:49.900 INFO  com.jktickets.aspect.LogAspect                    :106  [32m16896788295173ip  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.MemberMapper.selectByExample(MemberExample))
+2023-07-18 19:13:49.901 INFO  com.jktickets.aspect.LogAspect                    :111  [32m16896788295173ip  [0;39m 参数值: com.jktickets.domain.MemberExample@30886e7c
+2023-07-18 19:13:50.000 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m16896788295173ip  [0;39m HikariPool-1 - Starting...
+2023-07-18 19:13:50.366 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m16896788295173ip  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@567b8f22
+2023-07-18 19:13:50.369 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m16896788295173ip  [0;39m HikariPool-1 - Start completed.
+2023-07-18 19:13:50.442 INFO  com.jktickets.aspect.LogAspect                    :120  [32m16896788295173ip  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.MemberMapper.selectByExample(MemberExample))
+2023-07-18 19:13:50.461 INFO  com.jktickets.service.MemberService               :90   [32m16896788295173ip  [0;39m 手机号存在,不插入数据
+2023-07-18 19:13:50.461 INFO  com.jktickets.service.MemberService               :97   [32m16896788295173ip  [0;39m 生成短信验证码:wslu
+2023-07-18 19:13:50.461 INFO  com.jktickets.service.MemberService               :100  [32m16896788295173ip  [0;39m 保存短信记录表
+2023-07-18 19:13:50.462 INFO  com.jktickets.service.MemberService               :103  [32m16896788295173ip  [0;39m 对接短信通道
+2023-07-18 19:13:50.466 INFO  com.jktickets.aspect.LogAspect                    :94   [32m16896788295173ip  [0;39m 返回结果: {"code":0,"message":"","result":"短信发送成功","success":true}
+2023-07-18 19:13:50.467 INFO  com.jktickets.aspect.LogAspect                    :95   [32m16896788295173ip  [0;39m ------------- 结束 耗时：749 ms -------------
+2023-07-18 19:13:52.950 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689678832945rra  [0;39m ------------- 开始 -------------
+2023-07-18 19:13:52.950 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689678832945rra  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2023-07-18 19:13:52.951 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689678832945rra  [0;39m 类名方法: com.jktickets.controller.MemberController.sendCode
+2023-07-18 19:13:52.951 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689678832945rra  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:13:52.953 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689678832945rra  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
+2023-07-18 19:13:52.954 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689678832945rra  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.MemberMapper.selectByExample(MemberExample))
+2023-07-18 19:13:52.954 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689678832945rra  [0;39m 参数值: com.jktickets.domain.MemberExample@67bfa64f
+2023-07-18 19:13:52.987 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689678832945rra  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.MemberMapper.selectByExample(MemberExample))
+2023-07-18 19:13:53.869 INFO  com.jktickets.utils.JwtUtil                       :37   [32m1689678832945rra  [0;39m 生成JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:13:53.870 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689678832945rra  [0;39m 返回结果: {"code":0,"message":"","result":{"id":1680932902797447168,"mobile":"13000000000","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM"},"success":true}
+2023-07-18 19:13:53.871 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689678832945rra  [0;39m ------------- 结束 耗时：921 ms -------------
+2023-07-18 19:13:57.077 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689678837077z2t  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:13:57.087 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689678837077z2t  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:13:57.087 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689678837077z2t  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:13:57.109 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689678837077z2t  [0;39m ------------- 开始 -------------
+2023-07-18 19:13:57.109 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689678837077z2t  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryList GET
+2023-07-18 19:13:57.110 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689678837077z2t  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryPassengerList
+2023-07-18 19:13:57.110 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689678837077z2t  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:13:57.112 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689678837077z2t  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-07-18 19:13:57.117 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689678837077z2t  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:13:57.118 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689678837077z2t  [0;39m 参数值: com.jktickets.domain.PassengerExample@231a72ee
+2023-07-18 19:13:57.295 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689678837077z2t  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:13:57.297 INFO  com.jktickets.service.PassengerService            :76   [32m1689678837077z2t  [0;39m 总行数：8
+2023-07-18 19:13:57.298 INFO  com.jktickets.service.PassengerService            :77   [32m1689678837077z2t  [0;39m 总页数：1
+2023-07-18 19:13:57.316 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689678837077z2t  [0;39m 返回结果: {"code":0,"message":"","result":{"list":[{"createTime":1688308366143,"id":1,"idCard":"12345","memberId":1,"name":"test2","type":"3","updateTime":1688481047313},{"createTime":1688308367058,"id":1675512847641219072,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308367058},{"createTime":1688308367904,"id":1675512851189600256,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308367904},{"createTime":1688308368768,"id":1675512854813478912,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308368768},{"createTime":1688308369691,"id":1675512858684821504,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308369691},{"createTime":1688308370650,"id":1675512862707159040,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308370650},{"createTime":1688308371539,"id":1675512866435895296,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308371539},{"createTime":1688308375805,"id":1675512884328796160,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308375805}],"total":8},"success":true}
+2023-07-18 19:13:57.317 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689678837077z2t  [0;39m ------------- 结束 耗时：208 ms -------------
+2023-07-18 19:14:05.117 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689678845117tds  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:14:05.118 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689678845117tds  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:05.118 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689678845117tds  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:05.120 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689678845117tds  [0;39m ------------- 开始 -------------
+2023-07-18 19:14:05.121 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689678845117tds  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/delete/1675512847641219072 DELETE
+2023-07-18 19:14:05.121 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689678845117tds  [0;39m 类名方法: com.jktickets.controller.PassengerController.deleteById
+2023-07-18 19:14:05.121 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689678845117tds  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:14:05.121 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689678845117tds  [0;39m 请求参数: [1675512847641219072]
+2023-07-18 19:14:05.122 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689678845117tds  [0;39m 执行SQL:  deleteByPrimaryKey | execution(int com.jktickets.mapper.PassengerMapper.deleteByPrimaryKey(Long))
+2023-07-18 19:14:05.122 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689678845117tds  [0;39m 参数值: 1675512847641219072
+2023-07-18 19:14:05.182 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689678845117tds  [0;39m SQL执行完成: deleteByPrimaryKey | execution(int com.jktickets.mapper.PassengerMapper.deleteByPrimaryKey(Long))
+2023-07-18 19:14:05.182 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689678845117tds  [0;39m 返回结果: {"code":0,"message":"","result":"删除乘客成功","success":true}
+2023-07-18 19:14:05.183 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689678845117tds  [0;39m ------------- 结束 耗时：63 ms -------------
+2023-07-18 19:14:05.253 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689678845253qo3  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:14:05.255 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689678845253qo3  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:05.255 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689678845253qo3  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:05.256 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689678845253qo3  [0;39m ------------- 开始 -------------
+2023-07-18 19:14:05.256 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689678845253qo3  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryList GET
+2023-07-18 19:14:05.257 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689678845253qo3  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryPassengerList
+2023-07-18 19:14:05.257 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689678845253qo3  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:14:05.257 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689678845253qo3  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-07-18 19:14:05.257 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689678845253qo3  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:14:05.257 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689678845253qo3  [0;39m 参数值: com.jktickets.domain.PassengerExample@3ab9d286
+2023-07-18 19:14:05.297 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689678845253qo3  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:14:05.297 INFO  com.jktickets.service.PassengerService            :76   [32m1689678845253qo3  [0;39m 总行数：7
+2023-07-18 19:14:05.297 INFO  com.jktickets.service.PassengerService            :77   [32m1689678845253qo3  [0;39m 总页数：1
+2023-07-18 19:14:05.299 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689678845253qo3  [0;39m 返回结果: {"code":0,"message":"","result":{"list":[{"createTime":1688308366143,"id":1,"idCard":"12345","memberId":1,"name":"test2","type":"3","updateTime":1688481047313},{"createTime":1688308367904,"id":1675512851189600256,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308367904},{"createTime":1688308368768,"id":1675512854813478912,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308368768},{"createTime":1688308369691,"id":1675512858684821504,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308369691},{"createTime":1688308370650,"id":1675512862707159040,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308370650},{"createTime":1688308371539,"id":1675512866435895296,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308371539},{"createTime":1688308375805,"id":1675512884328796160,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308375805}],"total":7},"success":true}
+2023-07-18 19:14:05.301 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689678845253qo3  [0;39m ------------- 结束 耗时：45 ms -------------
+2023-07-18 19:14:06.736 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689678846736s3u  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:14:06.737 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689678846736s3u  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:06.738 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689678846736s3u  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:06.738 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689678846736s3u  [0;39m ------------- 开始 -------------
+2023-07-18 19:14:06.739 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689678846736s3u  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/delete/1675512851189600256 DELETE
+2023-07-18 19:14:06.739 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689678846736s3u  [0;39m 类名方法: com.jktickets.controller.PassengerController.deleteById
+2023-07-18 19:14:06.739 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689678846736s3u  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:14:06.740 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689678846736s3u  [0;39m 请求参数: [1675512851189600256]
+2023-07-18 19:14:06.740 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689678846736s3u  [0;39m 执行SQL:  deleteByPrimaryKey | execution(int com.jktickets.mapper.PassengerMapper.deleteByPrimaryKey(Long))
+2023-07-18 19:14:06.740 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689678846736s3u  [0;39m 参数值: 1675512851189600256
+2023-07-18 19:14:06.785 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689678846736s3u  [0;39m SQL执行完成: deleteByPrimaryKey | execution(int com.jktickets.mapper.PassengerMapper.deleteByPrimaryKey(Long))
+2023-07-18 19:14:06.785 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689678846736s3u  [0;39m 返回结果: {"code":0,"message":"","result":"删除乘客成功","success":true}
+2023-07-18 19:14:06.785 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689678846736s3u  [0;39m ------------- 结束 耗时：47 ms -------------
+2023-07-18 19:14:06.840 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689678846840r03  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:14:06.840 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689678846840r03  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:06.841 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689678846840r03  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:06.842 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689678846840r03  [0;39m ------------- 开始 -------------
+2023-07-18 19:14:06.842 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689678846840r03  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryList GET
+2023-07-18 19:14:06.842 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689678846840r03  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryPassengerList
+2023-07-18 19:14:06.842 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689678846840r03  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:14:06.843 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689678846840r03  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-07-18 19:14:06.843 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689678846840r03  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:14:06.843 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689678846840r03  [0;39m 参数值: com.jktickets.domain.PassengerExample@72fbb40a
+2023-07-18 19:14:06.883 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689678846840r03  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:14:06.883 INFO  com.jktickets.service.PassengerService            :76   [32m1689678846840r03  [0;39m 总行数：6
+2023-07-18 19:14:06.883 INFO  com.jktickets.service.PassengerService            :77   [32m1689678846840r03  [0;39m 总页数：1
+2023-07-18 19:14:06.888 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689678846840r03  [0;39m 返回结果: {"code":0,"message":"","result":{"list":[{"createTime":1688308366143,"id":1,"idCard":"12345","memberId":1,"name":"test2","type":"3","updateTime":1688481047313},{"createTime":1688308368768,"id":1675512854813478912,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308368768},{"createTime":1688308369691,"id":1675512858684821504,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308369691},{"createTime":1688308370650,"id":1675512862707159040,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308370650},{"createTime":1688308371539,"id":1675512866435895296,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308371539},{"createTime":1688308375805,"id":1675512884328796160,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308375805}],"total":6},"success":true}
+2023-07-18 19:14:06.888 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689678846840r03  [0;39m ------------- 结束 耗时：46 ms -------------
+2023-07-18 19:14:08.339 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689678848338fyi  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:14:08.339 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689678848338fyi  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:08.339 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689678848338fyi  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:08.340 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689678848338fyi  [0;39m ------------- 开始 -------------
+2023-07-18 19:14:08.340 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689678848338fyi  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/delete/1675512854813478912 DELETE
+2023-07-18 19:14:08.340 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689678848338fyi  [0;39m 类名方法: com.jktickets.controller.PassengerController.deleteById
+2023-07-18 19:14:08.341 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689678848338fyi  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:14:08.341 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689678848338fyi  [0;39m 请求参数: [1675512854813478912]
+2023-07-18 19:14:08.341 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689678848338fyi  [0;39m 执行SQL:  deleteByPrimaryKey | execution(int com.jktickets.mapper.PassengerMapper.deleteByPrimaryKey(Long))
+2023-07-18 19:14:08.342 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689678848338fyi  [0;39m 参数值: 1675512854813478912
+2023-07-18 19:14:08.443 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689678848338fyi  [0;39m SQL执行完成: deleteByPrimaryKey | execution(int com.jktickets.mapper.PassengerMapper.deleteByPrimaryKey(Long))
+2023-07-18 19:14:08.443 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689678848338fyi  [0;39m 返回结果: {"code":0,"message":"","result":"删除乘客成功","success":true}
+2023-07-18 19:14:08.444 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689678848338fyi  [0;39m ------------- 结束 耗时：104 ms -------------
+2023-07-18 19:14:08.510 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689678848510jq3  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:14:08.511 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689678848510jq3  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:08.512 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689678848510jq3  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:08.513 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689678848510jq3  [0;39m ------------- 开始 -------------
+2023-07-18 19:14:08.513 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689678848510jq3  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryList GET
+2023-07-18 19:14:08.513 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689678848510jq3  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryPassengerList
+2023-07-18 19:14:08.514 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689678848510jq3  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:14:08.514 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689678848510jq3  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-07-18 19:14:08.514 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689678848510jq3  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:14:08.515 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689678848510jq3  [0;39m 参数值: com.jktickets.domain.PassengerExample@f1362ef
+2023-07-18 19:14:08.556 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689678848510jq3  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:14:08.556 INFO  com.jktickets.service.PassengerService            :76   [32m1689678848510jq3  [0;39m 总行数：5
+2023-07-18 19:14:08.556 INFO  com.jktickets.service.PassengerService            :77   [32m1689678848510jq3  [0;39m 总页数：1
+2023-07-18 19:14:08.557 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689678848510jq3  [0;39m 返回结果: {"code":0,"message":"","result":{"list":[{"createTime":1688308366143,"id":1,"idCard":"12345","memberId":1,"name":"test2","type":"3","updateTime":1688481047313},{"createTime":1688308369691,"id":1675512858684821504,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308369691},{"createTime":1688308370650,"id":1675512862707159040,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308370650},{"createTime":1688308371539,"id":1675512866435895296,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308371539},{"createTime":1688308375805,"id":1675512884328796160,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308375805}],"total":5},"success":true}
+2023-07-18 19:14:08.558 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689678848510jq3  [0;39m ------------- 结束 耗时：45 ms -------------
+2023-07-18 19:14:10.609 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689678850609eoe  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:14:10.610 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689678850609eoe  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:10.611 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689678850609eoe  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:10.611 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689678850609eoe  [0;39m ------------- 开始 -------------
+2023-07-18 19:14:10.612 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689678850609eoe  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/delete/1675512858684821504 DELETE
+2023-07-18 19:14:10.613 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689678850609eoe  [0;39m 类名方法: com.jktickets.controller.PassengerController.deleteById
+2023-07-18 19:14:10.613 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689678850609eoe  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:14:10.613 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689678850609eoe  [0;39m 请求参数: [1675512858684821504]
+2023-07-18 19:14:10.614 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689678850609eoe  [0;39m 执行SQL:  deleteByPrimaryKey | execution(int com.jktickets.mapper.PassengerMapper.deleteByPrimaryKey(Long))
+2023-07-18 19:14:10.614 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689678850609eoe  [0;39m 参数值: 1675512858684821504
+2023-07-18 19:14:10.668 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689678850609eoe  [0;39m SQL执行完成: deleteByPrimaryKey | execution(int com.jktickets.mapper.PassengerMapper.deleteByPrimaryKey(Long))
+2023-07-18 19:14:10.668 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689678850609eoe  [0;39m 返回结果: {"code":0,"message":"","result":"删除乘客成功","success":true}
+2023-07-18 19:14:10.669 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689678850609eoe  [0;39m ------------- 结束 耗时：58 ms -------------
+2023-07-18 19:14:10.737 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m16896788507377k7  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:14:10.738 INFO  com.jktickets.utils.JwtUtil                       :64   [32m16896788507377k7  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:10.739 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m16896788507377k7  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:10.740 INFO  com.jktickets.aspect.LogAspect                    :57   [32m16896788507377k7  [0;39m ------------- 开始 -------------
+2023-07-18 19:14:10.740 INFO  com.jktickets.aspect.LogAspect                    :58   [32m16896788507377k7  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryList GET
+2023-07-18 19:14:10.740 INFO  com.jktickets.aspect.LogAspect                    :59   [32m16896788507377k7  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryPassengerList
+2023-07-18 19:14:10.741 INFO  com.jktickets.aspect.LogAspect                    :60   [32m16896788507377k7  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:14:10.741 INFO  com.jktickets.aspect.LogAspect                    :82   [32m16896788507377k7  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-07-18 19:14:10.741 INFO  com.jktickets.aspect.LogAspect                    :106  [32m16896788507377k7  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:14:10.741 INFO  com.jktickets.aspect.LogAspect                    :111  [32m16896788507377k7  [0;39m 参数值: com.jktickets.domain.PassengerExample@13b2c8e4
+2023-07-18 19:14:10.778 INFO  com.jktickets.aspect.LogAspect                    :120  [32m16896788507377k7  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:14:10.779 INFO  com.jktickets.service.PassengerService            :76   [32m16896788507377k7  [0;39m 总行数：4
+2023-07-18 19:14:10.779 INFO  com.jktickets.service.PassengerService            :77   [32m16896788507377k7  [0;39m 总页数：1
+2023-07-18 19:14:10.780 INFO  com.jktickets.aspect.LogAspect                    :94   [32m16896788507377k7  [0;39m 返回结果: {"code":0,"message":"","result":{"list":[{"createTime":1688308366143,"id":1,"idCard":"12345","memberId":1,"name":"test2","type":"3","updateTime":1688481047313},{"createTime":1688308370650,"id":1675512862707159040,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308370650},{"createTime":1688308371539,"id":1675512866435895296,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308371539},{"createTime":1688308375805,"id":1675512884328796160,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308375805}],"total":4},"success":true}
+2023-07-18 19:14:10.781 INFO  com.jktickets.aspect.LogAspect                    :95   [32m16896788507377k7  [0;39m ------------- 结束 耗时：41 ms -------------
+2023-07-18 19:14:13.601 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689678853601o2n  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:14:13.602 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689678853601o2n  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:13.602 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689678853601o2n  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:13.603 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689678853601o2n  [0;39m ------------- 开始 -------------
+2023-07-18 19:14:13.603 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689678853601o2n  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/delete/1675512862707159040 DELETE
+2023-07-18 19:14:13.603 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689678853601o2n  [0;39m 类名方法: com.jktickets.controller.PassengerController.deleteById
+2023-07-18 19:14:13.604 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689678853601o2n  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:14:13.604 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689678853601o2n  [0;39m 请求参数: [1675512862707159040]
+2023-07-18 19:14:13.604 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689678853601o2n  [0;39m 执行SQL:  deleteByPrimaryKey | execution(int com.jktickets.mapper.PassengerMapper.deleteByPrimaryKey(Long))
+2023-07-18 19:14:13.605 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689678853601o2n  [0;39m 参数值: 1675512862707159040
+2023-07-18 19:14:13.657 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689678853601o2n  [0;39m SQL执行完成: deleteByPrimaryKey | execution(int com.jktickets.mapper.PassengerMapper.deleteByPrimaryKey(Long))
+2023-07-18 19:14:13.658 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689678853601o2n  [0;39m 返回结果: {"code":0,"message":"","result":"删除乘客成功","success":true}
+2023-07-18 19:14:13.658 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689678853601o2n  [0;39m ------------- 结束 耗时：55 ms -------------
+2023-07-18 19:14:13.708 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m16896788537089gm  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:14:13.709 INFO  com.jktickets.utils.JwtUtil                       :64   [32m16896788537089gm  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:13.710 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m16896788537089gm  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:13.711 INFO  com.jktickets.aspect.LogAspect                    :57   [32m16896788537089gm  [0;39m ------------- 开始 -------------
+2023-07-18 19:14:13.712 INFO  com.jktickets.aspect.LogAspect                    :58   [32m16896788537089gm  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryList GET
+2023-07-18 19:14:13.712 INFO  com.jktickets.aspect.LogAspect                    :59   [32m16896788537089gm  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryPassengerList
+2023-07-18 19:14:13.713 INFO  com.jktickets.aspect.LogAspect                    :60   [32m16896788537089gm  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:14:13.713 INFO  com.jktickets.aspect.LogAspect                    :82   [32m16896788537089gm  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-07-18 19:14:13.713 INFO  com.jktickets.aspect.LogAspect                    :106  [32m16896788537089gm  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:14:13.713 INFO  com.jktickets.aspect.LogAspect                    :111  [32m16896788537089gm  [0;39m 参数值: com.jktickets.domain.PassengerExample@7b3a2de0
+2023-07-18 19:14:13.750 INFO  com.jktickets.aspect.LogAspect                    :120  [32m16896788537089gm  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:14:13.751 INFO  com.jktickets.service.PassengerService            :76   [32m16896788537089gm  [0;39m 总行数：3
+2023-07-18 19:14:13.751 INFO  com.jktickets.service.PassengerService            :77   [32m16896788537089gm  [0;39m 总页数：1
+2023-07-18 19:14:13.752 INFO  com.jktickets.aspect.LogAspect                    :94   [32m16896788537089gm  [0;39m 返回结果: {"code":0,"message":"","result":{"list":[{"createTime":1688308366143,"id":1,"idCard":"12345","memberId":1,"name":"test2","type":"3","updateTime":1688481047313},{"createTime":1688308371539,"id":1675512866435895296,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308371539},{"createTime":1688308375805,"id":1675512884328796160,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308375805}],"total":3},"success":true}
+2023-07-18 19:14:13.753 INFO  com.jktickets.aspect.LogAspect                    :95   [32m16896788537089gm  [0;39m ------------- 结束 耗时：42 ms -------------
+2023-07-18 19:14:17.954 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m16896788579548f2  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:14:17.954 INFO  com.jktickets.utils.JwtUtil                       :64   [32m16896788579548f2  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:17.955 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m16896788579548f2  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:17.955 INFO  com.jktickets.aspect.LogAspect                    :57   [32m16896788579548f2  [0;39m ------------- 开始 -------------
+2023-07-18 19:14:17.955 INFO  com.jktickets.aspect.LogAspect                    :58   [32m16896788579548f2  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/delete/1675512866435895296 DELETE
+2023-07-18 19:14:17.955 INFO  com.jktickets.aspect.LogAspect                    :59   [32m16896788579548f2  [0;39m 类名方法: com.jktickets.controller.PassengerController.deleteById
+2023-07-18 19:14:17.956 INFO  com.jktickets.aspect.LogAspect                    :60   [32m16896788579548f2  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:14:17.956 INFO  com.jktickets.aspect.LogAspect                    :82   [32m16896788579548f2  [0;39m 请求参数: [1675512866435895296]
+2023-07-18 19:14:17.956 INFO  com.jktickets.aspect.LogAspect                    :106  [32m16896788579548f2  [0;39m 执行SQL:  deleteByPrimaryKey | execution(int com.jktickets.mapper.PassengerMapper.deleteByPrimaryKey(Long))
+2023-07-18 19:14:17.956 INFO  com.jktickets.aspect.LogAspect                    :111  [32m16896788579548f2  [0;39m 参数值: 1675512866435895296
+2023-07-18 19:14:18.039 INFO  com.jktickets.aspect.LogAspect                    :120  [32m16896788579548f2  [0;39m SQL执行完成: deleteByPrimaryKey | execution(int com.jktickets.mapper.PassengerMapper.deleteByPrimaryKey(Long))
+2023-07-18 19:14:18.040 INFO  com.jktickets.aspect.LogAspect                    :94   [32m16896788579548f2  [0;39m 返回结果: {"code":0,"message":"","result":"删除乘客成功","success":true}
+2023-07-18 19:14:18.040 INFO  com.jktickets.aspect.LogAspect                    :95   [32m16896788579548f2  [0;39m ------------- 结束 耗时：85 ms -------------
+2023-07-18 19:14:18.080 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689678858080ib9  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:14:18.081 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689678858080ib9  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:18.081 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689678858080ib9  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:18.082 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689678858080ib9  [0;39m ------------- 开始 -------------
+2023-07-18 19:14:18.082 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689678858080ib9  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryList GET
+2023-07-18 19:14:18.082 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689678858080ib9  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryPassengerList
+2023-07-18 19:14:18.083 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689678858080ib9  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:14:18.083 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689678858080ib9  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-07-18 19:14:18.083 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689678858080ib9  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:14:18.083 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689678858080ib9  [0;39m 参数值: com.jktickets.domain.PassengerExample@263d1880
+2023-07-18 19:14:18.121 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689678858080ib9  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:14:18.121 INFO  com.jktickets.service.PassengerService            :76   [32m1689678858080ib9  [0;39m 总行数：2
+2023-07-18 19:14:18.121 INFO  com.jktickets.service.PassengerService            :77   [32m1689678858080ib9  [0;39m 总页数：1
+2023-07-18 19:14:18.122 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689678858080ib9  [0;39m 返回结果: {"code":0,"message":"","result":{"list":[{"createTime":1688308366143,"id":1,"idCard":"12345","memberId":1,"name":"test2","type":"3","updateTime":1688481047313},{"createTime":1688308375805,"id":1675512884328796160,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308375805}],"total":2},"success":true}
+2023-07-18 19:14:18.122 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689678858080ib9  [0;39m ------------- 结束 耗时：40 ms -------------
+2023-07-18 19:14:29.128 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689678869128yxv  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:14:29.129 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689678869128yxv  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:29.129 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689678869128yxv  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:29.184 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689678869128yxv  [0;39m ------------- 开始 -------------
+2023-07-18 19:14:29.185 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689678869128yxv  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/save POST
+2023-07-18 19:14:29.185 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689678869128yxv  [0;39m 类名方法: com.jktickets.controller.PassengerController.savePassenger
+2023-07-18 19:14:29.186 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689678869128yxv  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:14:29.191 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689678869128yxv  [0;39m 请求参数: [{"createTime":1688308366000,"id":1,"idCard":"654","memberId":1,"name":"test","type":"3","updateTime":1688481047000}]
+2023-07-18 19:14:29.192 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689678869128yxv  [0;39m 执行SQL:  updateByPrimaryKeySelective | execution(int com.jktickets.mapper.PassengerMapper.updateByPrimaryKeySelective(Passenger))
+2023-07-18 19:14:29.193 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689678869128yxv  [0;39m 参数值: Passenger [Hash = 743666311, id=1, memberId=1, name=test, idCard=654, type=3, createTime=Sun Jul 02 22:32:46 CST 2023, updateTime=2023-07-18 19:14:29]
+2023-07-18 19:14:29.249 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689678869128yxv  [0;39m SQL执行完成: updateByPrimaryKeySelective | execution(int com.jktickets.mapper.PassengerMapper.updateByPrimaryKeySelective(Passenger))
+2023-07-18 19:14:29.249 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689678869128yxv  [0;39m 返回结果: {"code":0,"message":"","result":"编辑乘客成功","success":true}
+2023-07-18 19:14:29.249 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689678869128yxv  [0;39m ------------- 结束 耗时：65 ms -------------
+2023-07-18 19:14:29.301 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689678869300bms  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:14:29.302 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689678869300bms  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:29.302 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689678869300bms  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:29.303 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689678869300bms  [0;39m ------------- 开始 -------------
+2023-07-18 19:14:29.303 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689678869300bms  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryList GET
+2023-07-18 19:14:29.304 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689678869300bms  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryPassengerList
+2023-07-18 19:14:29.304 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689678869300bms  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:14:29.304 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689678869300bms  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-07-18 19:14:29.305 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689678869300bms  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:14:29.305 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689678869300bms  [0;39m 参数值: com.jktickets.domain.PassengerExample@68596bb4
+2023-07-18 19:14:29.341 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689678869300bms  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:14:29.342 INFO  com.jktickets.service.PassengerService            :76   [32m1689678869300bms  [0;39m 总行数：2
+2023-07-18 19:14:29.342 INFO  com.jktickets.service.PassengerService            :77   [32m1689678869300bms  [0;39m 总页数：1
+2023-07-18 19:14:29.343 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689678869300bms  [0;39m 返回结果: {"code":0,"message":"","result":{"list":[{"createTime":1688308366000,"id":1,"idCard":"654","memberId":1,"name":"test","type":"3","updateTime":1689678869192},{"createTime":1688308375805,"id":1675512884328796160,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308375805}],"total":2},"success":true}
+2023-07-18 19:14:29.345 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689678869300bms  [0;39m ------------- 结束 耗时：42 ms -------------
+2023-07-18 19:14:57.888 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689678897888rdr  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:14:57.889 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689678897888rdr  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:57.889 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689678897888rdr  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:57.903 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689678897903rk6  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:14:57.903 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689678897903rk6  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:14:57.903 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689678897903rk6  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:15:13.843 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689678913843doo  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:15:13.844 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689678913843doo  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:15:13.844 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689678913843doo  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:15:13.853 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689678913853s2z  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:15:13.853 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689678913853s2z  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:15:13.853 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689678913853s2z  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:16:16.558 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m16896789765583su  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:16:16.559 INFO  com.jktickets.utils.JwtUtil                       :64   [32m16896789765583su  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:16:16.559 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m16896789765583su  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:16:16.562 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m16896789765620pu  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:16:16.563 INFO  com.jktickets.utils.JwtUtil                       :64   [32m16896789765620pu  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:16:16.563 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m16896789765620pu  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:27:10.286 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689679630286svt  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:27:10.287 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689679630286svt  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:27:10.287 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689679630286svt  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:27:10.292 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689679630292nix  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:27:10.292 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689679630292nix  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:27:10.293 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689679630292nix  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:27:20.876 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689679640876ly7  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:27:20.877 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689679640876ly7  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:27:20.877 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689679640876ly7  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:27:20.880 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689679640880x92  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:27:20.881 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689679640880x92  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:27:20.881 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689679640880x92  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:29:23.209 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-07-18 19:29:23.216 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-07-18 19:29:31.552 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-18 19:29:31.592 INFO  com.jktickets.MemberApplication                   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.3 with PID 9556 (D:\Project\java\jk-tickets\member-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-18 19:29:31.593 INFO  com.jktickets.MemberApplication                   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-18 19:29:31.642 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-18 19:29:31.643 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-18 19:29:32.541 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=52ef56ae-ef40-39b4-a425-4bd1c816e46f
+2023-07-18 19:29:33.360 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-07-18 19:29:33.370 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-07-18 19:29:33.371 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-18 19:29:33.371 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-18 19:29:33.435 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-18 19:29:33.436 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1793 ms
+2023-07-18 19:29:34.397 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-18 19:29:34.686 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-07-18 19:29:35.111 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-07-18 19:29:35.139 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-07-18 19:29:35.497 INFO  com.jktickets.MemberApplication                   :57   [32m                  [0;39m Started MemberApplication in 4.976 seconds (process running for 5.823)
+2023-07-18 19:29:35.500 INFO  com.jktickets.MemberApplication                   :22   [32m                  [0;39m 启动成功！！
+2023-07-18 19:29:35.500 INFO  com.jktickets.MemberApplication                   :24   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
+2023-07-18 19:29:46.927 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-18 19:29:46.928 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-18 19:29:46.930 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
+2023-07-18 19:29:46.981 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689679786969etb  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:29:47.325 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689679786969etb  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:29:47.330 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689679786969etb  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:29:47.399 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689679786969etb  [0;39m ------------- 开始 -------------
+2023-07-18 19:29:47.401 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689679786969etb  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryMine GET
+2023-07-18 19:29:47.401 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689679786969etb  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryMine
+2023-07-18 19:29:47.401 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689679786969etb  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:29:47.449 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689679786969etb  [0;39m 请求参数: []
+2023-07-18 19:29:47.452 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689679786969etb  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:29:47.452 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689679786969etb  [0;39m 参数值: com.jktickets.domain.PassengerExample@17d814c1
+2023-07-18 19:29:47.519 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1689679786969etb  [0;39m HikariPool-1 - Starting...
+2023-07-18 19:29:47.930 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1689679786969etb  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d99aa3a
+2023-07-18 19:29:47.933 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1689679786969etb  [0;39m HikariPool-1 - Start completed.
+2023-07-18 19:29:47.999 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689679786969etb  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:29:48.023 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689679786969etb  [0;39m 返回结果: {"code":0,"message":"","result":[],"success":true}
+2023-07-18 19:29:48.024 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689679786969etb  [0;39m ------------- 结束 耗时：626 ms -------------
+2023-07-18 19:30:50.902 INFO  com.jktickets.aspect.LogAspect                    :57   [32m16896798509023zh  [0;39m ------------- 开始 -------------
+2023-07-18 19:30:50.903 INFO  com.jktickets.aspect.LogAspect                    :58   [32m16896798509023zh  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryMine GET
+2023-07-18 19:30:50.904 INFO  com.jktickets.aspect.LogAspect                    :59   [32m16896798509023zh  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryMine
+2023-07-18 19:30:50.904 INFO  com.jktickets.aspect.LogAspect                    :60   [32m16896798509023zh  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:30:50.905 INFO  com.jktickets.aspect.LogAspect                    :82   [32m16896798509023zh  [0;39m 请求参数: []
+2023-07-18 19:30:50.905 ERROR com.jktickets.context.LoginMemberContext          :26   [32m16896798509023zh  [0;39m 获取登录会员信息异常
+java.lang.NullPointerException: Cannot invoke "com.jktickets.res.MemberLoginRes.getId()" because the return value of "java.lang.ThreadLocal.get()" is null
+	at com.jktickets.context.LoginMemberContext.getId(LoginMemberContext.java:24)
+	at com.jktickets.service.impl.PassengerServiceImpl.queryMine(PassengerServiceImpl.java:105)
+	at com.jktickets.controller.PassengerController.queryMine(PassengerController.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.jktickets.aspect.LogAspect.doAround(LogAspect.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.jktickets.controller.PassengerController$$SpringCGLIB$$0.queryMine(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:895)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-18 19:30:50.945 ERROR c.jktickets.exception.ControllerExceptionHandler  :32   [32m16896798509023zh  [0;39m 系统异常：
+java.lang.NullPointerException: Cannot invoke "com.jktickets.res.MemberLoginRes.getId()" because the return value of "java.lang.ThreadLocal.get()" is null
+	at com.jktickets.context.LoginMemberContext.getId(LoginMemberContext.java:24)
+	at com.jktickets.service.impl.PassengerServiceImpl.queryMine(PassengerServiceImpl.java:105)
+	at com.jktickets.controller.PassengerController.queryMine(PassengerController.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.jktickets.aspect.LogAspect.doAround(LogAspect.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.jktickets.controller.PassengerController$$SpringCGLIB$$0.queryMine(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:895)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-18 19:30:50.950 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m16896798509023zh  [0;39m Resolved [java.lang.NullPointerException: Cannot invoke "com.jktickets.res.MemberLoginRes.getId()" because the return value of "java.lang.ThreadLocal.get()" is null]
+2023-07-18 19:31:22.675 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689679882675uiy  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:31:22.676 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689679882675uiy  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:31:22.676 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689679882675uiy  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:31:22.677 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689679882675uiy  [0;39m ------------- 开始 -------------
+2023-07-18 19:31:22.677 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689679882675uiy  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryMine GET
+2023-07-18 19:31:22.678 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689679882675uiy  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryMine
+2023-07-18 19:31:22.678 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689679882675uiy  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:31:22.679 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689679882675uiy  [0;39m 请求参数: []
+2023-07-18 19:31:22.679 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689679882675uiy  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:31:22.680 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689679882675uiy  [0;39m 参数值: com.jktickets.domain.PassengerExample@f5a473a
+2023-07-18 19:31:22.715 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689679882675uiy  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:31:22.716 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689679882675uiy  [0;39m 返回结果: {"code":0,"message":"","result":[],"success":true}
+2023-07-18 19:31:22.716 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689679882675uiy  [0;39m ------------- 结束 耗时：39 ms -------------
+2023-07-18 19:32:20.610 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689679940610cui  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:32:20.612 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689679940610cui  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:20.613 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689679940610cui  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:20.716 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689679940610cui  [0;39m ------------- 开始 -------------
+2023-07-18 19:32:20.717 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689679940610cui  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryList GET
+2023-07-18 19:32:20.717 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689679940610cui  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryPassengerList
+2023-07-18 19:32:20.718 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689679940610cui  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:32:20.722 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689679940610cui  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-07-18 19:32:20.724 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689679940610cui  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:32:20.725 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689679940610cui  [0;39m 参数值: com.jktickets.domain.PassengerExample@2be40854
+2023-07-18 19:32:20.851 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689679940610cui  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:32:20.853 INFO  com.jktickets.service.PassengerService            :76   [32m1689679940610cui  [0;39m 总行数：2
+2023-07-18 19:32:20.854 INFO  com.jktickets.service.PassengerService            :77   [32m1689679940610cui  [0;39m 总页数：1
+2023-07-18 19:32:20.872 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689679940610cui  [0;39m 返回结果: {"code":0,"message":"","result":{"list":[{"createTime":1688308366000,"id":1,"idCard":"654","memberId":1,"name":"test","type":"3","updateTime":1689678869192},{"createTime":1688308375805,"id":1675512884328796160,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308375805}],"total":2},"success":true}
+2023-07-18 19:32:20.873 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689679940610cui  [0;39m ------------- 结束 耗时：157 ms -------------
+2023-07-18 19:32:24.088 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m168967994408871j  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:32:24.088 INFO  com.jktickets.utils.JwtUtil                       :64   [32m168967994408871j  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:24.089 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m168967994408871j  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:24.091 INFO  com.jktickets.aspect.LogAspect                    :57   [32m168967994408871j  [0;39m ------------- 开始 -------------
+2023-07-18 19:32:24.091 INFO  com.jktickets.aspect.LogAspect                    :58   [32m168967994408871j  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/delete/1 DELETE
+2023-07-18 19:32:24.092 INFO  com.jktickets.aspect.LogAspect                    :59   [32m168967994408871j  [0;39m 类名方法: com.jktickets.controller.PassengerController.deleteById
+2023-07-18 19:32:24.092 INFO  com.jktickets.aspect.LogAspect                    :60   [32m168967994408871j  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:32:24.092 INFO  com.jktickets.aspect.LogAspect                    :82   [32m168967994408871j  [0;39m 请求参数: [1]
+2023-07-18 19:32:24.093 INFO  com.jktickets.aspect.LogAspect                    :106  [32m168967994408871j  [0;39m 执行SQL:  deleteByPrimaryKey | execution(int com.jktickets.mapper.PassengerMapper.deleteByPrimaryKey(Long))
+2023-07-18 19:32:24.093 INFO  com.jktickets.aspect.LogAspect                    :111  [32m168967994408871j  [0;39m 参数值: 1
+2023-07-18 19:32:24.405 INFO  com.jktickets.aspect.LogAspect                    :120  [32m168967994408871j  [0;39m SQL执行完成: deleteByPrimaryKey | execution(int com.jktickets.mapper.PassengerMapper.deleteByPrimaryKey(Long))
+2023-07-18 19:32:24.406 INFO  com.jktickets.aspect.LogAspect                    :94   [32m168967994408871j  [0;39m 返回结果: {"code":0,"message":"","result":"删除乘客成功","success":true}
+2023-07-18 19:32:24.406 INFO  com.jktickets.aspect.LogAspect                    :95   [32m168967994408871j  [0;39m ------------- 结束 耗时：315 ms -------------
+2023-07-18 19:32:24.463 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689679944463cbw  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:32:24.463 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689679944463cbw  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:24.464 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689679944463cbw  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:24.465 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689679944463cbw  [0;39m ------------- 开始 -------------
+2023-07-18 19:32:24.466 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689679944463cbw  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryList GET
+2023-07-18 19:32:24.466 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689679944463cbw  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryPassengerList
+2023-07-18 19:32:24.467 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689679944463cbw  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:32:24.467 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689679944463cbw  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-07-18 19:32:24.468 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689679944463cbw  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:32:24.468 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689679944463cbw  [0;39m 参数值: com.jktickets.domain.PassengerExample@1d766f90
+2023-07-18 19:32:24.504 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689679944463cbw  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:32:24.505 INFO  com.jktickets.service.PassengerService            :76   [32m1689679944463cbw  [0;39m 总行数：1
+2023-07-18 19:32:24.505 INFO  com.jktickets.service.PassengerService            :77   [32m1689679944463cbw  [0;39m 总页数：1
+2023-07-18 19:32:24.506 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689679944463cbw  [0;39m 返回结果: {"code":0,"message":"","result":{"list":[{"createTime":1688308375805,"id":1675512884328796160,"idCard":"12345","memberId":1,"name":"test2","type":"1","updateTime":1688308375805}],"total":1},"success":true}
+2023-07-18 19:32:24.507 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689679944463cbw  [0;39m ------------- 结束 耗时：42 ms -------------
+2023-07-18 19:32:25.750 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689679945750pqt  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:32:25.751 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689679945750pqt  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:25.751 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689679945750pqt  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:25.752 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689679945750pqt  [0;39m ------------- 开始 -------------
+2023-07-18 19:32:25.753 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689679945750pqt  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/delete/1675512884328796160 DELETE
+2023-07-18 19:32:25.753 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689679945750pqt  [0;39m 类名方法: com.jktickets.controller.PassengerController.deleteById
+2023-07-18 19:32:25.754 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689679945750pqt  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:32:25.754 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689679945750pqt  [0;39m 请求参数: [1675512884328796160]
+2023-07-18 19:32:25.755 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689679945750pqt  [0;39m 执行SQL:  deleteByPrimaryKey | execution(int com.jktickets.mapper.PassengerMapper.deleteByPrimaryKey(Long))
+2023-07-18 19:32:25.755 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689679945750pqt  [0;39m 参数值: 1675512884328796160
+2023-07-18 19:32:25.801 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689679945750pqt  [0;39m SQL执行完成: deleteByPrimaryKey | execution(int com.jktickets.mapper.PassengerMapper.deleteByPrimaryKey(Long))
+2023-07-18 19:32:25.801 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689679945750pqt  [0;39m 返回结果: {"code":0,"message":"","result":"删除乘客成功","success":true}
+2023-07-18 19:32:25.801 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689679945750pqt  [0;39m ------------- 结束 耗时：49 ms -------------
+2023-07-18 19:32:25.840 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689679945840vdw  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:32:25.841 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689679945840vdw  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:25.842 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689679945840vdw  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:25.843 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689679945840vdw  [0;39m ------------- 开始 -------------
+2023-07-18 19:32:25.843 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689679945840vdw  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryList GET
+2023-07-18 19:32:25.844 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689679945840vdw  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryPassengerList
+2023-07-18 19:32:25.844 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689679945840vdw  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:32:25.845 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689679945840vdw  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-07-18 19:32:25.845 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689679945840vdw  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:32:25.846 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689679945840vdw  [0;39m 参数值: com.jktickets.domain.PassengerExample@7dc99a31
+2023-07-18 19:32:25.866 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689679945840vdw  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:32:25.866 INFO  com.jktickets.service.PassengerService            :76   [32m1689679945840vdw  [0;39m 总行数：0
+2023-07-18 19:32:25.866 INFO  com.jktickets.service.PassengerService            :77   [32m1689679945840vdw  [0;39m 总页数：0
+2023-07-18 19:32:25.866 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689679945840vdw  [0;39m 返回结果: {"code":0,"message":"","result":{"list":[],"total":0},"success":true}
+2023-07-18 19:32:25.867 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689679945840vdw  [0;39m ------------- 结束 耗时：24 ms -------------
+2023-07-18 19:32:34.926 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689679954926gf1  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:32:34.927 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689679954926gf1  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:34.927 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689679954926gf1  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:34.993 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689679954926gf1  [0;39m ------------- 开始 -------------
+2023-07-18 19:32:34.994 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689679954926gf1  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/save POST
+2023-07-18 19:32:34.994 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689679954926gf1  [0;39m 类名方法: com.jktickets.controller.PassengerController.savePassenger
+2023-07-18 19:32:34.995 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689679954926gf1  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:32:35.000 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689679954926gf1  [0;39m 请求参数: [{"idCard":"1","name":"测试","type":"1"}]
+2023-07-18 19:32:35.056 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689679954926gf1  [0;39m 执行SQL:  insert | execution(int com.jktickets.mapper.PassengerMapper.insert(Passenger))
+2023-07-18 19:32:35.060 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689679954926gf1  [0;39m 参数值: Passenger [Hash = 304849222, id=1681265704667582464, memberId=1680932902797447168, name=测试, idCard=1, type=1, createTime=2023-07-18 19:32:35, updateTime=2023-07-18 19:32:35]
+2023-07-18 19:32:35.117 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689679954926gf1  [0;39m SQL执行完成: insert | execution(int com.jktickets.mapper.PassengerMapper.insert(Passenger))
+2023-07-18 19:32:35.117 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689679954926gf1  [0;39m 返回结果: {"code":0,"message":"","result":"添加乘客成功","success":true}
+2023-07-18 19:32:35.118 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689679954926gf1  [0;39m ------------- 结束 耗时：125 ms -------------
+2023-07-18 19:32:35.192 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m16896799551929dp  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:32:35.193 INFO  com.jktickets.utils.JwtUtil                       :64   [32m16896799551929dp  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:35.193 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m16896799551929dp  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:35.194 INFO  com.jktickets.aspect.LogAspect                    :57   [32m16896799551929dp  [0;39m ------------- 开始 -------------
+2023-07-18 19:32:35.195 INFO  com.jktickets.aspect.LogAspect                    :58   [32m16896799551929dp  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryList GET
+2023-07-18 19:32:35.195 INFO  com.jktickets.aspect.LogAspect                    :59   [32m16896799551929dp  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryPassengerList
+2023-07-18 19:32:35.195 INFO  com.jktickets.aspect.LogAspect                    :60   [32m16896799551929dp  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:32:35.196 INFO  com.jktickets.aspect.LogAspect                    :82   [32m16896799551929dp  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-07-18 19:32:35.196 INFO  com.jktickets.aspect.LogAspect                    :106  [32m16896799551929dp  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:32:35.196 INFO  com.jktickets.aspect.LogAspect                    :111  [32m16896799551929dp  [0;39m 参数值: com.jktickets.domain.PassengerExample@1676f527
+2023-07-18 19:32:35.245 INFO  com.jktickets.aspect.LogAspect                    :120  [32m16896799551929dp  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:32:35.245 INFO  com.jktickets.service.PassengerService            :76   [32m16896799551929dp  [0;39m 总行数：1
+2023-07-18 19:32:35.246 INFO  com.jktickets.service.PassengerService            :77   [32m16896799551929dp  [0;39m 总页数：1
+2023-07-18 19:32:35.247 INFO  com.jktickets.aspect.LogAspect                    :94   [32m16896799551929dp  [0;39m 返回结果: {"code":0,"message":"","result":{"list":[{"createTime":1689679955003,"id":1681265704667582464,"idCard":"1","memberId":1680932902797447168,"name":"测试","type":"1","updateTime":1689679955003}],"total":1},"success":true}
+2023-07-18 19:32:35.247 INFO  com.jktickets.aspect.LogAspect                    :95   [32m16896799551929dp  [0;39m ------------- 结束 耗时：53 ms -------------
+2023-07-18 19:32:48.030 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689679968030krg  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:32:48.031 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689679968030krg  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:48.032 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689679968030krg  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:48.033 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689679968030krg  [0;39m ------------- 开始 -------------
+2023-07-18 19:32:48.034 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689679968030krg  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/save POST
+2023-07-18 19:32:48.035 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689679968030krg  [0;39m 类名方法: com.jktickets.controller.PassengerController.savePassenger
+2023-07-18 19:32:48.035 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689679968030krg  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:32:48.035 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689679968030krg  [0;39m 请求参数: [{"idCard":"123","name":"测试33","type":"2"}]
+2023-07-18 19:32:48.036 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689679968030krg  [0;39m 执行SQL:  insert | execution(int com.jktickets.mapper.PassengerMapper.insert(Passenger))
+2023-07-18 19:32:48.036 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689679968030krg  [0;39m 参数值: Passenger [Hash = 436125665, id=1681265759105454080, memberId=1680932902797447168, name=测试33, idCard=123, type=2, createTime=2023-07-18 19:32:48, updateTime=2023-07-18 19:32:48]
+2023-07-18 19:32:48.086 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689679968030krg  [0;39m SQL执行完成: insert | execution(int com.jktickets.mapper.PassengerMapper.insert(Passenger))
+2023-07-18 19:32:48.087 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689679968030krg  [0;39m 返回结果: {"code":0,"message":"","result":"添加乘客成功","success":true}
+2023-07-18 19:32:48.087 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689679968030krg  [0;39m ------------- 结束 耗时：54 ms -------------
+2023-07-18 19:32:48.167 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689679968167oma  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:32:48.167 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689679968167oma  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:48.167 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689679968167oma  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:48.168 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689679968167oma  [0;39m ------------- 开始 -------------
+2023-07-18 19:32:48.168 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689679968167oma  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryList GET
+2023-07-18 19:32:48.169 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689679968167oma  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryPassengerList
+2023-07-18 19:32:48.169 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689679968167oma  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:32:48.170 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689679968167oma  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-07-18 19:32:48.170 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689679968167oma  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:32:48.170 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689679968167oma  [0;39m 参数值: com.jktickets.domain.PassengerExample@71aa2591
+2023-07-18 19:32:48.207 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689679968167oma  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:32:48.208 INFO  com.jktickets.service.PassengerService            :76   [32m1689679968167oma  [0;39m 总行数：2
+2023-07-18 19:32:48.208 INFO  com.jktickets.service.PassengerService            :77   [32m1689679968167oma  [0;39m 总页数：1
+2023-07-18 19:32:48.209 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689679968167oma  [0;39m 返回结果: {"code":0,"message":"","result":{"list":[{"createTime":1689679955003,"id":1681265704667582464,"idCard":"1","memberId":1680932902797447168,"name":"测试","type":"1","updateTime":1689679955003},{"createTime":1689679968035,"id":1681265759105454080,"idCard":"123","memberId":1680932902797447168,"name":"测试33","type":"2","updateTime":1689679968035}],"total":2},"success":true}
+2023-07-18 19:32:48.209 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689679968167oma  [0;39m ------------- 结束 耗时：41 ms -------------
+2023-07-18 19:32:52.053 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689679972053rhz  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:32:52.054 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689679972053rhz  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:52.054 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689679972053rhz  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:32:52.055 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689679972053rhz  [0;39m ------------- 开始 -------------
+2023-07-18 19:32:52.056 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689679972053rhz  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryMine GET
+2023-07-18 19:32:52.057 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689679972053rhz  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryMine
+2023-07-18 19:32:52.057 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689679972053rhz  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:32:52.058 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689679972053rhz  [0;39m 请求参数: []
+2023-07-18 19:32:52.058 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689679972053rhz  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:32:52.059 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689679972053rhz  [0;39m 参数值: com.jktickets.domain.PassengerExample@772b4b25
+2023-07-18 19:32:52.095 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689679972053rhz  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:32:52.097 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689679972053rhz  [0;39m 返回结果: {"code":0,"message":"","result":[{"createTime":1689679955003,"id":1681265704667582464,"idCard":"1","memberId":1680932902797447168,"name":"测试","type":"1","updateTime":1689679955003},{"createTime":1689679968035,"id":1681265759105454080,"idCard":"123","memberId":1680932902797447168,"name":"测试33","type":"2","updateTime":1689679968035}],"success":true}
+2023-07-18 19:32:52.097 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689679972053rhz  [0;39m ------------- 结束 耗时：42 ms -------------
+2023-07-18 19:54:18.285 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689681258285glz  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 19:54:18.286 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689681258285glz  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:54:18.287 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689681258285glz  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 19:54:18.300 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689681258285glz  [0;39m ------------- 开始 -------------
+2023-07-18 19:54:18.300 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689681258285glz  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryList GET
+2023-07-18 19:54:18.301 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689681258285glz  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryPassengerList
+2023-07-18 19:54:18.301 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689681258285glz  [0;39m 远程地址: 127.0.0.1
+2023-07-18 19:54:18.302 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689681258285glz  [0;39m 请求参数: [{"page":1,"size":10}]
+2023-07-18 19:54:18.302 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689681258285glz  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:54:18.302 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689681258285glz  [0;39m 参数值: com.jktickets.domain.PassengerExample@55036754
+2023-07-18 19:54:18.419 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689681258285glz  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 19:54:18.419 INFO  com.jktickets.service.PassengerService            :76   [32m1689681258285glz  [0;39m 总行数：2
+2023-07-18 19:54:18.420 INFO  com.jktickets.service.PassengerService            :77   [32m1689681258285glz  [0;39m 总页数：1
+2023-07-18 19:54:18.422 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689681258285glz  [0;39m 返回结果: {"code":0,"message":"","result":{"list":[{"createTime":1689679955003,"id":1681265704667582464,"idCard":"1","memberId":1680932902797447168,"name":"测试","type":"1","updateTime":1689679955003},{"createTime":1689679968035,"id":1681265759105454080,"idCard":"123","memberId":1680932902797447168,"name":"测试33","type":"2","updateTime":1689679968035}],"total":2},"success":true}
+2023-07-18 19:54:18.422 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689681258285glz  [0;39m ------------- 结束 耗时：122 ms -------------
+2023-07-18 20:37:36.196 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m16896838561962r4  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 20:37:36.197 INFO  com.jktickets.utils.JwtUtil                       :64   [32m16896838561962r4  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 20:37:36.198 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m16896838561962r4  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 20:37:36.198 INFO  com.jktickets.aspect.LogAspect                    :57   [32m16896838561962r4  [0;39m ------------- 开始 -------------
+2023-07-18 20:37:36.199 INFO  com.jktickets.aspect.LogAspect                    :58   [32m16896838561962r4  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryMine GET
+2023-07-18 20:37:36.199 INFO  com.jktickets.aspect.LogAspect                    :59   [32m16896838561962r4  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryMine
+2023-07-18 20:37:36.200 INFO  com.jktickets.aspect.LogAspect                    :60   [32m16896838561962r4  [0;39m 远程地址: 127.0.0.1
+2023-07-18 20:37:36.200 INFO  com.jktickets.aspect.LogAspect                    :82   [32m16896838561962r4  [0;39m 请求参数: []
+2023-07-18 20:37:36.201 INFO  com.jktickets.aspect.LogAspect                    :106  [32m16896838561962r4  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 20:37:36.201 INFO  com.jktickets.aspect.LogAspect                    :111  [32m16896838561962r4  [0;39m 参数值: com.jktickets.domain.PassengerExample@222be7c8
+2023-07-18 20:37:36.235 INFO  com.jktickets.aspect.LogAspect                    :120  [32m16896838561962r4  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 20:37:36.236 INFO  com.jktickets.aspect.LogAspect                    :94   [32m16896838561962r4  [0;39m 返回结果: {"code":0,"message":"","result":[{"createTime":1689679955003,"id":1681265704667582464,"idCard":"1","memberId":1680932902797447168,"name":"测试","type":"1","updateTime":1689679955003},{"createTime":1689679968035,"id":1681265759105454080,"idCard":"123","memberId":1680932902797447168,"name":"测试33","type":"2","updateTime":1689679968035}],"success":true}
+2023-07-18 20:37:36.237 INFO  com.jktickets.aspect.LogAspect                    :95   [32m16896838561962r4  [0;39m ------------- 结束 耗时：39 ms -------------
+2023-07-18 20:38:06.204 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1689683886204p70  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 20:38:06.205 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1689683886204p70  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 20:38:06.205 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1689683886204p70  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 20:38:06.207 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1689683886204p70  [0;39m ------------- 开始 -------------
+2023-07-18 20:38:06.207 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1689683886204p70  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryMine GET
+2023-07-18 20:38:06.207 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1689683886204p70  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryMine
+2023-07-18 20:38:06.208 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1689683886204p70  [0;39m 远程地址: 127.0.0.1
+2023-07-18 20:38:06.208 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1689683886204p70  [0;39m 请求参数: []
+2023-07-18 20:38:06.208 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1689683886204p70  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 20:38:06.208 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1689683886204p70  [0;39m 参数值: com.jktickets.domain.PassengerExample@5caac8fe
+2023-07-18 20:38:06.245 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1689683886204p70  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 20:38:06.249 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1689683886204p70  [0;39m 返回结果: {"code":0,"message":"","result":[{"createTime":1689679955003,"id":1681265704667582464,"idCard":"1","memberId":1680932902797447168,"name":"测试","type":"1","updateTime":1689679955003},{"createTime":1689679968035,"id":1681265759105454080,"idCard":"123","memberId":1680932902797447168,"name":"测试33","type":"2","updateTime":1689679968035}],"success":true}
+2023-07-18 20:38:06.249 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1689683886204p70  [0;39m ------------- 结束 耗时：43 ms -------------
+2023-07-18 20:38:11.259 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m16896838912597nd  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2ODk2Nzg4MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY4OTc2NTIzMywiaWF0IjoxNjg5Njc4ODMzfQ.twu7-JXiUQdY5hwD6oCuwvAM4Jk-swDhCQ7Oi6Qe3WM
+2023-07-18 20:38:11.260 INFO  com.jktickets.utils.JwtUtil                       :64   [32m16896838912597nd  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 20:38:11.260 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m16896838912597nd  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-18 20:38:11.262 INFO  com.jktickets.aspect.LogAspect                    :57   [32m16896838912597nd  [0;39m ------------- 开始 -------------
+2023-07-18 20:38:11.262 INFO  com.jktickets.aspect.LogAspect                    :58   [32m16896838912597nd  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryMine GET
+2023-07-18 20:38:11.262 INFO  com.jktickets.aspect.LogAspect                    :59   [32m16896838912597nd  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryMine
+2023-07-18 20:38:11.262 INFO  com.jktickets.aspect.LogAspect                    :60   [32m16896838912597nd  [0;39m 远程地址: 127.0.0.1
+2023-07-18 20:38:11.262 INFO  com.jktickets.aspect.LogAspect                    :82   [32m16896838912597nd  [0;39m 请求参数: []
+2023-07-18 20:38:11.263 INFO  com.jktickets.aspect.LogAspect                    :106  [32m16896838912597nd  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 20:38:11.264 INFO  com.jktickets.aspect.LogAspect                    :111  [32m16896838912597nd  [0;39m 参数值: com.jktickets.domain.PassengerExample@26684198
+2023-07-18 20:38:11.299 INFO  com.jktickets.aspect.LogAspect                    :120  [32m16896838912597nd  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-18 20:38:11.302 INFO  com.jktickets.aspect.LogAspect                    :94   [32m16896838912597nd  [0;39m 返回结果: {"code":0,"message":"","result":[{"createTime":1689679955003,"id":1681265704667582464,"idCard":"1","memberId":1680932902797447168,"name":"测试","type":"1","updateTime":1689679955003},{"createTime":1689679968035,"id":1681265759105454080,"idCard":"123","memberId":1680932902797447168,"name":"测试33","type":"2","updateTime":1689679968035}],"success":true}
+2023-07-18 20:38:11.302 INFO  com.jktickets.aspect.LogAspect                    :95   [32m16896838912597nd  [0;39m ------------- 结束 耗时：40 ms -------------

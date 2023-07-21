@@ -1,4 +1,4 @@
-package com.jktickets.controller.admin;
+package com.jktickets.controller;
 
 
 import cn.hutool.core.util.ObjectUtil;
@@ -25,8 +25,8 @@ public class ConfirmOrderAdminController {
 
 
 
-    @GetMapping("/doConfirm")
-    public CommonRes<Object> doConfirm(@Valid ConfirmOrderDoReq req) {
+    @PostMapping("/doConfirm")
+    public CommonRes<Object> doConfirm(@Valid @RequestBody  ConfirmOrderDoReq req) {
         confirmOrderService.doConfirm(req);
         //       获取当前用户的MemberID
         //req.setMemberId(LoginMemberContext.getId());

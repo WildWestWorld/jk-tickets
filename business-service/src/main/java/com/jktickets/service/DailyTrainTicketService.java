@@ -3,6 +3,7 @@ package com.jktickets.service;
 
 
 import com.jktickets.domain.DailyTrain;
+import com.jktickets.domain.DailyTrainTicket;
 import com.jktickets.req.dailyTrainTicket.DailyTrainTicketQueryReq;
 import com.jktickets.req.dailyTrainTicket.DailyTrainTicketSaveReq;
 import com.jktickets.res.PageRes;
@@ -18,4 +19,7 @@ public interface DailyTrainTicketService {
    void deleteById(Long id);
 
    void genDailyTrainTicket(DailyTrain dailyTrain, Date date, String trainCode);
+
+
+   DailyTrainTicket selectByUnique(Date date, String trainCode, String start, String end);
 }

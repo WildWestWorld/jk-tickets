@@ -10,6 +10,7 @@ import com.github.pagehelper.PageInfo;
 import com.jktickets.context.LoginMemberContext;
 import com.jktickets.domain.ConfirmOrder;
 import com.jktickets.domain.ConfirmOrderExample;
+import com.jktickets.domain.DailyTrainTicket;
 import com.jktickets.enums.ConfirmOrderStatusEnum;
 import com.jktickets.mapper.ConfirmOrderMapper;
 
@@ -21,12 +22,14 @@ import com.jktickets.res.confirmOrder.ConfirmOrderQueryRes;
 
 import com.jktickets.service.ConfirmOrderService;
 
+import com.jktickets.service.DailyTrainTicketService;
 import com.jktickets.utils.SnowUtil;
 import jakarta.annotation.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -36,6 +39,10 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
 
     @Resource
     ConfirmOrderMapper confirmOrderMapper;
+
+    @Resource
+    DailyTrainTicketService dailyTrainTicketService;
+
 
     @Override
     public void saveConfirmOrder(ConfirmOrderSaveReq req) {
@@ -108,10 +115,19 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
         ConfirmOrder confirmOrder = new ConfirmOrder();
         confirmOrder.setId(SnowUtil.getSnowflakeNextId());
         confirmOrder.setMemberId(LoginMemberContext.getId());
-        confirmOrder.setDate(req.getDate());
-        confirmOrder.setTrainCode(req.getTrainCode());
-        confirmOrder.setStart(req.getStart());
-        confirmOrder.setEnd(req.getEnd());
+
+        Date date = req.getDate();
+        confirmOrder.setDate(date);
+
+        String trainCode = req.getTrainCode();
+        confirmOrder.setTrainCode(trainCode);
+
+        String start = req.getStart();
+        confirmOrder.setStart(start);
+
+        String end = req.getEnd();
+        confirmOrder.setEnd(end);
+
         confirmOrder.setDailyTrainTicketId(req.getDailyTrainTicketId());
         confirmOrder.setStatus(ConfirmOrderStatusEnum.INIT.getCode());
         confirmOrder.setCreateTime(nowTime);
@@ -120,6 +136,9 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
         confirmOrderMapper.insert(confirmOrder);
 
         // 查出余票记录，需要得到真实的库存
+//        根据日期，火车编号，出发地，目的地
+        DailyTrainTicket dailyTrainTicket = dailyTrainTicketService.selectByUnique(date, trainCode, start, end);
+        LOG.info("查出余票记录:{}",dailyTrainTicket);
 
         // 扣减余票数量，并判断余票是否足够
 

@@ -11,10 +11,7 @@ import cn.hutool.core.util.ObjectUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.jktickets.context.LoginMemberContext;
-import com.jktickets.domain.DailyTrain;
-import com.jktickets.domain.DailyTrainTicket;
-import com.jktickets.domain.DailyTrainTicketExample;
-import com.jktickets.domain.TrainStation;
+import com.jktickets.domain.*;
 import com.jktickets.enums.SeatTypeEnum;
 import com.jktickets.enums.TrainTypeEnum;
 import com.jktickets.mapper.DailyTrainTicketMapper;
@@ -57,13 +54,13 @@ public class DailyTrainTicketServiceImpl implements DailyTrainTicketService {
     public void saveDailyTrainTicket(DailyTrainTicketSaveReq req) {
 
 
-        DateTime nowTime  = DateTime.now();
+        DateTime nowTime = DateTime.now();
 
 
         DailyTrainTicket dailyTrainTicket = BeanUtil.copyProperties(req, DailyTrainTicket.class);
 
 
-        if(ObjectUtil.isNull(dailyTrainTicket.getId())){
+        if (ObjectUtil.isNull(dailyTrainTicket.getId())) {
             //        从 线程中获取数据
 //          dailyTrainTicket.setMemberId(LoginMemberContext.getId());
             dailyTrainTicket.setId(SnowUtil.getSnowflakeNextId());
@@ -71,11 +68,10 @@ public class DailyTrainTicketServiceImpl implements DailyTrainTicketService {
             dailyTrainTicket.setUpdateTime(nowTime);
 
             dailyTrainTicketMapper.insert(dailyTrainTicket);
-        }else{
+        } else {
             dailyTrainTicket.setUpdateTime(nowTime);
             dailyTrainTicketMapper.updateByPrimaryKeySelective(dailyTrainTicket);
         }
-
 
 
     }
@@ -142,7 +138,6 @@ public class DailyTrainTicketServiceImpl implements DailyTrainTicketService {
         dailyTrainTicketMapper.deleteByExample(dailyTrainTicketExample);
 
 
-
         // 查出某车次的所有的车站信息
         List<TrainStation> stationList = trainStationService.selectByTrainCode(trainCode);
         if (CollUtil.isEmpty(stationList)) {
@@ -156,7 +151,7 @@ public class DailyTrainTicketServiceImpl implements DailyTrainTicketService {
             TrainStation trainStationStart = stationList.get(i);
             BigDecimal sumKM = BigDecimal.ZERO;
             for (int j = (i + 1); j < stationList.size(); j++) {
-            //得到终点站
+                //得到终点站
                 TrainStation trainStationEnd = stationList.get(j);
                 sumKM = sumKM.add(trainStationEnd.getKm());
 
@@ -204,4 +199,19 @@ public class DailyTrainTicketServiceImpl implements DailyTrainTicketService {
         LOG.info("生成日期【{}】车次【{}】的余票信息结束", DateUtil.formatDate(date), trainCode);
     }
 
+    @Override
+    //    start 车票开始地区 end 车票结束地区
+    //    查询是否有对应的车票存在
+    public DailyTrainTicket selectByUnique(Date date, String trainCode, String start, String end) {
+        DailyTrainTicketExample dailyTrainTicketExample = new DailyTrainTicketExample();
+        dailyTrainTicketExample.createCriteria()
+                .andDateEqualTo(date)
+                .andTrainCodeEqualTo(trainCode).andStartEqualTo(start).andEndEqualTo(end);
+        List<DailyTrainTicket> list = dailyTrainTicketMapper.selectByExample(dailyTrainTicketExample);
+        if (CollUtil.isNotEmpty(list)) {
+            return list.get(0);
+        } else {
+            return null;
+        }
+    }
 }

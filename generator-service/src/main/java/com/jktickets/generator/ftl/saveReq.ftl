@@ -13,6 +13,7 @@ import java.math.BigDecimal;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotEmpty;
 
 public class ${Domain}SaveReq {
 
@@ -33,8 +34,11 @@ public class ${Domain}SaveReq {
         <#if !field.nullAble>
             <#if field.javaType=='String'>
     @NotBlank(message = "【${field.nameCn}】不能为空")
+            <#if field.javaType=='List'>
+    @NotEmpty(message = "【${field.nameCn}】不能为空")
             <#else>
     @NotNull(message = "【${field.nameCn}】不能为空")
+            </#if>
             </#if>
         </#if>
     </#if>
