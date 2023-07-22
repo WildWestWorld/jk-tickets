@@ -4,15 +4,14 @@ import cn.hutool.core.bean.BeanUtil;
 
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.util.EnumUtil;
+import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.jktickets.context.LoginMemberContext;
-import com.jktickets.domain.ConfirmOrder;
-import com.jktickets.domain.ConfirmOrderExample;
-import com.jktickets.domain.DailyTrainTicket;
+import com.jktickets.domain.*;
 import com.jktickets.enums.ConfirmOrderStatusEnum;
 import com.jktickets.enums.SeatColEnum;
 import com.jktickets.enums.SeatTypeEnum;
@@ -29,6 +28,8 @@ import com.jktickets.res.confirmOrder.ConfirmOrderQueryRes;
 
 import com.jktickets.service.ConfirmOrderService;
 
+import com.jktickets.service.DailyTrainCarriageService;
+import com.jktickets.service.DailyTrainSeatService;
 import com.jktickets.service.DailyTrainTicketService;
 import com.jktickets.utils.SnowUtil;
 import jakarta.annotation.Resource;
@@ -51,6 +52,12 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
 
     @Resource
     DailyTrainTicketService dailyTrainTicketService;
+
+    @Resource
+    DailyTrainCarriageService dailyTrainCarriageService;
+
+    @Resource
+    DailyTrainSeatService dailyTrainSeatService;
 
 
     @Override
@@ -201,9 +208,16 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
 
 
             LOG.info("计算得到所有座位的 绝对偏移量:{}", relativeOffsetList);
-
+//            confirmOrderTicketReq.getSeat().split("")[0]=》  A1 =>[A,1]=>A
+            selectSeat(date, trainCode, confirmOrderTicketReq.getSeatTypeCode(), confirmOrderTicketReq.getSeat().split("")[0], relativeOffsetList, dailyTrainTicket.getStartIndex(), dailyTrainTicket.getEndIndex());
         } else {
             LOG.info("本次购票没有选座");
+
+
+            for (ConfirmOrderTicketReq orderTicketReq : ticketReqList) {
+                selectSeat(date, trainCode, orderTicketReq.getSeatTypeCode(), null, null, dailyTrainTicket.getStartIndex(), dailyTrainTicket.getEndIndex());
+
+            }
 
         }
 
@@ -221,6 +235,102 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
         // 为会员增加购票记录
         // 更新确认订单为成功
     }
+
+
+    //    挑选座位
+    private void selectSeat(Date date, String trainCode, String seatType, String column, List<Integer> offsetList, Integer startIndex, Integer endIndex) {
+        // 一个车箱一个车箱的获取座位数据
+//        例如买的是一等座 就应该先找到一等座的车厢
+        List<DailyTrainCarriage> dailyTrainCarriageList = dailyTrainCarriageService.selectBySeatType(date, trainCode, seatType);
+        LOG.info("共查出{}个符合条件的车厢", dailyTrainCarriageList.size());
+
+
+//            根据车厢找所有的座位
+        for (DailyTrainCarriage dailyTrainCarriage : dailyTrainCarriageList) {
+            LOG.info("从车厢{}选座", dailyTrainCarriage.getIndex());
+//            根据日期 火车 火车车厢的Index，查询座位列表
+            List<DailyTrainSeat> dailyTrainSeatList = dailyTrainSeatService.selectByCarriage(date, trainCode, dailyTrainCarriage.getIndex());
+            LOG.info("车厢{}的座位数:{}", dailyTrainCarriage.getIndex(), dailyTrainSeatList.size());
+
+
+            for (DailyTrainSeat dailyTrainSeat : dailyTrainSeatList) {
+
+//                判断column 是否有值，如果有值就对比列号
+                String col = dailyTrainSeat.getCol();
+//                这里的column 是外部传入
+                if(StrUtil.isBlank(column)){
+                    LOG.info("无选座");
+                }else{
+//                    如果没有找到对应的列就跳出当前循环
+                    if(!column.equals(col)){
+                        continue;
+                    }
+                }
+
+
+                boolean isChoose = checkSeatSellState(dailyTrainSeat, startIndex, endIndex);
+//                如果已经选中好了，就跳出循环，没有就继续
+                if (isChoose) {
+                    LOG.info("选中座位");
+                    return;
+                } else {
+//                    LOG.info("未选中座位");
+                    ;
+                }
+
+            }
+
+        }
+
+    }
+
+
+//    计算 某座位在区间内的是否可卖
+//    sell = 10001 =》1-2站被买 5-6站被买=》 000=》2-5站可买
+//    全为0 可卖，只要1 就不可卖
+
+    //    例如已卖 1001  现买 0110  使用按位或=》 1111
+    private boolean checkSeatSellState(DailyTrainSeat dailyTrainSeat, Integer startIndex, Integer endIndex) {
+//         获得座位的售卖记录
+//        00001
+        String sell = dailyTrainSeat.getSell();
+        String sellPart = sell.substring(startIndex, endIndex);
+
+//        只要有1 就不可卖
+        if (Integer.parseInt(sellPart) > 0) {
+            LOG.info("座位{}在本次车站区间{}-{}已售过票,不可选中该座位", dailyTrainSeat.getCarriageIndex(), startIndex, endIndex);
+
+            return false;
+        } else {
+//            可选的座位
+            LOG.info("座位{}在本次车站区间{}-{}没有售过票,可选中该座位", dailyTrainSeat.getCarriageIndex(), startIndex, endIndex);
+
+//            把准备购买的区间 转换为111
+//            111
+            String currentSell = sellPart.replace("0", "1");
+//           0111 =>  StrUtil.fillBefore(原字符串，填充字符串，总字符串的长度)
+//            补充左边的零
+            currentSell = StrUtil.fillBefore(currentSell, '0', endIndex);
+//            补充右边的零
+//            01110
+            currentSell = StrUtil.fillAfter(currentSell, '0', sell.length());
+//         当前区间售票信息currentSell与库里面的售卖信息相或
+//            15 相或之后 得到的数是15(01111)
+            int newSellInt = NumberUtil.binaryToInt(currentSell) | NumberUtil.binaryToInt(sell);
+//            15 转换为2进制 =>1111
+            String newSell = NumberUtil.getBinaryStr(newSellInt);
+//        重新把左边 缺少的0 补上，右边是不会缺0的
+            currentSell = StrUtil.fillBefore(newSell, '0', sell.length());
+
+            LOG.info("座位{}被选中，原售票信息:{},车站区间:{}-{},即:{},最终售票信息:{}", dailyTrainSeat.getCarriageIndex(), sell, startIndex, endIndex, currentSell, newSell);
+
+
+            return true;
+        }
+
+
+    }
+
 
     private static void reduceTickets(DailyTrainTicket dailyTrainTicket, List<ConfirmOrderTicketReq> ticketReqList) {
         //  循环获取的票类型，

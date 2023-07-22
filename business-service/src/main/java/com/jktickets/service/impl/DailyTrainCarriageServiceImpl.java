@@ -31,6 +31,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.xml.crypto.Data;
 import java.util.Date;
 import java.util.List;
 
@@ -44,11 +45,12 @@ public class DailyTrainCarriageServiceImpl implements DailyTrainCarriageService 
 
     @Resource
     TrainCarriageService trainCarriageService;
+
     @Override
     public void saveDailyTrainCarriage(DailyTrainCarriageSaveReq req) {
 
 
-        DateTime nowTime  = DateTime.now();
+        DateTime nowTime = DateTime.now();
 
 
         // 自动计算出列数和总座位数
@@ -60,7 +62,7 @@ public class DailyTrainCarriageServiceImpl implements DailyTrainCarriageService 
         req.setSeatCount(req.getColCount() * req.getRowCount());
         DailyTrainCarriage dailyTrainCarriage = BeanUtil.copyProperties(req, DailyTrainCarriage.class);
 
-        if(ObjectUtil.isNull(dailyTrainCarriage.getId())){
+        if (ObjectUtil.isNull(dailyTrainCarriage.getId())) {
             //        从 线程中获取数据
 //          dailyTrainCarriage.setMemberId(LoginMemberContext.getId());
             dailyTrainCarriage.setId(SnowUtil.getSnowflakeNextId());
@@ -68,11 +70,10 @@ public class DailyTrainCarriageServiceImpl implements DailyTrainCarriageService 
             dailyTrainCarriage.setUpdateTime(nowTime);
 
             dailyTrainCarriageMapper.insert(dailyTrainCarriage);
-        }else{
+        } else {
             dailyTrainCarriage.setUpdateTime(nowTime);
             dailyTrainCarriageMapper.updateByPrimaryKeySelective(dailyTrainCarriage);
         }
-
 
 
     }
@@ -115,7 +116,6 @@ public class DailyTrainCarriageServiceImpl implements DailyTrainCarriageService 
     }
 
 
-
     @Transactional
     @Override
     public void genDailyTrainCarriage(Date date, String trainCode) {
@@ -146,6 +146,17 @@ public class DailyTrainCarriageServiceImpl implements DailyTrainCarriageService 
         }
         LOG.info("生成日期【{}】车次【{}】的车厢信息结束", DateUtil.formatDate(date), trainCode);
     }
+
+    @Override
+    public List<DailyTrainCarriage> selectBySeatType(Date date, String trainCode, String seatType) {
+        DailyTrainCarriageExample dailyTrainCarriageExample = new DailyTrainCarriageExample();
+        dailyTrainCarriageExample.createCriteria()
+                .andDateEqualTo(date)
+                .andTrainCodeEqualTo(trainCode)
+                .andSeatTypeEqualTo(seatType);
+        List<DailyTrainCarriage> dailyTrainCarriages = dailyTrainCarriageMapper.selectByExample(dailyTrainCarriageExample);
+        return dailyTrainCarriages;
+    };
 
 
 

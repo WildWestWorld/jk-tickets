@@ -2,6 +2,8 @@ package com.jktickets.service;
 
 
 
+import com.jktickets.domain.DailyTrainCarriage;
+import com.jktickets.domain.TrainCarriage;
 import com.jktickets.req.dailyTrainCarriage.DailyTrainCarriageQueryReq;
 import com.jktickets.req.dailyTrainCarriage.DailyTrainCarriageSaveReq;
 import com.jktickets.res.PageRes;
@@ -17,4 +19,7 @@ public interface DailyTrainCarriageService {
    void deleteById(Long id);
 
     void genDailyTrainCarriage(Date date, String trainCode);
+
+
+    List<DailyTrainCarriage> selectBySeatType(Date date, String trainCode, String seatType);
 }

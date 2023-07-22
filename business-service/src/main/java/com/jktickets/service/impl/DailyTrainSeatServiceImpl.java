@@ -10,10 +10,7 @@ import cn.hutool.core.util.StrUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.jktickets.context.LoginMemberContext;
-import com.jktickets.domain.DailyTrainSeat;
-import com.jktickets.domain.DailyTrainSeatExample;
-import com.jktickets.domain.TrainSeat;
-import com.jktickets.domain.TrainStation;
+import com.jktickets.domain.*;
 import com.jktickets.mapper.DailyTrainSeatMapper;
 
 import com.jktickets.req.dailyTrainSeat.DailyTrainSeatQueryReq;
@@ -44,7 +41,6 @@ public class DailyTrainSeatServiceImpl implements DailyTrainSeatService {
     DailyTrainSeatMapper dailyTrainSeatMapper;
 
 
-
     @Resource
     private TrainSeatService trainSeatService;
 
@@ -55,10 +51,10 @@ public class DailyTrainSeatServiceImpl implements DailyTrainSeatService {
     public void saveDailyTrainSeat(DailyTrainSeatSaveReq req) {
 
 
-        DateTime nowTime  = DateTime.now();
+        DateTime nowTime = DateTime.now();
         DailyTrainSeat dailyTrainSeat = BeanUtil.copyProperties(req, DailyTrainSeat.class);
 
-        if(ObjectUtil.isNull(dailyTrainSeat.getId())){
+        if (ObjectUtil.isNull(dailyTrainSeat.getId())) {
             //        从 线程中获取数据
 //          dailyTrainSeat.setMemberId(LoginMemberContext.getId());
             dailyTrainSeat.setId(SnowUtil.getSnowflakeNextId());
@@ -66,11 +62,10 @@ public class DailyTrainSeatServiceImpl implements DailyTrainSeatService {
             dailyTrainSeat.setUpdateTime(nowTime);
 
             dailyTrainSeatMapper.insert(dailyTrainSeat);
-        }else{
+        } else {
             dailyTrainSeat.setUpdateTime(nowTime);
             dailyTrainSeatMapper.updateByPrimaryKeySelective(dailyTrainSeat);
         }
-
 
 
     }
@@ -164,4 +159,20 @@ public class DailyTrainSeatServiceImpl implements DailyTrainSeatService {
         return (int) l;
     }
 
+
+    @Override
+    public List<DailyTrainSeat> selectByCarriage(Date date, String trainCode, Integer carriageIndex) {
+
+        DailyTrainSeatExample dailyTrainSeatExample = new DailyTrainSeatExample();
+
+//        按座位的索引排序
+        dailyTrainSeatExample.setOrderByClause("carriage_seat_index asc");
+
+        dailyTrainSeatExample.createCriteria()
+                .andDateEqualTo(date)
+                .andTrainCodeEqualTo(trainCode)
+                .andCarriageIndexEqualTo(carriageIndex);
+        List<DailyTrainSeat> dailyTrainSeats = dailyTrainSeatMapper.selectByExample(dailyTrainSeatExample);
+        return dailyTrainSeats;
+    }
 }

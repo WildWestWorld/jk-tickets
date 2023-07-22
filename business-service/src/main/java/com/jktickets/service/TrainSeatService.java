@@ -18,4 +18,7 @@ public interface TrainSeatService {
 
    void genTrainSeat(String trainCode);
    List<TrainSeat> selectByTrainCode(String trainCode);
+
+
+
 }
