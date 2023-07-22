@@ -1,0 +1,98 @@
+2023-07-21 19:57:24.989 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-21 19:57:25.281 INFO  com.jktickets.BatchApplication                    :51   [32m                  [0;39m Starting BatchApplication using Java 17.0.3 with PID 11340 (D:\Project\java\jk-tickets\batch-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-21 19:57:25.283 INFO  com.jktickets.BatchApplication                    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-21 19:57:26.077 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-21 19:57:26.092 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-21 19:57:32.554 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
+2023-07-21 19:57:33.274 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=1bedfdc6-bc76-3cfc-ba1b-14b17af324d7
+2023-07-21 19:57:40.653 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8003 (http)
+2023-07-21 19:57:40.740 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8003"]
+2023-07-21 19:57:40.741 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-21 19:57:40.742 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-21 19:57:41.025 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-21 19:57:41.028 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 14933 ms
+2023-07-21 19:57:42.208 INFO  org.quartz.impl.StdSchedulerFactory               :1220 [32m                  [0;39m Using default implementation for ThreadExecutor
+2023-07-21 19:57:42.250 INFO  org.quartz.core.SchedulerSignalerImpl             :61   [32m                  [0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-07-21 19:57:42.251 INFO  org.quartz.core.QuartzScheduler                   :229  [32m                  [0;39m Quartz Scheduler v.2.3.2 created.
+2023-07-21 19:57:42.356 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-07-21 19:57:44.341 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@748f1fc7
+2023-07-21 19:57:44.344 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-07-21 19:57:44.357 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :672  [32m                  [0;39m Using db table-based data access locking (synchronization).
+2023-07-21 19:57:44.413 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :145  [32m                  [0;39m JobStoreCMT initialized.
+2023-07-21 19:57:44.414 INFO  org.quartz.core.QuartzScheduler                   :294  [32m                  [0;39m Scheduler meta-data: Quartz Scheduler (v2.3.2) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
+
+2023-07-21 19:57:44.414 INFO  org.quartz.impl.StdSchedulerFactory               :1374 [32m                  [0;39m Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2023-07-21 19:57:44.415 INFO  org.quartz.impl.StdSchedulerFactory               :1378 [32m                  [0;39m Quartz scheduler version: 2.3.2
+2023-07-21 19:57:44.415 INFO  org.quartz.core.QuartzScheduler                   :2293 [32m                  [0;39m JobFactory set to: com.jktickets.job.sql.MyJobFactory@4e9ddee4
+2023-07-21 19:57:45.077 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-07-21 19:57:46.399 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-21 19:57:47.349 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m                  [0;39m Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-07-21 19:57:47.436 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8003"]
+2023-07-21 19:57:47.470 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8003 (http) with context path '/batch'
+2023-07-21 19:57:47.928 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :734  [32m                  [0;39m Will start Quartz Scheduler [schedulerFactoryBean] in 2 seconds
+2023-07-21 19:57:47.943 INFO  com.jktickets.BatchApplication                    :57   [32m                  [0;39m Started BatchApplication in 27.546 seconds (process running for 40.303)
+2023-07-21 19:57:47.949 INFO  com.jktickets.BatchApplication                    :26   [32m                  [0;39m 启动成功！！
+2023-07-21 19:57:47.950 INFO  com.jktickets.BatchApplication                    :28   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8003/batch/hello
+2023-07-21 19:57:49.936 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :750  [32m                  [0;39m Starting Quartz Scheduler now, after delay of 2 seconds
+2023-07-21 19:57:50.631 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :866  [32m                  [0;39m Freed 0 triggers from 'acquired' / 'blocked' state.
+2023-07-21 19:57:50.827 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :876  [32m                  [0;39m Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2023-07-21 19:57:50.827 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :889  [32m                  [0;39m Recovery complete.
+2023-07-21 19:57:50.859 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :896  [32m                  [0;39m Removed 0 'complete' triggers.
+2023-07-21 19:57:50.900 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :901  [32m                  [0;39m Removed 0 stale fired job entries.
+2023-07-21 19:57:51.044 INFO  org.quartz.core.QuartzScheduler                   :547  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2023-07-21 22:36:07.469 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@374b5d7a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-21 22:36:12.476 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@268f509c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-21 22:36:13.581 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1167cc41 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-21 22:36:17.483 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4f19ea92 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-21 22:36:18.590 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2a6fa2e1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-21 22:36:22.492 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2254de86 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-21 22:36:23.597 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@34717d4f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-21 22:36:26.015 WARN  com.zaxxer.hikari.pool.HikariPool                 :804  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m43s584ms161µs300ns).
+2023-07-21 22:36:27.508 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5ca3e1d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-21 22:36:28.606 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@19e5dcf4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-21 22:36:32.510 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@591d9588 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2023-07-21 22:36:32.522 ERROR o.s.scheduling.quartz.LocalDataSourceJobStore     :4017 [32m                  [0;39m MisfireHandler: Error handling misfires: Failed to obtain DB connection from data source 'springNonTxDataSource.schedulerFactoryBean': java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30133ms.
+org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'springNonTxDataSource.schedulerFactoryBean': java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30133ms.
+	at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:168)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doRecoverMisfires(JobStoreSupport.java:3246)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:4012)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:4033)
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30133ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.scheduling.quartz.LocalDataSourceJobStore$2.getConnection(LocalDataSourceJobStore.java:140)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:108)
+	at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:165)
+	... 3 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2498)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	... 8 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor42.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:576)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2494)
+	... 11 common frames omitted
