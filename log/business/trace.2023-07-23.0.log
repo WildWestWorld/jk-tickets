@@ -1,0 +1,788 @@
+2023-07-23 17:01:21.011 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 17:01:21.060 INFO  com.jktickets.BusinessApplication                 :51   [32m                  [0;39m Starting BusinessApplication using Java 17.0.3 with PID 1696 (D:\Project\java\jk-tickets\business-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-23 17:01:21.061 INFO  com.jktickets.BusinessApplication                 :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-23 17:01:21.165 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-23 17:01:21.166 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-23 17:01:23.428 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=a2d2181d-ab17-3664-9e1a-3e2eda0baeea
+2023-07-23 17:01:24.307 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8002 (http)
+2023-07-23 17:01:24.317 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8002"]
+2023-07-23 17:01:24.319 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-23 17:01:24.319 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-23 17:01:24.393 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-23 17:01:24.395 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 3227 ms
+2023-07-23 17:01:26.041 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-23 17:01:26.397 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-07-23 17:01:26.875 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8002"]
+2023-07-23 17:01:26.903 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8002 (http) with context path '/business'
+2023-07-23 17:01:27.298 INFO  com.jktickets.BusinessApplication                 :57   [32m                  [0;39m Started BusinessApplication in 7.371 seconds (process running for 8.337)
+2023-07-23 17:01:27.303 INFO  com.jktickets.BusinessApplication                 :21   [32m                  [0;39m 启动成功！！
+2023-07-23 17:01:27.304 INFO  com.jktickets.BusinessApplication                 :23   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8002/business/hello
+2023-07-23 17:03:33.587 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 17:03:33.588 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-23 17:03:33.589 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-07-23 17:03:33.617 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1690103013609z8j  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTAxMDMwMDksIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDE4OTQwOSwiaWF0IjoxNjkwMTAzMDA5fQ.fao_GuJBlWYVVAUJXk0mq0LUr5zOHVLDoBxO3Z15MBg
+2023-07-23 17:03:33.854 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1690103013609z8j  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:03:33.857 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1690103013609z8j  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:03:33.903 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1690103013609z8j  [0;39m ------------- 开始 -------------
+2023-07-23 17:03:33.904 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1690103013609z8j  [0;39m 请求地址: http://127.0.0.1:8002/business/station/queryAll GET
+2023-07-23 17:03:33.904 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690103013609z8j  [0;39m 类名方法: com.jktickets.controller.StationController.queryAllStationList
+2023-07-23 17:03:33.905 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1690103013609z8j  [0;39m 远程地址: 127.0.0.1
+2023-07-23 17:03:33.944 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1690103013609z8j  [0;39m 请求参数: []
+2023-07-23 17:03:33.945 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103013609z8j  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.StationMapper.selectByExample(StationExample))
+2023-07-23 17:03:33.945 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103013609z8j  [0;39m 参数值: com.jktickets.domain.StationExample@2c9e8012
+2023-07-23 17:03:33.988 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1690103013609z8j  [0;39m HikariPool-1 - Starting...
+2023-07-23 17:03:34.345 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1690103013609z8j  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43dec84
+2023-07-23 17:03:34.348 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1690103013609z8j  [0;39m HikariPool-1 - Start completed.
+2023-07-23 17:03:34.442 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103013609z8j  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.StationMapper.selectByExample(StationExample))
+2023-07-23 17:03:34.474 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1690103013609z8j  [0;39m 返回结果: {"code":0,"message":"","result":[{"createTime":1689430602268,"id":1680219843401486336,"name":"杭州","namePinyin":"hangzhou","namePy":"hz","updateTime":1689430602268},{"createTime":1689427282591,"id":1680205919650189312,"name":"上海","namePinyin":"shanghai","namePy":"sh","updateTime":1689427282591},{"createTime":1689427268871,"id":1680205862385356800,"name":"温州","namePinyin":"wenzhou","namePy":"wz","updateTime":1689427268871}],"success":true}
+2023-07-23 17:03:34.474 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1690103013609z8j  [0;39m ------------- 结束 耗时：572 ms -------------
+2023-07-23 17:03:34.562 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1690103014562rxm  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTAxMDMwMDksIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDE4OTQwOSwiaWF0IjoxNjkwMTAzMDA5fQ.fao_GuJBlWYVVAUJXk0mq0LUr5zOHVLDoBxO3Z15MBg
+2023-07-23 17:03:34.563 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1690103014562rxm  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:03:34.564 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1690103014562rxm  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:03:34.565 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1690103014562rxm  [0;39m ------------- 开始 -------------
+2023-07-23 17:03:34.565 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1690103014562rxm  [0;39m 请求地址: http://127.0.0.1:8002/business/station/queryAll GET
+2023-07-23 17:03:34.566 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690103014562rxm  [0;39m 类名方法: com.jktickets.controller.StationController.queryAllStationList
+2023-07-23 17:03:34.566 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1690103014562rxm  [0;39m 远程地址: 127.0.0.1
+2023-07-23 17:03:34.567 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1690103014562rxm  [0;39m 请求参数: []
+2023-07-23 17:03:34.568 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103014562rxm  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.StationMapper.selectByExample(StationExample))
+2023-07-23 17:03:34.568 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103014562rxm  [0;39m 参数值: com.jktickets.domain.StationExample@59a783bf
+2023-07-23 17:03:34.586 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103014562rxm  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.StationMapper.selectByExample(StationExample))
+2023-07-23 17:03:34.588 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1690103014562rxm  [0;39m 返回结果: {"code":0,"message":"","result":[{"createTime":1689430602268,"id":1680219843401486336,"name":"杭州","namePinyin":"hangzhou","namePy":"hz","updateTime":1689430602268},{"createTime":1689427282591,"id":1680205919650189312,"name":"上海","namePinyin":"shanghai","namePy":"sh","updateTime":1689427282591},{"createTime":1689427268871,"id":1680205862385356800,"name":"温州","namePinyin":"wenzhou","namePy":"wz","updateTime":1689427268871}],"success":true}
+2023-07-23 17:03:34.588 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1690103014562rxm  [0;39m ------------- 结束 耗时：23 ms -------------
+2023-07-23 17:03:44.269 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1690103024269ca7  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTAxMDMwMDksIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDE4OTQwOSwiaWF0IjoxNjkwMTAzMDA5fQ.fao_GuJBlWYVVAUJXk0mq0LUr5zOHVLDoBxO3Z15MBg
+2023-07-23 17:03:44.270 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1690103024269ca7  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:03:44.270 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1690103024269ca7  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:03:44.381 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1690103024269ca7  [0;39m ------------- 开始 -------------
+2023-07-23 17:03:44.382 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1690103024269ca7  [0;39m 请求地址: http://127.0.0.1:8002/business/dailyTrainTicket/queryList GET
+2023-07-23 17:03:44.382 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690103024269ca7  [0;39m 类名方法: com.jktickets.controller.DailyTrainTicketController.queryDailyTrainTicketList
+2023-07-23 17:03:44.382 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1690103024269ca7  [0;39m 远程地址: 127.0.0.1
+2023-07-23 17:03:44.387 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1690103024269ca7  [0;39m 请求参数: [{"date":1689523200000,"end":"杭州","page":1,"size":10,"start":"上海"}]
+2023-07-23 17:03:44.395 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103024269ca7  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainTicketMapper.selectByExample(DailyTrainTicketExample))
+2023-07-23 17:03:44.396 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103024269ca7  [0;39m 参数值: com.jktickets.domain.DailyTrainTicketExample@533d6682
+2023-07-23 17:03:44.653 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103024269ca7  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainTicketMapper.selectByExample(DailyTrainTicketExample))
+2023-07-23 17:03:44.655 INFO  com.jktickets.service.DailyTrainTicketService     :110  [32m1690103024269ca7  [0;39m 总行数：1
+2023-07-23 17:03:44.656 INFO  com.jktickets.service.DailyTrainTicketService     :111  [32m1690103024269ca7  [0;39m 总页数：1
+2023-07-23 17:03:44.686 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1690103024269ca7  [0;39m 返回结果: {"code":0,"message":"","result":{"list":[{"createTime":1689603320935,"date":1689523200000,"edz":25,"edzPrice":4.32,"end":"杭州","endIndex":2,"endPinyin":"hangzhou","endTime":25200000,"id":1680944278592950272,"rw":-1,"rwPrice":8.64,"start":"上海","startIndex":0,"startPinyin":"shanghai","startTime":-28680000,"trainCode":"01","updateTime":1689603320935,"ydz":12,"ydzPrice":5.76,"yw":-1,"ywPrice":7.20}],"total":1},"success":true}
+2023-07-23 17:03:44.686 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1690103024269ca7  [0;39m ------------- 结束 耗时：305 ms -------------
+2023-07-23 17:03:55.810 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1690103035810jk1  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTAxMDMwMDksIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDE4OTQwOSwiaWF0IjoxNjkwMTAzMDA5fQ.fao_GuJBlWYVVAUJXk0mq0LUr5zOHVLDoBxO3Z15MBg
+2023-07-23 17:03:55.811 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1690103035810jk1  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:03:55.812 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1690103035810jk1  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:03:55.869 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1690103035810jk1  [0;39m ------------- 开始 -------------
+2023-07-23 17:03:55.870 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1690103035810jk1  [0;39m 请求地址: http://127.0.0.1:8002/business/confirmOrder/doConfirm POST
+2023-07-23 17:03:55.871 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690103035810jk1  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderAdminController.doConfirm
+2023-07-23 17:03:55.871 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1690103035810jk1  [0;39m 远程地址: 127.0.0.1
+2023-07-23 17:03:55.879 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1690103035810jk1  [0;39m 请求参数: [{"dailyTrainTicketId":1680944278592950272,"date":1689523200000,"end":"杭州","start":"上海","tickets":[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}],"trainCode":"01"}]
+2023-07-23 17:03:55.906 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103035810jk1  [0;39m 执行SQL:  insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
+2023-07-23 17:03:55.912 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103035810jk1  [0;39m 参数值: ConfirmOrder [Hash = 1941487285, id=1683040234364866560, memberId=1680932902797447168, date=Mon Jul 17 00:00:00 CST 2023, trainCode=01, start=上海, end=杭州, dailyTrainTicketId=1680944278592950272, status=I, createTime=2023-07-23 17:03:55, updateTime=2023-07-23 17:03:55, tickets=[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}]]
+2023-07-23 17:03:55.989 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103035810jk1  [0;39m SQL执行完成: insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
+2023-07-23 17:03:55.989 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103035810jk1  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainTicketMapper.selectByExample(DailyTrainTicketExample))
+2023-07-23 17:03:55.990 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103035810jk1  [0;39m 参数值: com.jktickets.domain.DailyTrainTicketExample@15c9eeff
+2023-07-23 17:03:56.011 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103035810jk1  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainTicketMapper.selectByExample(DailyTrainTicketExample))
+2023-07-23 17:03:56.012 INFO  com.jktickets.service.ConfirmOrderService         :158  [32m1690103035810jk1  [0;39m 查出余票记录:DailyTrainTicket [Hash = 948593883, id=1680944278592950272, date=Mon Jul 17 00:00:00 CST 2023, trainCode=01, start=上海, startPinyin=shanghai, startTime=Thu Jan 01 00:02:00 CST 1970, startIndex=0, end=杭州, endPinyin=hangzhou, endTime=Thu Jan 01 15:00:00 CST 1970, endIndex=2, ydz=12, ydzPrice=5.76, edz=25, edzPrice=4.32, rw=-1, rwPrice=8.64, yw=-1, ywPrice=7.20, createTime=Mon Jul 17 22:15:20 CST 2023, updateTime=Mon Jul 17 22:15:20 CST 2023]
+2023-07-23 17:03:56.017 INFO  com.jktickets.service.ConfirmOrderService         :172  [32m1690103035810jk1  [0;39m 本次购票有选座
+2023-07-23 17:03:56.018 INFO  com.jktickets.service.ConfirmOrderService         :176  [32m1690103035810jk1  [0;39m 本次选座 座位类型包含的列:[EDZ_A, EDZ_B, EDZ_C, EDZ_D, EDZ_F]
+2023-07-23 17:03:56.018 INFO  com.jktickets.service.ConfirmOrderService         :188  [32m1690103035810jk1  [0;39m 用于作参照的两排座位,[A1, B1, C1, D1, F1, A1, B1, C1, D1, F1]
+2023-07-23 17:03:56.019 INFO  com.jktickets.service.ConfirmOrderService         :199  [32m1690103035810jk1  [0;39m 计算得到所有座位的的绝对偏移量:[0, -1]
+2023-07-23 17:03:56.019 INFO  com.jktickets.service.ConfirmOrderService         :212  [32m1690103035810jk1  [0;39m 计算得到所有座位的 绝对偏移量:[0, -1]
+2023-07-23 17:03:56.023 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103035810jk1  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainCarriageMapper.selectByExample(DailyTrainCarriageExample))
+2023-07-23 17:03:56.024 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103035810jk1  [0;39m 参数值: com.jktickets.domain.DailyTrainCarriageExample@72767032
+2023-07-23 17:03:56.050 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103035810jk1  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainCarriageMapper.selectByExample(DailyTrainCarriageExample))
+2023-07-23 17:03:56.050 INFO  com.jktickets.service.ConfirmOrderService         :247  [32m1690103035810jk1  [0;39m 共查出1个符合条件的车厢
+2023-07-23 17:03:56.051 INFO  com.jktickets.service.ConfirmOrderService         :252  [32m1690103035810jk1  [0;39m 从车厢2选座
+2023-07-23 17:03:56.056 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103035810jk1  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainSeatMapper.selectByExample(DailyTrainSeatExample))
+2023-07-23 17:03:56.056 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103035810jk1  [0;39m 参数值: com.jktickets.domain.DailyTrainSeatExample@299ac996
+2023-07-23 17:03:56.093 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103035810jk1  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainSeatMapper.selectByExample(DailyTrainSeatExample))
+2023-07-23 17:03:56.093 INFO  com.jktickets.service.ConfirmOrderService         :255  [32m1690103035810jk1  [0;39m 车厢2的座位数:25
+2023-07-23 17:03:56.093 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103035810jk1  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:03:56.094 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103035810jk1  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:03:56.094 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m1690103035810jk1  [0;39m 选中座位
+2023-07-23 17:03:56.094 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m1690103035810jk1  [0;39m 有偏移值:[0, -1]，校验偏移的座位是否可选
+2023-07-23 17:03:56.095 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103035810jk1  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:03:56.095 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103035810jk1  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:03:56.095 INFO  com.jktickets.service.ConfirmOrderService         :313  [32m1690103035810jk1  [0;39m 座位2被选中
+2023-07-23 17:03:56.095 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位2列值不对,继续判断下一个座位,当前列支:B,目标列值:A
+2023-07-23 17:03:56.095 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位3列值不对,继续判断下一个座位,当前列支:C,目标列值:A
+2023-07-23 17:03:56.095 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位4列值不对,继续判断下一个座位,当前列支:D,目标列值:A
+2023-07-23 17:03:56.096 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位5列值不对,继续判断下一个座位,当前列支:F,目标列值:A
+2023-07-23 17:03:56.096 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103035810jk1  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:03:56.096 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103035810jk1  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:03:56.096 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m1690103035810jk1  [0;39m 选中座位
+2023-07-23 17:03:56.096 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m1690103035810jk1  [0;39m 有偏移值:[0, -1]，校验偏移的座位是否可选
+2023-07-23 17:03:56.097 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103035810jk1  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:03:56.097 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103035810jk1  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:03:56.097 INFO  com.jktickets.service.ConfirmOrderService         :313  [32m1690103035810jk1  [0;39m 座位12被选中
+2023-07-23 17:03:56.097 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位7列值不对,继续判断下一个座位,当前列支:B,目标列值:A
+2023-07-23 17:03:56.097 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位8列值不对,继续判断下一个座位,当前列支:C,目标列值:A
+2023-07-23 17:03:56.097 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位9列值不对,继续判断下一个座位,当前列支:D,目标列值:A
+2023-07-23 17:03:56.098 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位10列值不对,继续判断下一个座位,当前列支:F,目标列值:A
+2023-07-23 17:03:56.098 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103035810jk1  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:03:56.098 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103035810jk1  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:03:56.098 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m1690103035810jk1  [0;39m 选中座位
+2023-07-23 17:03:56.098 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m1690103035810jk1  [0;39m 有偏移值:[0, -1]，校验偏移的座位是否可选
+2023-07-23 17:03:56.098 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103035810jk1  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:03:56.098 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103035810jk1  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:03:56.099 INFO  com.jktickets.service.ConfirmOrderService         :313  [32m1690103035810jk1  [0;39m 座位22被选中
+2023-07-23 17:03:56.099 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位12列值不对,继续判断下一个座位,当前列支:B,目标列值:A
+2023-07-23 17:03:56.099 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位13列值不对,继续判断下一个座位,当前列支:C,目标列值:A
+2023-07-23 17:03:56.099 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位14列值不对,继续判断下一个座位,当前列支:D,目标列值:A
+2023-07-23 17:03:56.099 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位15列值不对,继续判断下一个座位,当前列支:F,目标列值:A
+2023-07-23 17:03:56.100 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103035810jk1  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:03:56.100 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103035810jk1  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:03:56.100 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m1690103035810jk1  [0;39m 选中座位
+2023-07-23 17:03:56.100 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m1690103035810jk1  [0;39m 有偏移值:[0, -1]，校验偏移的座位是否可选
+2023-07-23 17:03:56.100 INFO  com.jktickets.service.ConfirmOrderService         :300  [32m1690103035810jk1  [0;39m 座位31不可选,偏移后的索引超出了这个车厢的座位数
+2023-07-23 17:03:56.100 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位17列值不对,继续判断下一个座位,当前列支:B,目标列值:A
+2023-07-23 17:03:56.100 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位18列值不对,继续判断下一个座位,当前列支:C,目标列值:A
+2023-07-23 17:03:56.101 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位19列值不对,继续判断下一个座位,当前列支:D,目标列值:A
+2023-07-23 17:03:56.101 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位20列值不对,继续判断下一个座位,当前列支:F,目标列值:A
+2023-07-23 17:03:56.102 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103035810jk1  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:03:56.102 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103035810jk1  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:03:56.102 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m1690103035810jk1  [0;39m 选中座位
+2023-07-23 17:03:56.102 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m1690103035810jk1  [0;39m 有偏移值:[0, -1]，校验偏移的座位是否可选
+2023-07-23 17:03:56.102 INFO  com.jktickets.service.ConfirmOrderService         :300  [32m1690103035810jk1  [0;39m 座位41不可选,偏移后的索引超出了这个车厢的座位数
+2023-07-23 17:03:56.103 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位22列值不对,继续判断下一个座位,当前列支:B,目标列值:A
+2023-07-23 17:03:56.103 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位23列值不对,继续判断下一个座位,当前列支:C,目标列值:A
+2023-07-23 17:03:56.103 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位24列值不对,继续判断下一个座位,当前列支:D,目标列值:A
+2023-07-23 17:03:56.103 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103035810jk1  [0;39m 座位25列值不对,继续判断下一个座位,当前列支:F,目标列值:A
+2023-07-23 17:03:56.104 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1690103035810jk1  [0;39m 返回结果: {"code":0,"message":"","success":true}
+2023-07-23 17:03:56.104 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1690103035810jk1  [0;39m ------------- 结束 耗时：235 ms -------------
+2023-07-23 17:05:39.436 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-07-23 17:05:39.508 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-07-23 17:05:47.023 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 17:05:47.077 INFO  com.jktickets.BusinessApplication                 :51   [32m                  [0;39m Starting BusinessApplication using Java 17.0.3 with PID 2516 (D:\Project\java\jk-tickets\business-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-23 17:05:47.079 INFO  com.jktickets.BusinessApplication                 :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-23 17:05:47.139 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-23 17:05:47.140 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-23 17:05:48.179 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=a2d2181d-ab17-3664-9e1a-3e2eda0baeea
+2023-07-23 17:05:49.070 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8002 (http)
+2023-07-23 17:05:49.082 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8002"]
+2023-07-23 17:05:49.083 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-23 17:05:49.084 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-23 17:05:49.168 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-23 17:05:49.170 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2027 ms
+2023-07-23 17:05:50.575 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-23 17:05:50.945 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-07-23 17:05:51.433 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8002"]
+2023-07-23 17:05:51.461 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8002 (http) with context path '/business'
+2023-07-23 17:05:51.859 INFO  com.jktickets.BusinessApplication                 :57   [32m                  [0;39m Started BusinessApplication in 5.991 seconds (process running for 6.983)
+2023-07-23 17:05:51.863 INFO  com.jktickets.BusinessApplication                 :21   [32m                  [0;39m 启动成功！！
+2023-07-23 17:05:51.864 INFO  com.jktickets.BusinessApplication                 :23   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8002/business/hello
+2023-07-23 17:06:10.007 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 17:06:10.007 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-23 17:06:10.009 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-07-23 17:06:10.040 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m16901031700333of  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTAxMDMwMDksIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDE4OTQwOSwiaWF0IjoxNjkwMTAzMDA5fQ.fao_GuJBlWYVVAUJXk0mq0LUr5zOHVLDoBxO3Z15MBg
+2023-07-23 17:06:10.325 INFO  com.jktickets.utils.JwtUtil                       :64   [32m16901031700333of  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:06:10.331 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m16901031700333of  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:06:10.514 INFO  com.jktickets.aspect.LogAspect                    :57   [32m16901031700333of  [0;39m ------------- 开始 -------------
+2023-07-23 17:06:10.515 INFO  com.jktickets.aspect.LogAspect                    :58   [32m16901031700333of  [0;39m 请求地址: http://127.0.0.1:8002/business/confirmOrder/doConfirm POST
+2023-07-23 17:06:10.516 INFO  com.jktickets.aspect.LogAspect                    :59   [32m16901031700333of  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderAdminController.doConfirm
+2023-07-23 17:06:10.516 INFO  com.jktickets.aspect.LogAspect                    :60   [32m16901031700333of  [0;39m 远程地址: 127.0.0.1
+2023-07-23 17:06:10.597 INFO  com.jktickets.aspect.LogAspect                    :82   [32m16901031700333of  [0;39m 请求参数: [{"dailyTrainTicketId":1680944278592950272,"date":1689523200000,"end":"杭州","start":"上海","tickets":[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}],"trainCode":"01"}]
+2023-07-23 17:06:10.604 INFO  com.jktickets.aspect.LogAspect                    :106  [32m16901031700333of  [0;39m 执行SQL:  insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
+2023-07-23 17:06:10.609 INFO  com.jktickets.aspect.LogAspect                    :111  [32m16901031700333of  [0;39m 参数值: ConfirmOrder [Hash = 1404976545, id=1683040799329226752, memberId=1680932902797447168, date=Mon Jul 17 00:00:00 CST 2023, trainCode=01, start=上海, end=杭州, dailyTrainTicketId=1680944278592950272, status=I, createTime=2023-07-23 17:06:10, updateTime=2023-07-23 17:06:10, tickets=[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}]]
+2023-07-23 17:06:10.632 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m16901031700333of  [0;39m HikariPool-1 - Starting...
+2023-07-23 17:06:11.035 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m16901031700333of  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19363c18
+2023-07-23 17:06:11.037 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m16901031700333of  [0;39m HikariPool-1 - Start completed.
+2023-07-23 17:06:11.102 INFO  com.jktickets.aspect.LogAspect                    :120  [32m16901031700333of  [0;39m SQL执行完成: insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
+2023-07-23 17:06:11.107 INFO  com.jktickets.aspect.LogAspect                    :106  [32m16901031700333of  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainTicketMapper.selectByExample(DailyTrainTicketExample))
+2023-07-23 17:06:11.107 INFO  com.jktickets.aspect.LogAspect                    :111  [32m16901031700333of  [0;39m 参数值: com.jktickets.domain.DailyTrainTicketExample@55b65dd5
+2023-07-23 17:06:11.186 INFO  com.jktickets.aspect.LogAspect                    :120  [32m16901031700333of  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainTicketMapper.selectByExample(DailyTrainTicketExample))
+2023-07-23 17:06:11.187 INFO  com.jktickets.service.ConfirmOrderService         :158  [32m16901031700333of  [0;39m 查出余票记录:DailyTrainTicket [Hash = 993330387, id=1680944278592950272, date=Mon Jul 17 00:00:00 CST 2023, trainCode=01, start=上海, startPinyin=shanghai, startTime=Thu Jan 01 00:02:00 CST 1970, startIndex=0, end=杭州, endPinyin=hangzhou, endTime=Thu Jan 01 15:00:00 CST 1970, endIndex=2, ydz=12, ydzPrice=5.76, edz=25, edzPrice=4.32, rw=-1, rwPrice=8.64, yw=-1, ywPrice=7.20, createTime=Mon Jul 17 22:15:20 CST 2023, updateTime=Mon Jul 17 22:15:20 CST 2023]
+2023-07-23 17:06:11.192 INFO  com.jktickets.service.ConfirmOrderService         :172  [32m16901031700333of  [0;39m 本次购票有选座
+2023-07-23 17:06:11.193 INFO  com.jktickets.service.ConfirmOrderService         :176  [32m16901031700333of  [0;39m 本次选座 座位类型包含的列:[EDZ_A, EDZ_B, EDZ_C, EDZ_D, EDZ_F]
+2023-07-23 17:06:11.194 INFO  com.jktickets.service.ConfirmOrderService         :188  [32m16901031700333of  [0;39m 用于作参照的两排座位,[A1, B1, C1, D1, F1, A1, B1, C1, D1, F1]
+2023-07-23 17:06:11.194 INFO  com.jktickets.service.ConfirmOrderService         :199  [32m16901031700333of  [0;39m 计算得到所有座位的的绝对偏移量:[0, -1]
+2023-07-23 17:06:11.194 INFO  com.jktickets.service.ConfirmOrderService         :212  [32m16901031700333of  [0;39m 计算得到所有座位的 绝对偏移量:[0, -1]
+2023-07-23 17:06:11.197 INFO  com.jktickets.aspect.LogAspect                    :106  [32m16901031700333of  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainCarriageMapper.selectByExample(DailyTrainCarriageExample))
+2023-07-23 17:06:11.198 INFO  com.jktickets.aspect.LogAspect                    :111  [32m16901031700333of  [0;39m 参数值: com.jktickets.domain.DailyTrainCarriageExample@56508ef1
+2023-07-23 17:06:11.220 INFO  com.jktickets.aspect.LogAspect                    :120  [32m16901031700333of  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainCarriageMapper.selectByExample(DailyTrainCarriageExample))
+2023-07-23 17:06:11.220 INFO  com.jktickets.service.ConfirmOrderService         :247  [32m16901031700333of  [0;39m 共查出1个符合条件的车厢
+2023-07-23 17:06:11.220 INFO  com.jktickets.service.ConfirmOrderService         :252  [32m16901031700333of  [0;39m 从车厢2选座
+2023-07-23 17:06:11.223 INFO  com.jktickets.aspect.LogAspect                    :106  [32m16901031700333of  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainSeatMapper.selectByExample(DailyTrainSeatExample))
+2023-07-23 17:06:11.224 INFO  com.jktickets.aspect.LogAspect                    :111  [32m16901031700333of  [0;39m 参数值: com.jktickets.domain.DailyTrainSeatExample@11c8fb71
+2023-07-23 17:06:11.262 INFO  com.jktickets.aspect.LogAspect                    :120  [32m16901031700333of  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainSeatMapper.selectByExample(DailyTrainSeatExample))
+2023-07-23 17:06:11.262 INFO  com.jktickets.service.ConfirmOrderService         :255  [32m16901031700333of  [0;39m 车厢2的座位数:25
+2023-07-23 17:06:11.263 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m16901031700333of  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:06:11.263 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m16901031700333of  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:06:11.263 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m16901031700333of  [0;39m 选中座位
+2023-07-23 17:06:11.263 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m16901031700333of  [0;39m 有偏移值:[0, -1]，校验偏移的座位是否可选
+2023-07-23 17:06:11.266 ERROR c.jktickets.exception.ControllerExceptionHandler  :32   [32m16901031700333of  [0;39m 系统异常：
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 25
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at com.jktickets.service.impl.ConfirmOrderServiceImpl.selectSeat(ConfirmOrderServiceImpl.java:309)
+	at com.jktickets.service.impl.ConfirmOrderServiceImpl.doConfirm(ConfirmOrderServiceImpl.java:214)
+	at com.jktickets.controller.ConfirmOrderAdminController.doConfirm(ConfirmOrderAdminController.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.jktickets.aspect.LogAspect.doAround(LogAspect.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.jktickets.controller.ConfirmOrderAdminController$$SpringCGLIB$$0.doConfirm(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-23 17:06:11.353 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m16901031700333of  [0;39m Resolved [java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 25]
+2023-07-23 17:06:52.768 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-07-23 17:06:52.781 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-07-23 17:06:57.749 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 17:06:57.808 INFO  com.jktickets.BusinessApplication                 :51   [32m                  [0;39m Starting BusinessApplication using Java 17.0.3 with PID 10988 (D:\Project\java\jk-tickets\business-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-23 17:06:57.810 INFO  com.jktickets.BusinessApplication                 :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-23 17:06:57.873 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-23 17:06:57.874 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-23 17:06:58.925 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=a2d2181d-ab17-3664-9e1a-3e2eda0baeea
+2023-07-23 17:06:59.831 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8002 (http)
+2023-07-23 17:06:59.843 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8002"]
+2023-07-23 17:06:59.845 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-23 17:06:59.845 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-23 17:06:59.913 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-23 17:06:59.915 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2039 ms
+2023-07-23 17:07:01.244 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-23 17:07:01.585 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-07-23 17:07:02.023 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8002"]
+2023-07-23 17:07:02.047 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8002 (http) with context path '/business'
+2023-07-23 17:07:02.410 INFO  com.jktickets.BusinessApplication                 :57   [32m                  [0;39m Started BusinessApplication in 5.678 seconds (process running for 6.593)
+2023-07-23 17:07:02.413 INFO  com.jktickets.BusinessApplication                 :21   [32m                  [0;39m 启动成功！！
+2023-07-23 17:07:02.414 INFO  com.jktickets.BusinessApplication                 :23   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8002/business/hello
+2023-07-23 17:07:07.295 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 17:07:07.295 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-23 17:07:07.297 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-07-23 17:07:07.332 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1690103227324b3l  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTAxMDMwMDksIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDE4OTQwOSwiaWF0IjoxNjkwMTAzMDA5fQ.fao_GuJBlWYVVAUJXk0mq0LUr5zOHVLDoBxO3Z15MBg
+2023-07-23 17:07:07.632 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1690103227324b3l  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:07:07.635 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1690103227324b3l  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:07:07.833 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1690103227324b3l  [0;39m ------------- 开始 -------------
+2023-07-23 17:07:07.834 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1690103227324b3l  [0;39m 请求地址: http://127.0.0.1:8002/business/confirmOrder/doConfirm POST
+2023-07-23 17:07:07.834 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690103227324b3l  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderAdminController.doConfirm
+2023-07-23 17:07:07.835 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1690103227324b3l  [0;39m 远程地址: 127.0.0.1
+2023-07-23 17:07:07.914 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1690103227324b3l  [0;39m 请求参数: [{"dailyTrainTicketId":1680944278592950272,"date":1689523200000,"end":"杭州","start":"上海","tickets":[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}],"trainCode":"01"}]
+2023-07-23 17:07:07.923 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103227324b3l  [0;39m 执行SQL:  insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
+2023-07-23 17:07:07.927 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103227324b3l  [0;39m 参数值: ConfirmOrder [Hash = 1498959879, id=1683041039738343424, memberId=1680932902797447168, date=Mon Jul 17 00:00:00 CST 2023, trainCode=01, start=上海, end=杭州, dailyTrainTicketId=1680944278592950272, status=I, createTime=2023-07-23 17:07:07, updateTime=2023-07-23 17:07:07, tickets=[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}]]
+2023-07-23 17:07:07.949 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1690103227324b3l  [0;39m HikariPool-1 - Starting...
+2023-07-23 17:07:08.366 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1690103227324b3l  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@aaeec00
+2023-07-23 17:07:08.369 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1690103227324b3l  [0;39m HikariPool-1 - Start completed.
+2023-07-23 17:07:08.443 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103227324b3l  [0;39m SQL执行完成: insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
+2023-07-23 17:07:08.448 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103227324b3l  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainTicketMapper.selectByExample(DailyTrainTicketExample))
+2023-07-23 17:07:08.449 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103227324b3l  [0;39m 参数值: com.jktickets.domain.DailyTrainTicketExample@48841e61
+2023-07-23 17:07:08.529 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103227324b3l  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainTicketMapper.selectByExample(DailyTrainTicketExample))
+2023-07-23 17:07:08.529 INFO  com.jktickets.service.ConfirmOrderService         :158  [32m1690103227324b3l  [0;39m 查出余票记录:DailyTrainTicket [Hash = 1188693499, id=1680944278592950272, date=Mon Jul 17 00:00:00 CST 2023, trainCode=01, start=上海, startPinyin=shanghai, startTime=Thu Jan 01 00:02:00 CST 1970, startIndex=0, end=杭州, endPinyin=hangzhou, endTime=Thu Jan 01 15:00:00 CST 1970, endIndex=2, ydz=12, ydzPrice=5.76, edz=25, edzPrice=4.32, rw=-1, rwPrice=8.64, yw=-1, ywPrice=7.20, createTime=Mon Jul 17 22:15:20 CST 2023, updateTime=Mon Jul 17 22:15:20 CST 2023]
+2023-07-23 17:07:08.533 INFO  com.jktickets.service.ConfirmOrderService         :172  [32m1690103227324b3l  [0;39m 本次购票有选座
+2023-07-23 17:07:08.535 INFO  com.jktickets.service.ConfirmOrderService         :176  [32m1690103227324b3l  [0;39m 本次选座 座位类型包含的列:[EDZ_A, EDZ_B, EDZ_C, EDZ_D, EDZ_F]
+2023-07-23 17:07:08.536 INFO  com.jktickets.service.ConfirmOrderService         :188  [32m1690103227324b3l  [0;39m 用于作参照的两排座位,[A1, B1, C1, D1, F1, A1, B1, C1, D1, F1]
+2023-07-23 17:07:08.536 INFO  com.jktickets.service.ConfirmOrderService         :199  [32m1690103227324b3l  [0;39m 计算得到所有座位的的绝对偏移量:[0, -1]
+2023-07-23 17:07:08.536 INFO  com.jktickets.service.ConfirmOrderService         :212  [32m1690103227324b3l  [0;39m 计算得到所有座位的 绝对偏移量:[0, -1]
+2023-07-23 17:07:08.541 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103227324b3l  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainCarriageMapper.selectByExample(DailyTrainCarriageExample))
+2023-07-23 17:07:08.541 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103227324b3l  [0;39m 参数值: com.jktickets.domain.DailyTrainCarriageExample@71b33585
+2023-07-23 17:07:08.567 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103227324b3l  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainCarriageMapper.selectByExample(DailyTrainCarriageExample))
+2023-07-23 17:07:08.568 INFO  com.jktickets.service.ConfirmOrderService         :247  [32m1690103227324b3l  [0;39m 共查出1个符合条件的车厢
+2023-07-23 17:07:08.568 INFO  com.jktickets.service.ConfirmOrderService         :252  [32m1690103227324b3l  [0;39m 从车厢2选座
+2023-07-23 17:07:08.572 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103227324b3l  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainSeatMapper.selectByExample(DailyTrainSeatExample))
+2023-07-23 17:07:08.573 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103227324b3l  [0;39m 参数值: com.jktickets.domain.DailyTrainSeatExample@67da5506
+2023-07-23 17:07:08.611 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103227324b3l  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainSeatMapper.selectByExample(DailyTrainSeatExample))
+2023-07-23 17:07:08.612 INFO  com.jktickets.service.ConfirmOrderService         :255  [32m1690103227324b3l  [0;39m 车厢2的座位数:25
+2023-07-23 17:07:08.612 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103227324b3l  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:07:08.613 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103227324b3l  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:07:08.613 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m1690103227324b3l  [0;39m 选中座位
+2023-07-23 17:07:08.614 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m1690103227324b3l  [0;39m 有偏移值:[0, -1]，校验偏移的座位是否可选
+2023-07-23 17:07:08.615 ERROR c.jktickets.exception.ControllerExceptionHandler  :32   [32m1690103227324b3l  [0;39m 系统异常：
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 25
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at com.jktickets.service.impl.ConfirmOrderServiceImpl.selectSeat(ConfirmOrderServiceImpl.java:309)
+	at com.jktickets.service.impl.ConfirmOrderServiceImpl.doConfirm(ConfirmOrderServiceImpl.java:214)
+	at com.jktickets.controller.ConfirmOrderAdminController.doConfirm(ConfirmOrderAdminController.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.jktickets.aspect.LogAspect.doAround(LogAspect.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.jktickets.controller.ConfirmOrderAdminController$$SpringCGLIB$$0.doConfirm(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-23 17:07:08.666 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m1690103227324b3l  [0;39m Resolved [java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 25]
+2023-07-23 17:07:13.572 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-07-23 17:07:13.579 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-07-23 17:07:22.322 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 17:07:22.381 INFO  com.jktickets.BusinessApplication                 :51   [32m                  [0;39m Starting BusinessApplication using Java 17.0.3 with PID 15540 (D:\Project\java\jk-tickets\business-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-23 17:07:22.383 INFO  com.jktickets.BusinessApplication                 :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-23 17:07:22.448 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-23 17:07:22.449 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-23 17:07:23.675 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=a2d2181d-ab17-3664-9e1a-3e2eda0baeea
+2023-07-23 17:07:24.722 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8002 (http)
+2023-07-23 17:07:24.739 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8002"]
+2023-07-23 17:07:24.740 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-23 17:07:24.741 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-23 17:07:24.855 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-23 17:07:24.857 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2406 ms
+2023-07-23 17:07:26.398 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-23 17:07:26.769 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-07-23 17:07:27.219 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8002"]
+2023-07-23 17:07:27.256 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8002 (http) with context path '/business'
+2023-07-23 17:07:27.626 INFO  com.jktickets.BusinessApplication                 :57   [32m                  [0;39m Started BusinessApplication in 6.598 seconds (process running for 11.087)
+2023-07-23 17:07:27.630 INFO  com.jktickets.BusinessApplication                 :21   [32m                  [0;39m 启动成功！！
+2023-07-23 17:07:27.632 INFO  com.jktickets.BusinessApplication                 :23   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8002/business/hello
+2023-07-23 17:07:33.386 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 17:07:33.386 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-23 17:07:33.387 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-07-23 17:07:33.424 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1690103253416j2g  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTAxMDMwMDksIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDE4OTQwOSwiaWF0IjoxNjkwMTAzMDA5fQ.fao_GuJBlWYVVAUJXk0mq0LUr5zOHVLDoBxO3Z15MBg
+2023-07-23 17:07:33.767 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1690103253416j2g  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:07:33.771 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1690103253416j2g  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:07:34.003 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1690103253416j2g  [0;39m ------------- 开始 -------------
+2023-07-23 17:07:34.004 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1690103253416j2g  [0;39m 请求地址: http://127.0.0.1:8002/business/confirmOrder/doConfirm POST
+2023-07-23 17:07:34.005 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690103253416j2g  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderAdminController.doConfirm
+2023-07-23 17:07:34.005 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1690103253416j2g  [0;39m 远程地址: 127.0.0.1
+2023-07-23 17:07:34.093 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1690103253416j2g  [0;39m 请求参数: [{"dailyTrainTicketId":1680944278592950272,"date":1689523200000,"end":"杭州","start":"上海","tickets":[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}],"trainCode":"01"}]
+2023-07-23 17:07:34.106 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103253416j2g  [0;39m 执行SQL:  insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
+2023-07-23 17:07:34.111 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103253416j2g  [0;39m 参数值: ConfirmOrder [Hash = 1053103204, id=1683041149557805056, memberId=1680932902797447168, date=Mon Jul 17 00:00:00 CST 2023, trainCode=01, start=上海, end=杭州, dailyTrainTicketId=1680944278592950272, status=I, createTime=2023-07-23 17:07:34, updateTime=2023-07-23 17:07:34, tickets=[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}]]
+2023-07-23 17:07:34.141 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1690103253416j2g  [0;39m HikariPool-1 - Starting...
+2023-07-23 17:07:34.579 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1690103253416j2g  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5925147d
+2023-07-23 17:07:34.584 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1690103253416j2g  [0;39m HikariPool-1 - Start completed.
+2023-07-23 17:07:34.650 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103253416j2g  [0;39m SQL执行完成: insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
+2023-07-23 17:07:34.655 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103253416j2g  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainTicketMapper.selectByExample(DailyTrainTicketExample))
+2023-07-23 17:07:34.655 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103253416j2g  [0;39m 参数值: com.jktickets.domain.DailyTrainTicketExample@c271967
+2023-07-23 17:07:34.736 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103253416j2g  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainTicketMapper.selectByExample(DailyTrainTicketExample))
+2023-07-23 17:07:34.737 INFO  com.jktickets.service.ConfirmOrderService         :158  [32m1690103253416j2g  [0;39m 查出余票记录:DailyTrainTicket [Hash = 282856434, id=1680944278592950272, date=Mon Jul 17 00:00:00 CST 2023, trainCode=01, start=上海, startPinyin=shanghai, startTime=Thu Jan 01 00:02:00 CST 1970, startIndex=0, end=杭州, endPinyin=hangzhou, endTime=Thu Jan 01 15:00:00 CST 1970, endIndex=2, ydz=12, ydzPrice=5.76, edz=25, edzPrice=4.32, rw=-1, rwPrice=8.64, yw=-1, ywPrice=7.20, createTime=Mon Jul 17 22:15:20 CST 2023, updateTime=Mon Jul 17 22:15:20 CST 2023]
+2023-07-23 17:07:34.742 INFO  com.jktickets.service.ConfirmOrderService         :172  [32m1690103253416j2g  [0;39m 本次购票有选座
+2023-07-23 17:07:34.743 INFO  com.jktickets.service.ConfirmOrderService         :176  [32m1690103253416j2g  [0;39m 本次选座 座位类型包含的列:[EDZ_A, EDZ_B, EDZ_C, EDZ_D, EDZ_F]
+2023-07-23 17:07:34.743 INFO  com.jktickets.service.ConfirmOrderService         :188  [32m1690103253416j2g  [0;39m 用于作参照的两排座位,[A1, B1, C1, D1, F1, A1, B1, C1, D1, F1]
+2023-07-23 17:07:34.744 INFO  com.jktickets.service.ConfirmOrderService         :199  [32m1690103253416j2g  [0;39m 计算得到所有座位的的绝对偏移量:[0, -1]
+2023-07-23 17:09:08.438 WARN  com.zaxxer.hikari.pool.HikariPool                 :804  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m33s752ms73µs900ns).
+2023-07-23 17:09:08.472 INFO  com.jktickets.service.ConfirmOrderService         :212  [32m1690103253416j2g  [0;39m 计算得到所有座位的 绝对偏移量:[0, -1]
+2023-07-23 17:09:08.477 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103253416j2g  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainCarriageMapper.selectByExample(DailyTrainCarriageExample))
+2023-07-23 17:09:08.478 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103253416j2g  [0;39m 参数值: com.jktickets.domain.DailyTrainCarriageExample@254e816e
+2023-07-23 17:09:08.513 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103253416j2g  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainCarriageMapper.selectByExample(DailyTrainCarriageExample))
+2023-07-23 17:09:08.514 INFO  com.jktickets.service.ConfirmOrderService         :247  [32m1690103253416j2g  [0;39m 共查出1个符合条件的车厢
+2023-07-23 17:09:08.514 INFO  com.jktickets.service.ConfirmOrderService         :252  [32m1690103253416j2g  [0;39m 从车厢2选座
+2023-07-23 17:09:08.519 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103253416j2g  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainSeatMapper.selectByExample(DailyTrainSeatExample))
+2023-07-23 17:09:08.519 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103253416j2g  [0;39m 参数值: com.jktickets.domain.DailyTrainSeatExample@4f9f4a87
+2023-07-23 17:09:08.547 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103253416j2g  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainSeatMapper.selectByExample(DailyTrainSeatExample))
+2023-07-23 17:09:08.548 INFO  com.jktickets.service.ConfirmOrderService         :255  [32m1690103253416j2g  [0;39m 车厢2的座位数:25
+2023-07-23 17:09:08.549 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103253416j2g  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:09:08.550 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103253416j2g  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:09:08.550 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m1690103253416j2g  [0;39m 选中座位
+2023-07-23 17:09:08.550 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m1690103253416j2g  [0;39m 有偏移值:[0, -1]，校验偏移的座位是否可选
+2023-07-23 17:09:08.552 ERROR c.jktickets.exception.ControllerExceptionHandler  :32   [32m1690103253416j2g  [0;39m 系统异常：
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 25
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at com.jktickets.service.impl.ConfirmOrderServiceImpl.selectSeat(ConfirmOrderServiceImpl.java:309)
+	at com.jktickets.service.impl.ConfirmOrderServiceImpl.doConfirm(ConfirmOrderServiceImpl.java:214)
+	at com.jktickets.controller.ConfirmOrderAdminController.doConfirm(ConfirmOrderAdminController.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.jktickets.aspect.LogAspect.doAround(LogAspect.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.jktickets.controller.ConfirmOrderAdminController$$SpringCGLIB$$0.doConfirm(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-23 17:09:08.599 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m1690103253416j2g  [0;39m Resolved [java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 25]
+2023-07-23 17:09:08.645 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-07-23 17:09:08.721 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-07-23 17:09:15.920 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-23 17:09:15.963 INFO  com.jktickets.BusinessApplication                 :51   [32m                  [0;39m Starting BusinessApplication using Java 17.0.3 with PID 5528 (D:\Project\java\jk-tickets\business-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-23 17:09:15.965 INFO  com.jktickets.BusinessApplication                 :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-23 17:09:16.015 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-23 17:09:16.015 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-23 17:09:17.014 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=a2d2181d-ab17-3664-9e1a-3e2eda0baeea
+2023-07-23 17:09:17.886 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8002 (http)
+2023-07-23 17:09:17.898 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8002"]
+2023-07-23 17:09:17.900 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-23 17:09:17.901 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-23 17:09:17.977 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-23 17:09:17.979 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1961 ms
+2023-07-23 17:09:19.277 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-23 17:09:19.621 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-07-23 17:09:20.100 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8002"]
+2023-07-23 17:09:20.127 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8002 (http) with context path '/business'
+2023-07-23 17:09:20.508 INFO  com.jktickets.BusinessApplication                 :57   [32m                  [0;39m Started BusinessApplication in 5.596 seconds (process running for 6.551)
+2023-07-23 17:09:20.512 INFO  com.jktickets.BusinessApplication                 :21   [32m                  [0;39m 启动成功！！
+2023-07-23 17:09:20.513 INFO  com.jktickets.BusinessApplication                 :23   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8002/business/hello
+2023-07-23 17:09:27.878 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 17:09:27.878 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-23 17:09:27.880 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-07-23 17:09:27.912 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1690103367903wum  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTAxMDMwMDksIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDE4OTQwOSwiaWF0IjoxNjkwMTAzMDA5fQ.fao_GuJBlWYVVAUJXk0mq0LUr5zOHVLDoBxO3Z15MBg
+2023-07-23 17:09:28.229 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1690103367903wum  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:09:28.233 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1690103367903wum  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:09:28.430 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1690103367903wum  [0;39m ------------- 开始 -------------
+2023-07-23 17:09:28.430 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1690103367903wum  [0;39m 请求地址: http://127.0.0.1:8002/business/confirmOrder/doConfirm POST
+2023-07-23 17:09:28.431 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690103367903wum  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderAdminController.doConfirm
+2023-07-23 17:09:28.432 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1690103367903wum  [0;39m 远程地址: 127.0.0.1
+2023-07-23 17:09:28.524 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1690103367903wum  [0;39m 请求参数: [{"dailyTrainTicketId":1680944278592950272,"date":1689523200000,"end":"杭州","start":"上海","tickets":[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}],"trainCode":"01"}]
+2023-07-23 17:09:28.533 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103367903wum  [0;39m 执行SQL:  insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
+2023-07-23 17:09:28.537 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103367903wum  [0;39m 参数值: ConfirmOrder [Hash = 776827740, id=1683041629499428864, memberId=1680932902797447168, date=Mon Jul 17 00:00:00 CST 2023, trainCode=01, start=上海, end=杭州, dailyTrainTicketId=1680944278592950272, status=I, createTime=2023-07-23 17:09:28, updateTime=2023-07-23 17:09:28, tickets=[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}]]
+2023-07-23 17:09:28.563 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1690103367903wum  [0;39m HikariPool-1 - Starting...
+2023-07-23 17:09:28.890 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1690103367903wum  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e69d87d
+2023-07-23 17:09:28.892 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1690103367903wum  [0;39m HikariPool-1 - Start completed.
+2023-07-23 17:09:28.962 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103367903wum  [0;39m SQL执行完成: insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
+2023-07-23 17:09:28.968 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103367903wum  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainTicketMapper.selectByExample(DailyTrainTicketExample))
+2023-07-23 17:09:28.969 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103367903wum  [0;39m 参数值: com.jktickets.domain.DailyTrainTicketExample@196658bd
+2023-07-23 17:09:29.045 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103367903wum  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainTicketMapper.selectByExample(DailyTrainTicketExample))
+2023-07-23 17:09:29.046 INFO  com.jktickets.service.ConfirmOrderService         :158  [32m1690103367903wum  [0;39m 查出余票记录:DailyTrainTicket [Hash = 1084701645, id=1680944278592950272, date=Mon Jul 17 00:00:00 CST 2023, trainCode=01, start=上海, startPinyin=shanghai, startTime=Thu Jan 01 00:02:00 CST 1970, startIndex=0, end=杭州, endPinyin=hangzhou, endTime=Thu Jan 01 15:00:00 CST 1970, endIndex=2, ydz=12, ydzPrice=5.76, edz=25, edzPrice=4.32, rw=-1, rwPrice=8.64, yw=-1, ywPrice=7.20, createTime=Mon Jul 17 22:15:20 CST 2023, updateTime=Mon Jul 17 22:15:20 CST 2023]
+2023-07-23 17:09:29.051 INFO  com.jktickets.service.ConfirmOrderService         :172  [32m1690103367903wum  [0;39m 本次购票有选座
+2023-07-23 17:09:29.052 INFO  com.jktickets.service.ConfirmOrderService         :176  [32m1690103367903wum  [0;39m 本次选座 座位类型包含的列:[EDZ_A, EDZ_B, EDZ_C, EDZ_D, EDZ_F]
+2023-07-23 17:09:29.052 INFO  com.jktickets.service.ConfirmOrderService         :188  [32m1690103367903wum  [0;39m 用于作参照的两排座位,[A1, B1, C1, D1, F1, A2, B2, C2, D2, F2]
+2023-07-23 17:09:29.053 INFO  com.jktickets.service.ConfirmOrderService         :199  [32m1690103367903wum  [0;39m 计算得到所有座位的的绝对偏移量:[0, 6]
+2023-07-23 17:09:29.053 INFO  com.jktickets.service.ConfirmOrderService         :212  [32m1690103367903wum  [0;39m 计算得到所有座位的 绝对偏移量:[0, 6]
+2023-07-23 17:09:29.056 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103367903wum  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainCarriageMapper.selectByExample(DailyTrainCarriageExample))
+2023-07-23 17:09:29.057 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103367903wum  [0;39m 参数值: com.jktickets.domain.DailyTrainCarriageExample@2c09793b
+2023-07-23 17:09:29.085 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103367903wum  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainCarriageMapper.selectByExample(DailyTrainCarriageExample))
+2023-07-23 17:09:29.085 INFO  com.jktickets.service.ConfirmOrderService         :247  [32m1690103367903wum  [0;39m 共查出1个符合条件的车厢
+2023-07-23 17:09:29.086 INFO  com.jktickets.service.ConfirmOrderService         :252  [32m1690103367903wum  [0;39m 从车厢2选座
+2023-07-23 17:09:29.090 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690103367903wum  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainSeatMapper.selectByExample(DailyTrainSeatExample))
+2023-07-23 17:09:29.090 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690103367903wum  [0;39m 参数值: com.jktickets.domain.DailyTrainSeatExample@2d0f349e
+2023-07-23 17:09:29.134 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690103367903wum  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainSeatMapper.selectByExample(DailyTrainSeatExample))
+2023-07-23 17:09:29.136 INFO  com.jktickets.service.ConfirmOrderService         :255  [32m1690103367903wum  [0;39m 车厢2的座位数:25
+2023-07-23 17:09:29.136 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103367903wum  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:09:29.137 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103367903wum  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:09:29.137 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m1690103367903wum  [0;39m 选中座位
+2023-07-23 17:09:29.137 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m1690103367903wum  [0;39m 有偏移值:[0, 6]，校验偏移的座位是否可选
+2023-07-23 17:09:29.138 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103367903wum  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:09:29.138 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103367903wum  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:09:29.139 INFO  com.jktickets.service.ConfirmOrderService         :313  [32m1690103367903wum  [0;39m 座位7被选中
+2023-07-23 17:09:29.139 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位2列值不对,继续判断下一个座位,当前列支:B,目标列值:A
+2023-07-23 17:09:29.139 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位3列值不对,继续判断下一个座位,当前列支:C,目标列值:A
+2023-07-23 17:09:29.140 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位4列值不对,继续判断下一个座位,当前列支:D,目标列值:A
+2023-07-23 17:09:29.140 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位5列值不对,继续判断下一个座位,当前列支:F,目标列值:A
+2023-07-23 17:09:29.141 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103367903wum  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:09:29.142 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103367903wum  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:09:29.143 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m1690103367903wum  [0;39m 选中座位
+2023-07-23 17:09:29.143 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m1690103367903wum  [0;39m 有偏移值:[0, 6]，校验偏移的座位是否可选
+2023-07-23 17:09:29.143 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103367903wum  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:09:29.143 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103367903wum  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:09:29.144 INFO  com.jktickets.service.ConfirmOrderService         :313  [32m1690103367903wum  [0;39m 座位12被选中
+2023-07-23 17:09:29.144 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位7列值不对,继续判断下一个座位,当前列支:B,目标列值:A
+2023-07-23 17:09:29.144 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位8列值不对,继续判断下一个座位,当前列支:C,目标列值:A
+2023-07-23 17:09:29.144 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位9列值不对,继续判断下一个座位,当前列支:D,目标列值:A
+2023-07-23 17:09:29.145 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位10列值不对,继续判断下一个座位,当前列支:F,目标列值:A
+2023-07-23 17:09:29.145 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103367903wum  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:09:29.145 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103367903wum  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:09:29.145 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m1690103367903wum  [0;39m 选中座位
+2023-07-23 17:09:29.146 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m1690103367903wum  [0;39m 有偏移值:[0, 6]，校验偏移的座位是否可选
+2023-07-23 17:09:29.146 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103367903wum  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:09:29.146 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103367903wum  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:09:29.146 INFO  com.jktickets.service.ConfirmOrderService         :313  [32m1690103367903wum  [0;39m 座位17被选中
+2023-07-23 17:09:29.147 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位12列值不对,继续判断下一个座位,当前列支:B,目标列值:A
+2023-07-23 17:09:29.147 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位13列值不对,继续判断下一个座位,当前列支:C,目标列值:A
+2023-07-23 17:09:29.147 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位14列值不对,继续判断下一个座位,当前列支:D,目标列值:A
+2023-07-23 17:09:29.147 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位15列值不对,继续判断下一个座位,当前列支:F,目标列值:A
+2023-07-23 17:09:29.147 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103367903wum  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:09:29.148 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103367903wum  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:09:29.148 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m1690103367903wum  [0;39m 选中座位
+2023-07-23 17:09:29.148 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m1690103367903wum  [0;39m 有偏移值:[0, 6]，校验偏移的座位是否可选
+2023-07-23 17:09:29.148 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103367903wum  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:09:29.149 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103367903wum  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:09:29.149 INFO  com.jktickets.service.ConfirmOrderService         :313  [32m1690103367903wum  [0;39m 座位22被选中
+2023-07-23 17:09:29.149 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位17列值不对,继续判断下一个座位,当前列支:B,目标列值:A
+2023-07-23 17:09:29.149 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位18列值不对,继续判断下一个座位,当前列支:C,目标列值:A
+2023-07-23 17:09:29.150 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位19列值不对,继续判断下一个座位,当前列支:D,目标列值:A
+2023-07-23 17:09:29.150 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位20列值不对,继续判断下一个座位,当前列支:F,目标列值:A
+2023-07-23 17:09:29.151 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m1690103367903wum  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:09:29.151 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m1690103367903wum  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:09:29.151 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m1690103367903wum  [0;39m 选中座位
+2023-07-23 17:09:29.152 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m1690103367903wum  [0;39m 有偏移值:[0, 6]，校验偏移的座位是否可选
+2023-07-23 17:09:29.152 INFO  com.jktickets.service.ConfirmOrderService         :300  [32m1690103367903wum  [0;39m 座位26不可选,偏移后的索引超出了这个车厢的座位数
+2023-07-23 17:09:29.152 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位22列值不对,继续判断下一个座位,当前列支:B,目标列值:A
+2023-07-23 17:09:29.153 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位23列值不对,继续判断下一个座位,当前列支:C,目标列值:A
+2023-07-23 17:09:29.153 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位24列值不对,继续判断下一个座位,当前列支:D,目标列值:A
+2023-07-23 17:09:29.153 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m1690103367903wum  [0;39m 座位25列值不对,继续判断下一个座位,当前列支:F,目标列值:A
+2023-07-23 17:09:29.158 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1690103367903wum  [0;39m 返回结果: {"code":0,"message":"","success":true}
+2023-07-23 17:09:29.159 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1690103367903wum  [0;39m ------------- 结束 耗时：730 ms -------------
+2023-07-23 17:13:34.022 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m169010361402242b  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTAxMDMwMDksIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDE4OTQwOSwiaWF0IjoxNjkwMTAzMDA5fQ.fao_GuJBlWYVVAUJXk0mq0LUr5zOHVLDoBxO3Z15MBg
+2023-07-23 17:13:34.023 INFO  com.jktickets.utils.JwtUtil                       :64   [32m169010361402242b  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:13:34.023 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m169010361402242b  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-23 17:13:34.025 INFO  com.jktickets.aspect.LogAspect                    :57   [32m169010361402242b  [0;39m ------------- 开始 -------------
+2023-07-23 17:13:34.026 INFO  com.jktickets.aspect.LogAspect                    :58   [32m169010361402242b  [0;39m 请求地址: http://127.0.0.1:8002/business/confirmOrder/doConfirm POST
+2023-07-23 17:13:34.026 INFO  com.jktickets.aspect.LogAspect                    :59   [32m169010361402242b  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderAdminController.doConfirm
+2023-07-23 17:13:34.026 INFO  com.jktickets.aspect.LogAspect                    :60   [32m169010361402242b  [0;39m 远程地址: 127.0.0.1
+2023-07-23 17:13:34.026 INFO  com.jktickets.aspect.LogAspect                    :82   [32m169010361402242b  [0;39m 请求参数: [{"dailyTrainTicketId":1680944278592950272,"date":1689523200000,"end":"杭州","start":"上海","tickets":[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}],"trainCode":"01"}]
+2023-07-23 17:13:34.027 INFO  com.jktickets.aspect.LogAspect                    :106  [32m169010361402242b  [0;39m 执行SQL:  insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
+2023-07-23 17:13:34.027 INFO  com.jktickets.aspect.LogAspect                    :111  [32m169010361402242b  [0;39m 参数值: ConfirmOrder [Hash = 1832402220, id=1683042659184283648, memberId=1680932902797447168, date=Mon Jul 17 00:00:00 CST 2023, trainCode=01, start=上海, end=杭州, dailyTrainTicketId=1680944278592950272, status=I, createTime=2023-07-23 17:13:34, updateTime=2023-07-23 17:13:34, tickets=[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}]]
+2023-07-23 17:13:34.089 INFO  com.jktickets.aspect.LogAspect                    :120  [32m169010361402242b  [0;39m SQL执行完成: insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
+2023-07-23 17:13:34.090 INFO  com.jktickets.aspect.LogAspect                    :106  [32m169010361402242b  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainTicketMapper.selectByExample(DailyTrainTicketExample))
+2023-07-23 17:13:34.091 INFO  com.jktickets.aspect.LogAspect                    :111  [32m169010361402242b  [0;39m 参数值: com.jktickets.domain.DailyTrainTicketExample@3c01df6f
+2023-07-23 17:13:34.110 INFO  com.jktickets.aspect.LogAspect                    :120  [32m169010361402242b  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainTicketMapper.selectByExample(DailyTrainTicketExample))
+2023-07-23 17:13:34.111 INFO  com.jktickets.service.ConfirmOrderService         :158  [32m169010361402242b  [0;39m 查出余票记录:DailyTrainTicket [Hash = 944703447, id=1680944278592950272, date=Mon Jul 17 00:00:00 CST 2023, trainCode=01, start=上海, startPinyin=shanghai, startTime=Thu Jan 01 00:02:00 CST 1970, startIndex=0, end=杭州, endPinyin=hangzhou, endTime=Thu Jan 01 15:00:00 CST 1970, endIndex=2, ydz=12, ydzPrice=5.76, edz=25, edzPrice=4.32, rw=-1, rwPrice=8.64, yw=-1, ywPrice=7.20, createTime=Mon Jul 17 22:15:20 CST 2023, updateTime=Mon Jul 17 22:15:20 CST 2023]
+2023-07-23 17:13:34.112 INFO  com.jktickets.service.ConfirmOrderService         :172  [32m169010361402242b  [0;39m 本次购票有选座
+2023-07-23 17:13:34.112 INFO  com.jktickets.service.ConfirmOrderService         :176  [32m169010361402242b  [0;39m 本次选座 座位类型包含的列:[EDZ_A, EDZ_B, EDZ_C, EDZ_D, EDZ_F]
+2023-07-23 17:13:34.112 INFO  com.jktickets.service.ConfirmOrderService         :188  [32m169010361402242b  [0;39m 用于作参照的两排座位,[A1, B1, C1, D1, F1, A2, B2, C2, D2, F2]
+2023-07-23 17:13:34.112 INFO  com.jktickets.service.ConfirmOrderService         :199  [32m169010361402242b  [0;39m 计算得到所有座位的的绝对偏移量:[0, 6]
+2023-07-23 17:13:34.112 INFO  com.jktickets.service.ConfirmOrderService         :212  [32m169010361402242b  [0;39m 计算得到所有座位的 绝对偏移量:[0, 6]
+2023-07-23 17:13:34.113 INFO  com.jktickets.aspect.LogAspect                    :106  [32m169010361402242b  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainCarriageMapper.selectByExample(DailyTrainCarriageExample))
+2023-07-23 17:13:34.113 INFO  com.jktickets.aspect.LogAspect                    :111  [32m169010361402242b  [0;39m 参数值: com.jktickets.domain.DailyTrainCarriageExample@326b67d3
+2023-07-23 17:13:34.132 INFO  com.jktickets.aspect.LogAspect                    :120  [32m169010361402242b  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainCarriageMapper.selectByExample(DailyTrainCarriageExample))
+2023-07-23 17:13:34.133 INFO  com.jktickets.service.ConfirmOrderService         :247  [32m169010361402242b  [0;39m 共查出1个符合条件的车厢
+2023-07-23 17:13:34.133 INFO  com.jktickets.service.ConfirmOrderService         :252  [32m169010361402242b  [0;39m 从车厢2选座
+2023-07-23 17:13:34.133 INFO  com.jktickets.aspect.LogAspect                    :106  [32m169010361402242b  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.DailyTrainSeatMapper.selectByExample(DailyTrainSeatExample))
+2023-07-23 17:13:34.133 INFO  com.jktickets.aspect.LogAspect                    :111  [32m169010361402242b  [0;39m 参数值: com.jktickets.domain.DailyTrainSeatExample@48d52144
+2023-07-23 17:13:34.433 INFO  com.jktickets.aspect.LogAspect                    :120  [32m169010361402242b  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.DailyTrainSeatMapper.selectByExample(DailyTrainSeatExample))
+2023-07-23 17:13:34.433 INFO  com.jktickets.service.ConfirmOrderService         :255  [32m169010361402242b  [0;39m 车厢2的座位数:25
+2023-07-23 17:13:34.433 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m169010361402242b  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:13:34.433 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m169010361402242b  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:13:34.433 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m169010361402242b  [0;39m 选中座位
+2023-07-23 17:13:34.434 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m169010361402242b  [0;39m 有偏移值:[0, 6]，校验偏移的座位是否可选
+2023-07-23 17:13:34.434 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m169010361402242b  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:13:34.434 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m169010361402242b  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:13:34.434 INFO  com.jktickets.service.ConfirmOrderService         :313  [32m169010361402242b  [0;39m 座位7被选中
+2023-07-23 17:13:34.434 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位2列值不对,继续判断下一个座位,当前列支:B,目标列值:A
+2023-07-23 17:13:34.435 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位3列值不对,继续判断下一个座位,当前列支:C,目标列值:A
+2023-07-23 17:13:34.435 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位4列值不对,继续判断下一个座位,当前列支:D,目标列值:A
+2023-07-23 17:13:34.435 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位5列值不对,继续判断下一个座位,当前列支:F,目标列值:A
+2023-07-23 17:13:34.435 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m169010361402242b  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:13:34.436 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m169010361402242b  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:13:34.436 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m169010361402242b  [0;39m 选中座位
+2023-07-23 17:13:34.436 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m169010361402242b  [0;39m 有偏移值:[0, 6]，校验偏移的座位是否可选
+2023-07-23 17:13:34.436 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m169010361402242b  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:13:34.436 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m169010361402242b  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:13:34.436 INFO  com.jktickets.service.ConfirmOrderService         :313  [32m169010361402242b  [0;39m 座位12被选中
+2023-07-23 17:13:34.436 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位7列值不对,继续判断下一个座位,当前列支:B,目标列值:A
+2023-07-23 17:13:34.437 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位8列值不对,继续判断下一个座位,当前列支:C,目标列值:A
+2023-07-23 17:13:34.437 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位9列值不对,继续判断下一个座位,当前列支:D,目标列值:A
+2023-07-23 17:13:34.437 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位10列值不对,继续判断下一个座位,当前列支:F,目标列值:A
+2023-07-23 17:13:34.437 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m169010361402242b  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:13:34.437 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m169010361402242b  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:13:34.438 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m169010361402242b  [0;39m 选中座位
+2023-07-23 17:13:34.438 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m169010361402242b  [0;39m 有偏移值:[0, 6]，校验偏移的座位是否可选
+2023-07-23 17:13:34.438 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m169010361402242b  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:13:34.438 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m169010361402242b  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:13:34.438 INFO  com.jktickets.service.ConfirmOrderService         :313  [32m169010361402242b  [0;39m 座位17被选中
+2023-07-23 17:13:34.438 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位12列值不对,继续判断下一个座位,当前列支:B,目标列值:A
+2023-07-23 17:13:34.439 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位13列值不对,继续判断下一个座位,当前列支:C,目标列值:A
+2023-07-23 17:13:34.439 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位14列值不对,继续判断下一个座位,当前列支:D,目标列值:A
+2023-07-23 17:13:34.439 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位15列值不对,继续判断下一个座位,当前列支:F,目标列值:A
+2023-07-23 17:13:34.439 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m169010361402242b  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:13:34.439 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m169010361402242b  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:13:34.439 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m169010361402242b  [0;39m 选中座位
+2023-07-23 17:13:34.439 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m169010361402242b  [0;39m 有偏移值:[0, 6]，校验偏移的座位是否可选
+2023-07-23 17:13:34.440 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m169010361402242b  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:13:34.440 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m169010361402242b  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:13:34.440 INFO  com.jktickets.service.ConfirmOrderService         :313  [32m169010361402242b  [0;39m 座位22被选中
+2023-07-23 17:13:34.440 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位17列值不对,继续判断下一个座位,当前列支:B,目标列值:A
+2023-07-23 17:13:34.441 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位18列值不对,继续判断下一个座位,当前列支:C,目标列值:A
+2023-07-23 17:13:34.441 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位19列值不对,继续判断下一个座位,当前列支:D,目标列值:A
+2023-07-23 17:13:34.441 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位20列值不对,继续判断下一个座位,当前列支:F,目标列值:A
+2023-07-23 17:13:34.441 INFO  com.jktickets.service.ConfirmOrderService         :357  [32m169010361402242b  [0;39m 座位2在本次车站区间0-2没有售过票,可选中该座位
+2023-07-23 17:13:34.442 INFO  com.jktickets.service.ConfirmOrderService         :376  [32m169010361402242b  [0;39m 座位2被选中，原售票信息:00,车站区间:0-2,即:11,最终售票信息:11
+2023-07-23 17:13:34.442 INFO  com.jktickets.service.ConfirmOrderService         :278  [32m169010361402242b  [0;39m 选中座位
+2023-07-23 17:13:34.442 INFO  com.jktickets.service.ConfirmOrderService         :289  [32m169010361402242b  [0;39m 有偏移值:[0, 6]，校验偏移的座位是否可选
+2023-07-23 17:13:34.442 INFO  com.jktickets.service.ConfirmOrderService         :300  [32m169010361402242b  [0;39m 座位26不可选,偏移后的索引超出了这个车厢的座位数
+2023-07-23 17:13:34.442 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位22列值不对,继续判断下一个座位,当前列支:B,目标列值:A
+2023-07-23 17:13:34.443 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位23列值不对,继续判断下一个座位,当前列支:C,目标列值:A
+2023-07-23 17:13:34.443 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位24列值不对,继续判断下一个座位,当前列支:D,目标列值:A
+2023-07-23 17:13:34.443 INFO  com.jktickets.service.ConfirmOrderService         :269  [32m169010361402242b  [0;39m 座位25列值不对,继续判断下一个座位,当前列支:F,目标列值:A
+2023-07-23 17:13:34.443 INFO  com.jktickets.aspect.LogAspect                    :94   [32m169010361402242b  [0;39m 返回结果: {"code":0,"message":"","success":true}
+2023-07-23 17:13:34.444 INFO  com.jktickets.aspect.LogAspect                    :95   [32m169010361402242b  [0;39m ------------- 结束 耗时：419 ms -------------

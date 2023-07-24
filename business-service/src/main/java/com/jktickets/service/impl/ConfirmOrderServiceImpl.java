@@ -2,11 +2,13 @@ package com.jktickets.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.util.EnumUtil;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.log.Log;
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -179,7 +181,7 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
                 for (SeatColEnum seatColEnum : colEnumList) {
 //                    seatColEnum.getCode() = A/C/D/F
 //                    seatColEnum.getCode()+1 = A1 C1 D1 F1
-                    referSeatList.add(seatColEnum.getCode() + 1);
+                    referSeatList.add(seatColEnum.getCode() + i);
                 }
             }
 
@@ -252,17 +254,19 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
             List<DailyTrainSeat> dailyTrainSeatList = dailyTrainSeatService.selectByCarriage(date, trainCode, dailyTrainCarriage.getIndex());
             LOG.info("车厢{}的座位数:{}", dailyTrainCarriage.getIndex(), dailyTrainSeatList.size());
 
-
-            for (DailyTrainSeat dailyTrainSeat : dailyTrainSeatList) {
-
+//        座位列表
+            for (int i = 0; i < dailyTrainSeatList.size(); i++) {
+                DailyTrainSeat dailyTrainSeat = dailyTrainSeatList.get(i);
+                Integer carriageSeatIndex = dailyTrainSeat.getCarriageSeatIndex();
 //                判断column 是否有值，如果有值就对比列号
                 String col = dailyTrainSeat.getCol();
 //                这里的column 是外部传入
-                if(StrUtil.isBlank(column)){
+                if (StrUtil.isBlank(column)) {
                     LOG.info("无选座");
-                }else{
+                } else {
 //                    如果没有找到对应的列就跳出当前循环
-                    if(!column.equals(col)){
+                    if (!column.equals(col)) {
+                        LOG.info("座位{}列值不对,继续判断下一个座位,当前列支:{},目标列值:{}", carriageSeatIndex, col, column);
                         continue;
                     }
                 }
@@ -272,12 +276,59 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
 //                如果已经选中好了，就跳出循环，没有就继续
                 if (isChoose) {
                     LOG.info("选中座位");
-                    return;
+//                    return;
                 } else {
 //                    LOG.info("未选中座位");
-                    ;
+                    continue;
                 }
 
+
+                boolean isGetAllOffsetSeat = true;
+//                根据offset选剩下的座位
+                if (CollUtil.isNotEmpty(offsetList)) {
+                    LOG.info("有偏移值:{}，校验偏移的座位是否可选", offsetList);
+//                   从索引1开始，索引0就是当前已选中的票 例如[0,2,4] =>索引0 就是已选中的票
+                    for (int j = 1; j < offsetList.size(); j++) {
+                        Integer offset = offsetList.get(j);
+//                        在库里面的  座位的索引是 从1开始的
+//                        int nextIndex = carriageSeatIndex + offset - 1;
+//                        i = 当前列表的索引号
+                        int nextIndex = offset + i;
+
+//                        有选座时，一定是在同一个车厢，所以索引号不是 不能大于一节车厢的座位数组的长度
+                        if (nextIndex >= dailyTrainSeatList.size()) {
+                            LOG.info("座位{}不可选,偏移后的索引超出了这个车厢的座位数", nextIndex);
+//                            有超过偏离量就不用继续查了，直接跳出for循环
+
+
+                            isGetAllOffsetSeat = false;
+                            break;
+                        }
+
+
+                        DailyTrainSeat nextDailyTrainSeat = dailyTrainSeatList.get(nextIndex);
+//                        查询位置是否售卖
+                        boolean isChooseNext = checkSeatSellState(nextDailyTrainSeat, startIndex, endIndex);
+                        if (isChooseNext) {
+                            LOG.info("座位{}被选中", nextDailyTrainSeat.getCarriageSeatIndex());
+                        } else {
+                            LOG.info("座位{}不可选中", nextDailyTrainSeat.getCarriageSeatIndex());
+//                          有一个座位已经被售卖了，不用继续了就直接跳出循环
+
+                            isGetAllOffsetSeat = false;
+                            break;
+
+                        }
+                    }
+
+                }
+
+//                 如果没有选中就继续这个循环
+                if (!isGetAllOffsetSeat) {
+                    continue;
+                }
+//     保存选择好的座位
+                return;
             }
 
         }
@@ -298,12 +349,12 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
 
 //        只要有1 就不可卖
         if (Integer.parseInt(sellPart) > 0) {
-            LOG.info("座位{}在本次车站区间{}-{}已售过票,不可选中该座位", dailyTrainSeat.getCarriageIndex(), startIndex, endIndex);
+            LOG.info("座位{}在本次车站区间{}-{}已售过票,不可选中该座位", dailyTrainSeat.getCarriageSeatIndex(), startIndex, endIndex);
 
             return false;
         } else {
 //            可选的座位
-            LOG.info("座位{}在本次车站区间{}-{}没有售过票,可选中该座位", dailyTrainSeat.getCarriageIndex(), startIndex, endIndex);
+            LOG.info("座位{}在本次车站区间{}-{}没有售过票,可选中该座位", dailyTrainSeat.getCarriageSeatIndex(), startIndex, endIndex);
 
 //            把准备购买的区间 转换为111
 //            111
@@ -322,7 +373,7 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
 //        重新把左边 缺少的0 补上，右边是不会缺0的
             currentSell = StrUtil.fillBefore(newSell, '0', sell.length());
 
-            LOG.info("座位{}被选中，原售票信息:{},车站区间:{}-{},即:{},最终售票信息:{}", dailyTrainSeat.getCarriageIndex(), sell, startIndex, endIndex, currentSell, newSell);
+            LOG.info("座位{}被选中，原售票信息:{},车站区间:{}-{},即:{},最终售票信息:{}", dailyTrainSeat.getCarriageSeatIndex(), sell, startIndex, endIndex, currentSell, newSell);
 
 
             return true;

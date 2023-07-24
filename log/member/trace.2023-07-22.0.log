@@ -1,0 +1,63 @@
+2023-07-22 12:10:08.916 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-22 12:10:09.279 INFO  com.jktickets.MemberApplication                   :51   [32m                  [0;39m Starting MemberApplication using Java 17.0.3 with PID 5472 (D:\Project\java\jk-tickets\member-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-22 12:10:09.281 INFO  com.jktickets.MemberApplication                   :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-22 12:10:09.817 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-22 12:10:09.824 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-22 12:10:11.748 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=52ef56ae-ef40-39b4-a425-4bd1c816e46f
+2023-07-22 12:10:12.933 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-07-22 12:10:12.947 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-07-22 12:10:12.948 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-22 12:10:12.949 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-22 12:10:13.043 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-22 12:10:13.044 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 3218 ms
+2023-07-22 12:10:14.575 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-22 12:10:15.048 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-07-22 12:10:15.620 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-07-22 12:10:15.655 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/member'
+2023-07-22 12:10:16.115 INFO  com.jktickets.MemberApplication                   :57   [32m                  [0;39m Started MemberApplication in 8.779 seconds (process running for 10.593)
+2023-07-22 12:10:16.121 INFO  com.jktickets.MemberApplication                   :22   [32m                  [0;39m 启动成功！！
+2023-07-22 12:10:16.121 INFO  com.jktickets.MemberApplication                   :24   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8001/member/hello
+2023-07-22 15:27:57.239 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-22 15:27:57.244 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-07-22 15:27:57.262 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 17 ms
+2023-07-22 15:27:57.772 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1690010877365vhl  [0;39m ------------- 开始 -------------
+2023-07-22 15:27:57.773 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1690010877365vhl  [0;39m 请求地址: http://127.0.0.1:8001/member/member/sendCode POST
+2023-07-22 15:27:57.774 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690010877365vhl  [0;39m 类名方法: com.jktickets.controller.MemberController.sendCode
+2023-07-22 15:27:57.775 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1690010877365vhl  [0;39m 远程地址: 127.0.0.1
+2023-07-22 15:27:58.199 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1690010877365vhl  [0;39m 请求参数: [{"mobile":"13000000000"}]
+2023-07-22 15:27:58.215 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690010877365vhl  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.MemberMapper.selectByExample(MemberExample))
+2023-07-22 15:27:58.216 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690010877365vhl  [0;39m 参数值: com.jktickets.domain.MemberExample@79a86c17
+2023-07-22 15:27:58.360 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1690010877365vhl  [0;39m HikariPool-1 - Starting...
+2023-07-22 15:27:58.805 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1690010877365vhl  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3777d449
+2023-07-22 15:27:58.820 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1690010877365vhl  [0;39m HikariPool-1 - Start completed.
+2023-07-22 15:27:58.907 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690010877365vhl  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.MemberMapper.selectByExample(MemberExample))
+2023-07-22 15:27:58.943 INFO  com.jktickets.service.MemberService               :90   [32m1690010877365vhl  [0;39m 手机号存在,不插入数据
+2023-07-22 15:27:58.944 INFO  com.jktickets.service.MemberService               :97   [32m1690010877365vhl  [0;39m 生成短信验证码:s6h4
+2023-07-22 15:27:58.944 INFO  com.jktickets.service.MemberService               :100  [32m1690010877365vhl  [0;39m 保存短信记录表
+2023-07-22 15:27:58.944 INFO  com.jktickets.service.MemberService               :103  [32m1690010877365vhl  [0;39m 对接短信通道
+2023-07-22 15:27:58.949 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1690010877365vhl  [0;39m 返回结果: {"code":0,"message":"","result":"短信发送成功","success":true}
+2023-07-22 15:27:58.949 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1690010877365vhl  [0;39m ------------- 结束 耗时：1178 ms -------------
+2023-07-22 15:28:00.455 INFO  com.jktickets.aspect.LogAspect                    :57   [32m16900108804490k0  [0;39m ------------- 开始 -------------
+2023-07-22 15:28:00.456 INFO  com.jktickets.aspect.LogAspect                    :58   [32m16900108804490k0  [0;39m 请求地址: http://127.0.0.1:8001/member/member/login POST
+2023-07-22 15:28:00.456 INFO  com.jktickets.aspect.LogAspect                    :59   [32m16900108804490k0  [0;39m 类名方法: com.jktickets.controller.MemberController.sendCode
+2023-07-22 15:28:00.457 INFO  com.jktickets.aspect.LogAspect                    :60   [32m16900108804490k0  [0;39m 远程地址: 127.0.0.1
+2023-07-22 15:28:00.459 INFO  com.jktickets.aspect.LogAspect                    :82   [32m16900108804490k0  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
+2023-07-22 15:28:00.460 INFO  com.jktickets.aspect.LogAspect                    :106  [32m16900108804490k0  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.MemberMapper.selectByExample(MemberExample))
+2023-07-22 15:28:00.460 INFO  com.jktickets.aspect.LogAspect                    :111  [32m16900108804490k0  [0;39m 参数值: com.jktickets.domain.MemberExample@4426dc89
+2023-07-22 15:28:00.495 INFO  com.jktickets.aspect.LogAspect                    :120  [32m16900108804490k0  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.MemberMapper.selectByExample(MemberExample))
+2023-07-22 15:28:01.843 INFO  com.jktickets.utils.JwtUtil                       :37   [32m16900108804490k0  [0;39m 生成JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTAwMTA4ODAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDA5NzI4MCwiaWF0IjoxNjkwMDEwODgwfQ.MoOWbhSIUrf-D0sFiQZTHUpcjBWW0tyfHqPdVuDBCDE
+2023-07-22 15:28:01.846 INFO  com.jktickets.aspect.LogAspect                    :94   [32m16900108804490k0  [0;39m 返回结果: {"code":0,"message":"","result":{"id":1680932902797447168,"mobile":"13000000000","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTAwMTA4ODAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDA5NzI4MCwiaWF0IjoxNjkwMDEwODgwfQ.MoOWbhSIUrf-D0sFiQZTHUpcjBWW0tyfHqPdVuDBCDE"},"success":true}
+2023-07-22 15:28:01.847 INFO  com.jktickets.aspect.LogAspect                    :95   [32m16900108804490k0  [0;39m ------------- 结束 耗时：1392 ms -------------
+2023-07-22 15:28:21.100 INFO  com.jktickets.interceptor.MemberInterceptor       :32   [32m1690010901100r7g  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTAwMTA4ODAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDA5NzI4MCwiaWF0IjoxNjkwMDEwODgwfQ.MoOWbhSIUrf-D0sFiQZTHUpcjBWW0tyfHqPdVuDBCDE
+2023-07-22 15:28:21.114 INFO  com.jktickets.utils.JwtUtil                       :64   [32m1690010901100r7g  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-22 15:28:21.115 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1690010901100r7g  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
+2023-07-22 15:28:21.123 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1690010901100r7g  [0;39m ------------- 开始 -------------
+2023-07-22 15:28:21.123 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1690010901100r7g  [0;39m 请求地址: http://127.0.0.1:8001/member/passenger/queryMine GET
+2023-07-22 15:28:21.123 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690010901100r7g  [0;39m 类名方法: com.jktickets.controller.PassengerController.queryMine
+2023-07-22 15:28:21.124 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1690010901100r7g  [0;39m 远程地址: 127.0.0.1
+2023-07-22 15:28:21.124 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1690010901100r7g  [0;39m 请求参数: []
+2023-07-22 15:28:21.185 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690010901100r7g  [0;39m 执行SQL:  selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-22 15:28:21.185 INFO  com.jktickets.aspect.LogAspect                    :111  [32m1690010901100r7g  [0;39m 参数值: com.jktickets.domain.PassengerExample@1218a8fb
+2023-07-22 15:28:21.229 INFO  com.jktickets.aspect.LogAspect                    :120  [32m1690010901100r7g  [0;39m SQL执行完成: selectByExample | execution(List com.jktickets.mapper.PassengerMapper.selectByExample(PassengerExample))
+2023-07-22 15:28:21.261 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1690010901100r7g  [0;39m 返回结果: {"code":0,"message":"","result":[{"createTime":1689679955003,"id":1681265704667582464,"idCard":"1","memberId":1680932902797447168,"name":"测试","type":"1","updateTime":1689679955003},{"createTime":1689679968035,"id":1681265759105454080,"idCard":"123","memberId":1680932902797447168,"name":"测试33","type":"2","updateTime":1689679968035}],"success":true}
+2023-07-22 15:28:21.262 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1690010901100r7g  [0;39m ------------- 结束 耗时：139 ms -------------
