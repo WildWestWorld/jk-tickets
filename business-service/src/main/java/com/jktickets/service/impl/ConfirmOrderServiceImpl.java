@@ -90,6 +90,9 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
     @Override
     public PageRes<ConfirmOrderQueryRes> queryConfirmOrderList(ConfirmOrderQueryReq req) {
         ConfirmOrderExample confirmOrderExample = new ConfirmOrderExample();
+
+        confirmOrderExample.setOrderByClause("date desc");
+
         ConfirmOrderExample.Criteria criteria = confirmOrderExample.createCriteria();
 //        if(ObjectUtil.isNotNull(req.getMemberId())){
 //            criteria.andMemberIdEqualTo(req.getMemberId());
@@ -240,7 +243,7 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
         // 余票详情表修改余票；
         // 为会员增加购票记录
         // 更新确认订单为成功
-        afterConfirmOrderService.afterDoConfirm(dailyTrainTicket,finalSeatList,ticketReqList);
+        afterConfirmOrderService.afterDoConfirm(dailyTrainTicket,finalSeatList,ticketReqList,confirmOrder);
 
 
 

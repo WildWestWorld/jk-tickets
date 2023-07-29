@@ -1,25 +1,16 @@
 package com.jktickets.controller;
 
 
-import cn.hutool.core.util.ObjectUtil;
-import com.github.pagehelper.PageInfo;
-import com.jktickets.context.LoginMemberContext;
 import com.jktickets.req.confirmOrder.ConfirmOrderDoReq;
-import com.jktickets.req.confirmOrder.ConfirmOrderQueryReq;
-import com.jktickets.req.confirmOrder.ConfirmOrderSaveReq;
 import com.jktickets.res.CommonRes;
-import com.jktickets.res.PageRes;
-import com.jktickets.res.confirmOrder.ConfirmOrderQueryRes;
 import com.jktickets.service.ConfirmOrderService;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/confirmOrder")
-public class ConfirmOrderAdminController {
+public class ConfirmOrderController {
     @Resource
     ConfirmOrderService confirmOrderService;
 

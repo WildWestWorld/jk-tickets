@@ -2,6 +2,7 @@ package com.jktickets.service;
 
 
 
+import com.jktickets.domain.ConfirmOrder;
 import com.jktickets.domain.DailyTrainSeat;
 import com.jktickets.domain.DailyTrainTicket;
 import com.jktickets.req.confirmOrder.ConfirmOrderDoReq;
@@ -14,6 +15,6 @@ import com.jktickets.res.confirmOrder.ConfirmOrderQueryRes;
 import java.util.List;
 
 public interface AfterConfirmOrderService {
-   void afterDoConfirm(DailyTrainTicket dailyTrainTicket,List<DailyTrainSeat> finalSeatList,List<ConfirmOrderTicketReq> ticketReqList);
+   void afterDoConfirm(DailyTrainTicket dailyTrainTicket,List<DailyTrainSeat> finalSeatList,List<ConfirmOrderTicketReq> ticketReqList, ConfirmOrder confirmOrder);
 
 }

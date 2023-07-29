@@ -69,7 +69,7 @@
 2023-07-26 22:55:03.702 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1690383303701lxg  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
 2023-07-26 22:55:03.753 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1690383303701lxg  [0;39m ------------- 开始 -------------
 2023-07-26 22:55:03.753 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1690383303701lxg  [0;39m 请求地址: http://127.0.0.1:8002/business/confirmOrder/doConfirm POST
-2023-07-26 22:55:03.753 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690383303701lxg  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderAdminController.doConfirm
+2023-07-26 22:55:03.753 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690383303701lxg  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderController.doConfirm
 2023-07-26 22:55:03.753 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1690383303701lxg  [0;39m 远程地址: 127.0.0.1
 2023-07-26 22:55:03.759 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1690383303701lxg  [0;39m 请求参数: [{"dailyTrainTicketId":1683830340080242688,"date":1690214400000,"end":"杭州","start":"温州","tickets":[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}],"trainCode":"01"}]
 2023-07-26 22:55:03.805 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690383303701lxg  [0;39m 执行SQL:  insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
@@ -128,7 +128,7 @@ java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
 	at com.jktickets.service.impl.AfterConfirmOrderServiceImpl$$SpringCGLIB$$0.afterDoConfirm(<generated>)
 	at com.jktickets.service.impl.ConfirmOrderServiceImpl.doConfirm(ConfirmOrderServiceImpl.java:243)
-	at com.jktickets.controller.ConfirmOrderAdminController.doConfirm(ConfirmOrderAdminController.java:30)
+	at com.jktickets.controller.ConfirmOrderController.doConfirm(ConfirmOrderAdminController.java:30)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -155,7 +155,7 @@ java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
-	at com.jktickets.controller.ConfirmOrderAdminController$$SpringCGLIB$$0.doConfirm(<generated>)
+	at com.jktickets.controller.ConfirmOrderController$$SpringCGLIB$$0.doConfirm(<generated>)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -236,7 +236,7 @@ java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 2023-07-26 22:59:49.210 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1690383588880y4l  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
 2023-07-26 22:59:49.399 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1690383588880y4l  [0;39m ------------- 开始 -------------
 2023-07-26 22:59:49.401 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1690383588880y4l  [0;39m 请求地址: http://127.0.0.1:8002/business/confirmOrder/doConfirm POST
-2023-07-26 22:59:49.401 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690383588880y4l  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderAdminController.doConfirm
+2023-07-26 22:59:49.401 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690383588880y4l  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderController.doConfirm
 2023-07-26 22:59:49.401 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1690383588880y4l  [0;39m 远程地址: 127.0.0.1
 2023-07-26 22:59:49.483 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1690383588880y4l  [0;39m 请求参数: [{"dailyTrainTicketId":1683830340080242688,"date":1690214400000,"end":"杭州","start":"温州","tickets":[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}],"trainCode":"01"}]
 2023-07-26 22:59:49.492 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690383588880y4l  [0;39m 执行SQL:  insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
@@ -317,7 +317,7 @@ java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 2023-07-26 23:02:35.844 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m16903837554981zd  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
 2023-07-26 23:02:36.041 INFO  com.jktickets.aspect.LogAspect                    :57   [32m16903837554981zd  [0;39m ------------- 开始 -------------
 2023-07-26 23:02:36.042 INFO  com.jktickets.aspect.LogAspect                    :58   [32m16903837554981zd  [0;39m 请求地址: http://127.0.0.1:8002/business/confirmOrder/doConfirm POST
-2023-07-26 23:02:36.043 INFO  com.jktickets.aspect.LogAspect                    :59   [32m16903837554981zd  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderAdminController.doConfirm
+2023-07-26 23:02:36.043 INFO  com.jktickets.aspect.LogAspect                    :59   [32m16903837554981zd  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderController.doConfirm
 2023-07-26 23:02:36.044 INFO  com.jktickets.aspect.LogAspect                    :60   [32m16903837554981zd  [0;39m 远程地址: 127.0.0.1
 2023-07-26 23:02:36.137 INFO  com.jktickets.aspect.LogAspect                    :82   [32m16903837554981zd  [0;39m 请求参数: [{"dailyTrainTicketId":1683830340080242688,"date":1690214400000,"end":"杭州","start":"温州","tickets":[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}],"trainCode":"01"}]
 2023-07-26 23:02:36.146 INFO  com.jktickets.aspect.LogAspect                    :106  [32m16903837554981zd  [0;39m 执行SQL:  insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
@@ -356,7 +356,7 @@ java.lang.StringIndexOutOfBoundsException: begin 1, end 2, length 1
 	at com.jktickets.service.impl.ConfirmOrderServiceImpl.checkSeatSellState(ConfirmOrderServiceImpl.java:391)
 	at com.jktickets.service.impl.ConfirmOrderServiceImpl.selectSeat(ConfirmOrderServiceImpl.java:308)
 	at com.jktickets.service.impl.ConfirmOrderServiceImpl.doConfirm(ConfirmOrderServiceImpl.java:218)
-	at com.jktickets.controller.ConfirmOrderAdminController.doConfirm(ConfirmOrderAdminController.java:30)
+	at com.jktickets.controller.ConfirmOrderController.doConfirm(ConfirmOrderAdminController.java:30)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -383,7 +383,7 @@ java.lang.StringIndexOutOfBoundsException: begin 1, end 2, length 1
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
-	at com.jktickets.controller.ConfirmOrderAdminController$$SpringCGLIB$$0.doConfirm(<generated>)
+	at com.jktickets.controller.ConfirmOrderController$$SpringCGLIB$$0.doConfirm(<generated>)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -464,7 +464,7 @@ java.lang.StringIndexOutOfBoundsException: begin 1, end 2, length 1
 2023-07-26 23:12:19.753 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1690384339464gdo  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
 2023-07-26 23:12:19.944 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1690384339464gdo  [0;39m ------------- 开始 -------------
 2023-07-26 23:12:19.946 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1690384339464gdo  [0;39m 请求地址: http://127.0.0.1:8002/business/confirmOrder/doConfirm POST
-2023-07-26 23:12:19.947 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690384339464gdo  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderAdminController.doConfirm
+2023-07-26 23:12:19.947 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690384339464gdo  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderController.doConfirm
 2023-07-26 23:12:19.948 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1690384339464gdo  [0;39m 远程地址: 127.0.0.1
 2023-07-26 23:12:20.020 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1690384339464gdo  [0;39m 请求参数: [{"dailyTrainTicketId":1683830340080242688,"date":1690214400000,"end":"杭州","start":"温州","tickets":[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}],"trainCode":"01"}]
 2023-07-26 23:12:20.029 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690384339464gdo  [0;39m 执行SQL:  insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
@@ -503,7 +503,7 @@ java.lang.StringIndexOutOfBoundsException: begin 1, end 2, length 1
 	at com.jktickets.service.impl.ConfirmOrderServiceImpl.checkSeatSellState(ConfirmOrderServiceImpl.java:391)
 	at com.jktickets.service.impl.ConfirmOrderServiceImpl.selectSeat(ConfirmOrderServiceImpl.java:308)
 	at com.jktickets.service.impl.ConfirmOrderServiceImpl.doConfirm(ConfirmOrderServiceImpl.java:218)
-	at com.jktickets.controller.ConfirmOrderAdminController.doConfirm(ConfirmOrderAdminController.java:30)
+	at com.jktickets.controller.ConfirmOrderController.doConfirm(ConfirmOrderAdminController.java:30)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -530,7 +530,7 @@ java.lang.StringIndexOutOfBoundsException: begin 1, end 2, length 1
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
-	at com.jktickets.controller.ConfirmOrderAdminController$$SpringCGLIB$$0.doConfirm(<generated>)
+	at com.jktickets.controller.ConfirmOrderController$$SpringCGLIB$$0.doConfirm(<generated>)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -611,7 +611,7 @@ java.lang.StringIndexOutOfBoundsException: begin 1, end 2, length 1
 2023-07-26 23:20:47.703 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1690384847360xr9  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
 2023-07-26 23:20:47.964 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1690384847360xr9  [0;39m ------------- 开始 -------------
 2023-07-26 23:20:47.965 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1690384847360xr9  [0;39m 请求地址: http://127.0.0.1:8002/business/confirmOrder/doConfirm POST
-2023-07-26 23:20:47.966 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690384847360xr9  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderAdminController.doConfirm
+2023-07-26 23:20:47.966 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690384847360xr9  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderController.doConfirm
 2023-07-26 23:20:47.966 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1690384847360xr9  [0;39m 远程地址: 127.0.0.1
 2023-07-26 23:20:48.059 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1690384847360xr9  [0;39m 请求参数: [{"dailyTrainTicketId":1683830340080242688,"date":1690214400000,"end":"杭州","start":"温州","tickets":[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}],"trainCode":"01"}]
 2023-07-26 23:20:48.074 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690384847360xr9  [0;39m 执行SQL:  insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))
@@ -650,7 +650,7 @@ java.lang.StringIndexOutOfBoundsException: begin 1, end 2, length 1
 	at com.jktickets.service.impl.ConfirmOrderServiceImpl.checkSeatSellState(ConfirmOrderServiceImpl.java:391)
 	at com.jktickets.service.impl.ConfirmOrderServiceImpl.selectSeat(ConfirmOrderServiceImpl.java:308)
 	at com.jktickets.service.impl.ConfirmOrderServiceImpl.doConfirm(ConfirmOrderServiceImpl.java:218)
-	at com.jktickets.controller.ConfirmOrderAdminController.doConfirm(ConfirmOrderAdminController.java:30)
+	at com.jktickets.controller.ConfirmOrderController.doConfirm(ConfirmOrderAdminController.java:30)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -677,7 +677,7 @@ java.lang.StringIndexOutOfBoundsException: begin 1, end 2, length 1
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
-	at com.jktickets.controller.ConfirmOrderAdminController$$SpringCGLIB$$0.doConfirm(<generated>)
+	at com.jktickets.controller.ConfirmOrderController$$SpringCGLIB$$0.doConfirm(<generated>)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -734,7 +734,7 @@ java.lang.StringIndexOutOfBoundsException: begin 1, end 2, length 1
 2023-07-26 23:23:18.209 INFO  com.jktickets.interceptor.MemberInterceptor       :35   [32m1690384998208jnu  [0;39m 当前登录会员：{"mobile":"13000000000","id":1680932902797447168}
 2023-07-26 23:23:18.212 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1690384998208jnu  [0;39m ------------- 开始 -------------
 2023-07-26 23:23:18.212 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1690384998208jnu  [0;39m 请求地址: http://127.0.0.1:8002/business/confirmOrder/doConfirm POST
-2023-07-26 23:23:18.213 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690384998208jnu  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderAdminController.doConfirm
+2023-07-26 23:23:18.213 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690384998208jnu  [0;39m 类名方法: com.jktickets.controller.ConfirmOrderController.doConfirm
 2023-07-26 23:23:18.214 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1690384998208jnu  [0;39m 远程地址: 127.0.0.1
 2023-07-26 23:23:18.215 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1690384998208jnu  [0;39m 请求参数: [{"dailyTrainTicketId":1683830340080242688,"date":1690214400000,"end":"杭州","start":"温州","tickets":[{"passengerId":1681265704667582464,"passengerIdCard":"1","passengerName":"测试","passengerType":"1","seat":"A1","seatTypeCode":"2"},{"passengerId":1681265759105454080,"passengerIdCard":"123","passengerName":"测试33","passengerType":"2","seat":"B2","seatTypeCode":"2"}],"trainCode":"01"}]
 2023-07-26 23:23:18.216 INFO  com.jktickets.aspect.LogAspect                    :106  [32m1690384998208jnu  [0;39m 执行SQL:  insert | execution(int com.jktickets.mapper.ConfirmOrderMapper.insert(ConfirmOrder))

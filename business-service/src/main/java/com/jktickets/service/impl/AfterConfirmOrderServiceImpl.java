@@ -52,9 +52,12 @@ public class AfterConfirmOrderServiceImpl implements AfterConfirmOrderService {
     @Resource
     DailyTrainTicketMapperCustom dailyTrainTicketMapperCustom;
 
-//    添加订单信息
     @Resource
-    MemberFeign  memberFeign;
+    ConfirmOrderMapper confirmOrderMapper;
+
+    //    添加订单信息
+    @Resource
+    MemberFeign memberFeign;
 
 
     //    为啥要另外开个类 去做后续的工作
@@ -62,8 +65,8 @@ public class AfterConfirmOrderServiceImpl implements AfterConfirmOrderService {
 //    所以得再写个类 使用Transactional
     @Override
     @Transactional
-    public void afterDoConfirm(DailyTrainTicket dailyTrainTicket, List<DailyTrainSeat> finalSeatList,List<ConfirmOrderTicketReq> ticketReqList) {
-        for (int j=0;j<finalSeatList.size();j++) {
+    public void afterDoConfirm(DailyTrainTicket dailyTrainTicket, List<DailyTrainSeat> finalSeatList, List<ConfirmOrderTicketReq> ticketReqList, ConfirmOrder confirmOrder) {
+        for (int j = 0; j < finalSeatList.size(); j++) {
             DailyTrainSeat dailyTrainSeat = finalSeatList.get(j);
             DailyTrainSeat seatForUpdate = new DailyTrainSeat();
             seatForUpdate.setId(dailyTrainSeat.getId());
@@ -95,7 +98,7 @@ public class AfterConfirmOrderServiceImpl implements AfterConfirmOrderService {
             LOG.info("影响出发站区间:{}-{}", minStartIndex, maxStartIndex);
 
 
-            Integer maxEndIndex = seatForUpdate.getSell().length() ;
+            Integer maxEndIndex = seatForUpdate.getSell().length();
 //            从开始的索引 找1,1的索引-1 就是最小的可购票 起始站索引
             for (int i = endIndex; i < seatForUpdate.getSell().length() - 1; i++) {
                 char searchChar = chars[i];
@@ -131,7 +134,15 @@ public class AfterConfirmOrderServiceImpl implements AfterConfirmOrderService {
 
 //            调用外键 保存订单
             CommonRes<Object> commonRes = memberFeign.save(memberTicketReq);
-            LOG.info("调用member接口，返回{}",commonRes);
+            LOG.info("调用member接口，返回{}", commonRes);
+
+//            更新订单状态为成功
+            ConfirmOrder confirmOrderForUpdate = new ConfirmOrder();
+            confirmOrderForUpdate.setId(confirmOrder.getId());
+            confirmOrderForUpdate.setUpdateTime(new Date());
+            confirmOrderForUpdate.setStatus(ConfirmOrderStatusEnum.SUCCESS.getCode());
+
+            confirmOrderMapper.updateByPrimaryKeySelective(confirmOrderForUpdate);
         }
 
 
