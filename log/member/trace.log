@@ -1241,3 +1241,10 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'te
 2023-07-29 22:18:17.465 INFO  org.springframework.boot.SpringApplication        :57   [32m                  [0;39m Started application in 0.575 seconds (process running for 253.567)
 2023-07-29 22:18:17.525 INFO  o.s.cloud.endpoint.event.RefreshEventListener     :73   [32m                  [0;39m Refresh keys changed: [test.nacos]
 2023-07-29 22:18:17.525 INFO  com.alibaba.nacos.client.config.impl.CacheData    :345  [32m                  [0;39m [fixed-127.0.0.1_8848] [notify-ok] dataId=member-service-dev.properties, group=DEFAULT_GROUP, md5=67bfac906cd2470cba881c97e080619b, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@33490126 ,cost=642 millis.
+2023-07-29 22:18:25.747 INFO  com.jktickets.aspect.LogAspect                    :57   [32m1690640305740gdb  [0;39m ------------- 开始 -------------
+2023-07-29 22:18:25.748 INFO  com.jktickets.aspect.LogAspect                    :58   [32m1690640305740gdb  [0;39m 请求地址: http://localhost:8001/member/hello GET
+2023-07-29 22:18:25.748 INFO  com.jktickets.aspect.LogAspect                    :59   [32m1690640305740gdb  [0;39m 类名方法: com.jktickets.controller.TestController.hello
+2023-07-29 22:18:25.749 INFO  com.jktickets.aspect.LogAspect                    :60   [32m1690640305740gdb  [0;39m 远程地址: 127.0.0.1
+2023-07-29 22:18:25.749 INFO  com.jktickets.aspect.LogAspect                    :82   [32m1690640305740gdb  [0;39m 请求参数: []
+2023-07-29 22:18:25.750 INFO  com.jktickets.aspect.LogAspect                    :94   [32m1690640305740gdb  [0;39m 返回结果: "Hello Nacos2!"
+2023-07-29 22:18:25.750 INFO  com.jktickets.aspect.LogAspect                    :95   [32m1690640305740gdb  [0;39m ------------- 结束 耗时：3 ms -------------

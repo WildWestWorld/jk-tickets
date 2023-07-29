@@ -316,3 +316,5 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 2023-07-29 20:56:55.336 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/hello
+2023-07-29 21:59:36.947 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/hello
+2023-07-29 22:00:18.180 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/hello
