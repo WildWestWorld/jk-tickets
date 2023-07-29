@@ -95,6 +95,11 @@
             <artifactId>spring-cloud-loadbalancer</artifactId>
         </dependency>
 
+<!--        SpringBoot 2.4版本/SpringCloud 2020之后，需要引入依赖，才能读取bootStrap文件-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
 
     </dependencies>
 
