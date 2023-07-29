@@ -1,5 +1,6 @@
 package com.jktickets;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.core.env.Environment;
@@ -12,6 +13,7 @@ import org.slf4j.LoggerFactory;
 
 
 @SpringBootApplication
+@MapperScan("com.jktickets.mapper")
 public class MemberApplication {
 
     private static final Logger LOG = LoggerFactory.getLogger(MemberApplication.class);

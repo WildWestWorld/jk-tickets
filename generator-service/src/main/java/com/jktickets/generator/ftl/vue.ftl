@@ -165,7 +165,7 @@ export default defineComponent({
         };
       }
       loading.value = true;
-      axios.get("/${module}/admin/${do_main}/query-list", {
+      axios.get("/${module}/admin/${do_main}/queryList", {
         params: {
           page: param.page,
           size: param.size
@@ -174,10 +174,10 @@ export default defineComponent({
         loading.value = false;
         let data = response.data;
         if (data.success) {
-          ${domain}s.value = data.content.list;
+          ${domain}s.value = data.result.list;
           // 设置分页控件的值
           pagination.value.current = param.page;
-          pagination.value.total = data.content.total;
+          pagination.value.total = data.result.total;
         } else {
           notification.error({description: data.message});
         }

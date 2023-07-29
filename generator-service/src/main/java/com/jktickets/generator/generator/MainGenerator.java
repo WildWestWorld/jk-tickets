@@ -28,6 +28,14 @@ public class MainGenerator {
     }
 
 
+
+    static boolean readOnly = true;
+    static String vuePath = "admin/src/views/main/";
+
+
+
+
+
     //    生成代码 主路径
     public static void main(String[] args) throws Exception {
 
@@ -118,6 +126,10 @@ public class MainGenerator {
 //        param.put("domain","Test");
 ////        设置生成路径
 //        FreemarkerUtil.generator(serverPath+"Test.java",param);
+
+        param.put("readOnly", readOnly);
+        genVue(do_main, param,module);
+
     }
 
     //    设置POM中的生成路径
@@ -184,6 +196,17 @@ public class MainGenerator {
         System.out.println("开始生成：" + fileName);
         FreemarkerUtil.generator(fileName, param);
     }
+
+
+
+    private static void genVue(String do_main, Map<String, Object> param,String module) throws IOException, TemplateException {
+        FreemarkerUtil.initConfig("vue.ftl");
+        new File(vuePath + module).mkdirs();
+        String fileName = vuePath + module + "/" + do_main + ".vue";
+        System.out.println("开始生成：" + fileName);
+        FreemarkerUtil.generator(fileName, param);
+    }
+
 
 
     /**

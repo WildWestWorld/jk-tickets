@@ -240,7 +240,7 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
         // 余票详情表修改余票；
         // 为会员增加购票记录
         // 更新确认订单为成功
-        afterConfirmOrderService.afterDoConfirm(dailyTrainTicket,finalSeatList);
+        afterConfirmOrderService.afterDoConfirm(dailyTrainTicket,finalSeatList,ticketReqList);
 
 
 

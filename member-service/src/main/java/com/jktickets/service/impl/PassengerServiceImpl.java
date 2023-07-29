@@ -62,9 +62,9 @@ public class PassengerServiceImpl implements PassengerService {
     public PageRes<PassengerQueryRes> queryPassengerList(PassengerQueryReq req) {
         PassengerExample passengerExample = new PassengerExample();
         PassengerExample.Criteria criteria = passengerExample.createCriteria();
-//        if(ObjectUtil.isNotNull(req.getMemberId())){
-//            criteria.andMemberIdEqualTo(req.getMemberId());
-//        }
+        if(ObjectUtil.isNotNull(req.getMemberId())){
+            criteria.andMemberIdEqualTo(req.getMemberId());
+        }
 
         // 分页处理
         PageHelper.startPage(req.getPage(), req.getSize());

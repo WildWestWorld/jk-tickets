@@ -34,6 +34,7 @@ public class ${Domain}SaveReq {
         <#if !field.nullAble>
             <#if field.javaType=='String'>
     @NotBlank(message = "【${field.nameCn}】不能为空")
+            <#else>
             <#if field.javaType=='List'>
     @NotEmpty(message = "【${field.nameCn}】不能为空")
             <#else>

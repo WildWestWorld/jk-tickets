@@ -17,13 +17,16 @@ import com.jktickets.enums.SeatColEnum;
 import com.jktickets.enums.SeatTypeEnum;
 import com.jktickets.exception.BusinessException;
 import com.jktickets.exception.BusinessExceptionEnum;
+import com.jktickets.feign.MemberFeign;
 import com.jktickets.mapper.ConfirmOrderMapper;
 import com.jktickets.mapper.DailyTrainSeatMapper;
 import com.jktickets.mapper.custom.DailyTrainTicketMapperCustom;
+import com.jktickets.req.MemberTicketReq;
 import com.jktickets.req.confirmOrder.ConfirmOrderDoReq;
 import com.jktickets.req.confirmOrder.ConfirmOrderQueryReq;
 import com.jktickets.req.confirmOrder.ConfirmOrderSaveReq;
 import com.jktickets.req.confirmOrder.ConfirmOrderTicketReq;
+import com.jktickets.res.CommonRes;
 import com.jktickets.res.PageRes;
 import com.jktickets.res.confirmOrder.ConfirmOrderQueryRes;
 import com.jktickets.service.*;
@@ -49,14 +52,19 @@ public class AfterConfirmOrderServiceImpl implements AfterConfirmOrderService {
     @Resource
     DailyTrainTicketMapperCustom dailyTrainTicketMapperCustom;
 
+//    添加订单信息
+    @Resource
+    MemberFeign  memberFeign;
+
 
     //    为啥要另外开个类 去做后续的工作
 //    因为用到了 Transactional ，如果在同一个类中 内部调用 带Transactional的方法是不生效的
 //    所以得再写个类 使用Transactional
     @Override
     @Transactional
-    public void afterDoConfirm(DailyTrainTicket dailyTrainTicket, List<DailyTrainSeat> finalSeatList) {
-        for (DailyTrainSeat dailyTrainSeat : finalSeatList) {
+    public void afterDoConfirm(DailyTrainTicket dailyTrainTicket, List<DailyTrainSeat> finalSeatList,List<ConfirmOrderTicketReq> ticketReqList) {
+        for (int j=0;j<finalSeatList.size();j++) {
+            DailyTrainSeat dailyTrainSeat = finalSeatList.get(j);
             DailyTrainSeat seatForUpdate = new DailyTrainSeat();
             seatForUpdate.setId(dailyTrainSeat.getId());
             seatForUpdate.setSell(dailyTrainSeat.getSell());
@@ -103,7 +111,29 @@ public class AfterConfirmOrderServiceImpl implements AfterConfirmOrderService {
             dailyTrainTicketMapperCustom.updateCountBySell(dailyTrainSeat.getDate(), dailyTrainSeat.getTrainCode(), dailyTrainSeat.getSeatType(), minStartIndex, maxStartIndex, minEndIndex, maxEndIndex);
 
 
+//            调用会员服务接口 生成订单
+            MemberTicketReq memberTicketReq = new MemberTicketReq();
+            memberTicketReq.setMemberId(LoginMemberContext.getId());
+            memberTicketReq.setPassengerId(ticketReqList.get(j).getPassengerId());
+            memberTicketReq.setPassengerName(ticketReqList.get(j).getPassengerName());
+            memberTicketReq.setDate(dailyTrainTicket.getDate());
+            memberTicketReq.setTrainCode(dailyTrainTicket.getTrainCode());
+
+            memberTicketReq.setCarriageIndex(dailyTrainSeat.getCarriageIndex());
+            memberTicketReq.setRow(dailyTrainSeat.getRow());
+            memberTicketReq.setCol(dailyTrainSeat.getCol());
+            memberTicketReq.setSeatType(dailyTrainSeat.getSeatType());
+
+            memberTicketReq.setStart(dailyTrainTicket.getStart());
+            memberTicketReq.setStartTime(dailyTrainTicket.getStartTime());
+            memberTicketReq.setEnd(dailyTrainTicket.getEnd());
+            memberTicketReq.setEndTime(dailyTrainTicket.getEndTime());
+
+//            调用外键 保存订单
+            CommonRes<Object> commonRes = memberFeign.save(memberTicketReq);
+            LOG.info("调用member接口，返回{}",commonRes);
         }
+
 
     }
 

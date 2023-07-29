@@ -1,0 +1,7 @@
+2023-07-22 18:45:52.081 ERROR o.s.b.a.w.r.error.AbstractErrorWebExceptionHandler:102  [32m                  [0;39m [c0038ffb-22]  500 Server Error for HTTP POST "/business/confirmOrder/doConfirm"
+reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/business/confirmOrder/doConfirm" [ExceptionHandlingWebHandler]
+Original Stack Trace:
