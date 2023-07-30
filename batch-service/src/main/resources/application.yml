@@ -26,3 +26,12 @@ pagehelper:
   reasonable: true
   support-methods-arguments: true
   params: count=countsql
+
+
+#log4j使用时候 打印sql信息
+logging:
+  level:
+    com:
+      jktickets:
+        mapper:
+          trace

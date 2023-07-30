@@ -19,6 +19,12 @@ spring:
 mybatis:
   #让mybatis知道xml文件在哪
   mapper-locations: classpath:/mapper/**/*.xml
+  #设置一级缓存是否开启
+#  local-cache-scope有session/statement(sql)
+#local-cache-scope 什么时候情况缓存，session 绘画结束后清空 ，statement执行完sql就会情况
+#  什么时候是session，使用了Transactional 事务注释
+  configuration:
+    local-cache-scope: statement
 
 # PageHelper 分页插件配置
 pagehelper:
@@ -26,3 +32,12 @@ pagehelper:
   reasonable: true
   support-methods-arguments: true
   params: count=countsql
+
+
+#log4j使用时候 打印sql信息
+logging:
+  level:
+    com:
+      jktickets:
+        mapper:
+          trace

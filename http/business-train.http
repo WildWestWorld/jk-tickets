@@ -2,3 +2,9 @@ GET http://localhost:8000/business/admin/train/genSeat/G1
 Accept: application/json
 
 ###
+
+
+GET http://localhost:8000/business/admin/train/queryAll
+Accept: application/json
+
+###
