@@ -15,6 +15,12 @@ spring:
   #  用于外键
   application:
     name: business-service
+#    配置redis
+  data:
+    redis:
+      host: r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com
+      port: 6379
+      password: KEY!moling!6
 
 mybatis:
   #让mybatis知道xml文件在哪
@@ -41,3 +47,5 @@ logging:
       jktickets:
         mapper:
           trace
+
+

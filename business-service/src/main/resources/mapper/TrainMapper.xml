@@ -3,7 +3,11 @@
 <mapper namespace="com.jktickets.mapper.TrainMapper">
 <!--  开启二级缓存-->
 <!--  开启时resultMap 的 type 的类得 序列化 class implements Serializable-->
-  <cache></cache>
+<!--  当使用增删改 的时候 缓存失效-->
+<!--  在正式的项目我们很少用到二级缓存-->
+<!--  1.若是业务频繁的的场景，二级缓存几乎用不到-->
+<!--  2.若是有多个节点，有一台有缓存，然后另一个进行了增删改，但有缓存的不知道，所以还是保留老数据 第一台还是有缓存-->
+<!--  <cache></cache>-->
   <resultMap id="BaseResultMap" type="com.jktickets.domain.Train">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="code" jdbcType="VARCHAR" property="code" />

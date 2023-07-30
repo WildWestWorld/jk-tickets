@@ -30,6 +30,7 @@ import com.jktickets.utils.SnowUtil;
 import jakarta.annotation.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -77,6 +78,15 @@ public class DailyTrainTicketServiceImpl implements DailyTrainTicketService {
     }
 
     @Override
+//     @Cacheable(value="服务名.方法")
+//    传入的参数 DailyTrainTicketQueryReq 参数得设置Hash值
+//    因为他们是根据Hash变更，才会重新从数据库中查询
+
+//    @CachePut 强制执行方法，并更新缓存
+
+//    缺点 在于 无法保证 多节点的数据一致性
+//    所以使用Redis
+//    @Cacheable(value = "DailyTrainTicketService.queryDailyTrainTicketList")
     public PageRes<DailyTrainTicketQueryRes> queryDailyTrainTicketList(DailyTrainTicketQueryReq req) {
         DailyTrainTicketExample dailyTrainTicketExample = new DailyTrainTicketExample();
 
