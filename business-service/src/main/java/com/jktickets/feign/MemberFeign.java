@@ -12,9 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.Date;
 
 //开启外键
-@FeignClient(name = "member-service",url = "http://127.0.0.1:8001")
+//@FeignClient(name = "member-service",url = "http://127.0.0.1:8001")
+@FeignClient(name = "member-service")
 public interface MemberFeign {
-    @GetMapping("/hello")
+    @GetMapping("/member/hello")
     String hello();
 
     @GetMapping("/member/feign/ticket/save")

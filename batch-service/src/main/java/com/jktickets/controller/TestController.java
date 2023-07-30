@@ -23,6 +23,6 @@ public class TestController {
         String hello = businessFeign.hello();
         LOG.info(hello);
 
-        return "HelloWorld12311!";
+        return "HelloWorld12311!"+hello;
     }
 }
