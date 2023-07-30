@@ -18,12 +18,14 @@ spring:
         - id: business
           predicates:
             - Path=/business/**
-          uri: http://127.0.0.1:8002
+#          uri: http://127.0.0.1:8002
+          uri: lb://business-service
 
         - id: batch
           predicates:
             - Path=/batch/**
-          uri: http://127.0.0.1:8003
+#          uri: http://127.0.0.1:8003
+          uri: lb://batch-service
 #          解决跨域
       globalcors:
         cors-configurations:

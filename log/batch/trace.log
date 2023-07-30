@@ -1,25 +1,52 @@
-2023-07-29 09:44:06.869 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-07-29 09:44:06.937 INFO  com.jktickets.BatchApplication                    :51   [32m                  [0;39m Starting BatchApplication using Java 17.0.3 with PID 7272 (D:\Project\java\jk-tickets\batch-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
-2023-07-29 09:44:06.939 INFO  com.jktickets.BatchApplication                    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-07-29 09:44:07.005 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-07-29 09:44:07.006 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-07-29 09:44:08.435 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
-2023-07-29 09:44:08.552 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=1bedfdc6-bc76-3cfc-ba1b-14b17af324d7
-2023-07-29 09:44:10.474 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8003 (http)
-2023-07-29 09:44:10.490 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8003"]
-2023-07-29 09:44:10.491 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-07-29 09:44:10.491 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
-2023-07-29 09:44:10.589 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-07-29 09:44:10.589 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 3582 ms
-2023-07-29 09:44:10.866 INFO  org.quartz.impl.StdSchedulerFactory               :1220 [32m                  [0;39m Using default implementation for ThreadExecutor
-2023-07-29 09:44:10.884 INFO  org.quartz.core.SchedulerSignalerImpl             :61   [32m                  [0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2023-07-29 09:44:10.884 INFO  org.quartz.core.QuartzScheduler                   :229  [32m                  [0;39m Quartz Scheduler v.2.3.2 created.
-2023-07-29 09:44:10.897 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2023-07-29 09:44:11.373 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b3bb4e7
-2023-07-29 09:44:11.377 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2023-07-29 09:44:11.392 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :672  [32m                  [0;39m Using db table-based data access locking (synchronization).
-2023-07-29 09:44:11.395 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :145  [32m                  [0;39m JobStoreCMT initialized.
-2023-07-29 09:44:11.396 INFO  org.quartz.core.QuartzScheduler                   :294  [32m                  [0;39m Scheduler meta-data: Quartz Scheduler (v2.3.2) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+2023-07-30 16:31:48.223 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-07-30 16:31:48.241 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-30 16:31:48.318 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-07-30 16:31:48.358 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-30 16:31:48.629 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-07-30 16:31:48.631 INFO  com.alibaba.nacos.client.utils.ParamUtil          :87   [32m                  [0;39m [settings] [req-serv] nacos-server port:8848
+2023-07-30 16:31:48.632 INFO  com.alibaba.nacos.client.utils.ParamUtil          :98   [32m                  [0;39m [settings] [http-client] connect timeout:1000
+2023-07-30 16:31:48.633 INFO  com.alibaba.nacos.client.utils.ParamUtil          :105  [32m                  [0;39m PER_TASK_CONFIG_SIZE: 3000.0
+2023-07-30 16:31:48.666 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-07-30 16:31:48.667 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-07-30 16:31:48.669 INFO  c.a.n.client.auth.ram.identify.CredentialWatcher  :165  [32m                  [0;39m null No credential found
+2023-07-30 16:31:49.297 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-07-30 16:31:49.315 INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor :63   [32m                  [0;39m LOCAL_SNAPSHOT_PATH:C:\Users\Administrator\nacos\config
+2023-07-30 16:31:49.321 INFO  com.alibaba.nacos.common.remote.client            :108  [32m                  [0;39m [RpcClientFactory] create a new rpc client of 0523864b-0d09-4b85-968c-46afcfe27e3a_config-0
+2023-07-30 16:31:49.352 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0523864b-0d09-4b85-968c-46afcfe27e3a_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$599/0x0000000800f933e0
+2023-07-30 16:31:49.353 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0523864b-0d09-4b85-968c-46afcfe27e3a_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$600/0x0000000800f93800
+2023-07-30 16:31:49.354 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0523864b-0d09-4b85-968c-46afcfe27e3a_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2023-07-30 16:31:49.355 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0523864b-0d09-4b85-968c-46afcfe27e3a_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2023-07-30 16:31:49.366 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0523864b-0d09-4b85-968c-46afcfe27e3a_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2023-07-30 16:31:49.419 INFO  c.a.nacos.common.remote.client.grpc.GrpcClient    :182  [32m                  [0;39m grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-07-30 16:31:50.983 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0523864b-0d09-4b85-968c-46afcfe27e3a_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1690705910745_127.0.0.1_62173
+2023-07-30 16:31:50.984 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0523864b-0d09-4b85-968c-46afcfe27e3a_config-0] Notify connected event to listeners.
+2023-07-30 16:31:50.984 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :639  [32m                  [0;39m [0523864b-0d09-4b85-968c-46afcfe27e3a_config-0] Connected,notify listen context...
+2023-07-30 16:31:50.984 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0523864b-0d09-4b85-968c-46afcfe27e3a_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-07-30 16:31:50.985 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0523864b-0d09-4b85-968c-46afcfe27e3a_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$616/0x00000008010d8890
+2023-07-30 16:31:51.051 INFO  com.alibaba.nacos.client.config.impl.Limiter      :62   [32m                  [0;39m limitTime:5.0
+2023-07-30 16:31:51.076 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[batch-service] & group[DEFAULT_GROUP]
+2023-07-30 16:31:51.085 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[batch-service.properties] & group[DEFAULT_GROUP]
+2023-07-30 16:31:51.092 WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder :87   [32m                  [0;39m Ignore the empty nacos configuration and get it based on dataId[batch-service-dev.properties] & group[DEFAULT_GROUP]
+2023-07-30 16:31:51.094 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration    :108  [32m                  [0;39m Located property source: [BootstrapPropertySource {name='bootstrapProperties-batch-service-dev.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-batch-service.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-batch-service,DEFAULT_GROUP'}]
+2023-07-30 16:31:51.101 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-07-30 16:31:51.102 INFO  com.jktickets.BatchApplication                    :636  [32m                  [0;39m The following 1 profile is active: "dev"
+2023-07-30 16:31:52.284 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
+2023-07-30 16:31:52.418 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=3df3674e-e20b-331c-ad52-efcd5164eea2
+2023-07-30 16:31:53.789 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8003 (http)
+2023-07-30 16:31:53.807 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8003"]
+2023-07-30 16:31:53.809 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-07-30 16:31:53.809 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-07-30 16:31:53.928 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-07-30 16:31:53.929 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2744 ms
+2023-07-30 16:31:54.302 INFO  org.quartz.impl.StdSchedulerFactory               :1220 [32m                  [0;39m Using default implementation for ThreadExecutor
+2023-07-30 16:31:54.401 INFO  org.quartz.core.SchedulerSignalerImpl             :61   [32m                  [0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2023-07-30 16:31:54.401 INFO  org.quartz.core.QuartzScheduler                   :229  [32m                  [0;39m Quartz Scheduler v.2.3.2 created.
+2023-07-30 16:31:54.484 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-07-30 16:31:55.253 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7720f7a0
+2023-07-30 16:31:55.276 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-07-30 16:31:55.295 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :672  [32m                  [0;39m Using db table-based data access locking (synchronization).
+2023-07-30 16:31:55.310 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :145  [32m                  [0;39m JobStoreCMT initialized.
+2023-07-30 16:31:55.312 INFO  org.quartz.core.QuartzScheduler                   :294  [32m                  [0;39m Scheduler meta-data: Quartz Scheduler (v2.3.2) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -27,397 +54,50 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
 
-2023-07-29 09:44:11.397 INFO  org.quartz.impl.StdSchedulerFactory               :1374 [32m                  [0;39m Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
-2023-07-29 09:44:11.397 INFO  org.quartz.impl.StdSchedulerFactory               :1378 [32m                  [0;39m Quartz scheduler version: 2.3.2
-2023-07-29 09:44:11.398 INFO  org.quartz.core.QuartzScheduler                   :2293 [32m                  [0;39m JobFactory set to: com.jktickets.job.sql.MyJobFactory@41722c03
-2023-07-29 09:44:11.811 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-07-29 09:44:12.916 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
-2023-07-29 09:44:13.878 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m                  [0;39m Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-07-29 09:44:13.962 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8003"]
-2023-07-29 09:44:14.001 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8003 (http) with context path '/batch'
-2023-07-29 09:44:14.521 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :734  [32m                  [0;39m Will start Quartz Scheduler [schedulerFactoryBean] in 2 seconds
-2023-07-29 09:44:14.533 INFO  com.jktickets.BatchApplication                    :57   [32m                  [0;39m Started BatchApplication in 9.001 seconds (process running for 10.411)
-2023-07-29 09:44:14.541 INFO  com.jktickets.BatchApplication                    :26   [32m                  [0;39m 启动成功！！
-2023-07-29 09:44:14.542 INFO  com.jktickets.BatchApplication                    :28   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8003/batch/hello
-2023-07-29 09:44:16.532 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :750  [32m                  [0;39m Starting Quartz Scheduler now, after delay of 2 seconds
-2023-07-29 09:44:16.690 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :866  [32m                  [0;39m Freed 0 triggers from 'acquired' / 'blocked' state.
-2023-07-29 09:44:16.735 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :876  [32m                  [0;39m Recovering 0 jobs that were in-progress at the time of the last shut-down.
-2023-07-29 09:44:16.736 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :889  [32m                  [0;39m Recovery complete.
-2023-07-29 09:44:16.755 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :896  [32m                  [0;39m Removed 0 'complete' triggers.
-2023-07-29 09:44:16.774 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :901  [32m                  [0;39m Removed 0 stale fired job entries.
-2023-07-29 09:44:16.827 INFO  org.quartz.core.QuartzScheduler                   :547  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
-2023-07-29 14:39:57.302 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-07-29 14:39:57.365 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
-2023-07-29 14:39:57.406 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8003"]
-2023-07-29 14:39:57.407 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2023-07-29 14:39:57.446 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8003"]
-2023-07-29 14:39:57.452 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8003"]
-2023-07-29 14:39:57.492 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :847  [32m                  [0;39m Shutting down Quartz Scheduler
-2023-07-29 14:39:57.493 INFO  org.quartz.core.QuartzScheduler                   :666  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutting down.
-2023-07-29 14:39:57.493 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
-2023-07-29 14:39:57.494 INFO  org.quartz.core.QuartzScheduler                   :740  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutdown complete.
-2023-07-29 14:39:57.495 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2023-07-29 14:39:57.502 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2023-07-29 14:39:58.217 INFO  com.jktickets.BatchApplication                    :51   [32m                  [0;39m Starting BatchApplication using Java 17.0.3 with PID 7272 (D:\Project\java\jk-tickets\batch-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
-2023-07-29 14:39:58.218 INFO  com.jktickets.BatchApplication                    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-07-29 14:39:58.780 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
-2023-07-29 14:39:58.802 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=c6b93fe6-4d78-340c-a268-346295eeba5f
-2023-07-29 14:39:58.937 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8003 (http)
-2023-07-29 14:39:58.938 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8003"]
-2023-07-29 14:39:58.939 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-07-29 14:39:58.939 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
-2023-07-29 14:39:59.017 INFO  o.a.c.c.C.[Tomcat].[localhost].[/batch]           :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-07-29 14:39:59.018 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 795 ms
-2023-07-29 14:39:59.030 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jobController': Lookup method resolution failed
-2023-07-29 14:39:59.031 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2023-07-29 14:39:59.040 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-07-29 14:39:59.065 ERROR org.springframework.boot.SpringApplication        :820  [32m                  [0;39m Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jobController': Lookup method resolution failed
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:470)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:340)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1283)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at com.jktickets.BatchApplication.main(BatchApplication.java:25)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.jktickets.controller.JobController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1b3b86a8]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
-	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:448)
-	... 22 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: com/jktickets/res/CommonRes
-	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
-	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
-	... 24 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.jktickets.res.CommonRes
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:467)
-	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
-	... 28 common frames omitted
-2023-07-29 14:40:01.022 INFO  com.jktickets.BatchApplication                    :51   [32m                  [0;39m Starting BatchApplication using Java 17.0.3 with PID 7272 (D:\Project\java\jk-tickets\batch-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
-2023-07-29 14:40:01.023 INFO  com.jktickets.BatchApplication                    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-07-29 14:40:01.467 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
-2023-07-29 14:40:01.499 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=c6b93fe6-4d78-340c-a268-346295eeba5f
-2023-07-29 14:40:01.584 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8003 (http)
-2023-07-29 14:40:01.586 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8003"]
-2023-07-29 14:40:01.587 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-07-29 14:40:01.587 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
-2023-07-29 14:40:01.616 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/batch]         :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-07-29 14:40:01.617 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 590 ms
-2023-07-29 14:40:01.632 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jobController': Lookup method resolution failed
-2023-07-29 14:40:01.633 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2023-07-29 14:40:01.642 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-07-29 14:40:01.648 ERROR org.springframework.boot.SpringApplication        :820  [32m                  [0;39m Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jobController': Lookup method resolution failed
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:470)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:340)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1283)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at com.jktickets.BatchApplication.main(BatchApplication.java:25)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.jktickets.controller.JobController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@63e3c46d]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
-	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:448)
-	... 22 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: com/jktickets/res/CommonRes
-	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
-	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
-	... 24 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.jktickets.res.CommonRes
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
-	at java.base/java.lang.Class.forName0(Native Method)
-	at java.base/java.lang.Class.forName(Class.java:467)
-	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
-	... 28 common frames omitted
-2023-07-29 14:40:05.036 INFO  com.jktickets.BatchApplication                    :51   [32m                  [0;39m Starting BatchApplication using Java 17.0.3 with PID 7272 (D:\Project\java\jk-tickets\batch-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
-2023-07-29 14:40:05.037 INFO  com.jktickets.BatchApplication                    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-07-29 14:40:05.397 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
-2023-07-29 14:40:05.418 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=1bedfdc6-bc76-3cfc-ba1b-14b17af324d7
-2023-07-29 14:40:05.602 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8003 (http)
-2023-07-29 14:40:05.603 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8003"]
-2023-07-29 14:40:05.603 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-07-29 14:40:05.603 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
-2023-07-29 14:40:05.627 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/batch]         :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-07-29 14:40:05.627 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 588 ms
-2023-07-29 14:40:05.757 INFO  org.quartz.impl.StdSchedulerFactory               :1220 [32m                  [0;39m Using default implementation for ThreadExecutor
-2023-07-29 14:40:05.759 INFO  org.quartz.core.SchedulerSignalerImpl             :61   [32m                  [0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2023-07-29 14:40:05.759 INFO  org.quartz.core.QuartzScheduler                   :229  [32m                  [0;39m Quartz Scheduler v.2.3.2 created.
-2023-07-29 14:40:05.760 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
-2023-07-29 14:40:05.958 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61a4a2b2
-2023-07-29 14:40:05.960 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
-2023-07-29 14:40:05.962 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :672  [32m                  [0;39m Using db table-based data access locking (synchronization).
-2023-07-29 14:40:05.962 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :145  [32m                  [0;39m JobStoreCMT initialized.
-2023-07-29 14:40:05.962 INFO  org.quartz.core.QuartzScheduler                   :294  [32m                  [0;39m Scheduler meta-data: Quartz Scheduler (v2.3.2) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
-
-2023-07-29 14:40:05.963 INFO  org.quartz.impl.StdSchedulerFactory               :1374 [32m                  [0;39m Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
-2023-07-29 14:40:05.963 INFO  org.quartz.impl.StdSchedulerFactory               :1378 [32m                  [0;39m Quartz scheduler version: 2.3.2
-2023-07-29 14:40:05.963 INFO  org.quartz.core.QuartzScheduler                   :2293 [32m                  [0;39m JobFactory set to: com.jktickets.job.sql.MyJobFactory@2c736ef8
-2023-07-29 14:40:06.300 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-07-29 14:40:07.093 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
-2023-07-29 14:40:08.703 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m                  [0;39m Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-07-29 14:40:08.791 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8003"]
-2023-07-29 14:40:08.809 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8003 (http) with context path '/batch'
-2023-07-29 14:40:09.720 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :734  [32m                  [0;39m Will start Quartz Scheduler [schedulerFactoryBean] in 2 seconds
-2023-07-29 14:40:09.737 INFO  com.jktickets.BatchApplication                    :57   [32m                  [0;39m Started BatchApplication in 5.219 seconds (process running for 17765.615)
-2023-07-29 14:40:09.740 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2023-07-29 14:40:09.741 INFO  com.jktickets.BatchApplication                    :26   [32m                  [0;39m 启动成功！！
-2023-07-29 14:40:09.741 INFO  com.jktickets.BatchApplication                    :28   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8003/batch/hello
-2023-07-29 14:40:11.744 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :750  [32m                  [0;39m Starting Quartz Scheduler now, after delay of 2 seconds
-2023-07-29 14:40:11.831 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :866  [32m                  [0;39m Freed 0 triggers from 'acquired' / 'blocked' state.
-2023-07-29 14:40:11.864 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :876  [32m                  [0;39m Recovering 0 jobs that were in-progress at the time of the last shut-down.
-2023-07-29 14:40:11.864 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :889  [32m                  [0;39m Recovery complete.
-2023-07-29 14:40:11.878 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :896  [32m                  [0;39m Removed 0 'complete' triggers.
-2023-07-29 14:40:11.892 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :901  [32m                  [0;39m Removed 0 stale fired job entries.
-2023-07-29 14:40:11.926 INFO  org.quartz.core.QuartzScheduler                   :547  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
-2023-07-29 17:19:12.821 WARN  com.zaxxer.hikari.pool.HikariPool                 :804  [32m                  [0;39m HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=11m36s360ms96µs600ns).
-2023-07-29 17:19:26.420 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@715ab857 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2023-07-29 17:19:27.831 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7f24f549 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2023-07-29 17:19:31.427 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@50ca2930 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2023-07-29 17:48:21.561 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@77cc70c2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2023-07-29 17:48:26.184 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@77434ff5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2023-07-29 17:48:26.573 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@62c0214b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2023-07-29 17:48:31.188 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@705d2b30 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2023-07-29 17:48:31.583 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4bb3f679 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2023-07-29 17:48:36.195 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@15f41393 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2023-07-29 17:48:36.584 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5f6dc5ad (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2023-07-29 17:48:41.206 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@582b74df (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2023-07-29 17:48:41.596 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@696bd469 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2023-07-29 17:48:46.215 WARN  com.zaxxer.hikari.pool.PoolBase                   :179  [32m                  [0;39m HikariPool-2 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@35fab4c8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
-2023-07-29 17:48:46.614 ERROR org.quartz.core.ErrorLogger                       :2407 [32m                  [0;39m An error occurred while scanning for the next triggers to fire.
-org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'springNonTxDataSource.schedulerFactoryBean': java.sql.SQLTransientConnectionException: HikariPool-2 - Connection is not available, request timed out after 30016ms.
-	at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:168)
-	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3861)
-	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTriggers(JobStoreSupport.java:2802)
-	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:287)
-Caused by: java.sql.SQLTransientConnectionException: HikariPool-2 - Connection is not available, request timed out after 30016ms.
-	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
-	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
-	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
-	at org.springframework.scheduling.quartz.LocalDataSourceJobStore$2.getConnection(LocalDataSourceJobStore.java:140)
-	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:108)
-	at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:165)
-	... 3 common frames omitted
-Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
-	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:733)
-	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at jdk.internal.reflect.GeneratedConstructorAccessor57.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
-	... 14 common frames omitted
-Caused by: java.net.UnknownHostException: rm-cn-uax39xxd10011clo.rwlb.rds.aliyuncs.com
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1367)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1301)
-	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:132)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
-	... 16 common frames omitted
-2023-07-29 17:48:51.184 ERROR o.s.scheduling.quartz.LocalDataSourceJobStore     :4017 [32m                  [0;39m MisfireHandler: Error handling misfires: Failed to obtain DB connection from data source 'springNonTxDataSource.schedulerFactoryBean': java.sql.SQLTransientConnectionException: HikariPool-2 - Connection is not available, request timed out after 30008ms.
-org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'springNonTxDataSource.schedulerFactoryBean': java.sql.SQLTransientConnectionException: HikariPool-2 - Connection is not available, request timed out after 30008ms.
-	at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:168)
-	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doRecoverMisfires(JobStoreSupport.java:3246)
-	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:4012)
-	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:4033)
-Caused by: java.sql.SQLTransientConnectionException: HikariPool-2 - Connection is not available, request timed out after 30008ms.
-	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
-	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
-	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
-	at org.springframework.scheduling.quartz.LocalDataSourceJobStore$2.getConnection(LocalDataSourceJobStore.java:140)
-	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:108)
-	at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:165)
-	... 3 common frames omitted
-Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
-	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:733)
-	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at jdk.internal.reflect.GeneratedConstructorAccessor57.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
-	... 14 common frames omitted
-Caused by: java.net.UnknownHostException: rm-cn-uax39xxd10011clo.rwlb.rds.aliyuncs.com
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1509)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1367)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1301)
-	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:132)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
-	... 16 common frames omitted
-2023-07-29 21:58:08.823 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 15 class path changes (0 additions, 14 deletions, 1 modification)
-2023-07-29 21:58:11.696 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
-2023-07-29 21:58:12.635 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8003"]
-2023-07-29 21:58:12.697 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2023-07-29 21:58:13.543 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8003"]
-2023-07-29 21:58:13.787 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8003"]
-2023-07-29 21:58:14.307 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :847  [32m                  [0;39m Shutting down Quartz Scheduler
-2023-07-29 21:58:14.326 INFO  org.quartz.core.QuartzScheduler                   :666  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutting down.
-2023-07-29 21:58:14.326 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
-2023-07-29 21:58:14.372 INFO  org.quartz.core.QuartzScheduler                   :740  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutdown complete.
-2023-07-29 21:58:14.388 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
-2023-07-29 21:58:14.415 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
-2023-07-29 21:58:19.164 INFO  com.jktickets.BatchApplication                    :51   [32m                  [0;39m Starting BatchApplication using Java 17.0.3 with PID 7272 (D:\Project\java\jk-tickets\batch-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
-2023-07-29 21:58:19.165 INFO  com.jktickets.BatchApplication                    :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-07-29 21:58:20.391 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.jktickets]' package. Please check your configuration.
-2023-07-29 21:58:20.449 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=1bedfdc6-bc76-3cfc-ba1b-14b17af324d7
-2023-07-29 21:58:21.088 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8003 (http)
-2023-07-29 21:58:21.088 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8003"]
-2023-07-29 21:58:21.089 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-07-29 21:58:21.089 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
-2023-07-29 21:58:21.113 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/batch]         :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-07-29 21:58:21.113 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1945 ms
-2023-07-29 21:58:21.202 INFO  org.quartz.impl.StdSchedulerFactory               :1220 [32m                  [0;39m Using default implementation for ThreadExecutor
-2023-07-29 21:58:21.204 INFO  org.quartz.core.SchedulerSignalerImpl             :61   [32m                  [0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2023-07-29 21:58:21.204 INFO  org.quartz.core.QuartzScheduler                   :229  [32m                  [0;39m Quartz Scheduler v.2.3.2 created.
-2023-07-29 21:58:21.205 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
-2023-07-29 21:58:21.378 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51227c0b
-2023-07-29 21:58:21.379 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
-2023-07-29 21:58:21.379 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :672  [32m                  [0;39m Using db table-based data access locking (synchronization).
-2023-07-29 21:58:21.379 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :145  [32m                  [0;39m JobStoreCMT initialized.
-2023-07-29 21:58:21.379 INFO  org.quartz.core.QuartzScheduler                   :294  [32m                  [0;39m Scheduler meta-data: Quartz Scheduler (v2.3.2) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is not clustered.
-
-2023-07-29 21:58:21.379 INFO  org.quartz.impl.StdSchedulerFactory               :1374 [32m                  [0;39m Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
-2023-07-29 21:58:21.380 INFO  org.quartz.impl.StdSchedulerFactory               :1378 [32m                  [0;39m Quartz scheduler version: 2.3.2
-2023-07-29 21:58:21.380 INFO  org.quartz.core.QuartzScheduler                   :2293 [32m                  [0;39m JobFactory set to: com.jktickets.job.sql.MyJobFactory@6db6c267
-2023-07-29 21:58:21.725 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-07-29 21:58:22.236 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
-2023-07-29 21:58:23.062 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m                  [0;39m Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-07-29 21:58:23.096 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8003"]
-2023-07-29 21:58:23.103 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8003 (http) with context path '/batch'
-2023-07-29 21:58:23.618 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :734  [32m                  [0;39m Will start Quartz Scheduler [schedulerFactoryBean] in 2 seconds
-2023-07-29 21:58:23.625 INFO  com.jktickets.BatchApplication                    :57   [32m                  [0;39m Started BatchApplication in 5.185 seconds (process running for 44059.514)
-2023-07-29 21:58:23.627 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2023-07-29 21:58:23.628 INFO  com.jktickets.BatchApplication                    :26   [32m                  [0;39m 启动成功！！
-2023-07-29 21:58:23.629 INFO  com.jktickets.BatchApplication                    :28   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8003/batch/hello
-2023-07-29 21:58:25.624 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :750  [32m                  [0;39m Starting Quartz Scheduler now, after delay of 2 seconds
-2023-07-29 21:58:25.696 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :866  [32m                  [0;39m Freed 0 triggers from 'acquired' / 'blocked' state.
-2023-07-29 21:58:25.720 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :876  [32m                  [0;39m Recovering 0 jobs that were in-progress at the time of the last shut-down.
-2023-07-29 21:58:25.721 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :889  [32m                  [0;39m Recovery complete.
-2023-07-29 21:58:25.733 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :896  [32m                  [0;39m Removed 0 'complete' triggers.
-2023-07-29 21:58:25.744 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :901  [32m                  [0;39m Removed 0 stale fired job entries.
-2023-07-29 21:58:25.769 INFO  org.quartz.core.QuartzScheduler                   :547  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
-2023-07-29 23:29:54.487 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
-2023-07-29 23:29:54.554 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :847  [32m                  [0;39m Shutting down Quartz Scheduler
-2023-07-29 23:29:54.555 INFO  org.quartz.core.QuartzScheduler                   :666  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutting down.
-2023-07-29 23:29:54.555 INFO  org.quartz.core.QuartzScheduler                   :585  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
-2023-07-29 23:29:54.555 INFO  org.quartz.core.QuartzScheduler                   :740  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutdown complete.
-2023-07-29 23:29:54.556 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
-2023-07-29 23:29:54.558 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
+2023-07-30 16:31:55.312 INFO  org.quartz.impl.StdSchedulerFactory               :1374 [32m                  [0;39m Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2023-07-30 16:31:55.313 INFO  org.quartz.impl.StdSchedulerFactory               :1378 [32m                  [0;39m Quartz scheduler version: 2.3.2
+2023-07-30 16:31:55.313 INFO  org.quartz.core.QuartzScheduler                   :2293 [32m                  [0;39m JobFactory set to: com.jktickets.job.sql.MyJobFactory@29d113a4
+2023-07-30 16:31:55.752 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-07-30 16:31:58.097 WARN  o.s.core.LocalVariableTableParameterNameDiscoverer:123  [32m                  [0;39m Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.github.pagehelper.autoconfigure.PageHelperStandardProperties
+2023-07-30 16:31:59.089 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m                  [0;39m Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-07-30 16:31:59.186 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8003"]
+2023-07-30 16:31:59.209 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8003 (http) with context path '/batch'
+2023-07-30 16:31:59.217 INFO  com.alibaba.nacos.client.naming                   :62   [32m                  [0;39m initializer namespace from ans.namespace attribute : null
+2023-07-30 16:31:59.218 INFO  com.alibaba.nacos.client.naming                   :66   [32m                  [0;39m initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2023-07-30 16:31:59.219 INFO  com.alibaba.nacos.client.naming                   :73   [32m                  [0;39m initializer namespace from namespace attribute :null
+2023-07-30 16:31:59.238 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-07-30 16:31:59.239 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-07-30 16:31:59.247 INFO  com.alibaba.nacos.common.remote.client            :108  [32m                  [0;39m [RpcClientFactory] create a new rpc client of 26f1b8da-1619-402d-b552-78d2493082a5
+2023-07-30 16:31:59.251 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [26f1b8da-1619-402d-b552-78d2493082a5] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2023-07-30 16:31:59.252 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [26f1b8da-1619-402d-b552-78d2493082a5] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2023-07-30 16:31:59.253 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [26f1b8da-1619-402d-b552-78d2493082a5] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2023-07-30 16:31:59.254 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [26f1b8da-1619-402d-b552-78d2493082a5] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2023-07-30 16:31:59.255 INFO  c.a.nacos.common.remote.client.grpc.GrpcClient    :182  [32m                  [0;39m grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-07-30 16:31:59.387 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [26f1b8da-1619-402d-b552-78d2493082a5] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1690705919263_127.0.0.1_62188
+2023-07-30 16:31:59.387 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [26f1b8da-1619-402d-b552-78d2493082a5] Notify connected event to listeners.
+2023-07-30 16:31:59.387 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [26f1b8da-1619-402d-b552-78d2493082a5] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-07-30 16:31:59.387 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [26f1b8da-1619-402d-b552-78d2493082a5] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$616/0x00000008010d8890
+2023-07-30 16:31:59.388 INFO  com.alibaba.nacos.client.naming                   :78   [32m                  [0;39m Grpc connection connect
+2023-07-30 16:31:59.390 INFO  com.alibaba.nacos.client.naming                   :121  [32m                  [0;39m [REGISTER-SERVICE] train registering service batch-service with instance Instance{instanceId='null', ip='192.168.0.102', port=8003, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2023-07-30 16:31:59.411 INFO  c.a.cloud.nacos.registry.NacosServiceRegistry     :76   [32m                  [0;39m nacos registry, DEFAULT_GROUP batch-service 192.168.0.102:8003 register finished
+2023-07-30 16:31:59.895 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :734  [32m                  [0;39m Will start Quartz Scheduler [schedulerFactoryBean] in 2 seconds
+2023-07-30 16:31:59.911 INFO  com.jktickets.BatchApplication                    :57   [32m                  [0;39m Started BatchApplication in 12.819 seconds (process running for 13.809)
+2023-07-30 16:31:59.918 INFO  com.alibaba.nacos.client.config.impl.CacheData    :67   [32m                  [0;39m nacos.cache.data.init.snapshot = true 
+2023-07-30 16:31:59.920 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :380  [32m                  [0;39m [fixed-train-127.0.0.1_8848] [subscribe] batch-service+DEFAULT_GROUP+train
+2023-07-30 16:31:59.940 INFO  com.alibaba.nacos.client.config.impl.CacheData    :197  [32m                  [0;39m [fixed-train-127.0.0.1_8848] [add-listener] ok, tenant=train, dataId=batch-service, group=DEFAULT_GROUP, cnt=1
+2023-07-30 16:31:59.941 INFO  c.a.cloud.nacos.refresh.NacosContextRefresher     :129  [32m                  [0;39m [Nacos Config] Listening config: dataId=batch-service, group=DEFAULT_GROUP
+2023-07-30 16:31:59.941 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :380  [32m                  [0;39m [fixed-train-127.0.0.1_8848] [subscribe] batch-service-dev.properties+DEFAULT_GROUP+train
+2023-07-30 16:31:59.942 INFO  com.alibaba.nacos.client.config.impl.CacheData    :197  [32m                  [0;39m [fixed-train-127.0.0.1_8848] [add-listener] ok, tenant=train, dataId=batch-service-dev.properties, group=DEFAULT_GROUP, cnt=1
+2023-07-30 16:31:59.942 INFO  c.a.cloud.nacos.refresh.NacosContextRefresher     :129  [32m                  [0;39m [Nacos Config] Listening config: dataId=batch-service-dev.properties, group=DEFAULT_GROUP
+2023-07-30 16:31:59.942 INFO  com.alibaba.nacos.client.config.impl.ClientWorker :380  [32m                  [0;39m [fixed-train-127.0.0.1_8848] [subscribe] batch-service.properties+DEFAULT_GROUP+train
+2023-07-30 16:31:59.943 INFO  com.alibaba.nacos.client.config.impl.CacheData    :197  [32m                  [0;39m [fixed-train-127.0.0.1_8848] [add-listener] ok, tenant=train, dataId=batch-service.properties, group=DEFAULT_GROUP, cnt=1
+2023-07-30 16:31:59.943 INFO  c.a.cloud.nacos.refresh.NacosContextRefresher     :129  [32m                  [0;39m [Nacos Config] Listening config: dataId=batch-service.properties, group=DEFAULT_GROUP
+2023-07-30 16:31:59.945 INFO  com.jktickets.BatchApplication                    :26   [32m                  [0;39m 启动成功！！
+2023-07-30 16:31:59.945 INFO  com.jktickets.BatchApplication                    :28   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8003/batch/hello
+2023-07-30 16:32:01.901 INFO  o.s.scheduling.quartz.SchedulerFactoryBean        :750  [32m                  [0;39m Starting Quartz Scheduler now, after delay of 2 seconds
+2023-07-30 16:32:02.080 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :866  [32m                  [0;39m Freed 0 triggers from 'acquired' / 'blocked' state.
+2023-07-30 16:32:02.113 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :876  [32m                  [0;39m Recovering 0 jobs that were in-progress at the time of the last shut-down.
+2023-07-30 16:32:02.113 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :889  [32m                  [0;39m Recovery complete.
+2023-07-30 16:32:02.128 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :896  [32m                  [0;39m Removed 0 'complete' triggers.
+2023-07-30 16:32:02.143 INFO  o.s.scheduling.quartz.LocalDataSourceJobStore     :901  [32m                  [0;39m Removed 0 stale fired job entries.
+2023-07-30 16:32:02.172 INFO  org.quartz.core.QuartzScheduler                   :547  [32m                  [0;39m Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
