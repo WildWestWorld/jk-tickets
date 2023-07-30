@@ -63,11 +63,6 @@
             <artifactId>spring-cloud-loadbalancer</artifactId>
         </dependency>
 
-<!-- Nacos-->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-        </dependency>
 
 
     </dependencies>

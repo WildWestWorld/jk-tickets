@@ -1,3 +1,8 @@
+#启动prod时需要在 启动的service设置options 启动
+#-Dspring.profiles.active=prod
+#需要在nacos配置
+
+
 server:
   port: 8001
 #  context-path 项目API前缀 加了要放访问的话 必须要加上这个前缀

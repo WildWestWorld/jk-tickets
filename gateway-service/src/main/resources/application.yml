@@ -8,7 +8,13 @@ spring:
         - id: member
           predicates:
             - Path=/member/**
-          uri: http://127.0.0.1:8001
+#          使用nacos前
+#          uri: http://127.0.0.1:8001
+#        使用nacos后 lb后面跟的是服务 application/name的名字
+#          而且gateway服务业要连入到nacos
+#          使用lb 得在pom加入spring-cloud-starter-loadbalancer
+          uri: lb://member-service
+
         - id: business
           predicates:
             - Path=/business/**

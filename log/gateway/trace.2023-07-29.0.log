@@ -1,0 +1,320 @@
+2023-07-29 09:44:11.618 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-07-29 09:44:11.698 INFO  com.jktickets.GatewayApplication                  :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.3 with PID 4120 (D:\Project\java\jk-tickets\gateway-service\target\classes started by Administrator in D:\Project\java\jk-tickets)
+2023-07-29 09:44:11.700 INFO  com.jktickets.GatewayApplication                  :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-07-29 09:44:11.788 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-29 09:44:11.790 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-29 09:44:13.024 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=324267dc-ff55-3f4c-bee8-5e2f01045e68
+2023-07-29 09:44:14.836 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-07-29 09:44:14.838 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-07-29 09:44:14.838 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-07-29 09:44:14.839 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-07-29 09:44:14.839 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-07-29 09:44:14.839 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-07-29 09:44:14.840 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-07-29 09:44:14.840 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-07-29 09:44:14.841 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-07-29 09:44:14.841 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-07-29 09:44:14.842 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-07-29 09:44:14.842 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-07-29 09:44:14.842 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-07-29 09:44:14.843 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-07-29 09:44:15.242 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-07-29 09:44:16.284 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-07-29 09:44:17.505 INFO  com.jktickets.GatewayApplication                  :57   [32m                  [0;39m Started GatewayApplication in 7.185 seconds (process running for 8.623)
+2023-07-29 09:44:17.512 INFO  com.jktickets.GatewayApplication                  :22   [32m                  [0;39m 启动成功！！
+2023-07-29 09:44:17.514 INFO  com.jktickets.GatewayApplication                  :24   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8000
+2023-07-29 09:45:56.177 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/admin/ticket/queryList
+2023-07-29 09:45:56.917 ERROR o.s.b.a.w.r.error.AbstractErrorWebExceptionHandler:102  [32m                  [0;39m [e4c63d71-1]  500 Server Error for HTTP GET "/member/admin/ticket/queryList?page=1&size=10"
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:8001
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/member/admin/ticket/queryList?page=1&size=10" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-29 09:49:00.363 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/admin/ticket/queryList
+2023-07-29 09:51:08.533 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/admin/ticket/queryList
+2023-07-29 09:51:20.250 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/admin/ticket/queryList
+2023-07-29 09:51:40.891 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/admin/ticket/queryList
+2023-07-29 14:43:00.981 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/member/sendCode
+2023-07-29 14:43:00.976 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/member/sendCode
+2023-07-29 14:43:07.236 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/member/login
+2023-07-29 14:43:13.643 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/station/queryAll
+2023-07-29 14:43:13.644 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTI5ODcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDY5OTM4NywiaWF0IjoxNjkwNjEyOTg3fQ.te4XhwVbPM3hCUdFfh1n_c_3_xjDMsfTRhkJfFw8D4g
+2023-07-29 14:43:14.189 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 14:43:14.189 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 14:43:15.479 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/station/queryAll
+2023-07-29 14:43:15.480 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTI5ODcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDY5OTM4NywiaWF0IjoxNjkwNjEyOTg3fQ.te4XhwVbPM3hCUdFfh1n_c_3_xjDMsfTRhkJfFw8D4g
+2023-07-29 14:43:15.482 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 14:43:15.483 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 14:43:31.711 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/dailyTrainTicket/queryList
+2023-07-29 14:43:31.712 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTI5ODcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDY5OTM4NywiaWF0IjoxNjkwNjEyOTg3fQ.te4XhwVbPM3hCUdFfh1n_c_3_xjDMsfTRhkJfFw8D4g
+2023-07-29 14:43:31.714 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 14:43:31.714 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 14:43:34.141 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
+2023-07-29 14:43:34.141 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTI5ODcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDY5OTM4NywiaWF0IjoxNjkwNjEyOTg3fQ.te4XhwVbPM3hCUdFfh1n_c_3_xjDMsfTRhkJfFw8D4g
+2023-07-29 14:43:34.142 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 14:43:34.142 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 14:43:42.363 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/confirmOrder/doConfirm
+2023-07-29 14:43:42.363 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTI5ODcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDY5OTM4NywiaWF0IjoxNjkwNjEyOTg3fQ.te4XhwVbPM3hCUdFfh1n_c_3_xjDMsfTRhkJfFw8D4g
+2023-07-29 14:43:42.364 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 14:43:42.365 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 14:44:54.542 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/admin/ticket/queryList
+2023-07-29 14:47:06.284 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/admin/ticket/queryList
+2023-07-29 14:47:35.082 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/admin/ticket/queryList
+2023-07-29 14:47:35.224 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/admin/ticket/queryList
+2023-07-29 15:05:43.164 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
+2023-07-29 15:05:43.166 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTI5ODcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDY5OTM4NywiaWF0IjoxNjkwNjEyOTg3fQ.te4XhwVbPM3hCUdFfh1n_c_3_xjDMsfTRhkJfFw8D4g
+2023-07-29 15:05:43.173 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:05:43.174 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:05:50.519 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
+2023-07-29 15:05:50.520 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTI5ODcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDY5OTM4NywiaWF0IjoxNjkwNjEyOTg3fQ.te4XhwVbPM3hCUdFfh1n_c_3_xjDMsfTRhkJfFw8D4g
+2023-07-29 15:05:50.521 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:05:50.521 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:05:58.869 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
+2023-07-29 15:05:58.870 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTI5ODcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDY5OTM4NywiaWF0IjoxNjkwNjEyOTg3fQ.te4XhwVbPM3hCUdFfh1n_c_3_xjDMsfTRhkJfFw8D4g
+2023-07-29 15:05:58.871 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:05:58.873 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:10:26.387 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/ticket/queryList
+2023-07-29 15:10:26.388 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTI5ODcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MDY5OTM4NywiaWF0IjoxNjkwNjEyOTg3fQ.te4XhwVbPM3hCUdFfh1n_c_3_xjDMsfTRhkJfFw8D4g
+2023-07-29 15:10:26.390 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:10:26.391 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:12:18.619 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/member/sendCode
+2023-07-29 15:12:19.989 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/member/login
+2023-07-29 15:12:22.265 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/ticket/queryList
+2023-07-29 15:12:22.265 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:12:22.267 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:12:22.267 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:12:24.578 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/station/queryAll
+2023-07-29 15:12:24.580 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:12:24.584 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:12:24.584 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:12:24.584 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/dailyTrainTicket/queryList
+2023-07-29 15:12:24.585 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:12:24.586 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:12:24.587 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:12:25.968 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/station/queryAll
+2023-07-29 15:12:25.968 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:12:25.970 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:12:25.970 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:12:43.425 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/dailyTrainTicket/queryList
+2023-07-29 15:12:43.426 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:12:43.427 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:12:43.428 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:12:45.867 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
+2023-07-29 15:12:45.868 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:12:45.869 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:12:45.869 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:12:48.716 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/passenger/queryList
+2023-07-29 15:12:48.717 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:12:48.722 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:12:48.723 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:13:00.355 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/ticket/queryList
+2023-07-29 15:13:00.356 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:13:00.356 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:13:00.357 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:13:01.536 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/station/queryAll
+2023-07-29 15:13:01.537 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:13:01.537 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/dailyTrainTicket/queryList
+2023-07-29 15:13:01.537 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:13:01.538 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:13:01.538 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:13:01.538 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:13:01.538 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:13:01.584 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/station/queryAll
+2023-07-29 15:13:01.584 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:13:01.586 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:13:01.586 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:13:03.481 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
+2023-07-29 15:13:03.482 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:13:03.483 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:13:03.483 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:13:05.693 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/passenger/queryList
+2023-07-29 15:13:05.693 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:13:05.694 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:13:05.695 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:13:28.916 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/passenger/queryList
+2023-07-29 15:13:28.917 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:13:28.918 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:13:28.919 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:14:59.736 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/passenger/queryList
+2023-07-29 15:14:59.737 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:14:59.738 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:14:59.738 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:13.818 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/passenger/save
+2023-07-29 15:15:13.818 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:13.819 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:13.819 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:14.114 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/passenger/queryList
+2023-07-29 15:15:14.115 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:14.116 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:14.117 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:16.237 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/station/queryAll
+2023-07-29 15:15:16.238 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:16.238 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/dailyTrainTicket/queryList
+2023-07-29 15:15:16.239 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:16.239 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:16.239 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:16.240 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:16.240 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:16.289 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/station/queryAll
+2023-07-29 15:15:16.290 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:16.292 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:16.293 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:16.807 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/passenger/queryList
+2023-07-29 15:15:16.808 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:16.809 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:16.810 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:17.726 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/passenger/queryList
+2023-07-29 15:15:17.727 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:17.727 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:17.728 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:18.753 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/station/queryAll
+2023-07-29 15:15:18.754 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:18.754 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/dailyTrainTicket/queryList
+2023-07-29 15:15:18.754 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:18.755 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:18.755 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:18.755 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:18.756 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:18.804 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/station/queryAll
+2023-07-29 15:15:18.805 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:18.806 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:18.806 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:21.091 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/ticket/queryList
+2023-07-29 15:15:21.091 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:21.092 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:21.093 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:22.412 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/station/queryAll
+2023-07-29 15:15:22.412 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:22.412 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/dailyTrainTicket/queryList
+2023-07-29 15:15:22.413 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:22.413 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:22.414 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:22.414 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:22.415 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:22.677 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/station/queryAll
+2023-07-29 15:15:22.678 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:22.679 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:22.680 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:23.267 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
+2023-07-29 15:15:23.268 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:23.269 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:23.269 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:29.167 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/confirmOrder/doConfirm
+2023-07-29 15:15:29.168 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:29.169 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:29.169 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:15:32.951 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/ticket/queryList
+2023-07-29 15:15:32.951 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 15:15:32.952 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 15:15:32.953 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 15:16:18.804 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/admin/ticket/queryList
+2023-07-29 18:33:40.595 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirm-order/queryList
+2023-07-29 18:33:52.088 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirm-order/queryList
+2023-07-29 18:34:14.257 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 18:36:08.081 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 18:36:09.061 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 18:36:10.065 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 18:36:12.056 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 18:37:46.879 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 18:37:48.342 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 18:37:49.550 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 18:37:51.886 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 18:37:56.375 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 18:37:58.662 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 18:38:00.245 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 18:38:01.675 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 18:38:08.450 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 18:38:09.358 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 18:38:10.554 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 18:38:11.691 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:02:33.199 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:02:34.164 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:02:35.021 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:02:36.318 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:09:35.610 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/station/queryAll
+2023-07-29 19:09:35.611 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 19:09:35.613 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/dailyTrainTicket/queryList
+2023-07-29 19:09:35.614 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 19:09:35.619 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 19:09:35.619 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 19:09:35.619 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 19:09:35.619 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 19:09:36.403 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/station/queryAll
+2023-07-29 19:09:36.423 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 19:09:36.424 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 19:09:36.425 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 19:09:37.510 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
+2023-07-29 19:09:37.511 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 19:09:37.511 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 19:09:37.511 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 19:09:42.474 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/confirmOrder/doConfirm
+2023-07-29 19:09:42.475 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 19:09:42.481 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 19:09:42.481 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 19:09:46.081 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:11:15.515 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:11:19.152 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:11:25.054 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:11:36.102 INFO  com.jktickets.filter.LoginMemberFilter            :33   [32m                  [0;39m 需要登录验证：/business/confirmOrder/doConfirm
+2023-07-29 19:11:36.102 INFO  com.jktickets.filter.LoginMemberFilter            :37   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTA2MTQ3NDAsIm1vYmlsZSI6IjEzMDAwMDAwMDAxIiwiaWQiOjE2NzQ5ODA1ODE5OTUzMTkyOTYsImV4cCI6MTY5MDcwMTE0MCwiaWF0IjoxNjkwNjE0NzQwfQ.FuI7ZD4Fo5_9SSM93Gw7Bpq_o6cW3w624I3ArGJ1Lzk
+2023-07-29 19:11:36.103 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
+2023-07-29 19:11:36.104 INFO  com.jktickets.filter.LoginMemberFilter            :47   [32m                  [0;39m token有效，放行该请求
+2023-07-29 19:11:54.776 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:11:55.720 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:16:22.864 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:16:25.001 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:18:29.412 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:18:32.063 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:18:33.067 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:18:34.324 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:18:35.974 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:19:55.639 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:20:01.783 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:20:02.402 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:20:03.078 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:20:04.597 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 19:20:21.800 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/dailyTrainTicket/queryList
+2023-07-29 19:20:21.803 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/station/queryAll
+2023-07-29 19:20:21.804 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/train/queryAll
+2023-07-29 19:20:21.882 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/station/queryAll
+2023-07-29 19:21:51.893 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/business/admin/confirmOrder/queryList
+2023-07-29 20:55:32.834 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/hello
+2023-07-29 20:55:35.666 ERROR o.s.b.a.w.r.error.AbstractErrorWebExceptionHandler:102  [32m                  [0;39m [e4b2b4be-128]  500 Server Error for HTTP GET "/member/hello"
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:8001
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/member/hello" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-29 20:56:55.336 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/hello
+2023-07-29 21:59:36.947 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/hello
+2023-07-29 22:00:18.180 INFO  com.jktickets.filter.LoginMemberFilter            :30   [32m                  [0;39m 不需要登录验证：/member/hello
