@@ -20,6 +20,7 @@ import com.jktickets.res.ticket.TicketQueryRes;
 import com.jktickets.service.TicketService;
 
 import com.jktickets.utils.SnowUtil;
+import io.seata.core.context.RootContext;
 import jakarta.annotation.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,8 +37,9 @@ public class TicketServiceImpl implements TicketService {
     TicketMapper ticketMapper;
 
     @Override
-    public void saveTicket(MemberTicketReq req) {
-
+    public void saveTicket(MemberTicketReq req) throws Exception {
+//        因为也会参与到Seata 事务中 所以也可以打印出ID
+        LOG.info("seata全局事务ID save:{}", RootContext.getXID());
 
         DateTime nowTime  = DateTime.now();
 
@@ -53,6 +55,10 @@ public class TicketServiceImpl implements TicketService {
 
             ticketMapper.insert(ticket);
 
+//            模拟事务事物出现异常
+//        if( 1==1){
+//            throw new Exception("测试异常001");
+//        }
 
 
 

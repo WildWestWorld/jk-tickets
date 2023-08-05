@@ -31,6 +31,8 @@ import com.jktickets.res.PageRes;
 import com.jktickets.res.confirmOrder.ConfirmOrderQueryRes;
 import com.jktickets.service.*;
 import com.jktickets.utils.SnowUtil;
+import io.seata.core.context.RootContext;
+import io.seata.spring.annotation.GlobalTransactional;
 import jakarta.annotation.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -64,8 +66,13 @@ public class AfterConfirmOrderServiceImpl implements AfterConfirmOrderService {
 //    因为用到了 Transactional ，如果在同一个类中 内部调用 带Transactional的方法是不生效的
 //    所以得再写个类 使用Transactional
     @Override
+//    SEATA前
     @Transactional
-    public void afterDoConfirm(DailyTrainTicket dailyTrainTicket, List<DailyTrainSeat> finalSeatList, List<ConfirmOrderTicketReq> ticketReqList, ConfirmOrder confirmOrder) {
+//    SEATA后
+    @GlobalTransactional
+    public void afterDoConfirm(DailyTrainTicket dailyTrainTicket, List<DailyTrainSeat> finalSeatList, List<ConfirmOrderTicketReq> ticketReqList, ConfirmOrder confirmOrder) throws Exception {
+       LOG.info("Seata全局事务ID:{}", RootContext.getXID());
+
         for (int j = 0; j < finalSeatList.size(); j++) {
             DailyTrainSeat dailyTrainSeat = finalSeatList.get(j);
             DailyTrainSeat seatForUpdate = new DailyTrainSeat();
@@ -119,17 +126,17 @@ public class AfterConfirmOrderServiceImpl implements AfterConfirmOrderService {
             memberTicketReq.setMemberId(LoginMemberContext.getId());
             memberTicketReq.setPassengerId(ticketReqList.get(j).getPassengerId());
             memberTicketReq.setPassengerName(ticketReqList.get(j).getPassengerName());
-            memberTicketReq.setDate(dailyTrainTicket.getDate());
+            memberTicketReq.setTrainDate(dailyTrainTicket.getDate());
             memberTicketReq.setTrainCode(dailyTrainTicket.getTrainCode());
 
             memberTicketReq.setCarriageIndex(dailyTrainSeat.getCarriageIndex());
-            memberTicketReq.setRow(dailyTrainSeat.getRow());
-            memberTicketReq.setCol(dailyTrainSeat.getCol());
+            memberTicketReq.setSeatRow(dailyTrainSeat.getRow());
+            memberTicketReq.setSeatCol(dailyTrainSeat.getCol());
             memberTicketReq.setSeatType(dailyTrainSeat.getSeatType());
 
-            memberTicketReq.setStart(dailyTrainTicket.getStart());
+            memberTicketReq.setStartStation(dailyTrainTicket.getStart());
             memberTicketReq.setStartTime(dailyTrainTicket.getStartTime());
-            memberTicketReq.setEnd(dailyTrainTicket.getEnd());
+            memberTicketReq.setEndStation(dailyTrainTicket.getEnd());
             memberTicketReq.setEndTime(dailyTrainTicket.getEndTime());
 
 //            调用外键 保存订单
@@ -143,6 +150,13 @@ public class AfterConfirmOrderServiceImpl implements AfterConfirmOrderService {
             confirmOrderForUpdate.setStatus(ConfirmOrderStatusEnum.SUCCESS.getCode());
 
             confirmOrderMapper.updateByPrimaryKeySelective(confirmOrderForUpdate);
+
+
+//            模拟调用方出现异常
+            if(1==1){
+                throw new Exception("测试结束");
+            }
+
         }
 
 

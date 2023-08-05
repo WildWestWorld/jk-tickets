@@ -2,11 +2,16 @@ package com.jktickets.res.dailyTrainTicket;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
+
+import java.io.Serializable;
 import java.util.Date;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.Data;
+
 import java.math.BigDecimal;
 
-public class DailyTrainTicketQueryRes {
+@Data
+public class DailyTrainTicketQueryRes  implements Serializable {
 
     /**
      * id

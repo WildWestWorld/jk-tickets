@@ -105,17 +105,17 @@ public class MainGenerator {
 
 //        生成Req
         genReq(Domain, param, "req", "saveReq");
-        genReq(Domain, param, "req", "queryReq");
+//        genReq(Domain, param, "req", "queryReq");
 
 //      生成genRes
         genRes(Domain, param, "res", "queryRes");
 
 //      生成Service
-        gen(Domain, param, "service", "service");
-        genImpl(Domain, param, "service", "serviceImpl");
+//        gen(Domain, param, "service", "service");
+//        genImpl(Domain, param, "service", "serviceImpl");
 //        生成Controller
 //        gen(Domain, param, "controller", "controller");
-        gen(Domain, param, "controller/admin", "adminController");
+//        gen(Domain, param, "controller/admin", "adminController");
 
 ////        生成类
 ////        设置模板路径

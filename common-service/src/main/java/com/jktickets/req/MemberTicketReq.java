@@ -38,7 +38,7 @@ public class MemberTicketReq {
      */
     @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT+8")
     @NotNull(message = "【日期】不能为空")
-    private Date date;
+    private Date trainDate;
 
     /**
      * 车次编号
@@ -56,19 +56,19 @@ public class MemberTicketReq {
      * 排号|01, 02
      */
     @NotBlank(message = "【排号】不能为空")
-    private String row;
+    private String seatRow;
 
     /**
      * 列号|枚举[SeatColEnum]
      */
     @NotBlank(message = "【列号】不能为空")
-    private String col;
+    private String seatCol;
 
     /**
      * 始发站
      */
     @NotBlank(message = "【始发站】不能为空")
-    private String start;
+    private String startStation;
 
     /**
      * 出发时间
@@ -81,7 +81,7 @@ public class MemberTicketReq {
      * 终点站
      */
     @NotBlank(message = "【终点站】不能为空")
-    private String end;
+    private String endStation;
 
     /**
      * 到站时间
@@ -101,17 +101,17 @@ public class MemberTicketReq {
      */
 //    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
 //    private Date createTime;
-//
-//    /**
-//     * 修改时间
-//     */
+
+    /**
+     * 修改时间
+     */
 //    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
 //    private Date updateTime;
 
 //    public Long getId() {
 //        return id;
 //    }
-//
+
 //    public void setId(Long id) {
 //        this.id = id;
 //    }
@@ -140,12 +140,12 @@ public class MemberTicketReq {
         this.passengerName = passengerName;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getTrainDate() {
+        return trainDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setTrainDate(Date trainDate) {
+        this.trainDate = trainDate;
     }
 
     public String getTrainCode() {
@@ -164,28 +164,28 @@ public class MemberTicketReq {
         this.carriageIndex = carriageIndex;
     }
 
-    public String getRow() {
-        return row;
+    public String getSeatRow() {
+        return seatRow;
     }
 
-    public void setRow(String row) {
-        this.row = row;
+    public void setSeatRow(String seatRow) {
+        this.seatRow = seatRow;
     }
 
-    public String getCol() {
-        return col;
+    public String getSeatCol() {
+        return seatCol;
     }
 
-    public void setCol(String col) {
-        this.col = col;
+    public void setSeatCol(String seatCol) {
+        this.seatCol = seatCol;
     }
 
-    public String getStart() {
-        return start;
+    public String getStartStation() {
+        return startStation;
     }
 
-    public void setStart(String start) {
-        this.start = start;
+    public void setStartStation(String startStation) {
+        this.startStation = startStation;
     }
 
     public Date getStartTime() {
@@ -196,12 +196,12 @@ public class MemberTicketReq {
         this.startTime = startTime;
     }
 
-    public String getEnd() {
-        return end;
+    public String getEndStation() {
+        return endStation;
     }
 
-    public void setEnd(String end) {
-        this.end = end;
+    public void setEndStation(String endStation) {
+        this.endStation = endStation;
     }
 
     public Date getEndTime() {
@@ -223,11 +223,11 @@ public class MemberTicketReq {
 //    public Date getCreateTime() {
 //        return createTime;
 //    }
-//
+
 //    public void setCreateTime(Date createTime) {
 //        this.createTime = createTime;
 //    }
-//
+
 //    public Date getUpdateTime() {
 //        return updateTime;
 //    }
@@ -246,14 +246,14 @@ public class MemberTicketReq {
         sb.append(", memberId=").append(memberId);
         sb.append(", passengerId=").append(passengerId);
         sb.append(", passengerName=").append(passengerName);
-        sb.append(", date=").append(date);
+        sb.append(", trainDate=").append(trainDate);
         sb.append(", trainCode=").append(trainCode);
         sb.append(", carriageIndex=").append(carriageIndex);
-        sb.append(", row=").append(row);
-        sb.append(", col=").append(col);
-        sb.append(", start=").append(start);
+        sb.append(", seatRow=").append(seatRow);
+        sb.append(", seatCol=").append(seatCol);
+        sb.append(", startStation=").append(startStation);
         sb.append(", startTime=").append(startTime);
-        sb.append(", end=").append(end);
+        sb.append(", endStation=").append(endStation);
         sb.append(", endTime=").append(endTime);
         sb.append(", seatType=").append(seatType);
 //        sb.append(", createTime=").append(createTime);

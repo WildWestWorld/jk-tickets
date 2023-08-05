@@ -1,7 +1,9 @@
 package com.jktickets.exception;
 
 
+import cn.hutool.core.util.StrUtil;
 import com.jktickets.res.CommonRes;
+import io.seata.core.context.RootContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.validation.BindException;
@@ -27,7 +29,18 @@ public class ControllerExceptionHandler {
      */
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
-    public CommonRes exceptionHandler(Exception e) {
+    public CommonRes exceptionHandler(Exception e) throws Exception {
+        LOG.info("Seata全局事务ID:{}", RootContext.getXID());
+
+//        如果是在一次全局事务里出了异常，就不要包装返回值，将异常抛给调用方，让调用方回滚事务
+//        因为 SEATA是根据状态码来判别事务是否要回滚，如果继续走下去，只会出现 状态码200，提示系统出现异常，请联系管理员
+//        那事务就不会回滚，所以我们得加上判断 如果是SEATA事务抛出的异常我们就不用自己封装的异常了
+        if(StrUtil.isNotBlank(RootContext.getXID())){
+            throw e;
+        }
+
+
+
         CommonRes commonRes = new CommonRes();
         LOG.error("系统异常：", e);
         commonRes.setSuccess(false);

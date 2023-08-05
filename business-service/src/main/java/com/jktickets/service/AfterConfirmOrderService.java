@@ -15,6 +15,6 @@ import com.jktickets.res.confirmOrder.ConfirmOrderQueryRes;
 import java.util.List;
 
 public interface AfterConfirmOrderService {
-   void afterDoConfirm(DailyTrainTicket dailyTrainTicket,List<DailyTrainSeat> finalSeatList,List<ConfirmOrderTicketReq> ticketReqList, ConfirmOrder confirmOrder);
+   void afterDoConfirm(DailyTrainTicket dailyTrainTicket,List<DailyTrainSeat> finalSeatList,List<ConfirmOrderTicketReq> ticketReqList, ConfirmOrder confirmOrder) throws Exception;
 
 }

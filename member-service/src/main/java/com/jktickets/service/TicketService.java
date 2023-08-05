@@ -11,7 +11,7 @@ import com.jktickets.res.ticket.TicketQueryRes;
 import java.util.List;
 
 public interface TicketService {
-   void saveTicket(MemberTicketReq req);
+   void saveTicket(MemberTicketReq req) throws Exception;
    PageRes<TicketQueryRes> queryTicketList(TicketQueryReq req);
 
    void deleteById(Long id);

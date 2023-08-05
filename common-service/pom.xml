@@ -120,6 +120,11 @@
             <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
 
+<!--        Seata依赖-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
+        </dependency>
 
 
     </dependencies>

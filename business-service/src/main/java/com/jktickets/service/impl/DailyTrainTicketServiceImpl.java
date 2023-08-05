@@ -82,12 +82,25 @@ public class DailyTrainTicketServiceImpl implements DailyTrainTicketService {
 //    传入的参数 DailyTrainTicketQueryReq 参数得设置Hash值
 //    因为他们是根据Hash变更，才会重新从数据库中查询
 
-//    @CachePut 强制执行方法，并更新缓存
-
-//    缺点 在于 无法保证 多节点的数据一致性
+//    缺点 在于 无法保证 多节点的数据一致性 需要加上redis
 //    所以使用Redis
-//    @Cacheable(value = "DailyTrainTicketService.queryDailyTrainTicketList")
+    @Cacheable(value = "DailyTrainTicketService.queryDailyTrainTicketList")
     public PageRes<DailyTrainTicketQueryRes> queryDailyTrainTicketList(DailyTrainTicketQueryReq req) {
+//       常见的缓存过期策略
+//        TTL 超过时间 :超过时间自动过期
+//        LRU 最近最少使用:一个小时内最少使用的 过期
+//        FIFO 先进先出
+//        Random 随机过期
+
+
+//        Seata分布式四种模式
+//        AT 默认模式 增加Undo表，失败时执行方向操作
+//        TCC   try confirm cancel Seata只执行调度
+//        SAGA  长事务解决方案 需要自己写两个阶段代码 AT不用谢第二个阶段
+//        基于状态机实现 需要JSON文件 可以 异步执行
+//        XA模式 具有强一致性
+
+
         DailyTrainTicketExample dailyTrainTicketExample = new DailyTrainTicketExample();
 
         dailyTrainTicketExample.setOrderByClause("id desc");

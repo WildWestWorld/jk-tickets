@@ -3,6 +3,7 @@ import com.jktickets.req.PageReq;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.io.Serializable;
 import java.util.Date;
 
 //该实体 是与表结构一一对应

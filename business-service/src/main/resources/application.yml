@@ -21,6 +21,19 @@ spring:
       host: r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com
       port: 6379
       password: KEY!moling!6
+  cache:
+    type: redis
+    redis:
+#      设置键值前缀 用于区别类型 项目隔离
+      use-key-prefix: true
+#      设置键值前缀
+      key-prefix: train_cache_
+#      是否可以为null 用于缓存穿透
+#      返回了null 就被缓存了，然后就不会继续执行数据库
+      cache-null-values: true
+#      缓存时间
+      time-to-live: 60s
+#配置缓存类型为redis
 
 mybatis:
   #让mybatis知道xml文件在哪
