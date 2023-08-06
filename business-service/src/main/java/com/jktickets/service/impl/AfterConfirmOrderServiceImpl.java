@@ -67,7 +67,7 @@ public class AfterConfirmOrderServiceImpl implements AfterConfirmOrderService {
 //    所以得再写个类 使用Transactional
     @Override
 //    SEATA前
-    @Transactional
+//    @Transactional
 //    SEATA后
     @GlobalTransactional
     public void afterDoConfirm(DailyTrainTicket dailyTrainTicket, List<DailyTrainSeat> finalSeatList, List<ConfirmOrderTicketReq> ticketReqList, ConfirmOrder confirmOrder) throws Exception {
@@ -153,9 +153,9 @@ public class AfterConfirmOrderServiceImpl implements AfterConfirmOrderService {
 
 
 //            模拟调用方出现异常
-            if(1==1){
-                throw new Exception("测试结束");
-            }
+//            if(1==1){
+//                throw new Exception("测试结束");
+//            }
 
         }
 

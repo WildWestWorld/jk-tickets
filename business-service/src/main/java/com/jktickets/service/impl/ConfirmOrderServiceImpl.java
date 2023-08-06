@@ -31,15 +31,20 @@ import com.jktickets.res.confirmOrder.ConfirmOrderQueryRes;
 import com.jktickets.service.*;
 
 import com.jktickets.utils.SnowUtil;
+import io.seata.spring.annotation.GlobalTransactional;
 import jakarta.annotation.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @Service
 public class ConfirmOrderServiceImpl implements ConfirmOrderService {
@@ -59,6 +64,11 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
     DailyTrainSeatService dailyTrainSeatService;
     @Resource
     AfterConfirmOrderService afterConfirmOrderService;
+
+
+//    Redis
+    @Resource
+    StringRedisTemplate redisTemplate;
 
 
     @Override
@@ -124,8 +134,29 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
     }
 
 
+
+
+//    synchronized 加入锁，以防高并发超卖
+//synchronized 只能解决 单机锁的问题，多个节点一起卖的时候还是超卖
     @Override
-    public void doConfirm(ConfirmOrderDoReq req) {
+    public synchronized void doConfirm(ConfirmOrderDoReq req) {
+
+//        车次时间+车次号来认定车次的票
+        String key =req.getDate() + "-" +req.getTrainCode();
+
+
+//        setIfAbsent 如果该值不存在 就往里面set
+        Boolean setIfAbsent = redisTemplate.opsForValue().setIfAbsent(key, key, 5, TimeUnit.SECONDS);
+
+        if(setIfAbsent){
+            LOG.info("恭喜，抢到锁了");
+        }else {
+            LOG.info("很遗憾，没抢到锁");
+            throw new BusinessException(BusinessExceptionEnum.CONFIRM_ORDER_LOCK_FAIL);
+
+        }
+
+
         // 省略业务数据校验，如：车次是否存在，余票是否存在，车次是否在有效期内，tickets条数>0，同乘客同车次是否已买过
 
         // 保存确认订单表，状态初始
@@ -225,7 +256,6 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
 
             for (ConfirmOrderTicketReq orderTicketReq : ticketReqList) {
                 selectSeat(finalSeatList, date, trainCode, orderTicketReq.getSeatTypeCode(), null, null, dailyTrainTicket.getStartIndex(), dailyTrainTicket.getEndIndex());
-
             }
 
         }
@@ -250,7 +280,6 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
             LOG.error("保存购票信息失败",e);
             throw new BusinessException(BusinessExceptionEnum.CONFIRM_ORDER_EXCEPTION);
         }
-
 
 
     }
@@ -287,9 +316,12 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
 //                判断column 是否有值，如果有值就对比列号
                 String col = dailyTrainSeat.getCol();
 
+
 //                判断当前座位不能被选中过
                 boolean alreadyChooseFlag  =false;
                 for (DailyTrainSeat trainSeat : finalSeatList) {
+//                    finalSeatList中的item 若是已经被选中了
+//                    dailyTrainSeat 是当前循环的座位
                     if(trainSeat.getId().equals(dailyTrainSeat.getId())){
                         alreadyChooseFlag=true;
                         break;
@@ -302,7 +334,9 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
                 }
 
 
-//                这里的column 是外部传入
+
+
+                //                这里的column 是外部传入
                 if (StrUtil.isBlank(column)) {
                     LOG.info("无选座");
                 } else {
@@ -312,6 +346,7 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
                         continue;
                     }
                 }
+
 
 
                 boolean isChoose = checkSeatSellState(dailyTrainSeat, startIndex, endIndex);
@@ -380,7 +415,7 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
                 }
 //     保存选择好的座位
                 finalSeatList.addAll(finalSeatListTemp);
-                return;
+                return ;
             }
 
         }
