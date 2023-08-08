@@ -4,6 +4,7 @@ import cn.hutool.core.bean.BeanUtil;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.date.DateTime;
+import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.EnumUtil;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.ObjectUtil;
@@ -35,6 +36,7 @@ import io.seata.spring.annotation.GlobalTransactional;
 import jakarta.annotation.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
@@ -67,7 +69,9 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
 
 
 //    Redis
-    @Resource
+//    一定得用 Autowired 他是按类去找的
+//    Resource 按后面的名字找的对象，会找到我们自己写的类
+    @Autowired
     StringRedisTemplate redisTemplate;
 
 
@@ -142,11 +146,11 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
     public synchronized void doConfirm(ConfirmOrderDoReq req) {
 
 //        车次时间+车次号来认定车次的票
-        String key =req.getDate() + "-" +req.getTrainCode();
+        String lockKey = DateUtil.formatDate(req.getDate())  + "-" +req.getTrainCode();
 
 
 //        setIfAbsent 如果该值不存在 就往里面set
-        Boolean setIfAbsent = redisTemplate.opsForValue().setIfAbsent(key, key, 5, TimeUnit.SECONDS);
+        Boolean setIfAbsent = redisTemplate.opsForValue().setIfAbsent(lockKey, lockKey, 5, TimeUnit.SECONDS);
 
         if(setIfAbsent){
             LOG.info("恭喜，抢到锁了");
@@ -280,6 +284,10 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
             LOG.error("保存购票信息失败",e);
             throw new BusinessException(BusinessExceptionEnum.CONFIRM_ORDER_EXCEPTION);
         }
+
+//       购票成功，删除redis 分布式锁
+        LOG.info("购票流程结束，释放锁");
+        redisTemplate.delete(lockKey);
 
 
     }

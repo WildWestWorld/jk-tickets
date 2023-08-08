@@ -125,7 +125,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;dailyTrainTicketId&quot;:&quot;1688027728420409344&quot;,&quot;date&quot;:&quot;2023-08-06&quot;,&quot;trainCode&quot;:&quot;01&quot;,&quot;start&quot;:&quot;温州&quot;,&quot;end&quot;:&quot;杭州&quot;,&quot;tickets&quot;:[{&quot;passengerId&quot;:&quot;1681265704667582464&quot;,&quot;passengerType&quot;:&quot;1&quot;,&quot;seatTypeCode&quot;:&quot;2&quot;,&quot;passengerName&quot;:&quot;测试&quot;,&quot;passengerIdCard&quot;:&quot;1&quot;,&quot;seat&quot;:null}]}</stringProp>
+                <stringProp name="Argument.value">{&quot;dailyTrainTicketId&quot;:&quot;1688913100071374848&quot;,&quot;date&quot;:&quot;2023-08-08&quot;,&quot;trainCode&quot;:&quot;01&quot;,&quot;start&quot;:&quot;温州&quot;,&quot;end&quot;:&quot;杭州&quot;,&quot;tickets&quot;:[{&quot;passengerId&quot;:&quot;1681265704667582464&quot;,&quot;passengerType&quot;:&quot;1&quot;,&quot;seatTypeCode&quot;:&quot;1&quot;,&quot;passengerName&quot;:&quot;测试&quot;,&quot;passengerIdCard&quot;:&quot;1&quot;,&quot;seat&quot;:null}]}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -150,7 +150,7 @@
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">token</stringProp>
-                <stringProp name="Header.value">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTEyOTI0OTIsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MTM3ODg5MiwiaWF0IjoxNjkxMjkyNDkyfQ.McdAs8tz15gzgL3-FwMXfhLjPxhSTMxVJ079jK7zP6k</stringProp>
+                <stringProp name="Header.value">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTE1MDMyNzUsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MTU4OTY3NSwiaWF0IjoxNjkxNTAzMjc1fQ.sVPeoIURc37rxe7U_s1uRJhHMW7L63PbnBZifa_qBbM</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
