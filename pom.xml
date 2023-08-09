@@ -99,6 +99,14 @@
                 <scope>import</scope>
             </dependency>
 
+<!--            至少为3.18.0版本 才支持SpringBoot3-->
+<!--            升级到3.20.0 以上否则生成环境会报错-->
+            <!-- https://mvnrepository.com/artifact/org.redisson/redisson-spring-boot-starter -->
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>3.21.0</version>
+            </dependency>
 
 
 

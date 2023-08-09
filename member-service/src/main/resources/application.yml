@@ -36,6 +36,9 @@ test:
   nacos: member-service
 
 
+
+
+
 #log4j使用时候 打印sql信息
 logging:
   level:

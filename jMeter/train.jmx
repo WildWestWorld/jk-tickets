@@ -110,7 +110,7 @@
           <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">30</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -125,7 +125,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;dailyTrainTicketId&quot;:&quot;1688913100071374848&quot;,&quot;date&quot;:&quot;2023-08-08&quot;,&quot;trainCode&quot;:&quot;01&quot;,&quot;start&quot;:&quot;温州&quot;,&quot;end&quot;:&quot;杭州&quot;,&quot;tickets&quot;:[{&quot;passengerId&quot;:&quot;1681265704667582464&quot;,&quot;passengerType&quot;:&quot;1&quot;,&quot;seatTypeCode&quot;:&quot;1&quot;,&quot;passengerName&quot;:&quot;测试&quot;,&quot;passengerIdCard&quot;:&quot;1&quot;,&quot;seat&quot;:null}]}</stringProp>
+                <stringProp name="Argument.value">{&quot;dailyTrainTicketId&quot;:&quot;1688913100071374848&quot;,&quot;date&quot;:&quot;2023-08-08&quot;,&quot;trainCode&quot;:&quot;01&quot;,&quot;start&quot;:&quot;温州&quot;,&quot;end&quot;:&quot;杭州&quot;,&quot;tickets&quot;:[{&quot;passengerId&quot;:&quot;1681265704667582464&quot;,&quot;passengerType&quot;:&quot;1&quot;,&quot;seatTypeCode&quot;:&quot;2&quot;,&quot;passengerName&quot;:&quot;测试&quot;,&quot;passengerIdCard&quot;:&quot;1&quot;,&quot;seat&quot;:null}]}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -150,7 +150,7 @@
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">token</stringProp>
-                <stringProp name="Header.value">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTE1MDMyNzUsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MTU4OTY3NSwiaWF0IjoxNjkxNTAzMjc1fQ.sVPeoIURc37rxe7U_s1uRJhHMW7L63PbnBZifa_qBbM</stringProp>
+                <stringProp name="Header.value">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTE1ODY3NDgsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MTY3MzE0OCwiaWF0IjoxNjkxNTg2NzQ4fQ.HD1PVOH_Avy4jkAgx3AqH1MmBlzE-vewA49CMIcdVKI</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
