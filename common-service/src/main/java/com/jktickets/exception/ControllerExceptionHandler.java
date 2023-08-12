@@ -86,4 +86,15 @@ public class ControllerExceptionHandler {
         return commonRes;
     }
 
+
+
+
+
+//    拦截Sentinel异常 让他返回正常的异常
+    @ExceptionHandler(value = RuntimeException.class)
+    @ResponseBody
+    public CommonRes exceptionHandler(RuntimeException e) {
+        throw e;
+    }
+
 }

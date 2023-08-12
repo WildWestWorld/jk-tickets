@@ -33,7 +33,29 @@ spring:
       cache-null-values: true
 #      缓存时间
       time-to-live: 60s
+
+      #  设置sentinel
+#  cloud:
+#    sentinel:
+#      transport:
+##        port: 8719是固定的
+#        port: 8719
+##        dashboard :sentinel 在的端口
+#        dashboard: localhost:18080
+#        #      设置sentinel的Nacos
+#      datasource:
+#        nacos:
+#          nacos:
+#            server-addr: localhost:8848
+#            namespace: train
+#            group-id: TRAIN_GROUP
+#            data-id: sentinel
+##            rule-type: flow :流控，限流
+#            rule-type: flow
+
+
 #配置缓存类型为redis
+
 
 mybatis:
   #让mybatis知道xml文件在哪

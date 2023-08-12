@@ -90,7 +90,7 @@ public class AfterConfirmOrderServiceImpl implements AfterConfirmOrderService {
 //            最大的起始 索引值 应该为购票的终点站索引-1 因为你要是终点设置在起始位置 = 终点位置 就不用购票了
             Integer maxStartIndex = endIndex - 1;
 //            最大的终点 索引值 应该为购票的起始站索引-1 因为你要是终点设置在起始位置 = 终点位置 就不用购票了
-            Integer minEndIndex = startIndex - 1;
+            Integer minEndIndex = startIndex + 1;
 
             Integer minStartIndex = 0;
 //           从后往前找

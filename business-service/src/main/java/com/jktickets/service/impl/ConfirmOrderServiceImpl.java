@@ -10,6 +10,8 @@ import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.Log;
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -34,6 +36,7 @@ import com.jktickets.service.*;
 import com.jktickets.utils.SnowUtil;
 import io.seata.spring.annotation.GlobalTransactional;
 import jakarta.annotation.Resource;
+import org.redisson.RedissonRedLock;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.slf4j.Logger;
@@ -144,7 +147,9 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
     //    synchronized 加入锁，以防高并发超卖
 //synchronized 只能解决 单机锁的问题，多个节点一起卖的时候还是超卖
     @Override
-    public synchronized void doConfirm(ConfirmOrderDoReq req) {
+//    Sentinenl 限流前得加资源注释
+    @SentinelResource(value="doConfirm",blockHandler = "doConfirmBlock")
+    public  void doConfirm(ConfirmOrderDoReq req) {
 
 //        车次时间+车次号来认定车次的票
         String lockKey = DateUtil.formatDate(req.getDate()) + "-" + req.getTrainCode();
@@ -171,6 +176,12 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
 //        使用redisson 自带看门狗
             lock = redissonClient.getLock(lockKey);
 
+
+//            红锁
+//            红锁，Redis 主从服务器 半数以上拿到锁就是拿到锁了
+//            RedissonRedLock redissonRedLock = new RedissonRedLock(lock, lock);
+//            boolean tryLock1 = redissonRedLock.tryLock(0, TimeUnit.SECONDS);
+
 //        不带看门狗
 //        lock.tryLock(0,10,TimeUnit.SECONDS);
 
@@ -183,11 +194,11 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
             if (tryLock) {
                 LOG.info("恭喜，抢到锁了");
 //            测试锁
-                for(int i= 0;i<30;i++){
-                    Long expire = redisTemplate.opsForValue().getOperations().getExpire(lockKey);
-                    LOG.info("锁过期时间还有:{}",expire);
-                    Thread.sleep(1000);
-                }
+//                for(int i= 0;i<30;i++){
+//                    Long expire = redisTemplate.opsForValue().getOperations().getExpire(lockKey);
+//                    LOG.info("锁过期时间还有:{}",expire);
+//                    Thread.sleep(1000);
+//                }
 
             } else {
                 LOG.info("很遗憾，没抢到锁");
@@ -228,6 +239,8 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
 //        根据日期，火车编号，出发地，目的地
             DailyTrainTicket dailyTrainTicket = dailyTrainTicketService.selectByUnique(date, trainCode, start, end);
             LOG.info("查出余票记录:{}", dailyTrainTicket);
+
+
 
 
             List<ConfirmOrderTicketReq> ticketReqList = req.getTickets();
@@ -333,6 +346,13 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
         }
 
 
+    }
+
+
+//    sentinel 降级方法
+    public void doConfirmBlock(ConfirmOrderDoReq req, BlockException e){
+        LOG.info("购票请求被限流:{}",req);
+        throw new BusinessException(BusinessExceptionEnum.CONFIRM_ORDER_FLOW_EXCEPTION);
     }
 
 

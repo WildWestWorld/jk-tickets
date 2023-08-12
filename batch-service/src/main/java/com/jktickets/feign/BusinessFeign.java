@@ -11,7 +11,7 @@ import java.util.Date;
 
 //开启外键
 //@FeignClient(name = "business-service",url = "http://127.0.0.1:8002/business")
-@FeignClient(name = "business-service")
+@FeignClient(value = "business-service",fallback = BusinessFeignFallback.class)
 public interface BusinessFeign {
     @GetMapping("/business/hello")
     String hello();
