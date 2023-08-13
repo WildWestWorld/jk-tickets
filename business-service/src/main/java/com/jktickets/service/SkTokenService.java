@@ -20,4 +20,8 @@ public interface SkTokenService {
 
    //    初始化
     void genDaily(Date date, String trainCode);
+
+//    获取令牌
+    boolean validSkToken(Date date,String trainCode,Long memberId);
+
 }

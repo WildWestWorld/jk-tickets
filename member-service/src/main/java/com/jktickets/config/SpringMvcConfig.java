@@ -30,8 +30,8 @@ public class SpringMvcConfig implements WebMvcConfigurer {
                .addPathPatterns("/**")
                .excludePathPatterns(
                        "/hello",
-                       "/member/send-code",
-                       "/member/login"
+                       "/member/member/send-code",
+                       "/member/member/login"
                );
    }
 }

@@ -12,6 +12,7 @@ import com.jktickets.domain.SkToken;
 import com.jktickets.domain.SkTokenExample;
 import com.jktickets.mapper.SkTokenMapper;
 
+import com.jktickets.mapper.custom.SkTokenMapperCustom;
 import com.jktickets.req.skToken.SkTokenQueryReq;
 import com.jktickets.req.skToken.SkTokenSaveReq;
 import com.jktickets.res.PageRes;
@@ -37,6 +38,9 @@ public class SkTokenServiceImpl implements SkTokenService {
 
     @Resource
     SkTokenMapper skTokenMapper;
+
+    @Resource
+    SkTokenMapperCustom skTokenMapperCustom;
 
     @Resource
     DailyTrainSeatService dailyTrainSeatService;
@@ -135,5 +139,19 @@ public class SkTokenServiceImpl implements SkTokenService {
     @Override
     public void deleteById(Long id) {
         skTokenMapper.deleteByPrimaryKey(id);
+    }
+
+
+    @Override
+    public boolean validSkToken(Date date, String trainCode, Long memberId) {
+        LOG.info("会员[{}] 获取日期[{}] 车次[{}] 的令牌开始",memberId,DateUtil.formatDate(date));
+        int updateCount = skTokenMapperCustom.decrease(date, trainCode);
+        if(updateCount>0){
+            return true;
+        }else {
+            return false;
+        }
+
+
     }
 }
