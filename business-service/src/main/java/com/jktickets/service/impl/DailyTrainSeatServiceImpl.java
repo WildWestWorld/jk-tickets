@@ -143,15 +143,24 @@ public class DailyTrainSeatServiceImpl implements DailyTrainSeatService {
     }
 
 
+
+
+
     @Override
     public int countTrainSeat(Date date, String trainCode, String seatType) {
         DailyTrainSeatExample example = new DailyTrainSeatExample();
+        DailyTrainSeatExample.Criteria criteria = example.createCriteria();
 //        根据 日期 火车 坐位的类型
 //        也就是查询 某个坐位的类型 的数量
-        example.createCriteria()
+        criteria
                 .andDateEqualTo(date)
-                .andTrainCodeEqualTo(trainCode)
-                .andSeatTypeEqualTo(seatType);
+                .andTrainCodeEqualTo(trainCode);
+
+        if (StrUtil.isNotBlank(seatType)) {
+            criteria.andSeatTypeEqualTo(seatType);
+        }
+
+
         long l = dailyTrainSeatMapper.countByExample(example);
         if (l == 0L) {
             return -1;

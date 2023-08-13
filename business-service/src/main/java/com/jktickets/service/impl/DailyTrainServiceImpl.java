@@ -56,7 +56,8 @@ public class DailyTrainServiceImpl implements DailyTrainService {
 
     @Resource
     DailyTrainTicketService dailyTrainTicketService;
-
+    @Resource
+    SkTokenService skTokenService;
 
 
     @Override
@@ -164,9 +165,6 @@ public class DailyTrainServiceImpl implements DailyTrainService {
         dailyTrainMapper.insert(dailyTrain);
 
 
-
-
-
 //        生成该车次的车站数据
         dailyTrainStationService.genDailyTrainStation(date, train.getCode());
 
@@ -177,11 +175,13 @@ public class DailyTrainServiceImpl implements DailyTrainService {
         // 生成该车次的座位数据
         dailyTrainSeatService.genDailyTrainSeat(date, train.getCode());
 
-
+//生成余票数据
         dailyTrainTicketService.genDailyTrainTicket(dailyTrain, date, train.getCode());
+//生成令牌余量数据
+        skTokenService.genDaily(date, train.getCode());
+
         LOG.info("生成日期【{}】车次【{}】的信息结束", DateUtil.formatDate(date), train.getCode());
     }
-
 
 
 }

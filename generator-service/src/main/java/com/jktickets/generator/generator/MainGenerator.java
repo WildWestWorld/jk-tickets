@@ -23,13 +23,13 @@ public class MainGenerator {
     //   pom路径
     static String pomPath = "generator-service/pom.xml";
 
-    static {
-        new File(serverPath).mkdirs();
-    }
+//    static {
+//        new File(serverPath).mkdirs();
+//    }
 
 
 
-    static boolean readOnly = true;
+    static boolean readOnly = false;
     static String vuePath = "admin/src/views/main/";
 
 
@@ -47,7 +47,7 @@ public class MainGenerator {
         String module = generatorPath.replace("src/main/resources/generator-config-", "").replace(".xml", "");
         System.out.println("module: " + module);
         serverPath = serverPath.replace("[module]", module);
-        // new File(servicePath).mkdirs();
+         new File(serverPath).mkdirs();
         System.out.println("servicePath: " + serverPath);
 
 
@@ -105,17 +105,17 @@ public class MainGenerator {
 
 //        生成Req
         genReq(Domain, param, "req", "saveReq");
-//        genReq(Domain, param, "req", "queryReq");
+        genReq(Domain, param, "req", "queryReq");
 
 //      生成genRes
         genRes(Domain, param, "res", "queryRes");
 
 //      生成Service
-//        gen(Domain, param, "service", "service");
-//        genImpl(Domain, param, "service", "serviceImpl");
+        gen(Domain, param, "service", "service");
+        genImpl(Domain, param, "service", "serviceImpl");
 //        生成Controller
 //        gen(Domain, param, "controller", "controller");
-//        gen(Domain, param, "controller/admin", "adminController");
+        gen(Domain, param, "controller/admin", "adminController");
 
 ////        生成类
 ////        设置模板路径

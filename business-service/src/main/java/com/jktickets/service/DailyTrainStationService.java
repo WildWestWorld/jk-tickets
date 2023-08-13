@@ -18,4 +18,7 @@ public interface DailyTrainStationService {
    void deleteById(Long id);
 
    void genDailyTrainStation(Date date, String trainCode);
+
+   long countByTrainCode(String trainCode);
+
 }

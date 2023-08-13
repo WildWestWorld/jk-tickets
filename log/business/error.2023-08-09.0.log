@@ -1,0 +1,391 @@
+2023-08-08 22:04:33.289 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472984p9f  [0;39m 业务异常:余票不足
+2023-08-08 22:04:33.312 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472949dcw  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.323 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16915034729159nc  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.334 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16915034728860a3  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.345 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16915034728492so  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.356 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472816lwv  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.367 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472796byu  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.378 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472755wwi  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.389 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472746ch1  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.402 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472687avb  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.415 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472651qud  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.426 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472618e0p  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.439 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472586bam  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.450 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472554e02  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.469 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16915034725212bq  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.483 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472488ozw  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.493 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472453nde  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.504 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472420z98  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.515 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472388z59  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.526 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16915034723564xo  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.537 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472324yfb  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.549 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472292fs9  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.588 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472256nfu  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.599 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472222kyw  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.611 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472189gff  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.622 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472156zsp  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.633 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472125dor  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.644 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472091ts0  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-08 22:04:33.656 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691503472058od1  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:13:53.935 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586833657hn9  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:13:53.961 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586833883aix  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:13:53.993 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586833799ecd  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:13:54.021 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586833734jqq  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:13:54.048 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586833677zkh  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:13:54.070 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16915868336822k9  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:13:54.095 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16915868336737mi  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:13:54.131 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586833679tyu  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:13:54.160 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16915868341271t5  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:13:54.181 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16915868340608v9  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:13:54.205 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586833995s44  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:13:54.239 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586833933vf3  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:13:54.268 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586834192d01  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:13:54.299 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586834256bft  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:13:54.356 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586834325rqx  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:14:30.428 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586870386zrw  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:14:30.480 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586870452yul  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:14:30.547 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16915868705196zb  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:14:30.617 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586870586mca  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:14:30.683 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586870651grn  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:14:30.748 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586870717mhl  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:14:30.828 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16915868707916xr  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:14:30.877 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16915868708498z8  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:14:30.938 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586870912gvw  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:14:31.008 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586870978lmm  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:14:31.072 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16915868710456a5  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:14:31.137 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586871112g2o  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:14:31.200 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586871176dzc  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:14:31.279 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586871245zx5  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:14:31.361 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586871311gyr  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-09 21:14:42.407 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586870748g4s  [0;39m 业务异常:余票不足
+2023-08-09 21:14:42.497 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586870684uuf  [0;39m 业务异常:余票不足
+2023-08-09 21:14:42.599 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586870617jbn  [0;39m 业务异常:余票不足
+2023-08-09 21:14:42.738 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586870552cnq  [0;39m 业务异常:余票不足
+2023-08-09 21:14:42.834 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16915868704879kk  [0;39m 业务异常:余票不足
+2023-08-09 21:14:42.938 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691586870419wht  [0;39m 业务异常:余票不足
+2023-08-09 21:28:53.869 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691587702089wr6  [0;39m 业务异常:余票不足
+2023-08-09 21:44:54.409 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m169158869358680m  [0;39m 业务异常:余票不足
+2023-08-09 21:57:41.743 ERROR c.a.nacos.common.remote.client.grpc.GrpcClient    :102  [32m                  [0;39m [1691588986113_127.0.0.1_49615]Request stream onCompleted, switch server
+2023-08-09 21:57:41.743 ERROR c.a.nacos.common.remote.client.grpc.GrpcClient    :102  [32m                  [0;39m [1691588972919_127.0.0.1_49572]Request stream onCompleted, switch server
+2023-08-09 21:57:41.743 ERROR c.a.nacos.common.remote.client.grpc.GrpcClient    :102  [32m                  [0;39m [1691588976412_127.0.0.1_49575]Request stream onCompleted, switch server
+2023-08-09 21:57:41.745 ERROR c.a.nacos.common.remote.client.grpc.GrpcClient    :102  [32m                  [0;39m [1691588976899_127.0.0.1_49576]Request stream onCompleted, switch server
+2023-08-09 21:57:41.877 ERROR com.alibaba.nacos.common.remote.client            :102  [32m                  [0;39m Send request fail, request = ConfigBatchListenRequest{headers={accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWNvcyIsImV4cCI6MTY5MTYwNjk3Nn0.81aSwZ2-vmjW0ivEtVUCUnJn6g3amuTZNxup-nFQ2Lg, charset=UTF-8, Client-AppName=unknown, Client-RequestToken=c22443ed537eeb6d146ab8706433335e, Client-RequestTS=1691589461718, exConfigInfo=true}, requestId='null'}, retryTimes = 0, errorMessage = Connection is unregistered.
+2023-08-09 21:57:41.878 ERROR com.alibaba.nacos.common.remote.client            :102  [32m                  [0;39m Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=566630d15869e727a6b3def132b8d9f9, Client-RequestTS=1691589461720, exConfigInfo=true}, requestId='null'}, retryTimes = 0, errorMessage = Connection is unregistered.
+2023-08-09 21:57:41.978 ERROR com.alibaba.nacos.common.remote.client            :102  [32m                  [0;39m Send request fail, request = ConfigBatchListenRequest{headers={accessToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWNvcyIsImV4cCI6MTY5MTYwNjk3Nn0.81aSwZ2-vmjW0ivEtVUCUnJn6g3amuTZNxup-nFQ2Lg, charset=UTF-8, Client-AppName=unknown, Client-RequestToken=c22443ed537eeb6d146ab8706433335e, Client-RequestTS=1691589461718, exConfigInfo=true}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2023-08-09 21:57:41.981 ERROR com.alibaba.nacos.common.remote.client            :102  [32m                  [0;39m Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=566630d15869e727a6b3def132b8d9f9, Client-RequestTS=1691589461720, exConfigInfo=true}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2023-08-09 21:57:42.040 ERROR i.seata.rm.datasource.exec.AbstractDMLBaseExecutor:151  [32m16915890018399jq  [0;39m execute executeAutoCommitTrue error:io.seata.core.exception.RmTransactionException: branch register failed, xid: 192.168.0.102:8091:7854700236664918323, errMsg: TransactionException[Could not register branch into global session xid = 192.168.0.102:8091:7854700236664918323 status = TimeoutRollbacking while expecting Begin] 
+java.sql.SQLException: io.seata.core.exception.RmTransactionException: branch register failed, xid: 192.168.0.102:8091:7854700236664918323, errMsg: TransactionException[Could not register branch into global session xid = 192.168.0.102:8091:7854700236664918323 status = TimeoutRollbacking while expecting Begin] 
+	at io.seata.rm.datasource.ConnectionProxy.recognizeLockKeyConflictException(ConnectionProxy.java:161)
+	at io.seata.rm.datasource.ConnectionProxy.processGlobalTransactionCommit(ConnectionProxy.java:252)
+	at io.seata.rm.datasource.ConnectionProxy.doCommit(ConnectionProxy.java:230)
+	at io.seata.rm.datasource.ConnectionProxy.lambda$commit$0(ConnectionProxy.java:188)
+	at io.seata.rm.datasource.ConnectionProxy$LockRetryPolicy.execute(ConnectionProxy.java:344)
+	at io.seata.rm.datasource.ConnectionProxy.commit(ConnectionProxy.java:187)
+	at io.seata.rm.datasource.exec.AbstractDMLBaseExecutor.lambda$executeAutoCommitTrue$2(AbstractDMLBaseExecutor.java:146)
+	at io.seata.rm.datasource.ConnectionProxy$LockRetryPolicy.doRetryOnLockConflict(ConnectionProxy.java:356)
+	at io.seata.rm.datasource.exec.AbstractDMLBaseExecutor$LockRetryPolicy.execute(AbstractDMLBaseExecutor.java:188)
+	at io.seata.rm.datasource.exec.AbstractDMLBaseExecutor.executeAutoCommitTrue(AbstractDMLBaseExecutor.java:144)
+	at io.seata.rm.datasource.exec.AbstractDMLBaseExecutor.doExecute(AbstractDMLBaseExecutor.java:83)
+	at io.seata.rm.datasource.exec.BaseTransactionalExecutor.execute(BaseTransactionalExecutor.java:125)
+	at io.seata.rm.datasource.exec.ExecuteTemplate.execute(ExecuteTemplate.java:137)
+	at io.seata.rm.datasource.exec.ExecuteTemplate.execute(ExecuteTemplate.java:56)
+	at io.seata.rm.datasource.PreparedStatementProxy.execute(PreparedStatementProxy.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at jdk.proxy4/jdk.proxy4.$Proxy210.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at jdk.proxy2/jdk.proxy2.$Proxy209.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy133.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy151.updateCountBySell(Unknown Source)
+	at com.jktickets.service.impl.AfterConfirmOrderServiceImpl.afterDoConfirm(AfterConfirmOrderServiceImpl.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at io.seata.spring.annotation.GlobalTransactionalInterceptor$2.execute(GlobalTransactionalInterceptor.java:208)
+	at io.seata.tm.api.TransactionalTemplate.execute(TransactionalTemplate.java:128)
+	at io.seata.spring.annotation.GlobalTransactionalInterceptor.handleGlobalTransaction(GlobalTransactionalInterceptor.java:205)
+	at io.seata.spring.annotation.GlobalTransactionalInterceptor.invoke(GlobalTransactionalInterceptor.java:175)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.jktickets.service.impl.AfterConfirmOrderServiceImpl$$SpringCGLIB$$0.afterDoConfirm(<generated>)
+	at com.jktickets.service.impl.ConfirmOrderServiceImpl.doConfirm(ConfirmOrderServiceImpl.java:317)
+	at com.jktickets.controller.ConfirmOrderController.doConfirm(ConfirmOrderController.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.jktickets.aspect.LogAspect.doAround(LogAspect.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.jktickets.controller.ConfirmOrderController$$SpringCGLIB$$0.doConfirm(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: io.seata.core.exception.RmTransactionException: branch register failed, xid: 192.168.0.102:8091:7854700236664918323, errMsg: TransactionException[Could not register branch into global session xid = 192.168.0.102:8091:7854700236664918323 status = TimeoutRollbacking while expecting Begin] 
+	at io.seata.rm.AbstractResourceManager.branchRegister(AbstractResourceManager.java:70)
+	at io.seata.rm.DefaultResourceManager.branchRegister(DefaultResourceManager.java:96)
+	at io.seata.rm.datasource.ConnectionProxy.register(ConnectionProxy.java:273)
+	at io.seata.rm.datasource.ConnectionProxy.processGlobalTransactionCommit(ConnectionProxy.java:250)
+	... 142 common frames omitted
+2023-08-09 21:57:42.256 ERROR com.jktickets.service.ConfirmOrderService         :319  [32m16915890018399jq  [0;39m 保存购票信息失败
+org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: io.seata.core.exception.RmTransactionException: branch register failed, xid: 192.168.0.102:8091:7854700236664918323, errMsg: TransactionException[Could not register branch into global session xid = 192.168.0.102:8091:7854700236664918323 status = TimeoutRollbacking while expecting Begin] 
+### The error may exist in file [D:\Project\java\jk-tickets\business-service\target\classes\mapper\custom\DailyTrainTicketMapperCustom.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update daily_train_ticket set                       ydz = ydz -1                                                    where `date`  = ?         and train_code  = ?         and start_index  >= ?         and ? >=start_index         and end_index  >= ?         and ? >=  end_index
+### Cause: java.sql.SQLException: io.seata.core.exception.RmTransactionException: branch register failed, xid: 192.168.0.102:8091:7854700236664918323, errMsg: TransactionException[Could not register branch into global session xid = 192.168.0.102:8091:7854700236664918323 status = TimeoutRollbacking while expecting Begin] 
+; uncategorized SQLException; SQL state [null]; error code [0]; io.seata.core.exception.RmTransactionException: branch register failed, xid: 192.168.0.102:8091:7854700236664918323, errMsg: TransactionException[Could not register branch into global session xid = 192.168.0.102:8091:7854700236664918323 status = TimeoutRollbacking while expecting Begin] 
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:93)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy133.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy151.updateCountBySell(Unknown Source)
+	at com.jktickets.service.impl.AfterConfirmOrderServiceImpl.afterDoConfirm(AfterConfirmOrderServiceImpl.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at io.seata.spring.annotation.GlobalTransactionalInterceptor$2.execute(GlobalTransactionalInterceptor.java:208)
+	at io.seata.tm.api.TransactionalTemplate.execute(TransactionalTemplate.java:128)
+	at io.seata.spring.annotation.GlobalTransactionalInterceptor.handleGlobalTransaction(GlobalTransactionalInterceptor.java:205)
+	at io.seata.spring.annotation.GlobalTransactionalInterceptor.invoke(GlobalTransactionalInterceptor.java:175)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.jktickets.service.impl.AfterConfirmOrderServiceImpl$$SpringCGLIB$$0.afterDoConfirm(<generated>)
+	at com.jktickets.service.impl.ConfirmOrderServiceImpl.doConfirm(ConfirmOrderServiceImpl.java:317)
+	at com.jktickets.controller.ConfirmOrderController.doConfirm(ConfirmOrderController.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.jktickets.aspect.LogAspect.doAround(LogAspect.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.jktickets.controller.ConfirmOrderController$$SpringCGLIB$$0.doConfirm(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.sql.SQLException: io.seata.core.exception.RmTransactionException: branch register failed, xid: 192.168.0.102:8091:7854700236664918323, errMsg: TransactionException[Could not register branch into global session xid = 192.168.0.102:8091:7854700236664918323 status = TimeoutRollbacking while expecting Begin] 
+	at io.seata.rm.datasource.ConnectionProxy.recognizeLockKeyConflictException(ConnectionProxy.java:161)
+	at io.seata.rm.datasource.ConnectionProxy.processGlobalTransactionCommit(ConnectionProxy.java:252)
+	at io.seata.rm.datasource.ConnectionProxy.doCommit(ConnectionProxy.java:230)
+	at io.seata.rm.datasource.ConnectionProxy.lambda$commit$0(ConnectionProxy.java:188)
+	at io.seata.rm.datasource.ConnectionProxy$LockRetryPolicy.execute(ConnectionProxy.java:344)
+	at io.seata.rm.datasource.ConnectionProxy.commit(ConnectionProxy.java:187)
+	at io.seata.rm.datasource.exec.AbstractDMLBaseExecutor.lambda$executeAutoCommitTrue$2(AbstractDMLBaseExecutor.java:146)
+	at io.seata.rm.datasource.ConnectionProxy$LockRetryPolicy.doRetryOnLockConflict(ConnectionProxy.java:356)
+	at io.seata.rm.datasource.exec.AbstractDMLBaseExecutor$LockRetryPolicy.execute(AbstractDMLBaseExecutor.java:188)
+	at io.seata.rm.datasource.exec.AbstractDMLBaseExecutor.executeAutoCommitTrue(AbstractDMLBaseExecutor.java:144)
+	at io.seata.rm.datasource.exec.AbstractDMLBaseExecutor.doExecute(AbstractDMLBaseExecutor.java:83)
+	at io.seata.rm.datasource.exec.BaseTransactionalExecutor.execute(BaseTransactionalExecutor.java:125)
+	at io.seata.rm.datasource.exec.ExecuteTemplate.execute(ExecuteTemplate.java:137)
+	at io.seata.rm.datasource.exec.ExecuteTemplate.execute(ExecuteTemplate.java:56)
+	at io.seata.rm.datasource.PreparedStatementProxy.execute(PreparedStatementProxy.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at jdk.proxy4/jdk.proxy4.$Proxy210.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at jdk.proxy2/jdk.proxy2.$Proxy209.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 106 common frames omitted
+Caused by: io.seata.core.exception.RmTransactionException: branch register failed, xid: 192.168.0.102:8091:7854700236664918323, errMsg: TransactionException[Could not register branch into global session xid = 192.168.0.102:8091:7854700236664918323 status = TimeoutRollbacking while expecting Begin] 
+	at io.seata.rm.AbstractResourceManager.branchRegister(AbstractResourceManager.java:70)
+	at io.seata.rm.DefaultResourceManager.branchRegister(DefaultResourceManager.java:96)
+	at io.seata.rm.datasource.ConnectionProxy.register(ConnectionProxy.java:273)
+	at io.seata.rm.datasource.ConnectionProxy.processGlobalTransactionCommit(ConnectionProxy.java:250)
+	... 142 common frames omitted
+2023-08-09 21:57:42.286 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16915890018399jq  [0;39m 业务异常:服务器忙,请稍后重试/下单错误

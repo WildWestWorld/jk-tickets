@@ -137,4 +137,11 @@ public class DailyTrainStationServiceImpl implements DailyTrainStationService {
     }
 
 
+    @Override
+    public long countByTrainCode(String trainCode) {
+        DailyTrainStationExample example = new DailyTrainStationExample();
+        example.createCriteria().andTrainCodeEqualTo(trainCode);
+        long stationCount = dailyTrainStationMapper.countByExample(example);
+        return stationCount;
+    }
 }
