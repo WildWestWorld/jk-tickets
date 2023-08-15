@@ -9,7 +9,6 @@ import cn.hutool.core.util.EnumUtil;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.hutool.log.Log;
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.alibaba.fastjson.JSON;
@@ -18,6 +17,7 @@ import com.github.pagehelper.PageInfo;
 import com.jktickets.context.LoginMemberContext;
 import com.jktickets.domain.*;
 import com.jktickets.enums.ConfirmOrderStatusEnum;
+import com.jktickets.enums.RedisKeyPreEnum;
 import com.jktickets.enums.SeatColEnum;
 import com.jktickets.enums.SeatTypeEnum;
 import com.jktickets.exception.BusinessException;
@@ -34,20 +34,15 @@ import com.jktickets.res.confirmOrder.ConfirmOrderQueryRes;
 import com.jktickets.service.*;
 
 import com.jktickets.utils.SnowUtil;
-import io.seata.spring.annotation.GlobalTransactional;
 import jakarta.annotation.Resource;
-import org.redisson.RedissonRedLock;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -151,20 +146,20 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
 //synchronized 只能解决 单机锁的问题，多个节点一起卖的时候还是超卖
     @Override
 //    Sentinenl 限流前得加资源注释
-    @SentinelResource(value="doConfirm",blockHandler = "doConfirmBlock")
-    public  void doConfirm(ConfirmOrderDoReq req) {
+    @SentinelResource(value = "doConfirm", blockHandler = "doConfirmBlock")
+    public void doConfirm(ConfirmOrderDoReq req) {
 //        拿令牌
         boolean validSkToken = skTokenService.validSkToken(req.getDate(), req.getTrainCode(), LoginMemberContext.getId());
-        if(validSkToken){
+        if (validSkToken) {
             LOG.info("令牌校验通过");
-        }else{
+        } else {
             LOG.info("令牌校验不通过");
             throw new BusinessException(BusinessExceptionEnum.CONFIRM_ORDER_SK_TOKEN_FAIL);
         }
 
 
 //        车次时间+车次号来认定车次的票
-        String lockKey = DateUtil.formatDate(req.getDate()) + "-" + req.getTrainCode();
+        String lockKey = RedisKeyPreEnum.CONFIRM_ORDER + "-" + DateUtil.formatDate(req.getDate()) + "-" + req.getTrainCode();
 
 //        Redis分布式锁 现在改为看门狗锁
 //        替换原因：可能会卡，卡了就导致 时间过长，锁就消失了
@@ -251,8 +246,6 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
 //        根据日期，火车编号，出发地，目的地
             DailyTrainTicket dailyTrainTicket = dailyTrainTicketService.selectByUnique(date, trainCode, start, end);
             LOG.info("查出余票记录:{}", dailyTrainTicket);
-
-
 
 
             List<ConfirmOrderTicketReq> ticketReqList = req.getTickets();
@@ -346,12 +339,12 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
             }
         } catch (InterruptedException e) {
             LOG.error("购票异常", e);
-        }finally {
+        } finally {
             //       购票成功，删除redis 分布式锁
             LOG.info("购票流程结束，释放锁");
 //            redisTemplate.delete(lockKey);
 //            isHeldByCurrentThread 判断是否是 当前线程
-            if(lock != null  &&lock.isHeldByCurrentThread()){
+            if (lock != null && lock.isHeldByCurrentThread()) {
                 lock.unlock();
             }
 
@@ -361,9 +354,9 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
     }
 
 
-//    sentinel 降级方法
-    public void doConfirmBlock(ConfirmOrderDoReq req, BlockException e){
-        LOG.info("购票请求被限流:{}",req);
+    //    sentinel 降级方法
+    public void doConfirmBlock(ConfirmOrderDoReq req, BlockException e) {
+        LOG.info("购票请求被限流:{}", req);
         throw new BusinessException(BusinessExceptionEnum.CONFIRM_ORDER_FLOW_EXCEPTION);
     }
 

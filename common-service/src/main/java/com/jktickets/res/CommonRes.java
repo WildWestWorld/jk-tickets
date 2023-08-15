@@ -31,4 +31,11 @@ public class CommonRes<T> {
 
     public CommonRes() {
     }
+
+    public CommonRes(boolean success, Integer code, String message, T result) {
+        this.success = success;
+        this.code = code;
+        this.message = message;
+        this.result = result;
+    }
 }

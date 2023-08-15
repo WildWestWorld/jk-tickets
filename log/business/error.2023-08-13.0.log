@@ -1,0 +1,294 @@
+2023-08-13 17:06:22.664 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691917582617lj8  [0;39m 业务异常:票已卖光
+2023-08-13 17:10:22.338 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691917822300djg  [0;39m 业务异常:票已卖光
+2023-08-13 18:38:47.153 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x83e70778, L:/192.168.0.102:56268 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.887 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x6fcc4a89, L:/192.168.0.102:56270 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.888 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x6da7b6c3, L:/192.168.0.102:56269 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.888 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x5e5a26e9, L:/192.168.0.102:56271 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.888 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x012759e9, L:/192.168.0.102:56272 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.888 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x5bb52366, L:/192.168.0.102:56273 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.889 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x417e647c, L:/192.168.0.102:56274 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.889 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0xa29acfc9, L:/192.168.0.102:56275 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.889 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x7916166a, L:/192.168.0.102:56276 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.890 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x3c2dbb8a, L:/192.168.0.102:56278 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.890 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0xf77d6af0, L:/192.168.0.102:56279 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.890 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x4304482f, L:/192.168.0.102:56280 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.891 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x4e923585, L:/192.168.0.102:56281 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.891 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x77209910, L:/192.168.0.102:56282 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.891 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x9c390962, L:/192.168.0.102:56283 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.892 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x127d65f3, L:/192.168.0.102:56284 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.892 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0xcff678b3, L:/192.168.0.102:56285 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.892 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x677bbbf6, L:/192.168.0.102:56286 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.892 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0xf26498e8, L:/192.168.0.102:56287 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.892 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x36ab77ff, L:/192.168.0.102:56288 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.893 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0xb1616bb7, L:/192.168.0.102:56289 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.893 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x734ab206, L:/192.168.0.102:56290 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.893 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x2fcfe0e7, L:/192.168.0.102:56291 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.893 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x2e33dbaf, L:/192.168.0.102:56292 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:49.893 ERROR org.redisson.client.handler.PingConnectionHandler :92   [32m                  [0;39m Unable to send PING command over channel: [id: 0x0cd8b5df, L:/192.168.0.102:56293 - R:r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com/47.110.123.191:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:719)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:707)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:794)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:507)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-08-13 18:38:50.104 ERROR org.redisson.connection.DNSMonitor                :102  [32m                  [0;39m Unable to resolve r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com
+java.net.UnknownHostException: Failed to resolve 'r-bp1e8io6hj1e27e15lpd.redis.rds.aliyuncs.com' after 2 queries 
+	at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1047)
+	at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1000)
+	at io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:418)
+	at io.netty.resolver.dns.DnsResolveContext.access$600(DnsResolveContext.java:66)
+	at io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:467)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+	at io.netty.resolver.dns.DnsQueryContext.tryFailure(DnsQueryContext.java:256)
+	at io.netty.resolver.dns.DnsQueryContext$4.run(DnsQueryContext.java:208)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: io.netty.resolver.dns.DnsNameResolverTimeoutException: [/192.168.0.1:53] query via UDP timed out after 5000 milliseconds (no stack trace available)
+2023-08-13 18:38:52.718 ERROR c.a.nacos.common.remote.client.grpc.GrpcClient    :102  [32m                  [0;39m [1691916964451_127.0.0.1_56254]Request stream onCompleted, switch server
+2023-08-13 19:13:21.612 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16919252008456po  [0;39m 业务异常:票已卖光
+2023-08-13 19:13:22.609 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691925202519d5b  [0;39m 业务异常:票已卖光
+2023-08-13 19:13:37.170 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16919252170043x2  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-13 19:13:44.795 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m169192522467032e  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-13 19:14:37.136 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691925277026dcg  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-13 19:14:37.319 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691925277204jt0  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-13 19:14:37.493 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m169192527735458n  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-13 19:14:37.883 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691925277526v8q  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-13 19:14:53.249 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691925293136jl1  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-13 19:16:34.928 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m16919253939679f1  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-13 19:16:44.865 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691925404753qzc  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-13 19:16:45.035 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691925404911yfn  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-13 19:16:45.154 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691925405045vdd  [0;39m 业务异常:当前抢票人数多，请稍后重试
+2023-08-13 21:36:45.061 ERROR c.jktickets.exception.ControllerExceptionHandler  :62   [32m1691933800026ltr  [0;39m 业务异常:当前抢令牌人数多，请稍后重试

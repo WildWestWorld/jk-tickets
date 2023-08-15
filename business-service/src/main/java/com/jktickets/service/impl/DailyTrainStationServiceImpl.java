@@ -138,9 +138,9 @@ public class DailyTrainStationServiceImpl implements DailyTrainStationService {
 
 
     @Override
-    public long countByTrainCode(String trainCode) {
+    public long countByTrainCode(Date date,String trainCode) {
         DailyTrainStationExample example = new DailyTrainStationExample();
-        example.createCriteria().andTrainCodeEqualTo(trainCode);
+        example.createCriteria().andTrainCodeEqualTo(trainCode).andDateEqualTo(date);
         long stationCount = dailyTrainStationMapper.countByExample(example);
         return stationCount;
     }

@@ -19,6 +19,6 @@ public interface DailyTrainStationService {
 
    void genDailyTrainStation(Date date, String trainCode);
 
-   long countByTrainCode(String trainCode);
+   long countByTrainCode(Date date,String trainCode);
 
 }

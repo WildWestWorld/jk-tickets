@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.jktickets.mapper.custom.SkTokenMapperCustom">
-
+<!--        &#45;&#45;        if(条件 ,条件达成 执行语句,条件未达成 执行语句)-->
+<!--        &#45;&#45;         &lt 小于-->
 <update id="decrease">
         update sk_token
---        if(条件 ,条件达成 执行语句,条件未达成 执行语句)
-        set `count` = if(1 >`count` ,0,`count` -1)
+
+        set `count` =  if(`count` &lt; ${decreaseCount},0,`count` - #{decreaseCount} )
         where `date` = #{date}
         and `train_code` =#{trainCode}
         and `count` >0
