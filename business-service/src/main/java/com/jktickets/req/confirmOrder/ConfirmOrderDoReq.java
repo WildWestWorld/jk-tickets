@@ -11,6 +11,10 @@ import java.util.List;
 @Data
 public class ConfirmOrderDoReq {
 
+
+    private String logId;
+
+
     /**
      * 会员id
      */

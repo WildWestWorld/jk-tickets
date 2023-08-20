@@ -30,6 +30,7 @@ import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
@@ -164,6 +165,7 @@ public class BeforeConfirmOrderServiceImpl implements BeforeConfirmOrderService 
             confirmOrder.setTickets(JSON.toJSONString(req.getTickets()));
             confirmOrderMapper.insert(confirmOrder);
 
+        req.setLogId(MDC.get("LOG_ID"));
 
 //            发送MQ排队购票
             String reqJson = JSON.toJSONString(req);

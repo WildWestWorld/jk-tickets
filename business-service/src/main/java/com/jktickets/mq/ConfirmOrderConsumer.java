@@ -24,10 +24,13 @@ import com.jktickets.service.ConfirmOrderService;
      @Override
      public void onMessage(MessageExt messageExt) {
          byte[] body = messageExt.getBody();
-         LOG.info("ROCKETMQ收到消息：{}", new String(body));
 //         从mq拿到消息后 消息是JSON字符串的类型，得把他转成正常格式
          ConfirmOrderDoReq confirmOrderDoReq = JSON.parseObject(new String(body), ConfirmOrderDoReq.class);
 
+//        处理 拦截器不拦截没有ID  问题
+         MDC.put("LOG_ID",confirmOrderDoReq.getLogId());
+
+         LOG.info("ROCKETMQ收到消息：{}", new String(body));
 
 //         在这里使用方法，拦截器是不会进行拦截的，因为拦截器拦截接口请求的方法
 
