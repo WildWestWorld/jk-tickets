@@ -1,361 +1,54 @@
-2023-08-15 20:36:48.050 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
-2023-08-15 20:36:48.068 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-08-15 20:36:48.167 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
-2023-08-15 20:36:48.223 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-08-15 20:36:49.395 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
-2023-08-15 20:36:49.417 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
-2023-08-15 20:36:49.418 INFO  com.jktickets.GatewayApplication                  :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-08-15 20:36:50.374 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=ea6e5f07-ce95-39ee-958f-0cb9fcb8301e
-2023-08-15 20:36:50.424 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:409  [32m                  [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-08-15 20:36:50.425 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:409  [32m                  [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-08-15 20:36:50.426 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:409  [32m                  [0;39m Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-08-15 20:36:52.653 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
-2023-08-15 20:36:52.654 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
-2023-08-15 20:36:52.655 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
-2023-08-15 20:36:52.656 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
-2023-08-15 20:36:52.657 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
-2023-08-15 20:36:52.657 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
-2023-08-15 20:36:52.658 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
-2023-08-15 20:36:52.658 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
-2023-08-15 20:36:52.659 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
-2023-08-15 20:36:52.659 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
-2023-08-15 20:36:52.660 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
-2023-08-15 20:36:52.661 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2023-08-15 20:36:52.662 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
-2023-08-15 20:36:52.662 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2023-08-15 20:36:53.591 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-08-15 20:36:53.643 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m                  [0;39m Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-08-15 20:36:54.149 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
-2023-08-15 20:36:55.116 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
-2023-08-15 20:36:55.117 INFO  com.alibaba.nacos.client.naming                   :62   [32m                  [0;39m initializer namespace from ans.namespace attribute : null
-2023-08-15 20:36:55.118 INFO  com.alibaba.nacos.client.naming                   :66   [32m                  [0;39m initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
-2023-08-15 20:36:55.119 INFO  com.alibaba.nacos.client.naming                   :73   [32m                  [0;39m initializer namespace from namespace attribute :null
-2023-08-15 20:36:55.168 INFO  com.alibaba.nacos.client.utils.ParamUtil          :87   [32m                  [0;39m [settings] [req-serv] nacos-server port:8848
-2023-08-15 20:36:55.168 INFO  com.alibaba.nacos.client.utils.ParamUtil          :98   [32m                  [0;39m [settings] [http-client] connect timeout:1000
-2023-08-15 20:36:55.170 INFO  com.alibaba.nacos.client.utils.ParamUtil          :105  [32m                  [0;39m PER_TASK_CONFIG_SIZE: 3000.0
-2023-08-15 20:36:55.176 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
-2023-08-15 20:36:55.177 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
-2023-08-15 20:36:55.181 INFO  c.a.n.client.auth.ram.identify.CredentialWatcher  :165  [32m                  [0;39m null No credential found
-2023-08-15 20:36:55.199 INFO  com.alibaba.nacos.common.remote.client            :108  [32m                  [0;39m [RpcClientFactory] create a new rpc client of 5a268a39-f8d7-4c26-9d58-e777b5b505a8
-2023-08-15 20:36:55.247 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [5a268a39-f8d7-4c26-9d58-e777b5b505a8] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-2023-08-15 20:36:55.247 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [5a268a39-f8d7-4c26-9d58-e777b5b505a8] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-2023-08-15 20:36:55.248 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [5a268a39-f8d7-4c26-9d58-e777b5b505a8] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-2023-08-15 20:36:55.253 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [5a268a39-f8d7-4c26-9d58-e777b5b505a8] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
-2023-08-15 20:36:55.334 INFO  c.a.nacos.common.remote.client.grpc.GrpcClient    :182  [32m                  [0;39m grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
-2023-08-15 20:36:57.159 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [5a268a39-f8d7-4c26-9d58-e777b5b505a8] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1692103016917_127.0.0.1_49176
-2023-08-15 20:36:57.161 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [5a268a39-f8d7-4c26-9d58-e777b5b505a8] Notify connected event to listeners.
-2023-08-15 20:36:57.161 INFO  com.alibaba.nacos.client.naming                   :78   [32m                  [0;39m Grpc connection connect
-2023-08-15 20:36:57.161 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [5a268a39-f8d7-4c26-9d58-e777b5b505a8] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-2023-08-15 20:36:57.162 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [5a268a39-f8d7-4c26-9d58-e777b5b505a8] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$955/0x0000000801315a88
-2023-08-15 20:36:57.164 INFO  com.alibaba.nacos.client.naming                   :121  [32m                  [0;39m [REGISTER-SERVICE] train registering service gateway-service with instance Instance{instanceId='null', ip='192.168.0.102', port=8000, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
-2023-08-15 20:36:58.260 INFO  com.alibaba.nacos.client.naming                   :73   [32m                  [0;39m Redo instance operation REGISTER for DEFAULT_GROUP@@gateway-service
-2023-08-15 20:37:00.193 ERROR com.alibaba.nacos.common.remote.client            :102  [32m                  [0;39m Send request fail, request = InstanceRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 8 milliseconds, 135500 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@2b107f50[status=PENDING, info=[GrpcFuture{clientCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@119dddd3, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@26354bc6, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2c89c6a3}}}]]
-2023-08-15 20:37:00.236 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [5a268a39-f8d7-4c26-9d58-e777b5b505a8] Server check success, currentServer is 127.0.0.1:8848 
-2023-08-15 20:37:00.248 ERROR c.a.cloud.nacos.registry.NacosServiceRegistry     :81   [32m                  [0;39m nacos registry, gateway-service register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='127.0.0.1:8848', username='', password='', endpoint='', namespace='train', watchDelay=30000, logName='', service='gateway-service', weight=1.0, clusterName='DEFAULT', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.0.102', networkInterface='', port=8000, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, instanceEnabled=true, ephemeral=true, failureToleranceEnabled=false}, ipDeleteTimeout=null, failFast=true}},
-com.alibaba.nacos.api.exception.NacosException: java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 8 milliseconds, 135500 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@2b107f50[status=PENDING, info=[GrpcFuture{clientCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@119dddd3, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@26354bc6, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2c89c6a3}}}]]
-	at com.alibaba.nacos.common.remote.client.grpc.GrpcConnection.request(GrpcConnection.java:78)
-	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:645)
-	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:623)
-	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:357)
-	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doRegisterService(NamingGrpcClientProxy.java:210)
-	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerService(NamingGrpcClientProxy.java:124)
-	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.registerService(NamingClientProxyDelegate.java:98)
-	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:143)
-	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:75)
-	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:264)
-	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:78)
-	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:156)
-	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:119)
-	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:49)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:413)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:370)
-	at org.springframework.boot.web.reactive.context.WebServerManager.start(WebServerManager.java:57)
-	at org.springframework.boot.web.reactive.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:41)
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:932)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:587)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at com.jktickets.GatewayApplication.main(GatewayApplication.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 8 milliseconds, 135500 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@2b107f50[status=PENDING, info=[GrpcFuture{clientCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@119dddd3, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@26354bc6, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2c89c6a3}}}]]
-	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
-	at com.alibaba.nacos.common.remote.client.grpc.GrpcConnection.request(GrpcConnection.java:76)
-	... 37 common frames omitted
-2023-08-15 20:37:00.253 WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2023-08-15 20:37:00.257 INFO  com.alibaba.nacos.client.naming                   :256  [32m                  [0;39m com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown begin
-2023-08-15 20:37:00.257 INFO  com.alibaba.nacos.client.naming                   :136  [32m                  [0;39m com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
-2023-08-15 20:37:00.583 INFO  com.alibaba.nacos.client.naming                   :138  [32m                  [0;39m com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
-2023-08-15 20:37:00.584 INFO  com.alibaba.nacos.client.naming                   :258  [32m                  [0;39m com.alibaba.nacos.client.naming.cache.ServiceInfoHolder do shutdown stop
-2023-08-15 20:37:00.584 INFO  com.alibaba.nacos.client.naming                   :204  [32m                  [0;39m com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown begin
-2023-08-15 20:37:00.584 INFO  com.alibaba.nacos.client.naming                   :143  [32m                  [0;39m com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown begin
-2023-08-15 20:37:00.585 INFO  com.alibaba.nacos.client.naming                   :145  [32m                  [0;39m com.alibaba.nacos.client.naming.core.ServiceInfoUpdateService do shutdown stop
-2023-08-15 20:37:00.586 INFO  com.alibaba.nacos.client.naming                   :194  [32m                  [0;39m com.alibaba.nacos.client.naming.core.ServerListManager do shutdown begin
-2023-08-15 20:37:00.586 WARN  com.alibaba.nacos.client.naming                   :74   [32m                  [0;39m [NamingHttpClientManager] Start destroying NacosRestTemplate
-2023-08-15 20:37:00.587 WARN  com.alibaba.nacos.client.naming                   :81   [32m                  [0;39m [NamingHttpClientManager] Destruction of the end
-2023-08-15 20:37:00.587 INFO  com.alibaba.nacos.client.naming                   :199  [32m                  [0;39m com.alibaba.nacos.client.naming.core.ServerListManager do shutdown stop
-2023-08-15 20:37:00.587 INFO  com.alibaba.nacos.client.naming                   :484  [32m                  [0;39m com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown begin
-2023-08-15 20:37:00.588 WARN  com.alibaba.nacos.client.naming                   :74   [32m                  [0;39m [NamingHttpClientManager] Start destroying NacosRestTemplate
-2023-08-15 20:37:00.588 WARN  com.alibaba.nacos.client.naming                   :81   [32m                  [0;39m [NamingHttpClientManager] Destruction of the end
-2023-08-15 20:37:00.588 INFO  com.alibaba.nacos.client.naming                   :486  [32m                  [0;39m com.alibaba.nacos.client.naming.remote.http.NamingHttpClientProxy do shutdown stop
-2023-08-15 20:37:00.589 INFO  com.alibaba.nacos.common.remote.client            :429  [32m                  [0;39m Shutdown rpc client, set status to shutdown
-2023-08-15 20:37:00.589 INFO  com.alibaba.nacos.common.remote.client            :431  [32m                  [0;39m Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@746fc508[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
-2023-08-15 20:37:00.589 INFO  com.alibaba.nacos.common.remote.client            :584  [32m                  [0;39m Close current connection 1692103016917_127.0.0.1_49176
-2023-08-15 20:37:00.599 ERROR com.alibaba.nacos.common.remote.client            :102  [32m                  [0;39m Send request fail, request = InstanceRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: Channel shutdownNow invoked
-2023-08-15 20:37:00.599 WARN  c.a.nacos.common.remote.client.grpc.GrpcClient    :89   [32m                  [0;39m [1692103016917_127.0.0.1_49176]Ignore error event,isRunning:false,isAbandon=false
-2023-08-15 20:37:00.603 INFO  c.a.nacos.common.remote.client.grpc.GrpcClient    :159  [32m                  [0;39m Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@1b47ba85[Running, pool size = 11, active threads = 0, queued tasks = 0, completed tasks = 11]
-2023-08-15 20:37:00.604 INFO  com.alibaba.nacos.client.naming                   :318  [32m                  [0;39m Shutdown grpc redo service executor java.util.concurrent.ScheduledThreadPoolExecutor@523f1d7a[Running, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
-2023-08-15 20:37:00.605 INFO  c.a.n.client.auth.ram.identify.CredentialWatcher  :106  [32m                  [0;39m [null] CredentialWatcher is stopped
-2023-08-15 20:37:00.606 ERROR com.alibaba.nacos.common.remote.client            :102  [32m                  [0;39m Send request fail, request = InstanceRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:SHUTDOWN
-2023-08-15 20:37:00.607 INFO  c.a.n.client.auth.ram.identify.CredentialService  :100  [32m                  [0;39m [null] CredentialService is freed
-2023-08-15 20:37:00.611 INFO  com.alibaba.nacos.client.naming                   :211  [32m                  [0;39m com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate do shutdown stop
-2023-08-15 20:37:00.722 ERROR com.alibaba.nacos.common.remote.client            :102  [32m                  [0;39m Send request fail, request = InstanceRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:SHUTDOWN
-2023-08-15 20:37:00.722 ERROR com.alibaba.nacos.client.naming                   :63   [32m                  [0;39m Redo instance operation REGISTER for DEFAULT_GROUP@@gateway-service failed. 
-com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:SHUTDOWN
-	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:643)
-	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:623)
-	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:357)
-	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doRegisterService(NamingGrpcClientProxy.java:210)
-	at com.alibaba.nacos.client.naming.remote.gprc.redo.RedoScheduledTask.processRegisterRedoType(RedoScheduledTask.java:102)
-	at com.alibaba.nacos.client.naming.remote.gprc.redo.RedoScheduledTask.redoForInstance(RedoScheduledTask.java:79)
-	at com.alibaba.nacos.client.naming.remote.gprc.redo.RedoScheduledTask.redoForInstances(RedoScheduledTask.java:61)
-	at com.alibaba.nacos.client.naming.remote.gprc.redo.RedoScheduledTask.run(RedoScheduledTask.java:51)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-08-15 20:37:02.722 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-08-15 20:37:02.757 ERROR org.springframework.boot.SpringApplication        :820  [32m                  [0;39m Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:932)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:587)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at com.jktickets.GatewayApplication.main(GatewayApplication.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.lang.reflect.UndeclaredThrowableException: null
-	at org.springframework.util.ReflectionUtils.rethrowRuntimeException(ReflectionUtils.java:147)
-	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:83)
-	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:264)
-	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:78)
-	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:156)
-	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:119)
-	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:49)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:413)
-	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:370)
-	at org.springframework.boot.web.reactive.context.WebServerManager.start(WebServerManager.java:57)
-	at org.springframework.boot.web.reactive.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:41)
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
-	... 16 common frames omitted
-Caused by: com.alibaba.nacos.api.exception.NacosException: java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 8 milliseconds, 135500 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@2b107f50[status=PENDING, info=[GrpcFuture{clientCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@119dddd3, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@26354bc6, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2c89c6a3}}}]]
-	at com.alibaba.nacos.common.remote.client.grpc.GrpcConnection.request(GrpcConnection.java:78)
-	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:645)
-	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:623)
-	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:357)
-	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doRegisterService(NamingGrpcClientProxy.java:210)
-	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerService(NamingGrpcClientProxy.java:124)
-	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.registerService(NamingClientProxyDelegate.java:98)
-	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:143)
-	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:75)
-	... 29 common frames omitted
-Caused by: java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 8 milliseconds, 135500 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@2b107f50[status=PENDING, info=[GrpcFuture{clientCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@119dddd3, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@26354bc6, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2c89c6a3}}}]]
-	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
-	at com.alibaba.nacos.common.remote.client.grpc.GrpcConnection.request(GrpcConnection.java:76)
-	... 37 common frames omitted
-2023-08-15 20:37:02.764 WARN  com.alibaba.nacos.common.notify.NotifyCenter      :136  [32m                  [0;39m [NotifyCenter] Start destroying Publisher
-2023-08-15 20:37:02.764 WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder  :102  [32m                  [0;39m [HttpClientBeanHolder] Start destroying common HttpClient
-2023-08-15 20:37:02.764 WARN  com.alibaba.nacos.common.notify.NotifyCenter      :153  [32m                  [0;39m [NotifyCenter] Destruction of the end
-2023-08-15 20:37:02.765 WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder  :111  [32m                  [0;39m [HttpClientBeanHolder] Destruction of the end
-2023-08-15 20:38:32.963 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
-2023-08-15 20:38:32.998 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-08-15 20:38:33.069 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
-2023-08-15 20:38:33.107 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-08-15 20:38:33.978 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
-2023-08-15 20:38:33.995 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
-2023-08-15 20:38:33.996 INFO  com.jktickets.GatewayApplication                  :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-08-15 20:38:34.757 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=ea6e5f07-ce95-39ee-958f-0cb9fcb8301e
-2023-08-15 20:38:34.800 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:409  [32m                  [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-08-15 20:38:34.801 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:409  [32m                  [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-08-15 20:38:34.803 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:409  [32m                  [0;39m Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-08-15 20:38:36.762 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
-2023-08-15 20:38:36.763 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
-2023-08-15 20:38:36.763 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
-2023-08-15 20:38:36.764 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
-2023-08-15 20:38:36.764 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
-2023-08-15 20:38:36.764 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
-2023-08-15 20:38:36.764 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
-2023-08-15 20:38:36.764 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
-2023-08-15 20:38:36.765 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
-2023-08-15 20:38:36.765 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
-2023-08-15 20:38:36.765 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
-2023-08-15 20:38:36.765 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2023-08-15 20:38:36.765 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
-2023-08-15 20:38:36.765 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2023-08-15 20:38:37.420 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
-2023-08-15 20:38:37.453 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m                  [0;39m Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-08-15 20:38:37.874 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
-2023-08-15 20:38:38.632 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
-2023-08-15 20:38:38.633 INFO  com.alibaba.nacos.client.naming                   :62   [32m                  [0;39m initializer namespace from ans.namespace attribute : null
-2023-08-15 20:38:38.634 INFO  com.alibaba.nacos.client.naming                   :66   [32m                  [0;39m initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
-2023-08-15 20:38:38.635 INFO  com.alibaba.nacos.client.naming                   :73   [32m                  [0;39m initializer namespace from namespace attribute :null
-2023-08-15 20:38:38.668 INFO  com.alibaba.nacos.client.utils.ParamUtil          :87   [32m                  [0;39m [settings] [req-serv] nacos-server port:8848
-2023-08-15 20:38:38.669 INFO  com.alibaba.nacos.client.utils.ParamUtil          :98   [32m                  [0;39m [settings] [http-client] connect timeout:1000
-2023-08-15 20:38:38.671 INFO  com.alibaba.nacos.client.utils.ParamUtil          :105  [32m                  [0;39m PER_TASK_CONFIG_SIZE: 3000.0
-2023-08-15 20:38:38.677 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
-2023-08-15 20:38:38.677 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
-2023-08-15 20:38:38.681 INFO  c.a.n.client.auth.ram.identify.CredentialWatcher  :165  [32m                  [0;39m null No credential found
-2023-08-15 20:38:38.691 INFO  com.alibaba.nacos.common.remote.client            :108  [32m                  [0;39m [RpcClientFactory] create a new rpc client of c8b59883-ec66-4d43-97a3-37c874e9a4bf
-2023-08-15 20:38:38.719 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [c8b59883-ec66-4d43-97a3-37c874e9a4bf] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-2023-08-15 20:38:38.719 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [c8b59883-ec66-4d43-97a3-37c874e9a4bf] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-2023-08-15 20:38:38.719 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [c8b59883-ec66-4d43-97a3-37c874e9a4bf] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-2023-08-15 20:38:38.722 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [c8b59883-ec66-4d43-97a3-37c874e9a4bf] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
-2023-08-15 20:38:38.766 INFO  c.a.nacos.common.remote.client.grpc.GrpcClient    :182  [32m                  [0;39m grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
-2023-08-15 20:38:40.130 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [c8b59883-ec66-4d43-97a3-37c874e9a4bf] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1692103119918_127.0.0.1_49343
-2023-08-15 20:38:40.131 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [c8b59883-ec66-4d43-97a3-37c874e9a4bf] Notify connected event to listeners.
-2023-08-15 20:38:40.131 INFO  com.alibaba.nacos.client.naming                   :78   [32m                  [0;39m Grpc connection connect
-2023-08-15 20:38:40.131 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [c8b59883-ec66-4d43-97a3-37c874e9a4bf] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-2023-08-15 20:38:40.132 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [c8b59883-ec66-4d43-97a3-37c874e9a4bf] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$953/0x0000000801315f30
-2023-08-15 20:38:40.133 INFO  com.alibaba.nacos.client.naming                   :121  [32m                  [0;39m [REGISTER-SERVICE] train registering service gateway-service with instance Instance{instanceId='null', ip='192.168.0.102', port=8000, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
-2023-08-15 20:38:40.153 INFO  c.a.cloud.nacos.registry.NacosServiceRegistry     :76   [32m                  [0;39m nacos registry, DEFAULT_GROUP gateway-service 192.168.0.102:8000 register finished
-2023-08-15 20:38:40.327 INFO  com.jktickets.GatewayApplication                  :57   [32m                  [0;39m Started GatewayApplication in 8.494 seconds (process running for 9.541)
-2023-08-15 20:38:40.330 INFO  com.jktickets.GatewayApplication                  :22   [32m                  [0;39m 启动成功！！
-2023-08-15 20:38:40.330 INFO  com.jktickets.GatewayApplication                  :24   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8000
-2023-08-15 20:39:02.749 INFO  com.jktickets.filter.LoginMemberFilter            :35   [32m                  [0;39m 不需要登录验证：/business/kaptcha/image-code/123
-2023-08-15 20:39:02.884 INFO  com.alibaba.nacos.client.naming                   :167  [32m                  [0;39m [SUBSCRIBE-SERVICE] service:business-service, group:DEFAULT_GROUP, clusters: 
-2023-08-15 20:39:02.909 INFO  com.alibaba.nacos.client.naming                   :184  [32m                  [0;39m init new ips(1) service: DEFAULT_GROUP@@business-service -> [{"ip":"192.168.0.102","port":8002,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@business-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-2023-08-15 20:39:02.922 INFO  com.alibaba.nacos.client.naming                   :169  [32m                  [0;39m current ips:(1) service: DEFAULT_GROUP@@business-service -> [{"ip":"192.168.0.102","port":8002,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@business-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-2023-08-15 20:39:03.513 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [c8b59883-ec66-4d43-97a3-37c874e9a4bf] Receive server push request, request = NotifySubscriberRequest, requestId = 9
-2023-08-15 20:39:03.513 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [c8b59883-ec66-4d43-97a3-37c874e9a4bf] Ack server push request, request = NotifySubscriberRequest, requestId = 9
-2023-08-15 20:39:28.002 INFO  com.jktickets.filter.LoginMemberFilter            :35   [32m                  [0;39m 不需要登录验证：/business/kaptcha/image-code/123
-2023-08-15 20:40:36.313 INFO  com.jktickets.filter.LoginMemberFilter            :35   [32m                  [0;39m 不需要登录验证：/business/kaptcha/image-code/123
-2023-08-15 20:48:34.254 INFO  com.jktickets.filter.LoginMemberFilter            :35   [32m                  [0;39m 不需要登录验证：/member/member/sendCode
-2023-08-15 20:48:34.294 INFO  com.alibaba.nacos.client.naming                   :167  [32m                  [0;39m [SUBSCRIBE-SERVICE] service:member-service, group:DEFAULT_GROUP, clusters: 
-2023-08-15 20:48:34.302 INFO  com.alibaba.nacos.client.naming                   :184  [32m                  [0;39m init new ips(1) service: DEFAULT_GROUP@@member-service -> [{"ip":"192.168.0.102","port":8001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@member-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-2023-08-15 20:48:34.304 INFO  com.alibaba.nacos.client.naming                   :169  [32m                  [0;39m current ips:(1) service: DEFAULT_GROUP@@member-service -> [{"ip":"192.168.0.102","port":8001,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@member-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-2023-08-15 20:48:34.828 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [c8b59883-ec66-4d43-97a3-37c874e9a4bf] Receive server push request, request = NotifySubscriberRequest, requestId = 10
-2023-08-15 20:48:34.828 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [c8b59883-ec66-4d43-97a3-37c874e9a4bf] Ack server push request, request = NotifySubscriberRequest, requestId = 10
-2023-08-15 20:48:35.783 INFO  com.jktickets.filter.LoginMemberFilter            :35   [32m                  [0;39m 不需要登录验证：/member/member/login
-2023-08-15 20:48:38.666 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/business/station/queryAll
-2023-08-15 20:48:38.667 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:48:39.166 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:48:39.166 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:48:40.147 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/business/station/queryAll
-2023-08-15 20:48:40.148 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:48:40.149 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:48:40.150 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:48:47.012 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/business/dailyTrainTicket/queryList
-2023-08-15 20:48:47.013 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:48:47.014 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:48:47.014 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:48:49.398 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
-2023-08-15 20:48:49.399 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:48:49.400 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:48:49.400 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:54:14.644 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
-2023-08-15 20:54:14.645 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:54:14.647 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:54:14.648 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:55:30.084 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
-2023-08-15 20:55:30.084 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:55:30.085 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:55:30.085 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:55:30.244 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
-2023-08-15 20:55:30.245 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:55:30.247 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:55:30.247 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:55:30.421 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
-2023-08-15 20:55:30.422 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:55:30.424 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:55:30.424 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:55:30.520 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
-2023-08-15 20:55:30.520 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:55:30.521 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:55:30.522 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:55:36.424 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
-2023-08-15 20:55:36.425 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:55:36.426 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:55:36.426 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:56:35.529 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
-2023-08-15 20:56:35.530 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:56:35.531 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:56:35.531 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:56:35.695 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
-2023-08-15 20:56:35.696 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:56:35.697 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:56:35.697 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:56:58.236 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
-2023-08-15 20:56:58.236 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:56:58.238 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:56:58.238 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:57:56.572 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
-2023-08-15 20:57:56.573 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:57:56.574 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:57:56.574 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:58:31.619 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
-2023-08-15 20:58:31.620 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:58:31.621 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:58:31.622 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:58:34.769 INFO  com.jktickets.filter.LoginMemberFilter            :35   [32m                  [0;39m 不需要登录验证：/business/kaptcha/image-code/c3scGEPe
-2023-08-15 20:58:36.697 INFO  com.jktickets.filter.LoginMemberFilter            :35   [32m                  [0;39m 不需要登录验证：/business/kaptcha/image-code/UB846CmN
-2023-08-15 20:59:23.505 INFO  com.jktickets.filter.LoginMemberFilter            :35   [32m                  [0;39m 不需要登录验证：/business/kaptcha/image-code/wdFRWmmZ
-2023-08-15 20:59:24.936 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/business/confirmOrder/doConfirm
-2023-08-15 20:59:24.937 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:59:24.938 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:59:24.939 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:59:26.326 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/business/confirmOrder/doConfirm
-2023-08-15 20:59:26.326 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:59:26.327 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:59:26.327 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:59:26.740 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/business/confirmOrder/doConfirm
-2023-08-15 20:59:26.741 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:59:26.741 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:59:26.742 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 20:59:34.365 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/business/confirmOrder/doConfirm
-2023-08-15 20:59:34.366 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 20:59:34.367 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 20:59:34.367 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 21:00:57.256 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
-2023-08-15 21:00:57.257 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 21:00:57.258 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 21:00:57.258 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 21:01:01.787 INFO  com.jktickets.filter.LoginMemberFilter            :35   [32m                  [0;39m 不需要登录验证：/business/kaptcha/image-code/BtwAG8fB
-2023-08-15 21:01:31.649 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
-2023-08-15 21:01:31.649 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 21:01:31.650 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 21:01:31.650 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
-2023-08-15 21:01:36.490 INFO  com.jktickets.filter.LoginMemberFilter            :35   [32m                  [0;39m 不需要登录验证：/business/kaptcha/image-code/qDwBWooG
-2023-08-15 21:43:45.199 INFO  com.jktickets.filter.LoginMemberFilter            :38   [32m                  [0;39m 需要登录验证：/member/passenger/queryMine
-2023-08-15 21:43:45.200 INFO  com.jktickets.filter.LoginMemberFilter            :42   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTIxMDM3MTYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2ODA5MzI5MDI3OTc0NDcxNjgsImV4cCI6MTY5MjE5MDExNiwiaWF0IjoxNjkyMTAzNzE2fQ.c91hw2dygxTS6c9WyaW0mZZ_R6MUU2kCIpwyK24nWMY
-2023-08-15 21:43:45.201 INFO  com.jktickets.utils.JwtUtil                       :48   [32m                  [0;39m JWT token校验结果：true
-2023-08-15 21:43:45.201 INFO  com.jktickets.filter.LoginMemberFilter            :52   [32m                  [0;39m token有效，放行该请求
+2023-08-20 17:28:30.000 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 17:28:30.015 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-08-20 17:28:30.088 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 17:28:30.126 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-20 17:28:30.880 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 17:28:30.895 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 17:28:30.897 INFO  com.jktickets.GatewayApplication                  :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-08-20 17:28:32.075 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=ea6e5f07-ce95-39ee-958f-0cb9fcb8301e
+2023-08-20 17:28:32.115 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:409  [32m                  [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-20 17:28:32.116 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:409  [32m                  [0;39m Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-20 17:28:32.132 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:409  [32m                  [0;39m Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-08-20 17:28:34.465 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-08-20 17:28:34.466 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-08-20 17:28:34.466 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-08-20 17:28:34.466 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-08-20 17:28:34.466 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-08-20 17:28:34.466 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-08-20 17:28:34.467 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-08-20 17:28:34.467 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-08-20 17:28:34.467 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-08-20 17:28:34.468 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-08-20 17:28:34.468 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-08-20 17:28:34.468 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-08-20 17:28:34.468 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-08-20 17:28:34.468 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-08-20 17:28:35.139 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-08-20 17:28:35.167 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m                  [0;39m Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-08-20 17:28:35.533 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-08-20 17:28:36.125 WARN  com.alibaba.nacos.client.logging.NacosLogging     :64   [32m                  [0;39m Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2023-08-20 17:28:36.125 INFO  com.alibaba.nacos.client.naming                   :62   [32m                  [0;39m initializer namespace from ans.namespace attribute : null
+2023-08-20 17:28:36.126 INFO  com.alibaba.nacos.client.naming                   :66   [32m                  [0;39m initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2023-08-20 17:28:36.127 INFO  com.alibaba.nacos.client.naming                   :73   [32m                  [0;39m initializer namespace from namespace attribute :null
+2023-08-20 17:28:36.152 INFO  com.alibaba.nacos.client.utils.ParamUtil          :87   [32m                  [0;39m [settings] [req-serv] nacos-server port:8848
+2023-08-20 17:28:36.152 INFO  com.alibaba.nacos.client.utils.ParamUtil          :98   [32m                  [0;39m [settings] [http-client] connect timeout:1000
+2023-08-20 17:28:36.154 INFO  com.alibaba.nacos.client.utils.ParamUtil          :105  [32m                  [0;39m PER_TASK_CONFIG_SIZE: 3000.0
+2023-08-20 17:28:36.160 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2023-08-20 17:28:36.161 INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager   :56   [32m                  [0;39m [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2023-08-20 17:28:36.164 INFO  c.a.n.client.auth.ram.identify.CredentialWatcher  :165  [32m                  [0;39m null No credential found
+2023-08-20 17:28:36.174 INFO  com.alibaba.nacos.common.remote.client            :108  [32m                  [0;39m [RpcClientFactory] create a new rpc client of 0052523d-046e-4a19-b454-8f1ec40a0612
+2023-08-20 17:28:36.198 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0052523d-046e-4a19-b454-8f1ec40a0612] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2023-08-20 17:28:36.199 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0052523d-046e-4a19-b454-8f1ec40a0612] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2023-08-20 17:28:36.200 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0052523d-046e-4a19-b454-8f1ec40a0612] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2023-08-20 17:28:36.204 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0052523d-046e-4a19-b454-8f1ec40a0612] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+2023-08-20 17:28:36.243 INFO  c.a.nacos.common.remote.client.grpc.GrpcClient    :182  [32m                  [0;39m grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2023-08-20 17:28:37.390 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0052523d-046e-4a19-b454-8f1ec40a0612] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1692523717177_127.0.0.1_57037
+2023-08-20 17:28:37.391 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0052523d-046e-4a19-b454-8f1ec40a0612] Notify connected event to listeners.
+2023-08-20 17:28:37.391 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0052523d-046e-4a19-b454-8f1ec40a0612] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2023-08-20 17:28:37.392 INFO  com.alibaba.nacos.client.naming                   :78   [32m                  [0;39m Grpc connection connect
+2023-08-20 17:28:37.392 INFO  com.alibaba.nacos.common.remote.client            :63   [32m                  [0;39m [0052523d-046e-4a19-b454-8f1ec40a0612] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$953/0x0000000801315a88
+2023-08-20 17:28:37.394 INFO  com.alibaba.nacos.client.naming                   :121  [32m                  [0;39m [REGISTER-SERVICE] train registering service gateway-service with instance Instance{instanceId='null', ip='192.168.0.102', port=8000, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2023-08-20 17:28:37.412 INFO  c.a.cloud.nacos.registry.NacosServiceRegistry     :76   [32m                  [0;39m nacos registry, DEFAULT_GROUP gateway-service 192.168.0.102:8000 register finished
+2023-08-20 17:28:37.528 INFO  com.jktickets.GatewayApplication                  :57   [32m                  [0;39m Started GatewayApplication in 8.454 seconds (process running for 9.667)
+2023-08-20 17:28:37.531 INFO  com.jktickets.GatewayApplication                  :22   [32m                  [0;39m 启动成功！！
+2023-08-20 17:28:37.532 INFO  com.jktickets.GatewayApplication                  :24   [32m                  [0;39m 测试地址: 	http://127.0.0.1:8000

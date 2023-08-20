@@ -8,6 +8,7 @@ import com.jktickets.exception.BusinessExceptionEnum;
 import com.jktickets.req.confirmOrder.ConfirmOrderDoReq;
 import com.jktickets.res.CommonRes;
 import com.jktickets.service.AfterConfirmOrderService;
+import com.jktickets.service.BeforeConfirmOrderService;
 import com.jktickets.service.ConfirmOrderService;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
@@ -28,6 +29,10 @@ public class ConfirmOrderController {
 
     @Resource
     ConfirmOrderService confirmOrderService;
+
+
+    @Resource
+    BeforeConfirmOrderService beforeConfirmOrderService;
 
     @Autowired
     private StringRedisTemplate redisTemplate;
@@ -54,7 +59,7 @@ public class ConfirmOrderController {
 
 
 
-        confirmOrderService.doConfirm(req);
+        beforeConfirmOrderService.beforeDoConfirm(req);
         //       获取当前用户的MemberID
         //req.setMemberId(LoginMemberContext.getId());
         return new CommonRes<>();

@@ -123,7 +123,11 @@ public class AfterConfirmOrderServiceImpl implements AfterConfirmOrderService {
 
 //            调用会员服务接口 生成订单
             MemberTicketReq memberTicketReq = new MemberTicketReq();
-            memberTicketReq.setMemberId(LoginMemberContext.getId());
+//            memberTicketReq.setMemberId(LoginMemberContext.getId());
+//            MQ接口无法是哟拦截器
+            memberTicketReq.setMemberId(confirmOrder.getMemberId());
+
+
             memberTicketReq.setPassengerId(ticketReqList.get(j).getPassengerId());
             memberTicketReq.setPassengerName(ticketReqList.get(j).getPassengerName());
             memberTicketReq.setTrainDate(dailyTrainTicket.getDate());

@@ -84,3 +84,8 @@ logging:
           trace
 
 
+#  <!--    RocketMQ-->
+rocketmq:
+  name-server: http://localhost:9876
+  producer:
+    group: default
