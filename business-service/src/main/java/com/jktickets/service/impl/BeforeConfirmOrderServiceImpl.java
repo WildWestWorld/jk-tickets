@@ -2,20 +2,16 @@ package com.jktickets.service.impl;
 
 
 import cn.hutool.core.date.DateTime;
-import cn.hutool.core.date.DateUtil;
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.jktickets.context.LoginMemberContext;
 import com.jktickets.domain.ConfirmOrder;
+import com.jktickets.dto.ConfirmOrderMQDto;
 import com.jktickets.enums.ConfirmOrderStatusEnum;
-import com.jktickets.enums.RedisKeyPreEnum;
 import com.jktickets.enums.RocketMQTopicEnum;
 import com.jktickets.exception.BusinessException;
 import com.jktickets.exception.BusinessExceptionEnum;
-import com.jktickets.feign.MemberFeign;
 import com.jktickets.mapper.ConfirmOrderMapper;
-import com.jktickets.mapper.DailyTrainSeatMapper;
-import com.jktickets.mapper.custom.DailyTrainTicketMapperCustom;
 
 import com.alibaba.fastjson.JSON;
 
@@ -26,7 +22,6 @@ import com.jktickets.service.SkTokenService;
 import com.jktickets.utils.SnowUtil;
 import jakarta.annotation.Resource;
 import org.apache.rocketmq.spring.core.RocketMQTemplate;
-import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,7 +31,6 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
-import java.util.concurrent.TimeUnit;
 
 
 @Service
@@ -63,7 +57,7 @@ public class BeforeConfirmOrderServiceImpl implements BeforeConfirmOrderService 
 
     @Override
     @SentinelResource(value = "beforeDoConfirm", blockHandler = "beforeDoConfirmBlock")
-    public void beforeDoConfirm(ConfirmOrderDoReq req) {
+    public Long beforeDoConfirm(ConfirmOrderDoReq req) {
 
 //        解决MQ中拿不到 用户ID的问题
         req.setMemberId(LoginMemberContext.getId());
@@ -165,13 +159,22 @@ public class BeforeConfirmOrderServiceImpl implements BeforeConfirmOrderService 
             confirmOrder.setTickets(JSON.toJSONString(req.getTickets()));
             confirmOrderMapper.insert(confirmOrder);
 
-        req.setLogId(MDC.get("LOG_ID"));
+//        req.setLogId(MDC.get("LOG_ID"));
 
 //            发送MQ排队购票
-            String reqJson = JSON.toJSONString(req);
+            ConfirmOrderMQDto confirmOrderMQDto = new ConfirmOrderMQDto();
+            confirmOrderMQDto.setDate(req.getDate());
+            confirmOrderMQDto.setTrainCode(req.getTrainCode());
+            confirmOrderMQDto.setLogId(MDC.get("LOG_ID"));
+
+
+            String reqJson = JSON.toJSONString(confirmOrderMQDto);
             LOG.info("排队购票,发送mq开始,消息:{}",reqJson);
             rocketMQTemplate.convertAndSend(RocketMQTopicEnum.CONFIRM_ORDER.getCode(),reqJson);
             LOG.info("排队购票，发送mq结束");
+
+//            返回confirmOrder 的ID  用于前端轮询
+            return confirmOrder.getId();
 
 
         }

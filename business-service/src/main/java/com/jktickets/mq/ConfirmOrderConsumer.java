@@ -1,6 +1,7 @@
 package com.jktickets.mq;// package com.jiawa.train.business.mq;
 import com.alibaba.fastjson.JSON;
 
+import com.jktickets.dto.ConfirmOrderMQDto;
 import com.jktickets.req.confirmOrder.ConfirmOrderDoReq;
 import com.jktickets.service.ConfirmOrderService;
  import jakarta.annotation.Resource;
@@ -34,6 +35,13 @@ import com.jktickets.service.ConfirmOrderService;
 
 //         在这里使用方法，拦截器是不会进行拦截的，因为拦截器拦截接口请求的方法
 
-         confirmOrderService.doConfirm(confirmOrderDoReq);
+         ConfirmOrderMQDto confirmOrderMQDto = new ConfirmOrderMQDto();
+         confirmOrderMQDto.setLogId(confirmOrderDoReq.getLogId());
+         confirmOrderMQDto.setDate(confirmOrderDoReq.getDate());
+         confirmOrderMQDto.setTrainCode(confirmOrderDoReq.getTrainCode());
+
+
+
+         confirmOrderService.doConfirm(confirmOrderMQDto);
      }
  }

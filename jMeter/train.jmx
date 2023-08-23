@@ -130,7 +130,7 @@
           <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">200</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.delayedStart">false</boolProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -145,7 +145,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;dailyTrainTicketId&quot;:&quot;1688913100071374848&quot;,&quot;date&quot;:&quot;2023-08-08&quot;,&quot;trainCode&quot;:&quot;01&quot;,&quot;start&quot;:&quot;温州&quot;,&quot;end&quot;:&quot;杭州&quot;,&quot;tickets&quot;:[{&quot;passengerId&quot;:&quot;1681265704667582464&quot;,&quot;passengerType&quot;:&quot;1&quot;,&quot;seatTypeCode&quot;:&quot;2&quot;,&quot;passengerName&quot;:&quot;测试&quot;,&quot;passengerIdCard&quot;:&quot;1&quot;,&quot;seat&quot;:null}]}</stringProp>
+                <stringProp name="Argument.value">{&quot;dailyTrainTicketId&quot;:&quot;1690630102678900736&quot;,&quot;date&quot;:&quot;2023-08-13&quot;,&quot;trainCode&quot;:&quot;01&quot;,&quot;start&quot;:&quot;上海&quot;,&quot;end&quot;:&quot;温州&quot;,&quot;tickets&quot;:[{&quot;passengerId&quot;:&quot;1681265704667582464&quot;,&quot;passengerType&quot;:&quot;1&quot;,&quot;seatTypeCode&quot;:&quot;1&quot;,&quot;passengerName&quot;:&quot;测试&quot;,&quot;passengerIdCard&quot;:&quot;1&quot;,&quot;seat&quot;:null}],&quot;imageCodeToken&quot;:&quot;t11lXiTL&quot;,&quot;imageCode&quot;:&quot;bbw7&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -255,7 +255,7 @@
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="线程组" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="线程组" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <stringProp name="LoopController.loops">1</stringProp>

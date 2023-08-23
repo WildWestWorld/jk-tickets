@@ -1,7 +1,9 @@
 package com.jktickets.controller.admin;
+import java.util.Date;
 
 
 import cn.hutool.core.util.ObjectUtil;
+import com.jktickets.dto.ConfirmOrderMQDto;
 import com.jktickets.req.confirmOrder.ConfirmOrderDoReq;
 import com.jktickets.req.confirmOrder.ConfirmOrderQueryReq;
 import com.jktickets.req.confirmOrder.ConfirmOrderSaveReq;
@@ -11,6 +13,7 @@ import com.jktickets.res.CommonRes;
 import com.jktickets.res.PageRes;
 import com.jktickets.res.confirmOrder.ConfirmOrderQueryRes;
 import com.jktickets.res.dailyTrain.DailyTrainQueryRes;
+import com.jktickets.service.BeforeConfirmOrderService;
 import com.jktickets.service.ConfirmOrderService;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
@@ -21,6 +24,9 @@ import org.springframework.web.bind.annotation.*;
 public class ConfirmOrderAdminController {
     @Resource
     ConfirmOrderService confirmOrderService;
+
+    @Resource
+    BeforeConfirmOrderService beforeConfirmOrderService;
 
 
 
@@ -48,7 +54,17 @@ public class ConfirmOrderAdminController {
 
     @PostMapping("/doConfirm")
     public CommonRes<Object> doConfirm(@Valid @RequestBody  ConfirmOrderDoReq req) {
-        confirmOrderService.doConfirm(req);
+
+        ConfirmOrderMQDto confirmOrderMQDto = new ConfirmOrderMQDto();
+        confirmOrderMQDto.setLogId(req.getLogId());
+        confirmOrderMQDto.setDate(req.getDate());
+        confirmOrderMQDto.setTrainCode(req.getTrainCode());
+
+
+
+        confirmOrderService.doConfirm(confirmOrderMQDto);
+
+
         //       获取当前用户的MemberID
         //req.setMemberId(LoginMemberContext.getId());
         return new CommonRes<>();

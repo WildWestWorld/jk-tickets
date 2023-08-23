@@ -2,6 +2,7 @@ package com.jktickets.service;
 
 
 
+import com.jktickets.dto.ConfirmOrderMQDto;
 import com.jktickets.req.confirmOrder.ConfirmOrderDoReq;
 import com.jktickets.req.confirmOrder.ConfirmOrderQueryReq;
 import com.jktickets.req.confirmOrder.ConfirmOrderSaveReq;
@@ -16,5 +17,7 @@ public interface ConfirmOrderService {
 
    void deleteById(Long id);
 
-   void doConfirm(ConfirmOrderDoReq req);
+//   void doConfirm(ConfirmOrderDoReq req);
+   void doConfirm(ConfirmOrderMQDto dto);
+   Integer queryLineCount(Long id);
 }
