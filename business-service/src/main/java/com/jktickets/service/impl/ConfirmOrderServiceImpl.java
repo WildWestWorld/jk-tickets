@@ -40,8 +40,10 @@ import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -146,10 +148,18 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
     //    synchronized 加入锁，以防高并发超卖
 //synchronized 只能解决 单机锁的问题，多个节点一起卖的时候还是超卖
     @Override
+//    开启异步 简约版MQ
+    @Async
+
 //    Sentinenl 限流前得加资源注释
     @SentinelResource(value = "doConfirm", blockHandler = "doConfirmBlock")
 //    public void doConfirm(ConfirmOrderDoReq req) {
     public void doConfirm(ConfirmOrderMQDto dto) {
+
+        MDC.put("LOG_ID",dto.getLogId());
+        LOG.info("异步出票开始:{}",dto);
+
+
 ////        拿令牌
 //        boolean validSkToken = skTokenService.validSkToken(req.getDate(), req.getTrainCode(), LoginMemberContext.getId());
 //        if (validSkToken) {

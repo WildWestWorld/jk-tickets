@@ -18,6 +18,7 @@ import com.alibaba.fastjson.JSON;
 import com.jktickets.req.confirmOrder.ConfirmOrderDoReq;
 import com.jktickets.service.BeforeConfirmOrderService;
 
+import com.jktickets.service.ConfirmOrderService;
 import com.jktickets.service.SkTokenService;
 import com.jktickets.utils.SnowUtil;
 import jakarta.annotation.Resource;
@@ -41,6 +42,10 @@ public class BeforeConfirmOrderServiceImpl implements BeforeConfirmOrderService 
     @Resource
     SkTokenService skTokenService;
 
+
+    @Resource
+    ConfirmOrderService confirmOrderService;
+
     @Autowired
     StringRedisTemplate redisTemplate;
     @Autowired
@@ -49,11 +54,11 @@ public class BeforeConfirmOrderServiceImpl implements BeforeConfirmOrderService 
     @Resource
     ConfirmOrderMapper confirmOrderMapper;
 
-    @Resource
-//            SpringBoot3 可能不认rocketMQTemplate
-//            rocketMQ里面 用了spring.factor 现在SpringBoot3移除了
-//            解决方法:
-    RocketMQTemplate rocketMQTemplate;
+//    @Resource
+////            SpringBoot3 可能不认rocketMQTemplate
+////            rocketMQ里面 用了spring.factor 现在SpringBoot3移除了
+////            解决方法:
+//    RocketMQTemplate rocketMQTemplate;
 
     @Override
     @SentinelResource(value = "beforeDoConfirm", blockHandler = "beforeDoConfirmBlock")
@@ -169,9 +174,12 @@ public class BeforeConfirmOrderServiceImpl implements BeforeConfirmOrderService 
 
 
             String reqJson = JSON.toJSONString(confirmOrderMQDto);
-            LOG.info("排队购票,发送mq开始,消息:{}",reqJson);
-            rocketMQTemplate.convertAndSend(RocketMQTopicEnum.CONFIRM_ORDER.getCode(),reqJson);
-            LOG.info("排队购票，发送mq结束");
+//            LOG.info("排队购票,发送mq开始,消息:{}",reqJson);
+//            rocketMQTemplate.convertAndSend(RocketMQTopicEnum.CONFIRM_ORDER.getCode(),reqJson);
+//            LOG.info("排队购票，发送mq结束");
+
+            confirmOrderService.doConfirm(confirmOrderMQDto);
+
 
 //            返回confirmOrder 的ID  用于前端轮询
             return confirmOrder.getId();
