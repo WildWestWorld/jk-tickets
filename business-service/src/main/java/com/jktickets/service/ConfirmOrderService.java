@@ -20,4 +20,6 @@ public interface ConfirmOrderService {
 //   void doConfirm(ConfirmOrderDoReq req);
    void doConfirm(ConfirmOrderMQDto dto);
    Integer queryLineCount(Long id);
+
+   public Integer cancel(Long id);
 }

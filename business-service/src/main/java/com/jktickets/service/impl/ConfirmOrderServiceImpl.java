@@ -749,4 +749,19 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
             return result;
         }
     }
+
+    @Override
+    /**
+     * 取消排队，只有I状态才能取消排队，所以按状态更新
+     * @param id
+     */
+    public Integer cancel(Long id) {
+        ConfirmOrderExample confirmOrderExample = new ConfirmOrderExample();
+        ConfirmOrderExample.Criteria criteria = confirmOrderExample.createCriteria();
+        criteria.andIdEqualTo(id).andStatusEqualTo(ConfirmOrderStatusEnum.INIT.getCode());
+        ConfirmOrder confirmOrder = new ConfirmOrder();
+//        查询对应订单 然后变更订单状态为取消
+        confirmOrder.setStatus(ConfirmOrderStatusEnum.CANCEL.getCode());
+        return confirmOrderMapper.updateByExampleSelective(confirmOrder, confirmOrderExample);
+    }
 }
