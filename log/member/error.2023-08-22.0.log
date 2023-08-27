@@ -1,0 +1,1 @@
+2023-08-22 21:27:57.276 ERROR c.a.nacos.common.remote.client.grpc.GrpcClient    :102  [32m                  [0;39m [1692704037891_127.0.0.1_64185]Request stream onCompleted, switch server

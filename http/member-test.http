@@ -9,3 +9,6 @@ GET http://localhost:8000/member/hello
 Accept: application/json
 
 ###
+
+GET http://47.98.225.182:80/member/hello
+Accept: application/json

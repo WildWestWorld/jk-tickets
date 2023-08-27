@@ -1,9 +1,9 @@
 package com.jktickets;
 
 
-import com.alibaba.csp.sentinel.slots.block.RuleConstant;
-import com.alibaba.csp.sentinel.slots.block.flow.FlowRule;
-import com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManager;
+//import com.alibaba.csp.sentinel.slots.block.RuleConstant;
+//import com.alibaba.csp.sentinel.slots.block.flow.FlowRule;
+//import com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManager;
 import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -49,14 +49,14 @@ public class BusinessApplication {
 
 
 
-    private static void initFlowRules(){
-        List<FlowRule> rules = new ArrayList<>();
-        FlowRule rule = new FlowRule();
-        rule.setResource("doConfirm");
-        rule.setGrade(RuleConstant.FLOW_GRADE_QPS);
-        // Set limit QPS to 20.
-        rule.setCount(1);
-        rules.add(rule);
-        FlowRuleManager.loadRules(rules);
-    }
+//    private static void initFlowRules(){
+//        List<FlowRule> rules = new ArrayList<>();
+//        FlowRule rule = new FlowRule();
+//        rule.setResource("doConfirm");
+//        rule.setGrade(RuleConstant.FLOW_GRADE_QPS);
+//        // Set limit QPS to 20.
+//        rule.setCount(1);
+//        rules.add(rule);
+//        FlowRuleManager.loadRules(rules);
+//    }
 }

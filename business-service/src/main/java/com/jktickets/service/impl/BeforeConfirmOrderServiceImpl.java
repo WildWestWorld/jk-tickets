@@ -2,8 +2,8 @@ package com.jktickets.service.impl;
 
 
 import cn.hutool.core.date.DateTime;
-import com.alibaba.csp.sentinel.annotation.SentinelResource;
-import com.alibaba.csp.sentinel.slots.block.BlockException;
+//import com.alibaba.csp.sentinel.annotation.SentinelResource;
+//import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.jktickets.context.LoginMemberContext;
 import com.jktickets.domain.ConfirmOrder;
 import com.jktickets.dto.ConfirmOrderMQDto;
@@ -61,7 +61,7 @@ public class BeforeConfirmOrderServiceImpl implements BeforeConfirmOrderService 
 //    RocketMQTemplate rocketMQTemplate;
 
     @Override
-    @SentinelResource(value = "beforeDoConfirm", blockHandler = "beforeDoConfirmBlock")
+//    @SentinelResource(value = "beforeDoConfirm", blockHandler = "beforeDoConfirmBlock")
     public Long beforeDoConfirm(ConfirmOrderDoReq req) {
 
 //        解决MQ中拿不到 用户ID的问题
@@ -204,8 +204,8 @@ public class BeforeConfirmOrderServiceImpl implements BeforeConfirmOrderService 
 
 
     //    sentinel 降级方法
-    public void beforeDoConfirmBlock(ConfirmOrderDoReq req, BlockException e) {
-        LOG.info("购票请求被限流:{}", req);
-        throw new BusinessException(BusinessExceptionEnum.CONFIRM_ORDER_FLOW_EXCEPTION);
-    }
+//    public void beforeDoConfirmBlock(ConfirmOrderDoReq req, BlockException e) {
+//        LOG.info("购票请求被限流:{}", req);
+//        throw new BusinessException(BusinessExceptionEnum.CONFIRM_ORDER_FLOW_EXCEPTION);
+//    }
 }

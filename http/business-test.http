@@ -9,3 +9,7 @@ GET http://localhost:8000/business/hello
 Accept: application/json
 
 ###
+
+
+GET http://47.98.225.182:80/business/hello
+Accept: application/json

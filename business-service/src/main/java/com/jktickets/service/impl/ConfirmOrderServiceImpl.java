@@ -9,8 +9,8 @@ import cn.hutool.core.util.EnumUtil;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
-import com.alibaba.csp.sentinel.annotation.SentinelResource;
-import com.alibaba.csp.sentinel.slots.block.BlockException;
+//import com.alibaba.csp.sentinel.annotation.SentinelResource;
+//import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -152,7 +152,7 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
     @Async
 
 //    Sentinenl 限流前得加资源注释
-    @SentinelResource(value = "doConfirm", blockHandler = "doConfirmBlock")
+//    @SentinelResource(value = "doConfirm", blockHandler = "doConfirmBlock")
 //    public void doConfirm(ConfirmOrderDoReq req) {
     public void doConfirm(ConfirmOrderMQDto dto) {
 
@@ -471,10 +471,10 @@ public class ConfirmOrderServiceImpl implements ConfirmOrderService {
 
 
     //    sentinel 降级方法
-    public void doConfirmBlock(ConfirmOrderDoReq req, BlockException e) {
-        LOG.info("购票请求被限流:{}", req);
-        throw new BusinessException(BusinessExceptionEnum.CONFIRM_ORDER_FLOW_EXCEPTION);
-    }
+//    public void doConfirmBlock(ConfirmOrderDoReq req, BlockException e) {
+//        LOG.info("购票请求被限流:{}", req);
+//        throw new BusinessException(BusinessExceptionEnum.CONFIRM_ORDER_FLOW_EXCEPTION);
+//    }
 
 
     //    挑选座位

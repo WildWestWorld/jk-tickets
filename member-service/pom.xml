@@ -69,6 +69,10 @@
 
 
     <build>
+
+        <!--        设置打包位置-->
+        <finalName>/dist/${artifactId}</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

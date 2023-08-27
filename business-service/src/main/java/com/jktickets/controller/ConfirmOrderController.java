@@ -1,8 +1,8 @@
 package com.jktickets.controller;
 
 
-import com.alibaba.csp.sentinel.annotation.SentinelResource;
-import com.alibaba.csp.sentinel.slots.block.BlockException;
+//import com.alibaba.csp.sentinel.annotation.SentinelResource;
+//import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.jktickets.exception.BusinessException;
 import com.jktickets.exception.BusinessExceptionEnum;
 import com.jktickets.req.confirmOrder.ConfirmOrderDoReq;
@@ -43,7 +43,7 @@ public class ConfirmOrderController {
     @Autowired
     private StringRedisTemplate redisTemplate;
     @PostMapping("/doConfirm")
-    @SentinelResource(value = "/confirmOrderDoConfirm", blockHandler = "doConfirmBlock")
+//    @SentinelResource(value = "/confirmOrderDoConfirm", blockHandler = "doConfirmBlock")
     public CommonRes<Object> doConfirm(@Valid @RequestBody ConfirmOrderDoReq req) {
 
         if(!env.equals("dev")){
@@ -75,14 +75,14 @@ public class ConfirmOrderController {
 
 
     //    返回值也得保持一致
-    public CommonRes<Object> doConfirmBlock(ConfirmOrderDoReq req, BlockException e) {
-        LOG.info("购票请求被限流:{}", req);
-//        throw new BusinessException(BusinessExceptionEnum.CONFIRM_ORDER_FLOW_EXCEPTION);
-        CommonRes<Object> commonRes = new CommonRes<>();
-        commonRes.setSuccess(false);
-        commonRes.setMessage(BusinessExceptionEnum.CONFIRM_ORDER_FLOW_EXCEPTION.getDesc());
-        return commonRes;
-    }
+//    public CommonRes<Object> doConfirmBlock(ConfirmOrderDoReq req, BlockException e) {
+//        LOG.info("购票请求被限流:{}", req);
+////        throw new BusinessException(BusinessExceptionEnum.CONFIRM_ORDER_FLOW_EXCEPTION);
+//        CommonRes<Object> commonRes = new CommonRes<>();
+//        commonRes.setSuccess(false);
+//        commonRes.setMessage(BusinessExceptionEnum.CONFIRM_ORDER_FLOW_EXCEPTION.getDesc());
+//        return commonRes;
+//    }
 
 
 //    @DeleteMapping("/delete/{id}")
