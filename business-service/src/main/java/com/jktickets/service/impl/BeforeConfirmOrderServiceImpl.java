@@ -64,18 +64,25 @@ public class BeforeConfirmOrderServiceImpl implements BeforeConfirmOrderService 
 //    @SentinelResource(value = "beforeDoConfirm", blockHandler = "beforeDoConfirmBlock")
     public Long beforeDoConfirm(ConfirmOrderDoReq req) {
 
+
+//        id 会被for循环 不断覆盖，id
+        Long id = null;
+        // 根据前端传值，加入排队人数
+        for (int i = 0; i < req.getLineNumber() + 1; i++) {
+
+
 //        解决MQ中拿不到 用户ID的问题
-        req.setMemberId(LoginMemberContext.getId());
+            req.setMemberId(LoginMemberContext.getId());
 
 
-        //        拿令牌
-        boolean validSkToken = skTokenService.validSkToken(req.getDate(), req.getTrainCode(), LoginMemberContext.getId());
-        if (validSkToken) {
-            LOG.info("令牌校验通过");
-        } else {
-            LOG.info("令牌校验不通过");
-            throw new BusinessException(BusinessExceptionEnum.CONFIRM_ORDER_SK_TOKEN_FAIL);
-        }
+            //        拿令牌
+            boolean validSkToken = skTokenService.validSkToken(req.getDate(), req.getTrainCode(), LoginMemberContext.getId());
+            if (validSkToken) {
+                LOG.info("令牌校验通过");
+            } else {
+                LOG.info("令牌校验不通过");
+                throw new BusinessException(BusinessExceptionEnum.CONFIRM_ORDER_SK_TOKEN_FAIL);
+            }
 
 
 //        车次时间+车次号来认定车次的票
@@ -99,7 +106,7 @@ public class BeforeConfirmOrderServiceImpl implements BeforeConfirmOrderService 
 
 //        RLock lock = null;
 
-        try {
+            try {
 //        使用redisson 自带看门狗
 //            lock = redissonClient.getLock(lockKey);
 //
@@ -134,71 +141,72 @@ public class BeforeConfirmOrderServiceImpl implements BeforeConfirmOrderService 
 //            }
 
 
+                // 保存确认订单表，状态初始
+                DateTime nowTime = DateTime.now();
 
-            // 保存确认订单表，状态初始
-            DateTime nowTime = DateTime.now();
-
-            ConfirmOrder confirmOrder = new ConfirmOrder();
-            confirmOrder.setId(SnowUtil.getSnowflakeNextId());
+                ConfirmOrder confirmOrder = new ConfirmOrder();
+                confirmOrder.setId(SnowUtil.getSnowflakeNextId());
 //            confirmOrder.setMemberId(LoginMemberContext.getId());
 
-            confirmOrder.setMemberId(req.getMemberId());
+                confirmOrder.setMemberId(req.getMemberId());
 
 
-            Date date = req.getDate();
-            confirmOrder.setDate(date);
+                Date date = req.getDate();
+                confirmOrder.setDate(date);
 
-            String trainCode = req.getTrainCode();
-            confirmOrder.setTrainCode(trainCode);
+                String trainCode = req.getTrainCode();
+                confirmOrder.setTrainCode(trainCode);
 
-            String start = req.getStart();
-            confirmOrder.setStart(start);
+                String start = req.getStart();
+                confirmOrder.setStart(start);
 
-            String end = req.getEnd();
-            confirmOrder.setEnd(end);
+                String end = req.getEnd();
+                confirmOrder.setEnd(end);
 
-            confirmOrder.setDailyTrainTicketId(req.getDailyTrainTicketId());
-            confirmOrder.setStatus(ConfirmOrderStatusEnum.INIT.getCode());
-            confirmOrder.setCreateTime(nowTime);
-            confirmOrder.setUpdateTime(nowTime);
-            confirmOrder.setTickets(JSON.toJSONString(req.getTickets()));
-            confirmOrderMapper.insert(confirmOrder);
+                confirmOrder.setDailyTrainTicketId(req.getDailyTrainTicketId());
+                confirmOrder.setStatus(ConfirmOrderStatusEnum.INIT.getCode());
+                confirmOrder.setCreateTime(nowTime);
+                confirmOrder.setUpdateTime(nowTime);
+                confirmOrder.setTickets(JSON.toJSONString(req.getTickets()));
+                confirmOrderMapper.insert(confirmOrder);
 
 //        req.setLogId(MDC.get("LOG_ID"));
 
 //            发送MQ排队购票
-            ConfirmOrderMQDto confirmOrderMQDto = new ConfirmOrderMQDto();
-            confirmOrderMQDto.setDate(req.getDate());
-            confirmOrderMQDto.setTrainCode(req.getTrainCode());
-            confirmOrderMQDto.setLogId(MDC.get("LOG_ID"));
+                ConfirmOrderMQDto confirmOrderMQDto = new ConfirmOrderMQDto();
+                confirmOrderMQDto.setDate(req.getDate());
+                confirmOrderMQDto.setTrainCode(req.getTrainCode());
+                confirmOrderMQDto.setLogId(MDC.get("LOG_ID"));
 
 
-            String reqJson = JSON.toJSONString(confirmOrderMQDto);
+                String reqJson = JSON.toJSONString(confirmOrderMQDto);
 //            LOG.info("排队购票,发送mq开始,消息:{}",reqJson);
 //            rocketMQTemplate.convertAndSend(RocketMQTopicEnum.CONFIRM_ORDER.getCode(),reqJson);
 //            LOG.info("排队购票，发送mq结束");
 
-            confirmOrderService.doConfirm(confirmOrderMQDto);
+                confirmOrderService.doConfirm(confirmOrderMQDto);
 
-
+                 id = confirmOrder.getId();
 //            返回confirmOrder 的ID  用于前端轮询
-            return confirmOrder.getId();
 
 
-        }
+            }
 //        catch (InterruptedException e) {
 //            LOG.error("购票异常", e);
 //        }
 
-        finally {
-            //       购票成功，删除redis 分布式锁
-            LOG.info("购票流程结束，释放锁");
+            finally {
+                //       购票成功，删除redis 分布式锁
+                LOG.info("购票流程结束，释放锁");
 //            redisTemplate.delete(lockKey);
 //            isHeldByCurrentThread 判断是否是 当前线程
 //            if (lock != null && lock.isHeldByCurrentThread()) {
 //                lock.unlock();
 //            }
+            }
         }
+
+        return id;
     }
 
 

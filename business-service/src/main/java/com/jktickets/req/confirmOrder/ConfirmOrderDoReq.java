@@ -14,6 +14,9 @@ public class ConfirmOrderDoReq {
 
     private String logId;
 
+//    加入排队人数
+    private int lineNumber;
+
 
     /**
      * 会员id
