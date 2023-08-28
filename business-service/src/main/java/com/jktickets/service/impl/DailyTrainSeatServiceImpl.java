@@ -184,4 +184,6 @@ public class DailyTrainSeatServiceImpl implements DailyTrainSeatService {
         List<DailyTrainSeat> dailyTrainSeats = dailyTrainSeatMapper.selectByExample(dailyTrainSeatExample);
         return dailyTrainSeats;
     }
+
+
 }

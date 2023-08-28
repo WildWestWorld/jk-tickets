@@ -144,4 +144,13 @@ public class DailyTrainStationServiceImpl implements DailyTrainStationService {
         long stationCount = dailyTrainStationMapper.countByExample(example);
         return stationCount;
     }
+
+    @Override
+    public List<DailyTrainStationQueryRes> queryByTrain(Date date, String trainCode) {
+        DailyTrainStationExample dailyTrainStationExample = new DailyTrainStationExample();
+        dailyTrainStationExample.setOrderByClause("`index` asc");
+        dailyTrainStationExample.createCriteria().andDateEqualTo(date).andTrainCodeEqualTo(trainCode);
+        List<DailyTrainStation> list = dailyTrainStationMapper.selectByExample(dailyTrainStationExample);
+        return BeanUtil.copyToList(list, DailyTrainStationQueryRes.class);
+    }
 }

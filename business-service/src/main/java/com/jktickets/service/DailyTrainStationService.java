@@ -21,4 +21,7 @@ public interface DailyTrainStationService {
 
    long countByTrainCode(Date date,String trainCode);
 
+
+    List<DailyTrainStationQueryRes> queryByTrain(Date date, String trainCode);
+
 }
