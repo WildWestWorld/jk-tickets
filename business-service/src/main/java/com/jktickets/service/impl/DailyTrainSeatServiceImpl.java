@@ -15,9 +15,11 @@ import com.jktickets.mapper.DailyTrainSeatMapper;
 
 import com.jktickets.req.dailyTrainSeat.DailyTrainSeatQueryReq;
 import com.jktickets.req.dailyTrainSeat.DailyTrainSeatSaveReq;
+import com.jktickets.req.seatSell.SeatSellReq;
 import com.jktickets.res.PageRes;
 import com.jktickets.res.dailyTrainSeat.DailyTrainSeatQueryRes;
 
+import com.jktickets.res.seatSell.SeatSellRes;
 import com.jktickets.service.DailyTrainSeatService;
 
 import com.jktickets.service.TrainSeatService;
@@ -183,6 +185,24 @@ public class DailyTrainSeatServiceImpl implements DailyTrainSeatService {
                 .andCarriageIndexEqualTo(carriageIndex);
         List<DailyTrainSeat> dailyTrainSeats = dailyTrainSeatMapper.selectByExample(dailyTrainSeatExample);
         return dailyTrainSeats;
+    }
+
+
+
+    /**
+     * 查询某日某车次的所有座位
+     */
+    @Override
+    public List<SeatSellRes> querySeatSell(SeatSellReq req) {
+        Date date = req.getDate();
+        String trainCode = req.getTrainCode();
+        LOG.info("查询日期【{}】车次【{}】的座位销售信息", DateUtil.formatDate(date), trainCode);
+        DailyTrainSeatExample dailyTrainSeatExample = new DailyTrainSeatExample();
+        dailyTrainSeatExample.setOrderByClause("`carriage_index` asc, carriage_seat_index asc");
+        dailyTrainSeatExample.createCriteria()
+                .andDateEqualTo(date)
+                .andTrainCodeEqualTo(trainCode);
+        return BeanUtil.copyToList(dailyTrainSeatMapper.selectByExample(dailyTrainSeatExample), SeatSellRes.class);
     }
 
 
